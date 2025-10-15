@@ -126,7 +126,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Navigation Bar */}
+      {/* Navigation  Bar */}
       <nav className="w-full bg-[#EFDCAB]">
         <div className="max-w-7xl mx-auto px-10 flex items-center justify-between h-12">
           <ul className="flex items-center gap-6">
