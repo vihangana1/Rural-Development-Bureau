@@ -72,7 +72,7 @@ const navItems = [
         subItems: [
           { label: " Road Developments", path: "/services/village/roaddevelopment" },
           { label: " Sanitar Facilities", path: "/services/village/sanitaryfacilities" },
-          { label: "Tourism", path: "/services/village/tourism" },
+          { label: "Tourism Industry", path: "/services/village/tourism" },
           { label: "Other services", path: "/services/village/otherservices" },
         ],
       },
