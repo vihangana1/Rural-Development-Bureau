@@ -70,12 +70,10 @@ const navItems = [
       {
         label: "Infrastructure ",
         subItems: [
-          { label: "Developments", path: "/services/village/roaddevelopment" },
-          { label: "Developments", path: "/services/village/sanitaryfacilities" },
-          { label: "Developments", path: "/services/village/tourism" },
-          { label: "Developments", path: "/services/village/otherservices" },
-
-
+          { label: " Road Developments", path: "/services/village/roaddevelopment" },
+          { label: " Sanitar Facilities", path: "/services/village/sanitaryfacilities" },
+          { label: "Tourism", path: "/services/village/tourism" },
+          { label: "Other services", path: "/services/village/otherservices" },
         ],
       },
     ],
