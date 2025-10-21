@@ -6,12 +6,13 @@ import image4 from "../assets/product/imageai4.jpeg";
 
 // Product list
 const products = [
-  { name: "Coconut Related ", image: image1 },
+  { name: "Hand Craft  ", image: image1 },
   { name: "Dehydrated Product", image: image2 },
-  { name: "Coconut Shell Craft", image: image3 },
-  { name: "Japan Jabara Handbag", image: image4 },
+  { name: "Coconut Related Product", image: image3 },
+  { name: "Clay Related Product", image: image4 },
   { name: "Dehydrated Product", image: image1 },
   { name: "Dehydrated Product", image: image2 },
+  { name: "dairyProduct", image: image2 },
 ];
 
 // Carousel images
@@ -76,22 +77,7 @@ const ProductCard = ({ name, image }) => (
   </div>
 );
 
-// Add new card
-const AddNewCard = () => (
-  <div
-    className="bg-gray-100 border-2 rounded-lg p-4 flex flex-col items-center justify-center"
-    style={{ borderColor: "#9A3F3F" }}
-  >
-    <img
-      src={image1}
-      alt="Add New"
-      className="w-full h-32 object-contain mb-4"
-    />
-    <button className="bg-black text-white text-xs px-4 py-2 rounded-full hover:bg-gray-800 transition">
-      ADD NEW →
-    </button>
-  </div>
-);
+
 
 // Main page
 const ProductPage = () => {
@@ -117,7 +103,7 @@ const ProductPage = () => {
           {products.map((item, index) => (
             <ProductCard key={index} name={item.name} image={item.image} />
           ))}
-          <AddNewCard />
+      
         </div>
       </section>
     </div>

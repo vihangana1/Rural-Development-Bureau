@@ -376,7 +376,7 @@ const Home = () => {
             National Policy Framework.
         </p>
         <a
-          href="/Download"
+          href="/News"
           className="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
         >
           READ MORE →
