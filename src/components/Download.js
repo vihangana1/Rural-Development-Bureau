@@ -40,7 +40,7 @@ const DocumentBox = ({ name, file }) => (
 
 // ✅ Section block
 const Section = ({ id, title, items }) => (
-  <section id={id} className="mb-12 scroll-mt-20">
+  <section id={id} className="mb-5 scroll-mt-20">
     <h2 className="text-2xl font-semibold text-[#2C3E50] mb-6">{title}</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {items.map((doc, index) => (

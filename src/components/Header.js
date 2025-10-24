@@ -92,16 +92,33 @@ const navItems = [
   { label: "Contact Us", path: "/ContactUs" },
 ];
 
-const accessibilityIcons = [
-  { icon: "bi bi-universal-access", title: "Accessibility" },
-  { icon: "bi bi-translate", title: "Language" },
-];
 
-const Header = () => {
+const Header = ({
+  accessibilitySettings,
+  setAccessibilitySettings,
+  showAccessibilityBox,
+  setShowAccessibilityBox,
+  accessibilityBoxRef,
+}) => {
   const [isServicesHovered, setIsServicesHovered] = useState(false);
   const [isAboutUsHovered, setIsAboutUsHovered] = useState(false);
   const [isDownloadHovered, setIsDownloadHovered] = useState(false);
-  const [hoveredCategory, setHoveredCategory] = useState(null); // To track which main category is hovered
+  const [hoveredCategory, setHoveredCategory] = useState(null);
+  const [activeAccessibility, setActiveAccessibility] = useState("");
+
+  const AccessibilityButton = ({ label, onClick, isActive }) => (
+    <button
+    onClick={onClick}
+    className={`w-full text-left px-3 py-2 rounded-md transition ${
+      isActive
+        ? "bg-black text-white"
+        : "bg-white text-black hover:bg-gray-200 hover:text-black"
+    }`}
+  >
+    {label}
+  </button>
+  );
+  
 
   return (
     <header className="w-full shadow-md">
@@ -116,15 +133,118 @@ const Header = () => {
               கிராமிய அபிவிருத்தி அமைச்சு
             </h1>
           </div>
-          <div className="flex gap-4">
-            {accessibilityIcons.map(({ icon, title }) => (
-              <button key={icon} className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-xl text-black hover:bg-blue-100 hover:text-blue-600 transition" title={title}>
-                <i className={icon}></i>
-              </button>
-            ))}
+          {/* Accessibility Icon + Box */}
+          <div className="relative inline-block">
+            <button
+              onClick={() => setShowAccessibilityBox(!showAccessibilityBox)}
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-xl text-black hover:bg-blue-100 hover:text-blue-600 transition"
+              title="Accessibility"
+            >
+              <i className="bi bi-universal-access"></i>
+            </button>
+
+            {showAccessibilityBox && (
+  <div
+    ref={accessibilityBoxRef}
+    className="absolute top-full right-0 mt-2 bg-white border border-gray-300 rounded-lg shadow-lg p-4 z-[9999] w-64 space-y-2 text-sm text-black"
+  >
+    <button
+      onClick={() => setShowAccessibilityBox(false)}
+      className="absolute top-2 right-2 text-gray-500 hover:text-black"
+    >
+      ✕
+    </button>
+    <h3 className="font-bold text-black mb-2">Accessibility Options</h3>
+
+    <AccessibilityButton
+      label="Increase Text Size"
+      onClick={() => setAccessibilitySettings((s) => ({ ...s, textSize: "text-lg" }))}
+      isActive={activeAccessibility === "Increase Text Size"}
+    />
+    <AccessibilityButton
+      label="Decrease Text Size"
+      onClick={() => setAccessibilitySettings((s) => ({ ...s, textSize: "text-sm" }))}
+      isActive={activeAccessibility === "Decrease Text Size"}
+    />
+    <AccessibilityButton
+      label="Increase Text Spacing"
+      onClick={() => setAccessibilitySettings((s) => ({ ...s, spacing: "tracking-wide" }))}
+      isActive={activeAccessibility === "Increase Text Spacing"}
+    />
+    <AccessibilityButton
+      label="Decrease Text Spacing"
+      onClick={() => setAccessibilitySettings((s) => ({ ...s, spacing: "tracking-tight" }))}
+      isActive={activeAccessibility === "Decrease Text Spacing"}
+    />
+    <AccessibilityButton
+      label="Invert Colors"
+      onClick={() =>setAccessibilitySettings((s) => ({...s,
+      invert: !s.invert,
+    }))
+      }
+      isActive={accessibilitySettings.invert}
+    />
+    <AccessibilityButton
+      label="Gray Hues"
+      onClick={() =>setAccessibilitySettings((s) => ({...s,
+      grayscale: !s.grayscale,
+    }))
+    }
+    isActive={accessibilitySettings.grayscale}
+  />
+    <AccessibilityButton
+      label="Big Cursor"
+      onClick={() => setAccessibilitySettings((s) => ({...s,
+      bigCursor: !s.bigCursor,
+    }))
+  }
+  isActive={accessibilitySettings.bigCursor}
+/>
+    <AccessibilityButton
+      label="Reading Guide"
+      onClick={() => alert("Reading guide feature coming soon")}
+      isActive={activeAccessibility === "Reading Guide"}
+    />
+    <AccessibilityButton
+      label="Text to Speech"
+      onClick={() => {
+        const utterance = new SpeechSynthesisUtterance("Welcome to the Rural Development Bureau website");
+        speechSynthesis.speak(utterance);
+      }}
+      isActive={activeAccessibility === "Text to Speech"}
+    />
+   <AccessibilityButton
+      label="Disable Animations"
+      onClick={() =>setAccessibilitySettings((s) => ({...s,
+      disableAnimations: !s.disableAnimations,
+        }))
+      }
+      isActive={accessibilitySettings.disableAnimations}
+    />
+    <AccessibilityButton
+      label="Reset Accessibility Settings"
+      onClick={() => {
+        setAccessibilitySettings({
+          textSize: "text-base",
+          spacing: "tracking-normal",
+          invert: false,
+          grayscale: false,
+          bigCursor: false,
+          disableAnimations: false,
+        });
+        setActiveAccessibility("Reset Accessibility Settings");
+      }}
+      isActive={activeAccessibility === "Reset Accessibility Settings"}
+    />
+  </div>
+)}
+
+      
           </div>
         </div>
       </div>
+
+
 
       {/* Navigation  Bar */}
       <nav className="w-full bg-[#EFDCAB]">
