@@ -132,17 +132,17 @@ const AboutUs = () => {
         {/* Officer Overview Section */}
         <section id="services">
         <h2 className="text-2xl font-bold text-[#9A3F3F] mb-4">Officer's Details</h2>
-        <div className="bg-w py-16 px-6 md:px-20" >
+        <div className="bg-w py-160 px-6 md:px-20" >
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {officers.map((officer, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300"
+                className="bg-white rounded-lg shadow-md p-2 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300"
               >
                 <img
                   src={officer.image}
                   alt={officer.name}
-                  className="w-30 h-30 object-cover mb-4 border-2 border-black"
+                  className="w-35 h-350 object-cover mb-4 border-2 "
                 />
                 <h3 className="text-xl font-semibold text-black mb-1">
                   {officer.name}

@@ -12,7 +12,7 @@ const products = [
   { name: "Dehydrated Product", image: image2, link: "/Products/dehydrate" },
   { name: "Coconut Related Product", image: image3, link: "/Products/coconutrelated" },
   { name: "Clay Related Product", image: image4, link: "/Products/clayrelated" },
-  { name: "Dairy Product", image: image2, link: "/Products/dairyproduct" },
+  { name: "Dairy Product", image: image2, link: "/roducts/dairyproduct" },
 ];
 
 // Carousel images

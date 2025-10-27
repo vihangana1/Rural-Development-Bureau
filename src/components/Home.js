@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom"; 
+import '../index.css';
 
 
 // Import your images
@@ -101,42 +102,42 @@ const Home = () => {
                 </div>
 
             {/* Overlay Boxes */}
-                <div className="absolute top-[600px] z-10 flex flex-col md:flex-row justify-center items-center gap-6 px-4 w-[900px] mx-auto">
-                {[
-                    {
-                        title: "Rural Development Programme",
-                        subtitle: "",
-                        path: "/components/programme/Ruraldevelopment",
-                    },
-                    {
-                        title: "Grama Shakthi Programme",
-                        subtitle: "",
-                        path: "/components/programme/Gramashakthi",
-                    },
-                    {
-                        title: "Praja Shakthi Programme",
-                        subtitle: "",
-                        path: "/components/programme/Prajashakthi",
-                    },
-                    {
-                        title: "Sawbagya Programme",
-                        subtitle: "",
-                        path: "/components/programme/Sawbagya",
-                    },
-                ].map((box, index) => (
-                    <Link
-                    to={box.path}
-                    key={index}
-                    className="bg-white rounded-lg shadow-lg border-t-[6px] border-[#F3931D] h-[200px] w-[300px] flex flex-col items-center text-center hover:scale-105 transform transition-transform duration-300 slide-in-left"
-                    style={{ animationDelay: `${index * 0.3}s` }}
-                    >
-                    <div className="p-4">
-                        <p className="text-lg font-semibold">{box.title}</p>
-                        <p className="text-2xl font-bold">{box.subtitle}</p>
-                    </div>
-                    </Link>
-                ))}
-                </div>
+            <div className="absolute top-[600px] z-10 flex flex-col md:flex-row justify-center items-center gap-6 px-4 w-[1100px] mx-auto">
+              {[
+                {
+                  title: "Rural Development Programme",
+                  //subtitle: "",
+                  path: "/components/programme/Ruraldevelopment",
+                },
+                {
+                  title: "Grama Shakthi Programme",
+                  //subtitle: "",
+                  path: "/components/programme/Gramashakthi",
+                },
+                {
+                  title: "Praja Shakthi Programme",
+                // subtitle: "",
+                  path: "/components/programme/Prajashakthi",
+                },
+                {
+                  title: "Sawbagya Programme",
+                // subtitle: "",
+                  path: "/components/programme/Sawbagya",
+                },
+              ].map((box, index) => (
+                <Link
+                  to={box.path}
+                  key={index}
+                  className={`bg-[#F8EEDF] rounded-lg shadow-lg border-t-[6px] border-[#F3931D] h-[200px] w-[300px] flex flex-col items-center text-center transform transition-transform duration-500 hover:scale-105 opacity-0 animate-slide-in-left`}                  style={{ animationDelay: `${index * 0.3}s`, animationFillMode: "forwards" }}
+                >
+                  <div className="p-4">
+                    <p className="text-2xl font-semibold text-[#333] mb-2">{box.title}</p>
+                    {/* <p className="text-lg font-bold">{box.subtitle}</p> */}
+                  </div>
+                </Link>
+              ))}
+            </div>
+
 
       </main>
    
