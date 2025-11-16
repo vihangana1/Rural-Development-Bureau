@@ -244,7 +244,7 @@ const translations = {
     tourismIndustry: "සංචාරක කර්මාන්තය",
     otherServices: "වෙනත් සේවා",
     
-    // Home Page
+    // Home Page language
     ruralDevProgramme: "ග්‍රාමීය සංවර්ධන වැඩසටහන",
     gramaShakthiProgramme: "ග්‍රාම ශක්ති වැඩසටහන",
     prajaShakthiProgramme: "ප්‍රජා ශක්ති වැඩසටහන",
