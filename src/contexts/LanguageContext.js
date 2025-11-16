@@ -1,0 +1,560 @@
+import React, { createContext, useState, useContext } from 'react';
+
+// --- 1. Translation Data ---
+// All text for English (en), Sinhala (si), and Tamil (ta) is stored here.
+const translations = {
+  en: {
+    // Header Navigation
+    home: "Home",
+    aboutUs: "About Us",
+    services: "Services",
+    product: "Product",
+    download: "Download",
+    news: "News",
+    contactUs: "Contact Us",
+    
+    // About Us sub-items
+    introduction: "Introduction",
+    overview: "Overview",
+    officerDetails: "Officer Details",
+    
+    // Download sub-items
+    circulars: "Circulars",
+    guidelines: "Guidelines",
+    formats: "Formats",
+    
+    // Service Categories
+    agriculture: "Agriculture",
+    industries: "Industries",
+    fisheries: "Fisheries",
+    animalHusbandry: "Animal Husbandry",
+    infrastructure: "Infrastructure",
+    
+    // Agriculture Products
+    coconutRelatedProduct: "Coconut Related Product",
+    kithulRelatedProduct: "Kithul Related Product",
+    palmRelatedProduct: "Palm Related Product",
+    spicesRelatedProduct: "Spices and Related Product",
+    flowersOrnamentalPlants: "Flowers and Ornamental Plants",
+    seedProduct: "Seed Product",
+    fruitRelatedProduct: "Fruit Related Product",
+    vegetableValueAddition: "Vegetable Value Addition",
+    mushroomProduct: "Mushroom Product",
+    teaProduct: "Tea Product",
+    bulathProduct: "Bulath Product",
+    cinnamonProduct: "Cinnamon Product",
+    otherProduct: "Other Product",
+    
+    // Industries Products
+    clothRelatedProduct: "Cloth Related Product",
+    footwear: "Footwear",
+    caneRelatedProduct: "Cane Related Product",
+    clayRelatedProduct: "Clay Related Product",
+    woodenItems: "Wooden Items",
+    poojaItems: "Pooja Items",
+    sweetOrganicFoods: "Sweet & Organic Foods",
+    coconutHuskProduct: "Coconut Husk Product",
+    handCraftProduct: "Hand Craft Product",
+    ironGoldProduct: "Iron & Gold Product",
+    
+    // Fisheries Products
+    umbalakadaDriedFish: "Umbalakada & Dried Fish",
+    ornamentalFish: "Ornamental Fish",
+    
+    // Animal Husbandry Products
+    dairyProduct: "Dairy Product",
+    egg: "Egg",
+    meats: "Meats",
+    beeHoney: "Bee Honey",
+    
+    // Infrastructure Services
+    roadDevelopments: "Road Developments",
+    sanitaryFacilities: "Sanitary Facilities",
+    tourismIndustry: "Tourism Industry",
+    otherServices: "Other Services",
+    
+    // Home Page
+    ruralDevProgramme: "Rural Development Programme",
+    gramaShakthiProgramme: "Grama Shakthi Programme",
+    prajaShakthiProgramme: "Praja Shakthi Programme",
+    sawbagyaProgramme: "Sawbagya Programme",
+    
+    aboutMinistry: "About Rural Development BUREU",
+    president: "President",
+    minister: "Minister",
+    secretary: "Secretary",
+    
+    productionVillages: "576 Production Villages Based on Rural Resources",
+    saubagyaDescription: "The Saubagya Production Village Program was launched to promote home-based products, raise the income level of the rural community, uplift the rural economy, and support the \"Vision of Prosperity and Splendour\" National Policy Framework.",
+    
+    officerDetail: "OFFICER DETAIL",
+    readMore: "READ MORE",
+    
+    projects: "Projects",
+    exploreSectors: "Explore 5 Key Sectors Driving Rural Development",
+    projectsDescription: "The Saubagya Production Village Program empowers 576 villages by organizing services into Agriculture, Industries, Fisheries, Animal Husbandry, and Infrastructure. Click a category to discover its sub-items and explore the products that uplift rural livelihoods.",
+    
+    downloadTitle: "Download circulers, Guidelines and Formats",
+    relatedOrganizations: "Related Organizations",
+    
+    // Officers Names
+    presidentName: "Hon. Anura Kumara Dissanayake",
+    ministerName: "Mr. Upali Pannilage",
+    secretaryName: "Mr. S. Alokabandara",
+    
+    // Organizations
+    ruralDevResearchInstitute: "Rural Development and Research Institute",
+    ministryPublicAdmin: "Ministry of Public Administration",
+    ministryHomeAffairs: "Ministry of Home Affairs",
+    ministryFinance: "Ministry of Finance",
+    exportDevBoard: "Export Development Board",
+    
+    // About Us Page
+    aboutUsTitle: "About Us",
+    introductionText: "The Saubagya Production Village Programme was launched to promote home-based products, raising the income level of the rural community, uplifting the rural economy, and making a significant contribution to the national product, in order to realize the \"Saubagyaye Dakma\" Political Manifest.",
+    introductionText2: "The aim is to establish 1000 villages as \"Saubhagya Production Villages\" throughout the country (500 villages in the first phase and another 500 in the second phase), involving low-income earners including Samurdhi recipients as well as more potential family units who directly contribute to the production process.",
+    vision: "Vision",
+    visionText: "An empowered community where every individual has the opportunity to lead a fulfilling and dignified life.",
+    mission: "Mission",
+    missionText: "Promoting rural community development by overseeing a wide range of programs including rural infrastructure, livelihood support, social protection schemes, and community engagement initiatives. Our work is collaborative, involving local governments, NGOs, and citizens to deliver impactful solutions tailored to each region's needs.",
+    officersDetails: "Officer's Details",
+    directorGeneral: "Director General",
+    director: "Director",
+    deputyDirector: "Deputy Director",
+    assistantDirector: "Assistant Director",
+    office: "Office",
+    mobile: "Mobile",
+    
+    // Contact Us Page
+    contactUsTitle: "Contact Us",
+    contactIntro: "If you have any query, suggestion or complaint, please reach out to us and we will get back to you soon.",
+    fillForm: "Fill the Form Below to Contact Us",
+    firstName: "First Name",
+    lastName: "Last Name",
+    district: "District",
+    email: "Email",
+    contactNumber: "Contact Number",
+    commentMessage: "Comment or Message",
+    submit: "Submit",
+    meetUs: "Meet Us",
+    
+    // Download Page
+    documentDownloads: "Document Downloads",
+    circularsTitle: "📑 Circulars",
+    guidelinesTitle: "📘 Guidelines",
+    formatsTitle: "📂 Formats",
+    downloadBtn: "Download",
+    circular: "Circular",
+    guideline: "Guideline",
+    format: "Format",
+    
+    // News Page
+    newsTitle: "News",
+    dehydratedProduct: "Dehydrated Product",
+    
+    // Products Page
+    productsTitle: "Products",
+    productsDescription: "We have a vast range of quality products made by our own producers in the Saubagya Production Villages. These locally based value-added products are crafted with care and meet global standards in the production value chain.",
+    handCraft: "Hand Craft",
+    dehydratedProductItem: "Dehydrated Product",
+    coconutRelatedProductItem: "Coconut Related Product",
+    clayRelatedProductItem: "Clay Related Product",
+    dairyProductItem: "Dairy Product",
+    showMore: "SHOW MORE",
+    
+    // Footer
+    quickLinks: "Quick Links",
+    importantLinks: "Important Links",
+    contactInfo: "Contact Information",
+    address: "Address",
+    addressText: "9th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka",
+    phone: "Phone",
+    followUs: "Follow Us",
+    allRightsReserved: "All Rights Reserved",
+    developedBy: "Developed by",
+  },
+  
+  si: {
+    // Header Navigation
+    home: "මුල් පිටුව",
+    aboutUs: "අප ගැන",
+    services: "සේවාවන්",
+    product: "නිෂ්පාදන",
+    download: "බාගත කිරීම්",
+    news: "ප්‍රවෘත්ති",
+    contactUs: "අප අමතන්න",
+    
+    // About Us sub-items
+    introduction: "හැඳින්වීම",
+    overview: "දළ විශ්ලේෂණය",
+    officerDetails: "නිලධාරී විස්තර",
+    
+    // Download sub-items
+    circulars: "චක්‍රලේඛ",
+    guidelines: "මාර්ගෝපදේශ",
+    formats: "ආකෘති",
+    
+    // Service Categories
+    agriculture: "කෘෂිකර්මාන්තය",
+    industries: "කර්මාන්ත",
+    fisheries: "ධීවර කර්මාන්තය",
+    animalHusbandry: "පශු සම්පත් සංවර්ධනය",
+    infrastructure: "යටිතල පහසුකම්",
+    
+    // Agriculture Products
+    coconutRelatedProduct: "පොල් ආශ්‍රිත නිෂ්පාදන",
+    kithulRelatedProduct: "කිතුල් ආශ්‍රිත නිෂ්පාදන",
+    palmRelatedProduct: "තල ආශ්‍රිත නිෂ්පාදන",
+    spicesRelatedProduct: "කුළුබඩු සහ ආශ්‍රිත නිෂ්පාදන",
+    flowersOrnamentalPlants: "මල් සහ විසිතුරු ශාක",
+    seedProduct: "බීජ නිෂ්පාදන",
+    fruitRelatedProduct: "පළතුරු ආශ්‍රිත නිෂ්පාදන",
+    vegetableValueAddition: "එළවළු වටිනාකම් එකතු කිරීම",
+    mushroomProduct: "හතු නිෂ්පාදන",
+    teaProduct: "තේ නිෂ්පාදන",
+    bulathProduct: "බුලත් නිෂ්පාදන",
+    cinnamonProduct: "කුරුඳු නිෂ්පාදන",
+    otherProduct: "වෙනත් නිෂ්පාදන",
+    
+    // Industries Products
+    clothRelatedProduct: "රෙදි ආශ්‍රිත නිෂ්පාදන",
+    footwear: "පාවහන්",
+    caneRelatedProduct: "බට ආශ්‍රිත නිෂ්පාදන",
+    clayRelatedProduct: "මැටි ආශ්‍රිත නිෂ්පාදන",
+    woodenItems: "ලී භාණ්ඩ",
+    poojaItems: "පූජා භාණ්ඩ",
+    sweetOrganicFoods: "රසකැවිලි සහ කාබනික ආහාර",
+    coconutHuskProduct: "පොල්ගොක් නිෂ්පාදන",
+    handCraftProduct: "අත්කම් නිෂ්පාදන",
+    ironGoldProduct: "යකඩ සහ රන් නිෂ්පාදන",
+    
+    // Fisheries Products
+    umbalakadaDriedFish: "උම්බලකඩ සහ වියළි මාළු",
+    ornamentalFish: "විසිතුරු මත්ස්‍ය",
+    
+    // Animal Husbandry Products
+    dairyProduct: "කිරි නිෂ්පාදන",
+    egg: "බිත්තර",
+    meats: "මස්",
+    beeHoney: "මී පැණි",
+    
+    // Infrastructure Services
+    roadDevelopments: "මාර්ග සංවර්ධන",
+    sanitaryFacilities: "සනීපාරක්ෂක පහසුකම්",
+    tourismIndustry: "සංචාරක කර්මාන්තය",
+    otherServices: "වෙනත් සේවා",
+    
+    // Home Page
+    ruralDevProgramme: "ග්‍රාමීය සංවර්ධන වැඩසටහන",
+    gramaShakthiProgramme: "ග්‍රාම ශක්ති වැඩසටහන",
+    prajaShakthiProgramme: "ප්‍රජා ශක්ති වැඩසටහන",
+    sawbagyaProgramme: "සෞභාග්‍ය වැඩසටහන",
+    
+    aboutMinistry: "ග්‍රාමීය සංවර්ධන කාර්යංශය පිළිබඳව",
+    president: "ජනාධිපති",
+    minister: "අමාත්‍ය",
+    secretary: "ලේකම්",
+    
+    productionVillages: "ග්‍රාමීය සම්පත් මත පදනම් වූ නිෂ්පාදන ගම්මාන 576",
+    saubagyaDescription: "ගෘහ පදනම් නිෂ්පාදන ප්‍රවර්ධනය කිරීම, ග්‍රාමීය ප්‍රජාවේ ආදායම් මට්ටම ඉහළ නැංවීම, ග්‍රාමීය ආර්ථිකය උසස් කිරීම සහ 'සමෘද්ධිය හා තේජසේ දැක්ම' ජාතික ප්‍රතිපත්ති රාමුවට සහාය වීම සඳහා සෞභාග්‍ය නිෂ්පාදන ගම්මාන වැඩසටහන ආරම්භ කරන ලදී.",
+    
+    officerDetail: "නිලධාරී විස්තර",
+    readMore: "වැඩි විස්තර",
+    
+    projects: "ව්‍යාපෘති",
+    exploreSectors: "ග්‍රාමීය සංවර්ධනය හමුවන ප්‍රධාන අංශ 5ක් ගවේෂණය කරන්න",
+    projectsDescription: "සෞභාග්‍ය නිෂ්පාදන ගම්මාන වැඩසටහන කෘෂිකර්මාන්තය, කර්මාන්ත, ධීවර කර්මාන්තය, පශු සම්පත් සංවර්ධනය සහ යටිතල පහසුකම් වලට සේවා සංවිධානය කරමින් ගම්මාන 576ක් සවිබල ගන්වයි.",
+    
+    downloadTitle: "චක්‍රලේඛ, මාර්ගෝපදේශ සහ ආකෘති බාගන්න",
+    relatedOrganizations: "අදාළ ආයතන",
+    
+    // Officers Names
+    presidentName: "ගරු අනුර කුමාර දිසානායක",
+    ministerName: "උපාලි පන්නිලගේ මහතා",
+    secretaryName: "එස්. අලෝකබන්දාර මහතා",
+    
+    // Organizations
+    ruralDevResearchInstitute: "ග්‍රාමීය සංවර්ධන හා පර්යේෂණ ආයතනය",
+    ministryPublicAdmin: "රාජ්‍ය පරිපාලන අමාත්‍යාංශය",
+    ministryHomeAffairs: "ස්වදේශ කටයුතු අමාත්‍යාංශය",
+    ministryFinance: "මුදල් අමාත්‍යාංශය",
+    exportDevBoard: "අපනයන සංවර්ධන මණ්ඩලය",
+    
+    // About Us Page
+    aboutUsTitle: "අප ගැන",
+    introductionText: "සෞභාග්‍ය නිෂ්පාදන ගම්මාන වැඩසටහන ආරම්භ කර ඇත්තේ ගෘහ පදනම් නිෂ්පාදන ප්‍රවර්ධනය කිරීම, ග්‍රාමීය ප්‍රජාවේ ආදායම් මට්ටම ඉහළ නැංවීම, ග්‍රාමීය ආර්ථිකය උසස් කිරීම සහ ජාතික නිෂ්පාදනයට සැලකිය යුතු දායකත්වයක් ලබා දීම, 'සෞභාග්‍යයේ දැක්ම' දේශපාලන ප්‍රකාශනය සාක්ෂාත් කර ගැනීම සඳහා ය.",
+    introductionText2: "රට පුරා ගම්මාන 1000ක් 'සෞභාග්‍ය නිෂ්පාදන ගම්මාන' ලෙස පිහිටුවීම (පළමු අදියරේදී ගම්මාන 500ක් සහ දෙවන අදියරේදී තවත් 500ක්) අරමුණ වන අතර, සමෘද්ධි ප්‍රතිලාභීන් ඇතුළු අඩු ආදායම්ලාභීන් මෙන්ම නිෂ්පාදන ක්‍රියාවලියට සෘජුවම දායක වන වැඩි විභව පවුල් ඒකක ඊට සම්බන්ධ වේ.",
+    vision: "දැක්ම",
+    visionText: "සෑම පුද්ගලයෙකුටම ඉටුකරවීමක් සහ ගෞරවනීය ජීවිතයක් ගත කිරීමට අවස්ථාව ඇති සවිබල ගන්වන ලද ප්‍රජාවක්.",
+    mission: "මෙහෙවර",
+    missionText: "ග්‍රාමීය යටිතල පහසුකම්, ජීවනෝපාය ආධාර, සමාජ ආරක්ෂණ යෝජනා ක්‍රම සහ ප්‍රජා සම්බන්ධතා මුලපිරීම් ඇතුළු පුළුල් වැඩසටහන් පරාසයක් අධීක්ෂණය කරමින් ග්‍රාමීය ප්‍රජා සංවර්ධනය ප්‍රවර්ධනය කිරීම. අපගේ කාර්යය සහයෝගීතාවයකි, එක් එක් කලාපයේ අවශ්‍යතා අනුව සකස් කරන ලද බලපෑම් සහිත විසඳුම් ලබා දීම සඳහා පළාත් පාලන ආයතන, රාජ්‍ය නොවන සංවිධාන සහ පුරවැසියන් සම්බන්ධ කර ගනිමින්.",
+    officersDetails: "නිලධාරී විස්තර",
+    directorGeneral: "අධ්‍යක්ෂ ජනරාල්",
+    director: "අධ්‍යක්ෂ",
+    deputyDirector: "නියෝජ්‍ය අධ්‍යක්ෂ",
+    assistantDirector: "සහකාර අධ්‍යක්ෂ",
+    office: "කාර්යාලය",
+    mobile: "ජංගම",
+    
+    // Contact Us Page
+    contactUsTitle: "අප අමතන්න",
+    contactIntro: "ඔබට කිසියම් විමසීමක්, යෝජනාවක් හෝ පැමිණිල්ලක් තිබේ නම්, කරුණාකර අප අමතන්න, අපි ඉක්මනින් ඔබව සම්බන්ධ කර ගන්නෙමු.",
+    fillForm: "අප අමතන්න පහත පෝරමය පුරවන්න",
+    firstName: "මුල් නම",
+    lastName: "වාසගම",
+    district: "දිස්ත්‍රික්කය",
+    email: "විද්‍යුත් තැපෑල",
+    contactNumber: "සම්බන්ධතා අංකය",
+    commentMessage: "අදහස් හෝ පණිවිඩය",
+    submit: "ඉදිරිපත් කරන්න",
+    meetUs: "අප හමුවන්න",
+    
+    // Download Page
+    documentDownloads: "ලේඛන බාගත කිරීම්",
+    circularsTitle: "📑 චක්‍රලේඛ",
+    guidelinesTitle: "📘 මාර්ගෝපදේශ",
+    formatsTitle: "📂 ආකෘති",
+    downloadBtn: "බාගන්න",
+    circular: "චක්‍රලේඛය",
+    guideline: "මාර්ගෝපදේශය",
+    format: "ආකෘතිය",
+    
+    // News Page
+    newsTitle: "ප්‍රවෘත්ති",
+    dehydratedProduct: "විජලීකරණය කළ නිෂ්පාදන",
+    
+    // Products Page
+    productsTitle: "නිෂ්පාදන",
+    productsDescription: "සෞභාග්‍ය නිෂ්පාදන ගම්මාන වල අපගේම නිෂ්පාදකයින් විසින් සාදන ලද ගුණාත්මක නිෂ්පාදන පුළුල් පරාසයක් අප සතුව ඇත. මෙම දේශීයව පදනම් වූ වටිනාකම් එකතු කරන ලද නිෂ්පාදන සත්කාරයෙන් නිර්මාණය කර ඇති අතර නිෂ්පාදන වටිනාකම් දාමයේ ගෝලීය ප්‍රමිතීන් සපුරාලයි.",
+    handCraft: "අත්කම්",
+    dehydratedProductItem: "විජලීකරණය කළ නිෂ්පාදන",
+    coconutRelatedProductItem: "පොල් ආශ්‍රිත නිෂ්පාදන",
+    clayRelatedProductItem: "මැටි ආශ්‍රිත නිෂ්පාදන",
+    dairyProductItem: "කිරි නිෂ්පාදන",
+    showMore: "වැඩි විස්තර",
+    
+    // Footer
+    quickLinks: "ඉක්මන් සබැඳි",
+    importantLinks: "වැදගත් සබැඳි",
+    contactInfo: "සම්බන්ධතා තොරතුරු",
+    address: "ලිපිනය",
+    addressText: "9 වන මහල, සෙත්සිරිපාය II අදියර, බත්තරමුල්ල, ශ්‍රී ලංකාව",
+    phone: "දුරකථන",
+    followUs: "අප අනුගමනය කරන්න",
+    allRightsReserved: "සියලුම හිමිකම් ඇවිරිණි",
+    developedBy: "නිර්මාණය කළේ",
+  },
+  
+  ta: {
+    // Header Navigation
+    home: "முகப்பு",
+    aboutUs: "எங்களை பற்றி",
+    services: "சேவைகள்",
+    product: "தயாரிப்புகள்",
+    download: "பதிவிறக்கம்",
+    news: "செய்திகள்",
+    contactUs: "எங்களை தொடர்பு கொள்ளுங்கள்",
+    
+    // About Us sub-items
+    introduction: "அறிமுகம்",
+    overview: "கண்ணோட்டம்",
+    officerDetails: "அதிகாரி விவரங்கள்",
+    
+    // Download sub-items
+    circulars: "சுற்றறிக்கைகள்",
+    guidelines: "வழிகாட்டுதல்கள்",
+    formats: "வடிவங்கள்",
+    
+    // Service Categories
+    agriculture: "விவசாயம்",
+    industries: "தொழில்துறை",
+    fisheries: "மீன்பிடி",
+    animalHusbandry: "கால்நடை வளர்ப்பு",
+    infrastructure: "உள்கட்டமைப்பு",
+    
+    // Agriculture Products
+    coconutRelatedProduct: "தேங்காய் தொடர்பான தயாரிப்பு",
+    kithulRelatedProduct: "கிதுல் தொடர்பான தயாரிப்பு",
+    palmRelatedProduct: "பனை தொடர்பான தயாரிப்பு",
+    spicesRelatedProduct: "மசாலா மற்றும் தொடர்புடைய தயாரிப்பு",
+    flowersOrnamentalPlants: "பூக்கள் மற்றும் அலங்கார தாவரங்கள்",
+    seedProduct: "விதை தயாரிப்பு",
+    fruitRelatedProduct: "பழ தொடர்பான தயாரிப்பு",
+    vegetableValueAddition: "காய்கறி மதிப்பு சேர்த்தல்",
+    mushroomProduct: "காளான் தயாரிப்பு",
+    teaProduct: "தேயிலை தயாரிப்பு",
+    bulathProduct: "புலத் தயாரிப்பு",
+    cinnamonProduct: "இலவங்கப்பட்டை தயாரிப்பு",
+    otherProduct: "பிற தயாரிப்பு",
+    
+    // Industries Products
+    clothRelatedProduct: "துணி தொடர்பான தயாரிப்பு",
+    footwear: "காலணிகள்",
+    caneRelatedProduct: "கரும்பு தொடர்பான தயாரிப்பு",
+    clayRelatedProduct: "களிமண் தொடர்பான தயாரிப்பு",
+    woodenItems: "மர பொருட்கள்",
+    poojaItems: "பூஜை பொருட்கள்",
+    sweetOrganicFoods: "இனிப்பு & இயற்கை உணவுகள்",
+    coconutHuskProduct: "தேங்காய் உமி தயாரிப்பு",
+    handCraftProduct: "கைவினை தயாரிப்பு",
+    ironGoldProduct: "இரும்பு & தங்க தயாரிப்பு",
+    
+    // Fisheries Products
+    umbalakadaDriedFish: "உம்பலகடா & உலர்ந்த மீன்",
+    ornamentalFish: "அலங்கார மீன்",
+    
+    // Animal Husbandry Products
+    dairyProduct: "பால் தயாரிப்பு",
+    egg: "முட்டை",
+    meats: "இறைச்சி",
+    beeHoney: "தேன்",
+    
+    // Infrastructure Services
+    roadDevelopments: "சாலை அபிவிருத்தி",
+    sanitaryFacilities: "சுகாதார வசதிகள்",
+    tourismIndustry: "சுற்றுலா தொழில்",
+    otherServices: "பிற சேவைகள்",
+    
+    // Home Page
+    ruralDevProgramme: "கிராமிய அபிவிருத்தி திட்டம்",
+    gramaShakthiProgramme: "கிராம சக்தி திட்டம்",
+    prajaShakthiProgramme: "பிரஜா சக்தி திட்டம்",
+    sawbagyaProgramme: "சௌபாக்ய திட்டம்",
+    
+    aboutMinistry: "கிராமிய அபிவிருத்தி அமைச்சகம் பற்றி",
+    president: "ஜனாதிபதி",
+    minister: "அமைச்சர்",
+    secretary: "செயலாளர்",
+    
+    productionVillages: "கிராமிய வளங்களை அடிப்படையாகக் கொண்ட 576 உற்பத்தி கிராமங்கள்",
+    saubagyaDescription: "வீட்டு அடிப்படையிலான தயாரிப்புகளை ஊக்குவித்தல், கிராமிய சமூகத்தின் வருமான நிலையை உயர்த்துதல், கிராமிய பொருளாதாரத்தை மேம்படுத்துதல் மற்றும் 'செழிப்பு மற்றும் சிறப்பு பார்வை' தேசிய கொள்கை கட்டமைப்பை ஆதரிக்க சௌபாக்ய உற்பத்தி கிராம திட்டம் தொடங்கப்பட்டது.",
+    
+    officerDetail: "அதிகாரி விவரங்கள்",
+    readMore: "மேலும் வாசிக்க",
+    
+    projects: "திட்டங்கள்",
+    exploreSectors: "கிராமிய அபிவிருத்தியை இயக்கும் 5 முக்கிய துறைகளை ஆராயுங்கள்",
+    projectsDescription: "சௌபாக்ய உற்பத்தி கிராம திட்டம் விவசாயம், தொழில்துறை, மீன்பிடி, கால்நடை வளர்ப்பு மற்றும் உள்கட்டமைப்பு ஆகியவற்றில் சேவைகளை ஒழுங்கமைப்பதன் மூலம் 576 கிராமங்களுக்கு அதிகாரம் அளிக்கிறது.",
+    
+    downloadTitle: "சுற்றறிக்கைகள், வழிகாட்டுதல்கள் மற்றும் வடிவங்களை பதிவிறக்கவும்",
+    relatedOrganizations: "தொடர்புடைய நிறுவனங்கள்",
+    
+    // Officers Names
+    presidentName: "மாண். அனுர குமார திஸாநாயக்க",
+    ministerName: "திரு. உபாலி பன்னிலகே",
+    secretaryName: "திரு. எஸ். அலோகபந்தார",
+    
+    // Organizations
+    ruralDevResearchInstitute: "கிராமிய அபிவிருத்தி மற்றும் ஆராய்ச்சி நிறுவனம்",
+    ministryPublicAdmin: "பொது நிர்வாக அமைச்சு",
+    ministryHomeAffairs: "உள்துறை அமைச்சு",
+    ministryFinance: "நிதி அமைச்சு",
+    exportDevBoard: "ஏற்றுமதி அபிவிருத்தி வாரியம்",
+    
+    // About Us Page
+    aboutUsTitle: "எங்களை பற்றி",
+    introductionText: "வீட்டு அடிப்படையிலான தயாரிப்புகளை ஊக்குவித்தல், கிராமிய சமூகத்தின் வருமான நிலையை உயர்த்துதல், கிராமிய பொருளாதாரத்தை மேம்படுத்துதல் மற்றும் தேசிய உற்பத்திக்கு குறிப்பிடத்தக்க பங்களிப்பை செய்தல், 'சௌபாக்கிய தக்மா' அரசியல் அறிக்கையை உணர்ந்துகொள்ள சௌபாக்ய உற்பத்தி கிராம திட்டம் தொடங்கப்பட்டது.",
+    introductionText2: "நாடு முழுவதும் 1000 கிராமங்களை 'சௌபாக்ய உற்பத்தி கிராமங்கள்' ஆக நிறுவுவது (முதல் கட்டத்தில் 500 கிராமங்கள் மற்றும் இரண்டாவது கட்டத்தில் மேலும் 500) இலக்காகும், சமுர்தி பயனாளர்கள் உட்பட குறைந்த வருமானம் பெறுபவர்கள் மற்றும் உற்பத்தி செயல்முறைக்கு நேரடியாக பங்களிக்கும் அதிக சாத்தியமுள்ள குடும்ப அலகுகள் சம்பந்தப்பட்டுள்ளன.",
+    vision: "பார்வை",
+    visionText: "ஒவ்வொரு தனிநபரும் நிறைவான மற்றும் கௌரவமான வாழ்க்கையை வாழ வாய்ப்பு உள்ள அதிகாரமளிக்கப்பட்ட சமூகம்.",
+    mission: "நோக்கம்",
+    missionText: "கிராமிய உள்கட்டமைப்பு, வாழ்வாதார ஆதரவு, சமூக பாதுகாப்பு திட்டங்கள் மற்றும் சமூக ஈடுபாடு முயற்சிகள் உட்பட பரந்த அளவிலான திட்டங்களை மேற்பார்வையிடுவதன் மூலம் கிராமிய சமூக அபிவிருத்தியை ஊக்குவித்தல். எங்கள் பணி கூட்டு முயற்சியானது, ஒவ்வொரு பிராந்தியத்தின் தேவைகளுக்கு ஏற்ப வடிவமைக்கப்பட்ட தாக்கமான தீர்வுகளை வழங்க உள்ளூர் அரசாங்கங்கள், தன்னார்வ தொண்டு நிறுவனங்கள் மற்றும் குடிமக்களை உள்ளடக்கியது.",
+    officersDetails: "அதிகாரி விவரங்கள்",
+    directorGeneral: "பணிப்பாளர் நாயகம்",
+    director: "பணிப்பாளர்",
+    deputyDirector: "துணை பணிப்பாளர்",
+    assistantDirector: "உதவி பணிப்பாளர்",
+    office: "அலுவலகம்",
+    mobile: "கையடக்கம்",
+    
+    // Contact Us Page
+    contactUsTitle: "எங்களை தொடர்பு கொள்ளுங்கள்",
+    contactIntro: "உங்களுக்கு ஏதேனும் கேள்வி, பரிந்துரை அல்லது புகார் இருந்தால், தயவுசெய்து எங்களை தொடர்பு கொள்ளுங்கள், நாங்கள் விரைவில் உங்களை தொடர்பு கொள்வோம்.",
+    fillForm: "எங்களை தொடர்பு கொள்ள கீழே உள்ள படிவத்தை பூர்த்தி செய்யவும்",
+    firstName: "முதல் பெயர்",
+    lastName: "கடைசி பெயர்",
+    district: "மாவட்டம்",
+    email: "மின்னஞ்சல்",
+    contactNumber: "தொடர்பு எண்",
+    commentMessage: "கருத்து அல்லது செய்தி",
+    submit: "சமர்ப்பிக்கவும்",
+    meetUs: "எங்களை சந்திக்கவும்",
+    
+    // Download Page
+    documentDownloads: "ஆவண பதிவிறக்கங்கள்",
+    circularsTitle: "📑 சுற்றறிக்கைகள்",
+    guidelinesTitle: "📘 வழிகாட்டுதல்கள்",
+    formatsTitle: "📂 வடிவங்கள்",
+    downloadBtn: "பதிவிறக்கவும்",
+    circular: "சுற்றறிக்கை",
+    guideline: "வழிகாட்டுதல்",
+    format: "வடிவம்",
+    
+    // News Page
+    newsTitle: "செய்திகள்",
+    dehydratedProduct: "நீரிழப்பு தயாரிப்பு",
+    
+    // Products Page
+    productsTitle: "தயாரிப்புகள்",
+    productsDescription: "சௌபாக்ய உற்பத்தி கிராமங்களில் எங்கள் சொந்த உற்பத்தியாளர்களால் தயாரிக்கப்பட்ட தரமான தயாரிப்புகளின் பரந்த அளவு எங்களிடம் உள்ளது. இந்த உள்நாட்டில் அடிப்படையிலான மதிப்பு கூட்டப்பட்ட தயாரிப்புகள் கவனமாக வடிவமைக்கப்பட்டு உற்பத்தி மதிப்பு சங்கிலியில் உலகளாவிய தரங்களை சந்திக்கின்றன.",
+    handCraft: "கைவினை",
+    dehydratedProductItem: "நீரிழப்பு தயாரிப்பு",
+    coconutRelatedProductItem: "தேங்காய் தொடர்பான தயாரிப்பு",
+    clayRelatedProductItem: "களிமண் தொடர்பான தயாரிப்பு",
+    dairyProductItem: "பால் தயாரிப்பு",
+    showMore: "மேலும் காட்டு",
+    
+    // Footer
+    quickLinks: "விரைவு இணைப்புகள்",
+    importantLinks: "முக்கிய இணைப்புகள்",
+    contactInfo: "தொடர்பு தகவல்",
+    address: "முகவரி",
+    addressText: "9வது மாடி, சேத்சிரிபாய கட்டம் II, பத்தரமுல்ல, இலங்கை",
+    phone: "தொலைபேசி",
+    followUs: "எங்களை பின்தொடருங்கள்",
+    allRightsReserved: "அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை",
+    developedBy: "உருவாக்கியவர்",
+  }
+};
+
+// --- 2. Create Language Context ---
+// This creates a shared space for language data across your app.
+const LanguageContext = createContext();
+
+// --- 3. Custom Hook: useLanguage ---
+// A shortcut for components to easily access the context data.
+export const useLanguage = () => {
+  const context = useContext(LanguageContext);
+  if (!context) {
+    throw new Error('useLanguage must be used within a LanguageProvider');
+  }
+  return context;
+};
+
+// --- 4. Language Provider Component ---
+// This component wraps your entire app and manages the language state.
+export const LanguageProvider = ({ children }) => {
+  // Default language is English ('en')
+  const [language, setLanguage] = useState('en');
+
+  // The translation function `t`. It takes a key and returns the translated string.
+  // If a translation isn't found, it returns the key itself to prevent crashes.
+  const t = (key) => {
+    return translations[language][key] || key;
+  };
+
+  // Function to change the language.
+  const changeLanguage = (lang) => {
+    // Only changes the language if it exists in our translations object.
+    if (translations[lang]) {
+      setLanguage(lang);
+    }
+  };
+
+  // Provide the current language, the change function, and the translation function to all children.
+  return (
+    <LanguageContext.Provider value={{ language, changeLanguage, t }}>
+      {children}
+    </LanguageContext.Provider>
+  );
+};

@@ -1,72 +1,77 @@
+
+
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { useLanguage } from '../contexts/LanguageContext'; // Import useLanguage
 
 // Import officer images
 import nimalImage from "../assets/officers/image 2.jpeg";
 import tharushiImage from "../assets/officers/image 2.jpeg";
 import ruwanImage from "../assets/officers/image 2.jpeg";
 
-const officers = [
-  {
-    name: "S.K.W. Sisira Kumara",
-    designation: "Director General",
-    office: " Office-011 2877122",
-    phone: "Mobile-N/A",
-    email: "nimal.perera@ministry.gov.lk",
-    image: nimalImage,
-  },
-  {
-    name: "W.P.S. Wickramge",
-    designation: "Director",
-    office: "Office-011 288714",
-    phone: "Mobile-071 8765432",
-    email: "tharushi.silva@ministry.gov.lk",
-    image: tharushiImage,
-  },
-  {
-    name: "W.M.U.M. Wijeyakoon",
-    designation: "Director",
-    office: "Office-N/A",
-    phone: "Mobile-0714434091",
-    email: "ruwan.jayasena@ministry.gov.lk",
-    image: ruwanImage,
-  },
-  {
-    name: "N.C. Wickramanayaka",
-    designation: "Director",
-    office: "Office-112186018",
-    phone: "Mobile-094 718318437",
-    email: "ruwan.jayasena@ministry.gov.lk",
-    image: ruwanImage,
-  },
-  {
-    name: "V.C. Wijewardana",
-    designation: "Deputy Director",
-    office: "Office-112887478",
-    phone: "Mobile-0702599805",
-    email: "ruwan.jayasena@ministry.gov.lk",
-    image: ruwanImage,
-  },
-  {
-    name: "S.G.A.K. Subawickrama",
-    designation: "Assistant Director",
-    office: "Office-N/A",
-    phone: "Mobile-0741520766",
-    email: "ruwan.jayasena@ministry.gov.lk",
-    image: ruwanImage,
-  },
-  {
-    name: "R.M.C.S. Rathnayaka",
-    designation: "Assistant Director",
-    office: "Office-112887831",
-    phone: "Mobile-0703065277",
-    email: "ruwan.jayasena@ministry.gov.lk",
-    image: ruwanImage,
-  },
-];
-
 const AboutUs = () => {
+  const { t } = useLanguage(); // Get the translation function
   const location = useLocation();
+
+  // Move the officers array inside the component to use the `t` function
+  const officers = [
+    {
+      name: "S.K.W. Sisira Kumara",
+      designation: t('directorGeneral'), // Translate designation
+      office: " Office-011 2877122",
+      phone: "Mobile-N/A",
+      email: "nimal.perera@ministry.gov.lk",
+      image: nimalImage,
+    },
+    {
+      name: "W.P.S. Wickramge",
+      designation: t('director'), // Translate designation
+      office: "Office-011 288714",
+      phone: "Mobile-071 8765432",
+      email: "tharushi.silva@ministry.gov.lk",
+      image: tharushiImage,
+    },
+    {
+      name: "W.M.U.M. Wijeyakoon",
+      designation: t('director'), // Translate designation
+      office: "Office-N/A",
+      phone: "Mobile-0714434091",
+      email: "ruwan.jayasena@ministry.gov.lk",
+      image: ruwanImage,
+    },
+    {
+      name: "N.C. Wickramanayaka",
+      designation: t('director'), // Translate designation
+      office: "Office-112186018",
+      phone: "Mobile-094 718318437",
+      email: "ruwan.jayasena@ministry.gov.lk",
+      image: ruwanImage,
+    },
+    {
+      name: "V.C. Wijewardana",
+      designation: t('deputyDirector'), // Translate designation
+      office: "Office-112887478",
+      phone: "Mobile-0702599805",
+      email: "ruwan.jayasena@ministry.gov.lk",
+      image: ruwanImage,
+    },
+    {
+      name: "S.G.A.K. Subawickrama",
+      designation: t('assistantDirector'), // Translate designation
+      office: "Office-N/A",
+      phone: "Mobile-0741520766",
+      email: "ruwan.jayasena@ministry.gov.lk",
+      image: ruwanImage,
+    },
+    {
+      name: "R.M.C.S. Rathnayaka",
+      designation: t('assistantDirector'), // Translate designation
+      office: "Office-112887831",
+      phone: "Mobile-0703065277",
+      email: "ruwan.jayasena@ministry.gov.lk",
+      image: ruwanImage,
+    },
+  ];
 
   useEffect(() => {
     if (location.hash) {
@@ -82,22 +87,17 @@ const AboutUs = () => {
       <main className="max-w-5xl mx-auto px-6 py-10 space-y-16">
         {/* Page Title */}
         <h1 className="text-4xl font-bold text-[#F3931D] text-center mb-6 font-serif">
-          About Us
+          {t('aboutUsTitle')}
         </h1>
 
         {/* Introduction Section */}
         <section id="introduction">
-          <h2 className="text-2xl font-bold text-[#9A3F3F] mb-2">Introduction</h2>
+          <h2 className="text-2xl font-bold text-[#9A3F3F] mb-2">{t('introduction')}</h2>
           <div className="bg-[#FDF1E7] rounded-lg p-6 shadow-sm">
             <p className="text-lg leading-relaxed">
-              The Saubagya Production Village Programme was launched to promote home-based products,
-              raising the income level of the rural community, uplifting the rural economy, and making
-              a significant contribution to the national product, in order to realize the “Saubagyaye Dakma”
-              Political Manifest.
+              {t('introductionText')}
               <br />
-              The aim is to establish 1000 villages as “Saubhagya Production Villages” throughout the country
-              (500 villages in the first phase and another 500 in the second phase), involving low-income earners
-              including Samurdhi recipients as well as more potential family units who directly contribute to the production process.
+              {t('introductionText2')}
             </p>
           </div>
         </section>
@@ -106,22 +106,19 @@ const AboutUs = () => {
 
         {/* Overview Section */}
         <section id="overview">
-          <h2 className="text-2xl font-bold text-[#9A3F3F] mb-4">Overview</h2>
-
+          <h2 className="text-2xl font-bold text-[#9A3F3F] mb-4">{t('overview')}</h2>
           <div className="space-y-6">
             <div className="bg-[#FDF1E7] rounded-lg p-6 shadow-sm">
-              <h3 className="text-lg font-bold text-orange-600 mb-2">Vision</h3>
+              <h3 className="text-lg font-bold text-orange-600 mb-2">{t('vision')}</h3>
               <p className="text-base leading-relaxed">
-                An empowered community where every individual has the opportunity to lead a fulfilling and dignified life.
+                {t('visionText')}
               </p>
             </div>
 
             <div className="bg-[#FDF1E7] rounded-lg p-6 shadow-sm">
-              <h3 className="text-lg font-bold text-orange-600 mb-2">Mission</h3>
+              <h3 className="text-lg font-bold text-orange-600 mb-2">{t('mission')}</h3>
               <p className="text-base leading-relaxed">
-                Promoting rural community development by overseeing a wide range of programs including rural infrastructure,
-                livelihood support, social protection schemes, and community engagement initiatives. Our work is collaborative,
-                involving local governments, NGOs, and citizens to deliver impactful solutions tailored to each region’s needs.
+                {t('missionText')}
               </p>
             </div>
           </div>
@@ -131,7 +128,7 @@ const AboutUs = () => {
 
         {/* Officer Overview Section */}
         <section id="services">
-        <h2 className="text-2xl font-bold text-[#9A3F3F] mb-4">Officer's Details</h2>
+        <h2 className="text-2xl font-bold text-[#9A3F3F] mb-4">{t('officersDetails')}</h2>
         <div className="bg-w py-160 px-6 md:px-20" >
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {officers.map((officer, index) => (
@@ -150,9 +147,9 @@ const AboutUs = () => {
                 <p className="text-sm font-medium text-gray-700 mb-1">
                   {officer.designation}
                 </p>
-                <p className="text-sm text-gray-600 mb-1">{officer.office}</p>
+                <p className="text-sm text-gray-600 mb-1">{t('office')}-{officer.office}</p>
                 <p className="text-sm text-blue-600 mb-1">{officer.email}</p>
-                <p className="text-sm text-gray-700">{officer.phone}</p>
+                <p className="text-sm text-gray-700">{t('mobile')}-{officer.phone}</p>
               </div>
             ))}
           </div>

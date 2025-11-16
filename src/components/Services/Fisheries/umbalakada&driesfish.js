@@ -1,32 +1,44 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
+
+// Import images (only 3 images now)
+import image1 from "../../../assets/services/fisheries/dryfish/id01/image1.jpg";
+import image2 from "../../../assets/services/fisheries/dryfish/id01/image2.jpg";
+import image3 from "../../../assets/services/fisheries/dryfish/id01/image3.jpg";
+
+import image4 from "../../../assets/services/fisheries/dryfish/id02/image1.jpg";
+import image5 from "../../../assets/services/fisheries/dryfish/id02/image2.jpg";
+import image6 from "../../../assets/services/fisheries/dryfish/id02/image3.jpg";
+
 
 const driedFishProjects = [
-  {
-    id: 1,
-    name: "Bandaradoowa Dried Fish Cluster",
+  { id: 1,//recheaked
+    name: " Fish Project",
     district: "Ampara",
     office: "Uhana",
-    product: "Fish and dried fish",
-    location: "Bandaradoowa",
-    buyPath: "/buy/bandaradoowa-fish",
+    product: "Dry Fish",
+    location: "Bandaraduuwa",
+    images: [image1, image2, image3], 
+    // buyPath: "/buy/mamunuwa-fish",
     description:
-      "This cluster supports fish and dried fish producers in Bandaradoowa with improved drying facilities, packaging, and market access. It promotes hygienic processing and connects producers to regional buyers.",
+      "Improve the Inland fisheries at Kalugaloya Tank project in Bandaradoowa Grama Niladhari Division of Uhana Divisional Secretary Division in Amparaa District has been approved for a sum of allocation of Rs 922,500.00 under the Rural Development Programme- 2025. Eleven Fishermen (11) out of 25 permanent fishermen in this village are benefiting to get jobs directly through this project. So far, 50% of physical progress has been completed and balance has to complete as possible early before end of this year." ,
     mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.314248420939!2d81.4604659!3d7.4268175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae520c1595dddbf%3A0x25c2ef2f88d9dec!2sBandaradoowa!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-  },
-  {
-    id: 2,
-    name: "Karaithivu Dried Fish Cooperative",
-    district: "Ampara",
-    office: "Karaithivu",
-    product: "Dried Fish",
-    location: "Karaithivu 09",
-    buyPath: "/buy/karaithivu-fish",
-    description:
-      "This cooperative supports dried fish producers in Karaithivu with shared drying units, branding, and fair trade certification. It promotes rural entrepreneurship and sustainable livelihoods.",
-    mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.314248420939!2d81.7749383!3d7.2536504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae513ddc602ccdb%3A0x0000000000000000!2sKaraithivu%2009!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-  },
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.314248420939!2d80.2362518!3d7.6458574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae32d11227a7507%3A0xc4be8a57987c6e46!2sMamunuwa!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",},
+
+      {d: 2,//recheaked
+        name: "Dry Fish Project",
+        district: "Ampara",
+        office: "Kareithiw",
+        product: "Dry Fish",
+        location: "Kareithiw-09",
+        images: [image4, image5, image6], // Only 3 images
+        // buyPath: "/buy/mamunuwa-fish",
+        description:
+          "Construction of Infrastructure Facilities for Dry Fish Production & Provision of Tools and Equipment for Dry Fish project has been approved for allocation of Rs 4,100,000.00 to implement in Karaitivu-09 Grama Niladhari Divisions of Karaitivu Divisonal Secretary Division in Ampara Distct Under the Rural Development Programme- 2025." ,
+        mapEmbed:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.314248420939!2d80.2362518!3d7.6458574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae32d11227a7507%3A0xc4be8a57987c6e46!2sMamunuwa!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+      },
+    
+      
   {
     id: 3,
     name: "Karukupane Fish Processing Zone",
@@ -34,7 +46,8 @@ const driedFishProjects = [
     office: "Arachchikattuwa",
     product: "Fish and dried fish",
     location: "Karukupane",
-    buyPath: "/buy/karukupane-fish",
+    images: [image1, image2, image3],
+    // buyPath: "/buy/karukupane-fish",
     description:
       "This zone promotes fish and dried fish production in Karukupane with improved feed, storage, and cold chain logistics. It connects producers to hotels and wellness markets.",
     mapEmbed:
@@ -45,6 +58,18 @@ const driedFishProjects = [
 const UmbalakadaDriesFishPage = () => {
   const [selectedProject, setSelectedProject] = useState(driedFishProjects[0]);
   const scrollTargetRef = useRef(null);
+  const [imageIndex, setImageIndex] = useState(0);
+
+  useEffect(() => {
+    setImageIndex(0);
+  }, [selectedProject]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setImageIndex((prev) => (prev + 1) % selectedProject.images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [selectedProject]);
 
   const handleSelect = (project) => {
     setSelectedProject(project);
@@ -67,7 +92,7 @@ const UmbalakadaDriesFishPage = () => {
               <th className="px-4 py-2 border">Divisional Secretary Office</th>
               <th className="px-4 py-2 border">Product</th>
               <th className="px-4 py-2 border">Location</th>
-              <th className="px-4 py-2 border">Buy Product</th>
+              {/* <th className="px-4 py-2 border">Buy Product</th> */}
             </tr>
           </thead>
           <tbody>
@@ -82,7 +107,7 @@ const UmbalakadaDriesFishPage = () => {
                 <td className="px-4 py-2 border">{item.office}</td>
                 <td className="px-4 py-2 border">{item.product}</td>
                 <td className="px-4 py-2 border text-blue-600 underline">{item.location}</td>
-                <td className="px-4 py-2 border">
+                {/* <td className="px-4 py-2 border">
                   <a
                     href={item.buyPath}
                     className="text-blue-600 underline hover:text-[#F3931D]"
@@ -90,41 +115,49 @@ const UmbalakadaDriesFishPage = () => {
                   >
                     Click Here
                   </a>
-                </td>
+                </td> */}
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
-      {/* Split Layout Section */}
+      {/* Details Section */}
       <div
         ref={scrollTargetRef}
         className="w-full flex flex-col lg:flex-row gap-6 items-start"
       >
-        {/* Map Section */}
         <div className="w-full lg:w-1/2 h-[400px] rounded-md overflow-hidden shadow-lg">
           <iframe
-            title="Umbalakada & Dried Fish Project Map"
+            title="Betel Project Map"
             src={selectedProject.mapEmbed}
             width="100%"
             height="100%"
             style={{ border: 0 }}
-            allowFullScreen
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
 
-        {/* Project Details Section */}
-        <div className="w-full lg:w-1/2 h-[400px] bg-[#FFF7E6] p-6 rounded-md shadow-md overflow-y-auto">
-          <h2 className="text-xl font-bold text-[#F3931D] mb-2">{selectedProject.name}</h2>
-          <p className="text-sm text-gray-700 mb-4">{selectedProject.description}</p>
-          <div className="text-sm space-y-1">
-            <p><strong>District:</strong> {selectedProject.district}</p>
-            <p><strong>Divisional Secretary Office:</strong> {selectedProject.office}</p>
-            <p><strong>Product:</strong> {selectedProject.product}</p>
-            <p><strong>Location:</strong> {selectedProject.location}</p>
+        <div className="w-full lg:w-1/2 h-[400px] bg-[#EDE5DD] p-6 rounded-md shadow-md overflow-y-auto">
+          <h2 className="text-xl font-bold text-[#896C6C] mb-2">
+            {selectedProject.name}
+          </h2>
+
+          <p className="text-sm text-gray-700 mb-4">
+            {selectedProject.description}
+          </p>
+
+          <div className="relative w-full h-40 mb-4 overflow-hidden rounded-md">
+            {selectedProject.images.map((img, idx) => (
+              <img
+                key={idx}
+                src={img}
+                alt=""
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                  idx === imageIndex ? "opacity-100" : "opacity-0"
+                }`}
+              />
+            ))}
           </div>
         </div>
       </div>

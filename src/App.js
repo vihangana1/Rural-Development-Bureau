@@ -1,6 +1,8 @@
+
 import React, { useState, useRef, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import { LanguageProvider } from './contexts/LanguageContext';
 // Layout
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -112,100 +114,100 @@ function App() {
 
   return (
     <Router>
-      <div
-        className={`min-h-screen ${
-          accessibilitySettings.invert ? "invert" : ""
-        } ${accessibilitySettings.grayscale ? "grayscale" : ""} ${
-          accessibilitySettings.disableAnimations ? "animate-none transition-none" : ""
-        } ${accessibilitySettings.textSize} ${accessibilitySettings.spacing}`}
-        style={{
-          cursor: accessibilitySettings.bigCursor ? "url('/big-cursor.png'), auto" : "auto",
-        }}
-      >
-        <Header
-          accessibilitySettings={accessibilitySettings}
-          setAccessibilitySettings={setAccessibilitySettings}
-          showAccessibilityBox={showAccessibilityBox}
-          setShowAccessibilityBox={setShowAccessibilityBox}
-          accessibilityBoxRef={accessibilityBoxRef}
-        />
+      <LanguageProvider>
+        <div
+          className={`min-h-screen ${
+            accessibilitySettings.invert ? "invert" : ""
+          } ${accessibilitySettings.grayscale ? "grayscale" : ""} ${
+            accessibilitySettings.disableAnimations ? "animate-none transition-none" : ""
+          } ${accessibilitySettings.textSize} ${accessibilitySettings.spacing}`}
+          style={{
+            cursor: accessibilitySettings.bigCursor ? "url('/big-cursor.png'), auto" : "auto",
+          }}
+        >
+          <Header
+            accessibilitySettings={accessibilitySettings}
+            setAccessibilitySettings={setAccessibilitySettings}
+            showAccessibilityBox={showAccessibilityBox}
+            setShowAccessibilityBox={setShowAccessibilityBox}
+            accessibilityBoxRef={accessibilityBoxRef}
+          />
 
-        <Routes>
-          {/* Main Pages */}
-          <Route path="/" element={<Home />} />
-          <Route path="/AboutUs" element={<AboutUs />} />
-          <Route path="/ContactUs" element={<ContactUs />} />
-          <Route path="/News" element={<News />} />
-          <Route path="/Product" element={<Product />} />
-          <Route path="/Download" element={<Download />} />
+          <Routes>
+            {/* Main Pages */}
+            <Route path="/" element={<Home />} />
+            <Route path="/AboutUs" element={<AboutUs />} />
+            <Route path="/ContactUs" element={<ContactUs />} />
+            <Route path="/News" element={<News />} />
+            <Route path="/Product" element={<Product />} />
+            <Route path="/Download" element={<Download />} />
 
-          {/* Programmes */}
-          <Route path="/components/programme/Gramashakthi" element={<Gramashakthi />} />
-          <Route path="/components/programme/Prajashakthi" element={<Prajashakthi />} />
-          <Route path="/components/programme/Sawbagya" element={<Sawbagya />} />
-          <Route path="/components/programme/Ruraldevelopment" element={<Ruraldevelopment />} />
+            {/* Programmes */}
+            <Route path="/components/programme/Gramashakthi" element={<Gramashakthi />} />
+            <Route path="/components/programme/Prajashakthi" element={<Prajashakthi />} />
+            <Route path="/components/programme/Sawbagya" element={<Sawbagya />} />
+            <Route path="/components/programme/Ruraldevelopment" element={<Ruraldevelopment />} />
 
-          {/* Agriculture */}
-          <Route path="/services/agriculture/coconut" element={<Coconut />} />
-          <Route path="/services/agriculture/flowers" element={<Flowers />} />
-          <Route path="/services/agriculture/fruits" element={<Fruits />} />
-          <Route path="/services/agriculture/kithul" element={<Kithul />} />
-          <Route path="/services/agriculture/palm" element={<Palm />} />
-          <Route path="/services/agriculture/seed" element={<Seed />} />
-          <Route path="/services/agriculture/spices" element={<Spices />} />
-          <Route path="/services/agriculture/vegetable" element={<Vegetable />} />
-          <Route path="/services/agriculture/mushroom" element={<Mushroom />} />
-          <Route path="/services/agriculture/tea" element={<Tea />} />
-          <Route path="/services/agriculture/cinnamon" element={<Cinnamon />} />
-          <Route path="/services/agriculture/bulath" element={<Bulath />} />
-          <Route path="/services/agriculture/other" element={<Other />} />
+            {/* Agriculture */}
+            <Route path="/services/agriculture/coconut" element={<Coconut />} />
+            <Route path="/services/agriculture/flowers" element={<Flowers />} />
+            <Route path="/services/agriculture/fruits" element={<Fruits />} />
+            <Route path="/services/agriculture/kithul" element={<Kithul />} />
+            <Route path="/services/agriculture/palm" element={<Palm />} />
+            <Route path="/services/agriculture/seed" element={<Seed />} />
+            <Route path="/services/agriculture/spices" element={<Spices />} />
+            <Route path="/services/agriculture/vegetable" element={<Vegetable />} />
+            <Route path="/services/agriculture/mushroom" element={<Mushroom />} />
+            <Route path="/services/agriculture/tea" element={<Tea />} />
+            <Route path="/services/agriculture/cinnamon" element={<Cinnamon />} />
+            <Route path="/services/agriculture/bulath" element={<Bulath />} />
+            <Route path="/services/agriculture/other" element={<Other />} />
 
-          {/* Industries */}
-          <Route path="/services/industries/cane" element={<Cane />} />
-          <Route path="/services/industries/clay" element={<Clay />} />
-          <Route path="/services/industries/cloth" element={<Cloth />} />
-          <Route path="/services/industries/footwear" element={<Footwear />} />
-          <Route path="/services/industries/handcraft" element={<Handcraft />} />
-          <Route path="/services/industries/iron&gold" element={<IronGold />} />
-          <Route path="/services/industries/pooja" element={<Pooja />} />
-          <Route path="/services/industries/sweet&foods" element={<SweetFoods />} />
-          <Route path="/services/industries/wooden" element={<Wooden />} />
-          <Route path="/services/industries/coconutHusk" element={<CoconutHusk />} />
+            {/* Industries */}
+            <Route path="/services/industries/cane" element={<Cane />} />
+            <Route path="/services/industries/clay" element={<Clay />} />
+            <Route path="/services/industries/cloth" element={<Cloth />} />
+            <Route path="/services/industries/footwear" element={<Footwear />} />
+            <Route path="/services/industries/handcraft" element={<Handcraft />} />
+            <Route path="/services/industries/iron&gold" element={<IronGold />} />
+            <Route path="/services/industries/pooja" element={<Pooja />} />
+            <Route path="/services/industries/sweet&foods" element={<SweetFoods />} />
+            <Route path="/services/industries/wooden" element={<Wooden />} />
+            <Route path="/services/industries/coconutHusk" element={<CoconutHusk />} />
 
-          {/* Fisheries */}
-          <Route path="/services/fisheries/ornamentalfish" element={<OrnamentalFish />} />
-          <Route path="/services/fisheries/umbalakada&driesfish" element={<UmbalakadaDries />} />
+            {/* Fisheries */}
+            <Route path="/services/fisheries/ornamentalfish" element={<OrnamentalFish />} />
+            <Route path="/services/fisheries/umbalakada&driesfish" element={<UmbalakadaDries />} />
 
-          {/* Animal Husbandry */}
-          <Route path="/services/AnimalHusbandry/beehoney" element={<BeeHoney />} />
-          <Route path="/services/AnimalHusbandry/dairyproduct" element={<DairyProduct />} />
-          <Route path="/services/AnimalHusbandry/eggs" element={<Eggs />} />
-          <Route path="/services/AnimalHusbandry/Meats" element={<Meats />} />
+            {/* Animal Husbandry */}
+            <Route path="/services/AnimalHusbandry/beehoney" element={<BeeHoney />} />
+            <Route path="/services/AnimalHusbandry/dairyproduct" element={<DairyProduct />} />
+            <Route path="/services/AnimalHusbandry/eggs" element={<Eggs />} />
+            <Route path="/services/AnimalHusbandry/Meats" element={<Meats />} />
 
-          {/* Village */}
-          <Route path="/services/village/roaddevelopment" element={<Roaddevelopment />} />
-          <Route path="/services/village/sanitaryfacilities" element={<Sanitary />} />
-          <Route path="/services/village/tourism" element={<Tourism />} />
-          <Route path="/services/village/otherservices" element={<Otherservices />} />
+            {/* Village */}
+            <Route path="/services/village/roaddevelopment" element={<Roaddevelopment />} />
+            <Route path="/services/village/sanitaryfacilities" element={<Sanitary />} />
+            <Route path="/services/village/tourism" element={<Tourism />} />
+            <Route path="/services/village/otherservices" element={<Otherservices />} />
 
-          <Route path="/news/news1" element={<News1 />} />
-          <Route path="/news/news2" element={<News2 />} />
-          <Route path="/news/news3" element={<News3 />} />
-          <Route path="/news/news4" element={<News4 />} />
-          <Route path="/news/news5" element={<News5 />} />
-          <Route path="/news/news6" element={<News6 />} />
+            <Route path="/news/news1" element={<News1 />} />
+            <Route path="/news/news2" element={<News2 />} />
+            <Route path="/news/news3" element={<News3 />} />
+            <Route path="/news/news4" element={<News4 />} />
+            <Route path="/news/news5" element={<News5 />} />
+            <Route path="/news/news6" element={<News6 />} />
 
-          <Route path="/products/handcraft" element={<HandCraftProduct />} />
-          <Route path="/products/dehydrate" element={<DehydratedProduct />} />
-          <Route path="/products/coconutrelated" element={<CoconutProduct />} />
-          <Route path="/products/clayrelated" element={<ClayProduct />} />
-          <Route path="/products/dairyproduct" element={<DairyProducts />} />
-          
+            <Route path="/products/handcraft" element={<HandCraftProduct />} />
+            <Route path="/products/dehydrate" element={<DehydratedProduct />} />
+            <Route path="/products/coconutrelated" element={<CoconutProduct />} />
+            <Route path="/products/clayrelated" element={<ClayProduct />} />
+            <Route path="/products/dairyproduct" element={<DairyProducts />} />
+          </Routes>
 
-        </Routes>
-
-        <Footer />
-      </div>
+          <Footer />
+        </div>
+      </LanguageProvider>
     </Router>
   );
 }
