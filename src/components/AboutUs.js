@@ -6,8 +6,13 @@ import { useLanguage } from '../contexts/LanguageContext'; // Import useLanguage
 
 // Import officer images
 import nimalImage from "../assets/officers/image 2.jpeg";
-import tharushiImage from "../assets/officers/image 2.jpeg";
+//import tharushiImage from "../assets/officers/image 2.jpeg";
 import ruwanImage from "../assets/officers/image 2.jpeg";
+import wickramageImage from "../assets/officers/W.P.S.Wickramage.jpeg";
+import wijayakoonImage from "../assets/officers/W.M.U.M.Wijayakoon.jpeg";
+import WickramanayakaImage from "../assets/officers/N.C.Wickramanayaka.jpeg";
+import VijewardanaImage from "../assets/officers/V.C.Vijewardana.jpeg";
+import RathnayakeImage from "../assets/officers/R.M.C.S.Rathnayake.jpeg";
 
 const AboutUs = () => {
   const { t } = useLanguage(); // Get the translation function
@@ -29,7 +34,7 @@ const AboutUs = () => {
       office: "Office-011 288714",
       phone: "Mobile-071 8765432",
       email: "tharushi.silva@ministry.gov.lk",
-      image: tharushiImage,
+      image: wickramageImage,
     },
     {
       name: "W.M.U.M. Wijeyakoon",
@@ -37,7 +42,7 @@ const AboutUs = () => {
       office: "Office-N/A",
       phone: "Mobile-0714434091",
       email: "ruwan.jayasena@ministry.gov.lk",
-      image: ruwanImage,
+      image: wijayakoonImage,
     },
     {
       name: "N.C. Wickramanayaka",
@@ -45,7 +50,7 @@ const AboutUs = () => {
       office: "Office-112186018",
       phone: "Mobile-094 718318437",
       email: "ruwan.jayasena@ministry.gov.lk",
-      image: ruwanImage,
+      image: WickramanayakaImage,
     },
     {
       name: "V.C. Wijewardana",
@@ -53,7 +58,7 @@ const AboutUs = () => {
       office: "Office-112887478",
       phone: "Mobile-0702599805",
       email: "ruwan.jayasena@ministry.gov.lk",
-      image: ruwanImage,
+      image: VijewardanaImage,
     },
     {
       name: "S.G.A.K. Subawickrama",
@@ -69,7 +74,7 @@ const AboutUs = () => {
       office: "Office-112887831",
       phone: "Mobile-0703065277",
       email: "ruwan.jayasena@ministry.gov.lk",
-      image: ruwanImage,
+      image: RathnayakeImage,
     },
   ];
 
@@ -97,7 +102,7 @@ const AboutUs = () => {
             <p className="text-lg leading-relaxed">
               {t('introductionText')}
               <br />
-              {t('introductionText2')}
+              {/* {t('introductionText2')} */}
             </p>
           </div>
         </section>

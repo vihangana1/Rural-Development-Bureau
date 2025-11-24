@@ -7,7 +7,9 @@ const Footer = () => {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-gradient-to-r from-[#F7941D] to-[#6AA84F] text-white py-10 px-6">
+    // <footer className="bg-gradient-to-r from-[#F7941D] to-[#6AA84F] text-white py-10 px-6">
+    <footer className="bg-black text-white py-10 px-6">
+
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         
         {/* Quick Links */}

@@ -85,12 +85,16 @@ const translations = {
     minister: "Minister",
     secretary: "Secretary",
     
+    aboutIntro: "Our leadership and guiding principles for national development.",
+    // vision: "Our Vision",
+    // mission: "Our Mission",
+    readMore: "Read More",
+
+
     productionVillages: "576 Production Villages Based on Rural Resources",
     saubagyaDescription: "The Saubagya Production Village Program was launched to promote home-based products, raise the income level of the rural community, uplift the rural economy, and support the \"Vision of Prosperity and Splendour\" National Policy Framework.",
     
     officerDetail: "OFFICER DETAIL",
-    readMore: "READ MORE",
-    
     projects: "Projects",
     exploreSectors: "Explore 5 Key Sectors Driving Rural Development",
     projectsDescription: "The  Production Village Program empowers  villages by organizing services into Agriculture, Industries, Fisheries, Animal Husbandry, and Infrastructure. Click a category to discover its sub-items and explore the products that uplift rural livelihoods.",
@@ -112,8 +116,8 @@ const translations = {
     
     // About Us Page
     aboutUsTitle: "About Us",
-    introductionText: "The Saubagya Production Village Programme was launched to promote home-based products, raising the income level of the rural community, uplifting the rural economy, and making a significant contribution to the national product, in order to realize the \"Saubagyaye Dakma\" Political Manifest.",
-    introductionText2: "The aim is to establish 1000 villages as \"Saubhagya Production Villages\" throughout the country (500 villages in the first phase and another 500 in the second phase), involving low-income earners including Samurdhi recipients as well as more potential family units who directly contribute to the production process.",
+    introductionText: "In accordance with the Cabinet Decision No. Amap/25/0150/820/004 dated 10th February 2025, the Rural Development Bureau has been established under the Ministry of Rural Development, Social Security and Community Empowerment as the central institution for the implementation of the Integrated Rural Development Programme.",
+   // introductionText2: "The aim is to establish 1000 villages as \"Saubhagya Production Villages\" throughout the country (500 villages in the first phase and another 500 in the second phase), involving low-income earners including Samurdhi recipients as well as more potential family units who directly contribute to the production process.",
     vision: "Vision",
     visionText: "A perfect life through a sustainable economy.",
     mission: "Mission",
@@ -264,6 +268,11 @@ const translations = {
     president: "ජනාධිපති",
     minister: "අමාත්‍ය",
     secretary: "ලේකම්",
+
+
+    aboutIntro: "ජාතික සංවර්ධනය සඳහා අපගේ නායකත්වය සහ මූලධර්ම.",
+    // vision: "අපගේ දැක්ම",
+    // mission: "අපගේ මෙහෙවර",
     
     productionVillages: "ග්‍රාමීය සම්පත් මත පදනම් වූ නිෂ්පාදන ගම්මාන 576",
     saubagyaDescription: "ගෘහ පදනම් නිෂ්පාදන ප්‍රවර්ධනය කිරීම, ග්‍රාමීය ප්‍රජාවේ ආදායම් මට්ටම ඉහළ නැංවීම, ග්‍රාමීය ආර්ථිකය උසස් කිරීම සහ 'සමෘද්ධිය හා තේජසේ දැක්ම' ජාතික ප්‍රතිපත්ති රාමුවට සහාය වීම සඳහා සෞභාග්‍ය නිෂ්පාදන ගම්මාන වැඩසටහන ආරම්භ කරන ලදී.",
@@ -292,8 +301,8 @@ const translations = {
     
     // About Us Page
     aboutUsTitle: "අප ගැන",
-    introductionText: "සෞභාග්‍ය නිෂ්පාදන ගම්මාන වැඩසටහන ආරම්භ කර ඇත්තේ ගෘහ පදනම් නිෂ්පාදන ප්‍රවර්ධනය කිරීම, ග්‍රාමීය ප්‍රජාවේ ආදායම් මට්ටම ඉහළ නැංවීම, ග්‍රාමීය ආර්ථිකය උසස් කිරීම සහ ජාතික නිෂ්පාදනයට සැලකිය යුතු දායකත්වයක් ලබා දීම, 'සෞභාග්‍යයේ දැක්ම' දේශපාලන ප්‍රකාශනය සාක්ෂාත් කර ගැනීම සඳහා ය.",
-    introductionText2: "රට පුරා ගම්මාන 1000ක් 'සෞභාග්‍ය නිෂ්පාදන ගම්මාන' ලෙස පිහිටුවීම (පළමු අදියරේදී ගම්මාන 500ක් සහ දෙවන අදියරේදී තවත් 500ක්) අරමුණ වන අතර, සමෘද්ධි ප්‍රතිලාභීන් ඇතුළු අඩු ආදායම්ලාභීන් මෙන්ම නිෂ්පාදන ක්‍රියාවලියට සෘජුවම දායක වන වැඩි විභව පවුල් ඒකක ඊට සම්බන්ධ වේ.",
+    introductionText: "2025 පෙබරවාරි මස 10 දිනැති හා අමප/25/0150/820/004 අංක දරණ අමාත්‍ය මණ්ඩල තීරණයට අනුව, ඒකාබද්ධ ග්‍රාමීය සංවර්ධන වැඩසටහන ක්‍රියාත්මක කිරීමේ කේන්ද්‍රීය ආයතනය ලෙස ග්‍රාමීය සංවර්ධන, සමාජ ආරක්ෂණ සහ ප්‍රජා සවිබලගැන්වීම් අමාත්‍යාංශය යටතේ ග්‍රාමීය සංවර්ධන කාර්යාංශය පිහිටුවා ඇත.",
+    //introductionText2: "රට පුරා ගම්මාන 1000ක් 'සෞභාග්‍ය නිෂ්පාදන ගම්මාන' ලෙස පිහිටුවීම (පළමු අදියරේදී ගම්මාන 500ක් සහ දෙවන අදියරේදී තවත් 500ක්) අරමුණ වන අතර, සමෘද්ධි ප්‍රතිලාභීන් ඇතුළු අඩු ආදායම්ලාභීන් මෙන්ම නිෂ්පාදන ක්‍රියාවලියට සෘජුවම දායක වන වැඩි විභව පවුල් ඒකක ඊට සම්බන්ධ වේ.",
     vision: "දැක්ම",
     visionText: "තිරසර ආර්ථිකයක් තුළින් පරිපූර්ණ ජීවිතයක්.",
     mission: "මෙහෙවර",
@@ -445,11 +454,17 @@ const translations = {
     minister: "அமைச்சர்",
     secretary: "செயலாளர்",
     
+
+    aboutIntro: "தேசிய வளர்ச்சிக்கான எங்கள் தலைமையும் வழிகாட்டும் கொள்கைகளும்.",
+    // vision: "எங்கள் பார்வை",
+    // mission: "எங்கள் பணி",
+    readMore: "மேலும் படிக்க",
+
+
     productionVillages: "கிராமிய வளங்களை அடிப்படையாகக் கொண்ட 576 உற்பத்தி கிராமங்கள்",
     saubagyaDescription: "வீட்டு அடிப்படையிலான தயாரிப்புகளை ஊக்குவித்தல், கிராமிய சமூகத்தின் வருமான நிலையை உயர்த்துதல், கிராமிய பொருளாதாரத்தை மேம்படுத்துதல் மற்றும் 'செழிப்பு மற்றும் சிறப்பு பார்வை' தேசிய கொள்கை கட்டமைப்பை ஆதரிக்க சௌபாக்ய உற்பத்தி கிராம திட்டம் தொடங்கப்பட்டது.",
     
     officerDetail: "அதிகாரி விவரங்கள்",
-    readMore: "மேலும் வாசிக்க",
     
     projects: "திட்டங்கள்",
     exploreSectors: "கிராமிய அபிவிருத்தியை இயக்கும் 5 முக்கிய துறைகளை ஆராயுங்கள்",
@@ -472,8 +487,8 @@ const translations = {
     
     // About Us Page
     aboutUsTitle: "எங்களை பற்றி",
-    introductionText: "வீட்டு அடிப்படையிலான தயாரிப்புகளை ஊக்குவித்தல், கிராமிய சமூகத்தின் வருமான நிலையை உயர்த்துதல், கிராமிய பொருளாதாரத்தை மேம்படுத்துதல் மற்றும் தேசிய உற்பத்திக்கு குறிப்பிடத்தக்க பங்களிப்பை செய்தல், 'சௌபாக்கிய தக்மா' அரசியல் அறிக்கையை உணர்ந்துகொள்ள சௌபாக்ய உற்பத்தி கிராம திட்டம் தொடங்கப்பட்டது.",
-    introductionText2: "நாடு முழுவதும் 1000 கிராமங்களை 'சௌபாக்ய உற்பத்தி கிராமங்கள்' ஆக நிறுவுவது (முதல் கட்டத்தில் 500 கிராமங்கள் மற்றும் இரண்டாவது கட்டத்தில் மேலும் 500) இலக்காகும், சமுர்தி பயனாளர்கள் உட்பட குறைந்த வருமானம் பெறுபவர்கள் மற்றும் உற்பத்தி செயல்முறைக்கு நேரடியாக பங்களிக்கும் அதிக சாத்தியமுள்ள குடும்ப அலகுகள் சம்பந்தப்பட்டுள்ளன.",
+    introductionText: "பிப்ரவரி 10, 2025 தேதியிட்ட அமைச்சரவை முடிவு எண். Amap/25/0150/820/004 இன் படி, ஒருங்கிணைந்த கிராமப்புற மேம்பாட்டுத் திட்டத்தை செயல்படுத்துவதற்கான மைய நிறுவனமாக கிராமப்புற மேம்பாடு, சமூகப் பாதுகாப்பு மற்றும் சமூக அதிகாரமளித்தல் அமைச்சகத்தின் கீழ் கிராமப்புற மேம்பாட்டுப் பணியகம் நிறுவப்பட்டுள்ளதுci.",
+    //introductionText2: "நாடு முழுவதும் 1000 கிராமங்களை 'சௌபாக்ய உற்பத்தி கிராமங்கள்' ஆக நிறுவுவது (முதல் கட்டத்தில் 500 கிராமங்கள் மற்றும் இரண்டாவது கட்டத்தில் மேலும் 500) இலக்காகும், சமுர்தி பயனாளர்கள் உட்பட குறைந்த வருமானம் பெறுபவர்கள் மற்றும் உற்பத்தி செயல்முறைக்கு நேரடியாக பங்களிக்கும் அதிக சாத்தியமுள்ள குடும்ப அலகுகள் சம்பந்தப்பட்டுள்ளன.",
     vision: "பார்வை",
     visionText: "நிலையான பொருளாதாரம் மூலம் ஒரு சரியான வாழ்க்கை.",
     mission: "நோக்கம்",

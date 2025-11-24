@@ -102,10 +102,10 @@ const Home = () => {
         {/* Overlay Boxes */}
         <div className="absolute top-[600px] z-10 flex flex-col md:flex-row justify-center items-center gap-6 px-4 w-[710px] mx-auto">
           {[
-            {
-              title: t('ruralDevProgramme'),
-              path: "/components/programme/Ruraldevelopment",
-            },
+            // {
+            //   title: t('ruralDevProgramme'),
+            //   path: "/components/programme/Ruraldevelopment",
+            // },
             // {
             //   title: t('gramaShakthiProgramme'),
             //   path: "/components/programme/Gramashakthi",
@@ -134,16 +134,16 @@ const Home = () => {
       </main>
    
       {/* About Section */}
-      <section className="bg-white py-16 px-6 md:px-20">
+      {/* <section className="bg-white py-16 px-6 md:px-20">
         <div className="w-full text-center mt-[200px] gap-10">
           <h2 className="text-3xl font-bold text-[#F3931D] mb-6 uppercase gap-300">
             {t('aboutMinistry')}
           </h2>
         </div>
         <div className="max-w-9xl mx-auto flex flex-col items-center gap-10">
-          
+           */}
           {/* Officer Cards in One Row */}
-          <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-6">
+          {/* <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-6">
             {[
               {
                 title: t('president'),
@@ -180,10 +180,10 @@ const Home = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* Bottom: Text Content */}
-          <div className="w-full text-center mt-10">
+          {/* <div className="w-full text-center mt-10">
             <p className="text-sm uppercase text-gray-600 mb-2">
               {t('productionVillages')}
             </p>
@@ -198,7 +198,115 @@ const Home = () => {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
+
+
+
+
+{/* About Section */}
+<section className="bg-[#EFE9E3] py-20 px-6 md:px-20">
+  <div className="text-center mb-12">
+    <h2 className="text-3xl font-bold text-[#F3931D] uppercase mb-4">
+      {t('aboutMinistry')}
+    </h2>
+    {/* <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+      {t('aboutIntro')}
+    </p> */}
+  </div>
+
+  {/* Vision and Mission */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+    <div className="bg-white p-6 rounded-lg shadow-md text-center">
+      <h3 className="text-xl font-bold text-[#2C3E50] mb-4 border-b-2 border-yellow-400 pb-2">
+        {t('vision')}
+      </h3>
+      <p className="text-gray-700 text-sm leading-relaxed">
+        {t('visionText')}      </p>
+    </div>
+    <div className="bg-white p-6 rounded-lg shadow-md text-center">
+      <h3 className="text-xl font-bold text-[#2C3E50] mb-4 border-b-2 border-yellow-400 pb-2">
+        {t('mission')}
+      </h3>
+      <p className="text-gray-700 text-sm leading-relaxed">
+        {t('missionText')}      </p>
+      <a
+        href="/AboutUs"
+        className="inline-block mt-4 text-yellow-600 font-semibold text-sm hover:underline"
+      >
+        {t('readMore')} →
+      </a>
+    </div>
+  </div>
+
+  <div className="w-full overflow-x-auto pb-4">
+  <div className="flex gap-6 justify-center min-w-[800px]">
+    {[
+      {
+        title: t('president'),
+        name: t('presidentName'),
+        image: require("../assets/officers/president.jpeg"),
+      },
+      {
+        title: t('minister'),
+        name: t('ministerName'),
+        image: require("../assets/officers/minister.jpg"),
+      },
+      {
+        title: t('secretary'),
+        name: t('secretaryName'),
+        image: require("../assets/officers/secetry.jpg"),
+      },
+    ].map((officer, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl w-64"
+      >
+        <img
+          src={officer.image}
+          alt={officer.title}
+          className="w-40 h-40 rounded-full object-cover mb-4"
+        />
+        <p className="text-sm font-semibold text-gray-600 uppercase">
+          {officer.title}
+        </p>
+        <p className="text-base font-bold text-gray-800 text-center">
+          {officer.name}
+        </p>
+      </div>
+
+      
+    ))}
+  </div>
+
+  <div className="w-full overflow-x-auto pb-4 mb-6">
+  <div className="flex gap-10 justify-center min-w-[900px]">
+    {/* officer cards */}
+  </div>
+</div>
+
+<div className="w-full text-center">
+  <a
+    href="/AboutUs#services"
+    className="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
+  >
+    {t('officerDetail')} →
+  </a>
+</div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
 
       {/* Projects Section */}
       <section className="bg-[#EEEEEE] py-16 px-6 md:px-20">
@@ -322,24 +430,24 @@ const Home = () => {
       {
         title: t('latestCirculars'),
         files: [
-          { name: 'Registration of public officers (No. 03/2025(I))', path: '/downloads/circular1.pdf' },
-          { name: 'Revision of pensions (No. 15/2025(I))', path: '/downloads/circular2.pdf' },
+          { name: 'Prajashakthi Circular-Sinhala', path: '/downloads/circular/Prajashakthi Circular-Sinhala.pdf' },
+          { name: 'Prajashakthi Circular-Tamil', path: '/downloads/circular/Prajashakthi Circular-Tamil.pdf' },
         ],
         link: '/Download#Circulars',
       },
       {
         title: t('latestGuidelines'),
         files: [
-          { name: 'Procurement Guidelines 2025', path: '/downloads/guideline1.pdf' },
-          { name: 'Staff Conduct Manual', path: '/downloads/guideline2.pdf' },
+          { name: 'Prajashakthi Guidline - Sinhala', path: '/downloads/guidline/Prajashakthi Guidline - Sinhala.pdf' },
+          { name: 'Prajashakthi Guidline  - Tamil', path: '/downloads/guidline/Prajashakthi Guidline  - Tamil.pdf' },
         ],
         link: '/Download#Guidelines',
       },
       {
         title: t('latestFormats'),
         files: [
-          { name: 'Leave Application Form', path: '/downloads/format1.pdf' },
-          { name: 'Annual Report Template', path: '/downloads/format2.docx' },
+          { name: 'Livelihood Project Proposal Format-English', path: '/downloads/Livelihood Project Proposal Format_En.pdf' },
+          { name: 'Livelihood Project Proposal Format-Sinhala.pdf', path: '/downloads/Livelihood Project Proposal Format_Si.pdf' },
         ],
         link: '/Download#Formats',
       },
