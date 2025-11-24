@@ -100,29 +100,29 @@ const Home = () => {
         </div>
 
         {/* Overlay Boxes */}
-        <div className="absolute top-[600px] z-10 flex flex-col md:flex-row justify-center items-center gap-6 px-4 w-[1100px] mx-auto">
+        <div className="absolute top-[600px] z-10 flex flex-col md:flex-row justify-center items-center gap-6 px-4 w-[710px] mx-auto">
           {[
             {
               title: t('ruralDevProgramme'),
               path: "/components/programme/Ruraldevelopment",
             },
-            {
-              title: t('gramaShakthiProgramme'),
-              path: "/components/programme/Gramashakthi",
-            },
-            {
-              title: t('prajaShakthiProgramme'),
-              path: "/components/programme/Prajashakthi",
-            },
-            {
-              title: t('sawbagyaProgramme'),
-              path: "/components/programme/Sawbagya",
-            },
+            // {
+            //   title: t('gramaShakthiProgramme'),
+            //   path: "/components/programme/Gramashakthi",
+            // },
+            // {
+            //   title: t('prajaShakthiProgramme'),
+            //   path: "/components/programme/Prajashakthi",
+            // },
+            // {
+            //   title: t('sawbagyaProgramme'),
+            //   path: "/components/programme/Sawbagya",
+            // },
           ].map((box, index) => (
             <Link
               to={box.path}
               key={index}
-              className={`bg-[#F8EEDF] rounded-lg shadow-lg border-t-[6px] border-[#F3931D] h-[150px] w-[300px] flex flex-col items-center text-center transform transition-transform duration-500 hover:scale-105 opacity-0 animate-slide-in-left`}
+              className={`bg-[#F8EEDF] rounded-lg shadow-lg border-t-[6px] border-[#F3931D] h-[120px] w-[600px] flex flex-col items-center text-center transform transition-transform duration-500 hover:scale-105 opacity-0 animate-slide-in-left`}
               style={{ animationDelay: `${index * 0.3}s`, animationFillMode: "forwards" }}
             >
               <div className="p-4">
@@ -257,7 +257,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Product Section */}
+      {/* Product Section
       <section className="bg-white py-16 px-6 md:px-20">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
           <div className="md:w-1/2 text-left">
@@ -286,17 +286,17 @@ const Home = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Download Section */}
-      <section className="bg-[#EEEEEE] py-16 px-6 md:px-20 text-center">
+      {/* <section className="bg-white py-16 px-6 md:px-20 text-center">
         <h2 className="text-3xl font-bold text-[#F3931D] mb-4 uppercase">
           {t('downloadTitle')}
-        </h2>
-        <p className="text-sm uppercase text-gray-600 mb-2">
+        </h2> */}
+        {/* <p className="text-sm uppercase text-gray-600 mb-2">
           {t('productionVillages')}
-        </p>
-        <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-6">
+        </p> */}
+        {/* <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-6">
           {t('saubagyaDescription')}
         </p>
         <a
@@ -305,26 +305,80 @@ const Home = () => {
         >
           {t('readMore')} →
         </a>
-      </section>
+      </section> */}
 
-      {/* News Section */}
-      <section className="bg-white py-16 px-6 md:px-20 text-center">
-        <h2 className="text-3xl font-bold text-[#F3931D] mb-4 uppercase">
-          {t('news')}
-        </h2>
-        <p className="text-sm uppercase text-gray-600 mb-2">
-          {t('productionVillages')}
-        </p>
-        <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-6">
-          {t('saubagyaDescription')}
-        </p>
+      {/* Download Section */}
+<section className="bg-white py-16 px-6 md:px-20">
+  <h2 className="text-3xl font-bold text-[#F3931D] mb-4 text-center uppercase">
+    {t('downloadTitle')}<br></br>
+  </h2><br></br>
+  {/* <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-10 text-center">
+    {t('saubagyaDescription')}
+  </p> */}
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {/* Box Template */}
+    {[
+      {
+        title: t('latestCirculars'),
+        files: [
+          { name: 'Registration of public officers (No. 03/2025(I))', path: '/downloads/circular1.pdf' },
+          { name: 'Revision of pensions (No. 15/2025(I))', path: '/downloads/circular2.pdf' },
+        ],
+        link: '/Download#Circulars',
+      },
+      {
+        title: t('latestGuidelines'),
+        files: [
+          { name: 'Procurement Guidelines 2025', path: '/downloads/guideline1.pdf' },
+          { name: 'Staff Conduct Manual', path: '/downloads/guideline2.pdf' },
+        ],
+        link: '/Download#Guidelines',
+      },
+      {
+        title: t('latestFormats'),
+        files: [
+          { name: 'Leave Application Form', path: '/downloads/format1.pdf' },
+          { name: 'Annual Report Template', path: '/downloads/format2.docx' },
+        ],
+        link: '/Download#Formats',
+      },
+    ].map((item, index) => (
+      <div
+        key={index}
+        className="relative bg-gradient-to-br from-white to-yellow-50 border border-yellow-200 p-8 min-h-[250px]  rounded-xl shadow-md group hover:shadow-lg transition"
+      >
+        <h3 className="text-lg font-semibold text-gray-800 mb-4 border-b-2 border-yellow-400 pb-2">{item.title}</h3>
+        <ul className="space-y-2 text-gray-700 text-sm">
+          {item.files.map((file, i) => (
+            <li key={i}>
+              <a
+                href={file.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-700 hover:underline"
+              >
+                {file.name}
+              </a>
+            </li>
+          ))}
+        </ul>
         <a
-          href="/News"
-          className="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
+          href={item.link}
+          className="absolute bottom-4 right-4 text-yellow-600 font-semibold text-sm opacity-0 group-hover:opacity-100 transition"
         >
-          {t('readMore')} →
+          {t('viewAll')} →
         </a>
-      </section>
+      </div>
+    ))}
+  </div>
+</section>
+
+
+
+
+
+
 
       {/* Related Organizations section */}
       <section className="bg-[#EEEEEE] py-16 px-6 md:px-20">

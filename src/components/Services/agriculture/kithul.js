@@ -12,7 +12,7 @@ import image7 from "../../../assets/services/agriculture/kithul/id01/image7.jpg"
 
 const kithulProjects = [
   
-  {
+  {//checked
     name: "Matugama Kithul Development Project",
     id: 2,
     district: "Kalutara",

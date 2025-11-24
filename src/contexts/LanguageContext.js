@@ -74,12 +74,13 @@ const translations = {
     otherServices: "Other Services",
     
     // Home Page
-    ruralDevProgramme: "Rural Development Programme",
+    // homevision: "A perfect life through a sustainable economy",
+    ruralDevProgramme: '" A perfect life through a sustainable economy "',
     gramaShakthiProgramme: "Grama Shakthi Programme",
     prajaShakthiProgramme: "Praja Shakthi Programme",
     sawbagyaProgramme: "Sawbagya Programme",
     
-    aboutMinistry: "About Rural Development BUREU",
+    aboutMinistry: "About Rural Development Bureau",
     president: "President",
     minister: "Minister",
     secretary: "Secretary",
@@ -92,7 +93,7 @@ const translations = {
     
     projects: "Projects",
     exploreSectors: "Explore 5 Key Sectors Driving Rural Development",
-    projectsDescription: "The Saubagya Production Village Program empowers 576 villages by organizing services into Agriculture, Industries, Fisheries, Animal Husbandry, and Infrastructure. Click a category to discover its sub-items and explore the products that uplift rural livelihoods.",
+    projectsDescription: "The  Production Village Program empowers  villages by organizing services into Agriculture, Industries, Fisheries, Animal Husbandry, and Infrastructure. Click a category to discover its sub-items and explore the products that uplift rural livelihoods.",
     
     downloadTitle: "Download circulers, Guidelines and Formats",
     relatedOrganizations: "Related Organizations",
@@ -114,9 +115,9 @@ const translations = {
     introductionText: "The Saubagya Production Village Programme was launched to promote home-based products, raising the income level of the rural community, uplifting the rural economy, and making a significant contribution to the national product, in order to realize the \"Saubagyaye Dakma\" Political Manifest.",
     introductionText2: "The aim is to establish 1000 villages as \"Saubhagya Production Villages\" throughout the country (500 villages in the first phase and another 500 in the second phase), involving low-income earners including Samurdhi recipients as well as more potential family units who directly contribute to the production process.",
     vision: "Vision",
-    visionText: "An empowered community where every individual has the opportunity to lead a fulfilling and dignified life.",
+    visionText: "A perfect life through a sustainable economy.",
     mission: "Mission",
-    missionText: "Promoting rural community development by overseeing a wide range of programs including rural infrastructure, livelihood support, social protection schemes, and community engagement initiatives. Our work is collaborative, involving local governments, NGOs, and citizens to deliver impactful solutions tailored to each region's needs.",
+    missionText: "To contribute to the optimal fulfillment of human needs through active community participation and strategic resource management through an integrated approach that encompasses the entire community.",
     officersDetails: "Officer's Details",
     directorGeneral: "Director General",
     director: "Director",
@@ -139,6 +140,14 @@ const translations = {
     meetUs: "Meet Us",
     
     // Download Page
+    latestCirculars: "Latest Circulars",
+    latestGuidelines: "Latest Guidelines",
+    latestFormats: "Latest Formats",
+    viewAll: "View All",
+    //downloadTitle: "Download Section",
+   // saubagyaDescription: "Access the latest circulars, guidelines, and formats for public administration.",
+
+    
     documentDownloads: "Document Downloads",
     circularsTitle: "📑 Circulars",
     guidelinesTitle: "📘 Guidelines",
@@ -245,7 +254,8 @@ const translations = {
     otherServices: "වෙනත් සේවා",
     
     // Home Page language
-    ruralDevProgramme: "ග්‍රාමීය සංවර්ධන වැඩසටහන",
+    // homevision: "තිරසර ආර්ථිකයක් තුළින් පරිපූර්ණ ජීවිතයක්",
+    ruralDevProgramme: ' " තිරසර ආර්ථිකයක් තුළින් පරිපූර්ණ ජීවිතයක් "' ,
     gramaShakthiProgramme: "ග්‍රාම ශක්ති වැඩසටහන",
     prajaShakthiProgramme: "ප්‍රජා ශක්ති වැඩසටහන",
     sawbagyaProgramme: "සෞභාග්‍ය වැඩසටහන",
@@ -285,9 +295,9 @@ const translations = {
     introductionText: "සෞභාග්‍ය නිෂ්පාදන ගම්මාන වැඩසටහන ආරම්භ කර ඇත්තේ ගෘහ පදනම් නිෂ්පාදන ප්‍රවර්ධනය කිරීම, ග්‍රාමීය ප්‍රජාවේ ආදායම් මට්ටම ඉහළ නැංවීම, ග්‍රාමීය ආර්ථිකය උසස් කිරීම සහ ජාතික නිෂ්පාදනයට සැලකිය යුතු දායකත්වයක් ලබා දීම, 'සෞභාග්‍යයේ දැක්ම' දේශපාලන ප්‍රකාශනය සාක්ෂාත් කර ගැනීම සඳහා ය.",
     introductionText2: "රට පුරා ගම්මාන 1000ක් 'සෞභාග්‍ය නිෂ්පාදන ගම්මාන' ලෙස පිහිටුවීම (පළමු අදියරේදී ගම්මාන 500ක් සහ දෙවන අදියරේදී තවත් 500ක්) අරමුණ වන අතර, සමෘද්ධි ප්‍රතිලාභීන් ඇතුළු අඩු ආදායම්ලාභීන් මෙන්ම නිෂ්පාදන ක්‍රියාවලියට සෘජුවම දායක වන වැඩි විභව පවුල් ඒකක ඊට සම්බන්ධ වේ.",
     vision: "දැක්ම",
-    visionText: "සෑම පුද්ගලයෙකුටම ඉටුකරවීමක් සහ ගෞරවනීය ජීවිතයක් ගත කිරීමට අවස්ථාව ඇති සවිබල ගන්වන ලද ප්‍රජාවක්.",
+    visionText: "තිරසර ආර්ථිකයක් තුළින් පරිපූර්ණ ජීවිතයක්.",
     mission: "මෙහෙවර",
-    missionText: "ග්‍රාමීය යටිතල පහසුකම්, ජීවනෝපාය ආධාර, සමාජ ආරක්ෂණ යෝජනා ක්‍රම සහ ප්‍රජා සම්බන්ධතා මුලපිරීම් ඇතුළු පුළුල් වැඩසටහන් පරාසයක් අධීක්ෂණය කරමින් ග්‍රාමීය ප්‍රජා සංවර්ධනය ප්‍රවර්ධනය කිරීම. අපගේ කාර්යය සහයෝගීතාවයකි, එක් එක් කලාපයේ අවශ්‍යතා අනුව සකස් කරන ලද බලපෑම් සහිත විසඳුම් ලබා දීම සඳහා පළාත් පාලන ආයතන, රාජ්‍ය නොවන සංවිධාන සහ පුරවැසියන් සම්බන්ධ කර ගනිමින්.",
+    missionText: "සමස්ථ ප්‍රජාව අන්තර්ග්‍රහණය වන ඒකාබද්ධ ප්‍රවේශයක් තුළින් සක්‍රීය ප්‍රජා සහභාගීත්වය හා උපායමාර්ගික සම්පත් කළමණාකරණයෙන් මානව අවශ්‍යතා ප්‍රශස්ථ ලෙස සපුරාලීමට දායකවීම.",
     officersDetails: "නිලධාරී විස්තර",
     directorGeneral: "අධ්‍යක්ෂ ජනරාල්",
     director: "අධ්‍යක්ෂ",
@@ -319,6 +329,14 @@ const translations = {
     guideline: "මාර්ගෝපදේශය",
     format: "ආකෘතිය",
     
+    latestCirculars: "නවතම වටුපත්",
+    latestGuidelines: "නවතම මාර්ගෝපදේශ",
+    latestFormats: "නවතම ආකෘති",
+    viewAll: "සියල්ල බලන්න",
+
+
+
+
     // News Page
     newsTitle: "ප්‍රවෘත්ති",
     dehydratedProduct: "විජලීකරණය කළ නිෂ්පාදන",
@@ -416,7 +434,8 @@ const translations = {
     otherServices: "பிற சேவைகள்",
     
     // Home Page
-    ruralDevProgramme: "கிராமிய அபிவிருத்தி திட்டம்",
+    //homevision: "நிலையான பொருளாதாரம் மூலம் ஒரு சரியான வாழ்க்கை",
+    ruralDevProgramme: '"நிலையான பொருளாதாரம் மூலம் ஒரு சரியான வாழ்க்கை"',
     gramaShakthiProgramme: "கிராம சக்தி திட்டம்",
     prajaShakthiProgramme: "பிரஜா சக்தி திட்டம்",
     sawbagyaProgramme: "சௌபாக்ய திட்டம்",
@@ -456,9 +475,9 @@ const translations = {
     introductionText: "வீட்டு அடிப்படையிலான தயாரிப்புகளை ஊக்குவித்தல், கிராமிய சமூகத்தின் வருமான நிலையை உயர்த்துதல், கிராமிய பொருளாதாரத்தை மேம்படுத்துதல் மற்றும் தேசிய உற்பத்திக்கு குறிப்பிடத்தக்க பங்களிப்பை செய்தல், 'சௌபாக்கிய தக்மா' அரசியல் அறிக்கையை உணர்ந்துகொள்ள சௌபாக்ய உற்பத்தி கிராம திட்டம் தொடங்கப்பட்டது.",
     introductionText2: "நாடு முழுவதும் 1000 கிராமங்களை 'சௌபாக்ய உற்பத்தி கிராமங்கள்' ஆக நிறுவுவது (முதல் கட்டத்தில் 500 கிராமங்கள் மற்றும் இரண்டாவது கட்டத்தில் மேலும் 500) இலக்காகும், சமுர்தி பயனாளர்கள் உட்பட குறைந்த வருமானம் பெறுபவர்கள் மற்றும் உற்பத்தி செயல்முறைக்கு நேரடியாக பங்களிக்கும் அதிக சாத்தியமுள்ள குடும்ப அலகுகள் சம்பந்தப்பட்டுள்ளன.",
     vision: "பார்வை",
-    visionText: "ஒவ்வொரு தனிநபரும் நிறைவான மற்றும் கௌரவமான வாழ்க்கையை வாழ வாய்ப்பு உள்ள அதிகாரமளிக்கப்பட்ட சமூகம்.",
+    visionText: "நிலையான பொருளாதாரம் மூலம் ஒரு சரியான வாழ்க்கை.",
     mission: "நோக்கம்",
-    missionText: "கிராமிய உள்கட்டமைப்பு, வாழ்வாதார ஆதரவு, சமூக பாதுகாப்பு திட்டங்கள் மற்றும் சமூக ஈடுபாடு முயற்சிகள் உட்பட பரந்த அளவிலான திட்டங்களை மேற்பார்வையிடுவதன் மூலம் கிராமிய சமூக அபிவிருத்தியை ஊக்குவித்தல். எங்கள் பணி கூட்டு முயற்சியானது, ஒவ்வொரு பிராந்தியத்தின் தேவைகளுக்கு ஏற்ப வடிவமைக்கப்பட்ட தாக்கமான தீர்வுகளை வழங்க உள்ளூர் அரசாங்கங்கள், தன்னார்வ தொண்டு நிறுவனங்கள் மற்றும் குடிமக்களை உள்ளடக்கியது.",
+    missionText: "முழு சமூகத்தையும் உள்ளடக்கிய ஒருங்கிணைந்த அணுகுமுறையின் மூலம் செயலில் சமூக பங்கேற்பு மற்றும் மூலோபாய வள மேலாண்மை மூலம் மனித தேவைகளை உகந்த முறையில் பூர்த்தி செய்வதற்கு பங்களிக்க.",
     officersDetails: "அதிகாரி விவரங்கள்",
     directorGeneral: "பணிப்பாளர் நாயகம்",
     director: "பணிப்பாளர்",
@@ -489,6 +508,14 @@ const translations = {
     circular: "சுற்றறிக்கை",
     guideline: "வழிகாட்டுதல்",
     format: "வடிவம்",
+
+
+
+
+    latestCirculars: "சமீபத்திய சுற்றறிக்கைகள்",
+latestGuidelines: "சமீபத்திய வழிகாட்டிகள்",
+latestFormats: "சமீபத்திய வடிவங்கள்",
+viewAll: "அனைத்தையும் பார்க்க",
     
     // News Page
     newsTitle: "செய்திகள்",

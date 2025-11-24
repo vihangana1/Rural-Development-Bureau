@@ -10,7 +10,7 @@ import image4 from "../../../assets/services/Animal husbandry/eggs/id01/image2.j
 const eggProjects = [
   
   {
-    id: 1,
+    id: 1,//rechecked
     name: "Kandangamuwa Poultry Cooperative",
     district: "Gampaha",
     office: "Meerigama",

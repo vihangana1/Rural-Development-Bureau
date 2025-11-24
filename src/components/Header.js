@@ -95,7 +95,7 @@ const Header = ({
         },
       ],
     },
-    { label: t('product'), path: "/Product" },
+    //{ label: t('product'), path: "/Product" },
     {
       label: t('download'),
       path: "/Download",
