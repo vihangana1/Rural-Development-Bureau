@@ -79,6 +79,8 @@ import ClayProduct from "./components/Products/clayrelated";
 import DairyProducts from "./components/Products/dairyproduct";
 
 
+
+
 function App() {
   const [accessibilitySettings, setAccessibilitySettings] = useState({
     textSize: "text-base",
@@ -203,6 +205,8 @@ function App() {
             <Route path="/products/coconutrelated" element={<CoconutProduct />} />
             <Route path="/products/clayrelated" element={<ClayProduct />} />
             <Route path="/products/dairyproduct" element={<DairyProducts />} />
+
+
           </Routes>
 
           <Footer />

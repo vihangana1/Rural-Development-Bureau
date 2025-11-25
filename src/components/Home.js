@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom"; 
 import '../index.css';
 import { useLanguage } from '../contexts/LanguageContext';
+import FeaturedNewsSection from "../components/FeaturedNewsSection";
 
 // Import your images
 import image1 from "../assets/homepage/imageai1.jpeg";
@@ -15,6 +16,15 @@ import image6 from "../assets/homepage/imageai6.jpeg";
 const images = [image1, image2, image3, image4, image5, image6];
 
 const Home = () => {
+
+
+
+
+
+
+
+
+  
   const { t } = useLanguage();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeService, setActiveService] = useState(null);
@@ -83,11 +93,11 @@ const Home = () => {
   return (
     <div className="w-screen overflow-hidden">
       {/* Carousel Section */}
-      <main className="w-full h-[650px] relative flex flex-col justify-center items-center">
+      <main className="w-full h-[350px] relative flex flex-col justify-center items-center">
         
         {/* Background Images */}
-        <div className="absolute top-5 left-0 w-full h-full z-0">
-          {images.map((img, index) => (
+        <div className="absolute top-5 left-0 w-full h-[100%] z-0 overflow-hidden">
+        {images.map((img, index) => (
             <img
               key={index}
               src={img}
@@ -96,7 +106,7 @@ const Home = () => {
                 index === currentIndex ? "opacity-100" : "opacity-0"
               }`}
             />
-          ))}
+          ))}<br></br> <br></br>
         </div>
 
         {/* Overlay Boxes */}
@@ -128,6 +138,7 @@ const Home = () => {
               <div className="p-4">
                 <p className="text-2xl font-semibold text-[#333] mb-2">{box.title}</p>
               </div>
+              <br></br>
             </Link>
           ))}
         </div>
@@ -204,7 +215,7 @@ const Home = () => {
 
 
 {/* About Section */}
-<section className="bg-[#EFE9E3] py-20 px-6 md:px-20">
+<section className="bg-[#F9F8F6] py-10 px-4 md:px-12">
   <div className="text-center mb-12">
     <h2 className="text-3xl font-bold text-[#F3931D] uppercase mb-4">
       {t('aboutMinistry')}
@@ -396,24 +407,7 @@ const Home = () => {
         </div>
       </section> */}
 
-      {/* Download Section */}
-      {/* <section className="bg-white py-16 px-6 md:px-20 text-center">
-        <h2 className="text-3xl font-bold text-[#F3931D] mb-4 uppercase">
-          {t('downloadTitle')}
-        </h2> */}
-        {/* <p className="text-sm uppercase text-gray-600 mb-2">
-          {t('productionVillages')}
-        </p> */}
-        {/* <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-6">
-          {t('saubagyaDescription')}
-        </p>
-        <a
-          href="/Download"
-          className="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
-        >
-          {t('readMore')} →
-        </a>
-      </section> */}
+      
 
       {/* Download Section */}
 <section className="bg-white py-16 px-6 md:px-20">
@@ -481,6 +475,17 @@ const Home = () => {
     ))}
   </div>
 </section>
+
+
+
+
+
+
+<div>
+      {/* Other homepage sections */}
+      <FeaturedNewsSection />
+      {/* More sections */}
+    </div>
 
 
 

@@ -164,7 +164,25 @@ const translations = {
     // News Page
     newsTitle: "News",
     dehydratedProduct: "Dehydrated Product",
+    prajashakthiTrainingofTrainersNorthWesternProvinceProgram: "Praja Shakthi Training of Trainers - North Western Province Program",
     
+
+
+    "featuredNews.title": "Featured News",
+"featuredNews.readMoreNews": "Read More News →",
+"featuredNews.readMore": "Read More →",
+"featuredNews.imageAlt": "News image",
+
+"news1.date": "18th Nov 2025",
+"news1.title": "Praja Shakthi Training of Trainers - North Western Province Program.",
+"news2.date": "14th Oct 2025",
+//"news2.title": "Today is the second day of the 78th Regional Conference of the World Health Organization (WHO) for South and Southeast Asia.",
+
+
+    //news1 page 
+    northWesternProgramIntro: "The North Western Provincial Program for Training Community Empowerment Trainers, jointly organized by the Rural Development Bureau and the Presidential Secretariat, was successfully held on November 18th and 19th at the Wariyapola North Western Training Center.",
+    northWesternProgramAlt: "Community Empowerment Training Program",
+
     // Products Page
     productsTitle: "Products",
     productsDescription: "We have a vast range of quality products made by our own producers in the Saubagya Production Villages. These locally based value-added products are crafted with care and meet global standards in the production value chain.",
@@ -349,7 +367,29 @@ const translations = {
     // News Page
     newsTitle: "ප්‍රවෘත්ති",
     dehydratedProduct: "විජලීකරණය කළ නිෂ්පාදන",
+    prajashakthiTrainingofTrainersNorthWesternProvinceProgram: "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ වයඹ පළාත් පළාත් වැඩසටහන",
     
+
+  "featuredNews.title": "විශේෂ පුවත්",
+"featuredNews.readMoreNews": "තවත් පුවත් කියවන්න →",
+"featuredNews.readMore": "වැඩිදුර කියවන්න →",
+"featuredNews.imageAlt": "පුවත් රූපය",
+
+"news1.date": "2025 නොවැම්බර් 18",
+"news1.title": "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ වයඹ පළාත් පළාත් වැඩසටහන",
+"news2.date": "2025 ඔක්තෝබර් 14",
+//"news2.title": "දකුණු සහ දකුණු ආසියාව සඳහා ලෝක සෞඛ්‍ය සංවිධානයේ 78 වන කලාපීය සම්මේලනයේ දෙවැනි දිනය අදයි.",
+
+
+
+
+
+
+    //news1 page 
+    "northWesternProgramIntro": "ග්‍රාමීය සංවර්ධන කාර්යංශය සහ ජනාධිපති ලේකම් කාර්යාලය එක්ව සංවිධානය කරනු ලැබූ ප්‍රජාශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ වයඹ පළාත් වැඩසටහන නොවැම්බර් මස 18, 19 දෙදින තුළ වාරියපොළ වයඹ පුහුණු මධ්‍යස්ථානයේ දී සාර්ථකව පවත්වන ලදි.",
+    "northWesternProgramAlt": "සමාජ බලගැන්වීමේ පුහුණු වැඩසටහන",
+
+
     // Products Page
     productsTitle: "නිෂ්පාදන",
     productsDescription: "සෞභාග්‍ය නිෂ්පාදන ගම්මාන වල අපගේම නිෂ්පාදකයින් විසින් සාදන ලද ගුණාත්මක නිෂ්පාදන පුළුල් පරාසයක් අප සතුව ඇත. මෙම දේශීයව පදනම් වූ වටිනාකම් එකතු කරන ලද නිෂ්පාදන සත්කාරයෙන් නිර්මාණය කර ඇති අතර නිෂ්පාදන වටිනාකම් දාමයේ ගෝලීය ප්‍රමිතීන් සපුරාලයි.",
@@ -536,6 +576,26 @@ viewAll: "அனைத்தையும் பார்க்க",
     newsTitle: "செய்திகள்",
     dehydratedProduct: "நீரிழப்பு தயாரிப்பு",
     
+
+    "featuredNews.title": "சிறப்பு செய்தி",
+"featuredNews.readMoreNews": "மேலும் செய்திகள் →",
+"featuredNews.readMore": "மேலும் படிக்க →",
+"featuredNews.imageAlt": "செய்தி படம்",
+
+"news1.date": "2025 நவம்பர் 18",
+"news1.title": "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – வடமேற்கு மாகாண திட்டம்.",
+"news2.date": "2025 அக்டோபர் 14",
+"news2.title": "தென் மற்றும் தென்கிழக்கு ஆசியாவுக்கான WHO 78வது பிராந்திய மாநாட்டின் இரண்டாவது நாள் இன்று.",
+
+
+    //news1 page 
+  prajashakthiTrainingofTrainersNorthWesternProvinceProgram: "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – வடமேற்கு மாகாண திட்டம்",
+  northWesternProgramIntro: "வடமேற்கு மாகாண சமூக அதிகாரப்படுத்தல் பயிற்சியாளர்களுக்கான பயிற்சி திட்டம், கிராமப்புற அபிவிருத்தி பணியகம் மற்றும் ஜனாதிபதி செயலாளர் அலுவலகம் இணைந்து ஏற்பாடு செய்தது, நவம்பர் 18 மற்றும் 19 ஆம் தேதிகளில் வாரியபொல வடமேற்கு பயிற்சி மையத்தில் வெற்றிகரமாக நடைபெற்றது.",
+  northWesternProgramAlt: "சமூக அதிகாரப்படுத்தல் பயிற்சி திட்டம்",
+
+
+
+
     // Products Page
     productsTitle: "தயாரிப்புகள்",
     productsDescription: "சௌபாக்ய உற்பத்தி கிராமங்களில் எங்கள் சொந்த உற்பத்தியாளர்களால் தயாரிக்கப்பட்ட தரமான தயாரிப்புகளின் பரந்த அளவு எங்களிடம் உள்ளது. இந்த உள்நாட்டில் அடிப்படையிலான மதிப்பு கூட்டப்பட்ட தயாரிப்புகள் கவனமாக வடிவமைக்கப்பட்டு உற்பத்தி மதிப்பு சங்கிலியில் உலகளாவிய தரங்களை சந்திக்கின்றன.",

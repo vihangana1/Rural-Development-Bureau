@@ -3,13 +3,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from '../contexts/LanguageContext'; // Import useLanguage
 import placeholderImage from "../assets/homepage/image 1.jpeg";
+import News1 from "../assets/news/news1.jpeg";
 
 const News = () => {
   const { t } = useLanguage(); // Get the translation function
 
   // Move newsItems inside the component to use the `t` function
   const newsItems = [
-    { title: t('dehydratedProduct'), image: placeholderImage, link: "/news/news1" },
+    { title: t('prajashakthiTrainingofTrainersNorthWesternProvinceProgram'), image: News1, link: "/news/news1" },//news1.js
     { title: t('dehydratedProduct'), image: placeholderImage, link: "/news/news2" },
     { title: t('dehydratedProduct'), image: placeholderImage, link: "/news/news3" },
     { title: t('dehydratedProduct'), image: placeholderImage, link: "/news/news4" },
@@ -28,7 +29,7 @@ const News = () => {
               key={index}
               className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105"
             >
-              <div className="w-full h-45 mb-4 border-2 rounded overflow-hidden" style={{ borderColor: "white" }}>
+              <div className="w-full h-60 mb-4 border-2 rounded overflow-hidden" style={{ borderColor: "white" }}>
                 <img
                   src={item.image}
                   alt={item.title}
@@ -36,7 +37,7 @@ const News = () => {
                 />
               </div>
               <h3 className="text-lg font-semibold text-[#333] mb-2">{item.title}</h3>
-              <Link to={item.link}>
+              <Link to={item.link}><br></br>
                 <button className="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition">
                   {t('readMore')} →
                 </button>
