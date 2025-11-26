@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLanguage } from "../contexts/LanguageContext"; // ✅ make sure this path is correct
-import newsImage1 from "../assets/news/news1.jpeg";
+import news1Image1 from "../assets/news/news1.jpeg";
+import News2Image from "../assets/news/news2.jpeg";
 
 const FeaturedNewsSection = () => {
   const { t } = useLanguage(); // ✅ access translation function
@@ -9,13 +10,14 @@ const FeaturedNewsSection = () => {
     {
       date: t("news1.date"),
       title: t("news1.title"),
-      image: newsImage1,
+      image: news1Image1,
       link: "/news/news1",
     },
     {
       date: t("news2.date"),
       title: t("news2.title"),
-      image: null,
+     // image: null,
+     image:News2Image,
       link: "/news/news2",
     },
   ];

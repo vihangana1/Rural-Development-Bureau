@@ -1,8 +1,6 @@
-
-
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react"; // Added useState, useRef
 import { useLocation } from "react-router-dom";
-import { useLanguage } from '../contexts/LanguageContext'; // Import useLanguage
+import { useLanguage } from '../contexts/LanguageContext';
 
 // Import officer images
 import nimalImage from "../assets/officers/image 2.jpeg";
@@ -14,15 +12,55 @@ import WickramanayakaImage from "../assets/officers/N.C.Wickramanayaka.jpeg";
 import VijewardanaImage from "../assets/officers/V.C.Vijewardana.jpeg";
 import RathnayakeImage from "../assets/officers/R.M.C.S.Rathnayake.jpeg";
 
+// --- Reusable Reveal Component ---
+const Reveal = ({ children, delay = 0, className = "" }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    const currentRef = ref.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-1000 ease-out transform ${className} ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
+      }`}
+      style={{ transitionDelay: `${delay}ms` }}
+    >
+      {children}
+    </div>
+  );
+};
+
 const AboutUs = () => {
-  const { t } = useLanguage(); // Get the translation function
+  const { t } = useLanguage();
   const location = useLocation();
 
-  // Move the officers array inside the component to use the `t` function
   const officers = [
     {
       name: "S.K.W. Sisira Kumara",
-      designation: t('directorGeneral'), // Translate designation
+      designation: t('directorGeneral'),
       office: " Office-011 2877122",
       phone: "Mobile-N/A",
       email: "nimal.perera@ministry.gov.lk",
@@ -30,7 +68,7 @@ const AboutUs = () => {
     },
     {
       name: "W.P.S. Wickramge",
-      designation: t('director'), // Translate designation
+      designation: t('director'),
       office: "Office-011 288714",
       phone: "Mobile-071 8765432",
       email: "tharushi.silva@ministry.gov.lk",
@@ -38,7 +76,7 @@ const AboutUs = () => {
     },
     {
       name: "W.M.U.M. Wijeyakoon",
-      designation: t('director'), // Translate designation
+      designation: t('director'),
       office: "Office-N/A",
       phone: "Mobile-0714434091",
       email: "ruwan.jayasena@ministry.gov.lk",
@@ -46,7 +84,7 @@ const AboutUs = () => {
     },
     {
       name: "N.C. Wickramanayaka",
-      designation: t('director'), // Translate designation
+      designation: t('director'),
       office: "Office-112186018",
       phone: "Mobile-094 718318437",
       email: "ruwan.jayasena@ministry.gov.lk",
@@ -54,7 +92,7 @@ const AboutUs = () => {
     },
     {
       name: "V.C. Wijewardana",
-      designation: t('deputyDirector'), // Translate designation
+      designation: t('deputyDirector'),
       office: "Office-112887478",
       phone: "Mobile-0702599805",
       email: "ruwan.jayasena@ministry.gov.lk",
@@ -62,7 +100,7 @@ const AboutUs = () => {
     },
     {
       name: "S.G.A.K. Subawickrama",
-      designation: t('assistantDirector'), // Translate designation
+      designation: t('assistantDirector'),
       office: "Office-N/A",
       phone: "Mobile-0741520766",
       email: "ruwan.jayasena@ministry.gov.lk",
@@ -70,7 +108,7 @@ const AboutUs = () => {
     },
     {
       name: "R.M.C.S. Rathnayaka",
-      designation: t('assistantDirector'), // Translate designation
+      designation: t('assistantDirector'),
       office: "Office-112887831",
       phone: "Mobile-0703065277",
       email: "ruwan.jayasena@ministry.gov.lk",
@@ -90,42 +128,54 @@ const AboutUs = () => {
   return (
     <div className="bg-[#FFF8F6] text-gray-800 min-h-screen">
       <main className="max-w-5xl mx-auto px-6 py-10 space-y-16">
+        
         {/* Page Title */}
-        <h1 className="text-4xl font-bold text-[#F3931D] text-center mb-6 font-serif">
-          {t('aboutUsTitle')}
-        </h1>
+        <Reveal>
+          <h1 className="text-4xl font-bold text-[#F3931D] text-center mb-6 font-serif">
+            {t('aboutUsTitle')}
+          </h1>
+        </Reveal>
 
         {/* Introduction Section */}
         <section id="introduction">
-          <h2 className="text-2xl font-bold text-[#9A3F3F] mb-2">{t('introduction')}</h2>
-          <div className="bg-[#FDF1E7] rounded-lg p-6 shadow-sm">
-            <p className="text-lg leading-relaxed">
-              {t('introductionText')}
-              <br />
-              {/* {t('introductionText2')} */}
-            </p>
-          </div>
+          <Reveal delay={200}>
+            <h2 className="text-2xl font-bold text-[#9A3F3F] mb-2">{t('introduction')}</h2>
+            <div className="bg-[#FDF1E7] rounded-lg p-6 shadow-sm">
+              <p className="text-lg leading-relaxed">
+                {t('introductionText')}
+                <br />
+                {/* {t('introductionText2')} */}
+              </p>
+            </div>
+          </Reveal>
         </section>
 
         <hr className="border-t border-gray-400" />
 
         {/* Overview Section */}
         <section id="overview">
-          <h2 className="text-2xl font-bold text-[#9A3F3F] mb-4">{t('overview')}</h2>
+          <Reveal>
+            <h2 className="text-2xl font-bold text-[#9A3F3F] mb-4">{t('overview')}</h2>
+          </Reveal>
+          
           <div className="space-y-6">
-            <div className="bg-[#FDF1E7] rounded-lg p-6 shadow-sm">
-              <h3 className="text-lg font-bold text-orange-600 mb-2">{t('vision')}</h3>
-              <p className="text-base leading-relaxed">
-                {t('visionText')}
-              </p>
-            </div>
+            <Reveal delay={200}>
+              <div className="bg-[#FDF1E7] rounded-lg p-6 shadow-sm">
+                <h3 className="text-lg font-bold text-orange-600 mb-2">{t('vision')}</h3>
+                <p className="text-base leading-relaxed">
+                  {t('visionText')}
+                </p>
+              </div>
+            </Reveal>
 
-            <div className="bg-[#FDF1E7] rounded-lg p-6 shadow-sm">
-              <h3 className="text-lg font-bold text-orange-600 mb-2">{t('mission')}</h3>
-              <p className="text-base leading-relaxed">
-                {t('missionText')}
-              </p>
-            </div>
+            <Reveal delay={400}>
+              <div className="bg-[#FDF1E7] rounded-lg p-6 shadow-sm">
+                <h3 className="text-lg font-bold text-orange-600 mb-2">{t('mission')}</h3>
+                <p className="text-base leading-relaxed">
+                  {t('missionText')}
+                </p>
+              </div>
+            </Reveal>
           </div>
         </section>
 
@@ -133,31 +183,35 @@ const AboutUs = () => {
 
         {/* Officer Overview Section */}
         <section id="services">
-        <h2 className="text-2xl font-bold text-[#9A3F3F] mb-4">{t('officersDetails')}</h2>
-        <div className="bg-w py-160 px-6 md:px-20" >
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {officers.map((officer, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-md p-2 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300"
-              >
-                <img
-                  src={officer.image}
-                  alt={officer.name}
-                  className="w-35 h-350 object-cover mb-4 border-2 "
-                />
-                <h3 className="text-xl font-semibold text-black mb-1">
-                  {officer.name}
-                </h3>
-                <p className="text-sm font-medium text-gray-700 mb-1">
-                  {officer.designation}
-                </p>
-                <p className="text-sm text-gray-600 mb-1">{t('office')}-{officer.office}</p>
-                <p className="text-sm text-blue-600 mb-1">{officer.email}</p>
-                <p className="text-sm text-gray-700">{t('mobile')}-{officer.phone}</p>
-              </div>
-            ))}
-          </div>
+          <Reveal>
+            <h2 className="text-2xl font-bold text-[#9A3F3F] mb-4">{t('officersDetails')}</h2>
+          </Reveal>
+          
+          <div className="bg-w py-160 px-6 md:px-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {officers.map((officer, index) => (
+                <Reveal key={index} delay={index * 150} className="h-full">
+                  <div
+                    className="bg-white rounded-lg shadow-md p-2 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 h-full"
+                  >
+                    <img
+                      src={officer.image}
+                      alt={officer.name}
+                      className="w-35 h-350 object-cover mb-4 border-2"
+                    />
+                    <h3 className="text-xl font-semibold text-black mb-1">
+                      {officer.name}
+                    </h3>
+                    <p className="text-sm font-medium text-gray-700 mb-1">
+                      {officer.designation}
+                    </p>
+                    <p className="text-sm text-gray-600 mb-1">{t('office')}-{officer.office}</p>
+                    <p className="text-sm text-blue-600 mb-1">{officer.email}</p>
+                    <p className="text-sm text-gray-700">{t('mobile')}-{officer.phone}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </section>
       </main>

@@ -165,23 +165,28 @@ const translations = {
     newsTitle: "News",
     dehydratedProduct: "Dehydrated Product",
     prajashakthiTrainingofTrainersNorthWesternProvinceProgram: "Praja Shakthi Training of Trainers - North Western Province Program",
+    prajashakthiTrainingofTrainersNorthCentralProvinceProgram: "Praja Shakthi Training of Trainers - North Central Province Program",
+
     
 
-
     "featuredNews.title": "Featured News",
-"featuredNews.readMoreNews": "Read More News →",
-"featuredNews.readMore": "Read More →",
-"featuredNews.imageAlt": "News image",
+    "featuredNews.readMoreNews": "Read More News →",
+    "featuredNews.readMore": "Read More →",
+    "featuredNews.imageAlt": "News image",
 
-"news1.date": "18th Nov 2025",
-"news1.title": "Praja Shakthi Training of Trainers - North Western Province Program.",
-"news2.date": "14th Oct 2025",
-//"news2.title": "Today is the second day of the 78th Regional Conference of the World Health Organization (WHO) for South and Southeast Asia.",
+    "news1.date": "18th Nov 2025",
+    "news1.title": "Praja Shakthi Training of Trainers - North Western Province Program.",
+    "news2.date": "10th Nov 2025",
+    "news2.title": "Praja Shakthi Training of Trainers - North Center Province Program.",
 
 
     //news1 page 
     northWesternProgramIntro: "The North Western Provincial Program for Training Community Empowerment Trainers, jointly organized by the Rural Development Bureau and the Presidential Secretariat, was successfully held on November 18th and 19th at the Wariyapola North Western Training Center.",
     northWesternProgramAlt: "Community Empowerment Training Program",
+
+    //news2 page
+    northCentralProgramIntro: "The North Central Province Program for Training of Community Empowerment Trainers, jointly organized by the Rural Development Bureau and the Presidential Secretariat, was successfully held on November 10th and 11th at the National Freshwater Fisheries and Aquaculture Training Center.",
+    northCentralProgramAlt: "Community Empowerment Training Program",
 
     // Products Page
     productsTitle: "Products",
@@ -370,15 +375,15 @@ const translations = {
     prajashakthiTrainingofTrainersNorthWesternProvinceProgram: "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ වයඹ පළාත් පළාත් වැඩසටහන",
     
 
-  "featuredNews.title": "විශේෂ පුවත්",
-"featuredNews.readMoreNews": "තවත් පුවත් කියවන්න →",
-"featuredNews.readMore": "වැඩිදුර කියවන්න →",
-"featuredNews.imageAlt": "පුවත් රූපය",
+    "featuredNews.title": "විශේෂ පුවත්",
+    "featuredNews.readMoreNews": "තවත් පුවත් කියවන්න →",
+    "featuredNews.readMore": "වැඩිදුර කියවන්න →",
+    "featuredNews.imageAlt": "පුවත් රූපය",
 
-"news1.date": "2025 නොවැම්බර් 18",
-"news1.title": "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ වයඹ පළාත් පළාත් වැඩසටහන",
-"news2.date": "2025 ඔක්තෝබර් 14",
-//"news2.title": "දකුණු සහ දකුණු ආසියාව සඳහා ලෝක සෞඛ්‍ය සංවිධානයේ 78 වන කලාපීය සම්මේලනයේ දෙවැනි දිනය අදයි.",
+    "news1.date": "2025 නොවැම්බර් 18",
+    "news1.title": "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ වයඹ පළාත් පළාත් වැඩසටහන",
+    "news2.date": "2025 නොවැම්බර් 14",
+    "news2.title": "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ උතුරු මැද පළාත් වැඩසටහන.",
 
 
 
@@ -389,6 +394,9 @@ const translations = {
     "northWesternProgramIntro": "ග්‍රාමීය සංවර්ධන කාර්යංශය සහ ජනාධිපති ලේකම් කාර්යාලය එක්ව සංවිධානය කරනු ලැබූ ප්‍රජාශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ වයඹ පළාත් වැඩසටහන නොවැම්බර් මස 18, 19 දෙදින තුළ වාරියපොළ වයඹ පුහුණු මධ්‍යස්ථානයේ දී සාර්ථකව පවත්වන ලදි.",
     "northWesternProgramAlt": "සමාජ බලගැන්වීමේ පුහුණු වැඩසටහන",
 
+    //newa2 page
+    "northCentralProgramIntro": "ග්‍රාමීය සංවර්ධන කාර්යංශය සහ ජනාධිපති ලේකම් කාර්යාලය එක්ව සංවිධානය කරනු ලැබූ ප්‍රජාශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ උතුරු මැද පළාත් වැඩසටහන නොවැම්බර් මස 10, 11 දෙදින තුළ ජාතික මිරිදිය දීවර සහ ජලජීවී වගා පුහුනු මධ්‍යස්ථානයේ දී සාර්ථකව පවත්වන ලදි.",
+    //"northWesternProgramAlt": "සමාජ බලගැන්වීමේ පුහුණු වැඩසටහන",
 
     // Products Page
     productsTitle: "නිෂ්පාදන",
@@ -584,7 +592,7 @@ viewAll: "அனைத்தையும் பார்க்க",
 
 "news1.date": "2025 நவம்பர் 18",
 "news1.title": "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – வடமேற்கு மாகாண திட்டம்.",
-"news2.date": "2025 அக்டோபர் 14",
+"news2.date": "2025 நவம்பர் 14",
 "news2.title": "தென் மற்றும் தென்கிழக்கு ஆசியாவுக்கான WHO 78வது பிராந்திய மாநாட்டின் இரண்டாவது நாள் இன்று.",
 
 
@@ -592,6 +600,11 @@ viewAll: "அனைத்தையும் பார்க்க",
   prajashakthiTrainingofTrainersNorthWesternProvinceProgram: "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – வடமேற்கு மாகாண திட்டம்",
   northWesternProgramIntro: "வடமேற்கு மாகாண சமூக அதிகாரப்படுத்தல் பயிற்சியாளர்களுக்கான பயிற்சி திட்டம், கிராமப்புற அபிவிருத்தி பணியகம் மற்றும் ஜனாதிபதி செயலாளர் அலுவலகம் இணைந்து ஏற்பாடு செய்தது, நவம்பர் 18 மற்றும் 19 ஆம் தேதிகளில் வாரியபொல வடமேற்கு பயிற்சி மையத்தில் வெற்றிகரமாக நடைபெற்றது.",
   northWesternProgramAlt: "சமூக அதிகாரப்படுத்தல் பயிற்சி திட்டம்",
+
+  //news2 page
+  prajashakthiTrainingofTrainersNorthCentralProvinceProgram:"பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – வடமத்திய மாகாண திட்டம்",
+  northCentralProgramIntro:"கிராமப்புற அபிவிருத்தி பணியகம் மற்றும் ஜனாதிபதி செயலகம் இணைந்து ஏற்பாடு செய்த சமூக வலுவூட்டல் பயிற்சியாளர்களுக்கான வடமத்திய மாகாண பயிற்சி நிகழ்ச்சித்திட்டம் நவம்பர் 10 மற்றும் 11 ஆம் தேதிகளில் தேசிய நன்னீர் மீன்பிடி மற்றும் மீன்வளர்ப்பு பயிற்சி மையத்தில் வெற்றிகரமாக நடைபெற்றது.",
+  northCentralProgramAlt:"வடமத்திய மாகாண பயிற்சி நிகழ்ச்சித்திட்டம்",
 
 
 
