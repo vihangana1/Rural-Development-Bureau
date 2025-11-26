@@ -106,7 +106,7 @@ const Download = () => {
   return (
     <div className="min-h-screen bg-[#FAFAFA] px-6 py-10">
       <Reveal>
-        <h1 className="text-4xl font-bold text-center mb-6 font-serif text-[#F3931D]">{t('documentDownloads')}</h1>
+        <h1 className="text-4xl font-bold text-center mb-6  text-black ">{t('documentDownloads')}</h1>
       </Reveal>
 
       {/* Sections linked to navigation anchors */}

@@ -64,7 +64,7 @@ const News = () => {
         
         {/* Animated Title */}
         <Reveal>
-          <h1 className="text-4xl font-bold text-center mb-6 font-serif text-[#F3931D]">
+          <h1 className="text-4xl font-bold text-center mb-6 text-black">
             {t('newsTitle')}
           </h1>
         </Reveal>

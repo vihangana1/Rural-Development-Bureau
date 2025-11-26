@@ -131,7 +131,7 @@ const AboutUs = () => {
         
         {/* Page Title */}
         <Reveal>
-          <h1 className="text-4xl font-bold text-[#F3931D] text-center mb-6 font-serif">
+          <h1 className="text-4xl font-bold text-black text-center mb-6 ">
             {t('aboutUsTitle')}
           </h1>
         </Reveal>
@@ -139,7 +139,7 @@ const AboutUs = () => {
         {/* Introduction Section */}
         <section id="introduction">
           <Reveal delay={200}>
-            <h2 className="text-2xl font-bold text-[#9A3F3F] mb-2">{t('introduction')}</h2>
+            <h2 className="text-2xl font-bold text-black mb-2">{t('introduction')}</h2>
             <div className="bg-[#FDF1E7] rounded-lg p-6 shadow-sm">
               <p className="text-lg leading-relaxed">
                 {t('introductionText')}
@@ -155,7 +155,7 @@ const AboutUs = () => {
         {/* Overview Section */}
         <section id="overview">
           <Reveal>
-            <h2 className="text-2xl font-bold text-[#9A3F3F] mb-4">{t('overview')}</h2>
+            <h2 className="text-2xl font-bold text-black mb-4">{t('overview')}</h2>
           </Reveal>
           
           <div className="space-y-6">
@@ -184,7 +184,7 @@ const AboutUs = () => {
         {/* Officer Overview Section */}
         <section id="services">
           <Reveal>
-            <h2 className="text-2xl font-bold text-[#9A3F3F] mb-4">{t('officersDetails')}</h2>
+            <h2 className="text-2xl font-bold text-black mb-4">{t('officersDetails')}</h2>
           </Reveal>
           
           <div className="bg-w py-160 px-6 md:px-20">

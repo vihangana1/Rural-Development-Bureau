@@ -49,7 +49,7 @@ const FeaturedNewsSection = () => {
     <section className="bg-[#F9F9F9] py-16 px-6 md:px-20 relative">
       {/* Header */}
       <div className="flex justify-between items-center mb-12">
-        <h2 className="text-3xl font-bold text-[#F3931D] uppercase">
+        <h2 className="text-3xl font-bold text-black uppercase">
           {t("featuredNews.title")}
         </h2>
         <a

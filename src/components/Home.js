@@ -168,7 +168,7 @@ const Home = () => {
       <section className="bg-[#F9F8F6] py-10 px-4 md:px-12">
         <div className="text-center mb-12">
           <Reveal>
-            <h2 className="text-3xl font-bold text-[#F3931D] uppercase mb-4">
+            <h2 className="text-3xl font-bold text-black uppercase mb-4">
               {t('aboutMinistry')}
             </h2>
           </Reveal>
@@ -267,7 +267,7 @@ const Home = () => {
           {/* Left: Text Content */}
           <div className="md:w-1/2 text-left">
             <Reveal>
-              <h2 className="text-3xl font-bold text-[#F3931D] mb-4 uppercase">
+              <h2 className="text-3xl font-bold text-black mb-4 uppercase">
                 {t('projects')}
               </h2>
               <p className="text-sm uppercase text-gray-600 mb-2">
@@ -325,7 +325,7 @@ const Home = () => {
       {/* Download Section */}
       <section className="bg-white py-16 px-6 md:px-20">
         <Reveal>
-          <h2 className="text-3xl font-bold text-[#F3931D] mb-4 text-center uppercase">
+          <h2 className="text-3xl font-bold text-black mb-4 text-center uppercase">
             {t('downloadTitle')}<br></br>
           </h2>
         </Reveal>
@@ -396,7 +396,7 @@ const Home = () => {
       {/* Related Organizations section */}
       <section className="bg-[#EEEEEE] py-16 px-6 md:px-20">
         <Reveal>
-          <h2 className="text-3xl font-bold text-center text-[#F3931D] mb-10 uppercase relative">
+          <h2 className="text-3xl font-bold text-center text-black mb-10 uppercase relative">
             <span className="px-4 bg-white z-10 relative">{t('relatedOrganizations')}</span>
             <div className="absolute left-0 right-0 top-1/2 border-t border-black z-0"></div>
           </h2>

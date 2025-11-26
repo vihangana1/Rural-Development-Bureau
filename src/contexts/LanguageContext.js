@@ -7,7 +7,7 @@ const translations = {
     // Header Navigation
     home: "Home",
     aboutUs: "About Us",
-    services: "Services",
+    services: "Projects",
     product: "Product",
     download: "Download",
     news: "News",

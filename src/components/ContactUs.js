@@ -51,9 +51,10 @@ const ContactUs = () => {
         
         {/* Animated Title */}
         <Reveal>
-          <h1 className="text-4xl font-bold text-center mb-6 font-serif text-[#F3931D]">
+          <h1 className="text-4xl font-bold text-left mb-6  text-black">
             {t('contactUsTitle')}
           </h1>
+          <br></br>
         </Reveal>
 
         {/* Animated Intro Box */}
@@ -113,7 +114,7 @@ const ContactUs = () => {
           {/* Animated Contact Info */}
           <Reveal delay={300} className="h-full">
             <div className="bg-[#FFF8F6] p-20 rounded-lg shadow-md border-l-4 h-full" style={{ borderColor: "#F3931D" }}>
-              <h2 className="text-4xl font-bold mb-8">{t('meetUs')}</h2>
+              <h2 className="text-3xl font-bold mb-8">{t('meetUs')}</h2>
               <div className="space-y-4 text-gray-700">
                 <div>
                   <i className="bi bi-geo-alt-fill text-[#9A3F3F] mr-2 mb 40 "></i>
