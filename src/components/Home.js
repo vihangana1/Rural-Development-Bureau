@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import '../index.css';
 import { useLanguage } from '../contexts/LanguageContext';
 import FeaturedNewsSection from "../components/FeaturedNewsSection";
+import ServicesSection from "../components/ServicesSection";
 
 // Import your images
 import image1 from "../assets/homepage/imageai1.jpeg";
@@ -181,7 +182,7 @@ const Home = () => {
               <h3 className="text-xl font-bold text-[#2C3E50] mb-4 border-b-2 border-yellow-400 pb-2">
                 {t('vision')}
               </h3>
-              <p className="text-gray-700 text-sm leading-relaxed">
+              <p className="text-gray-700 text-xl leading-relaxed">
                 {t('visionText')}
               </p>
             </div>
@@ -192,7 +193,7 @@ const Home = () => {
               <h3 className="text-xl font-bold text-[#2C3E50] mb-4 border-b-2 border-yellow-400 pb-2">
                 {t('mission')}
               </h3>
-              <p className="text-gray-700 text-sm leading-relaxed">
+              <p className="text-gray-700 text-xl leading-relaxed">
                 {t('missionText')}
               </p>
               <a
@@ -234,7 +235,7 @@ const Home = () => {
                   <p className="text-sm font-semibold text-gray-600 uppercase">
                     {officer.title}
                   </p>
-                  <p className="text-base font-bold text-gray-800 text-center">
+                  <p className="text-lg font-bold text-gray-800 text-center">
                     {officer.name}
                   </p>
                 </div>
@@ -261,8 +262,85 @@ const Home = () => {
         </div>
       </section>
 
+      
+
+      {/* Download Section */}
+      <section className="bg-white py-16 px-6 md:px-20">
+        <Reveal>
+          <h2 className="text-3xl font-bold text-black mb-4 text-center uppercase">
+            {t('downloadTitle')}<br></br>
+          </h2>
+        </Reveal>
+        <br></br>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            {
+              title: t('latestCirculars'),
+              files: [
+                { name: 'Prajashakthi Circular-Sinhala', path: '/downloads/circular/Prajashakthi Circular-Sinhala.pdf' },
+                { name: 'Prajashakthi Circular-Tamil', path: '/downloads/circular/Prajashakthi Circular-Tamil.pdf' },
+              ],
+              link: '/Download#Circulars',
+            },
+            {
+              title: t('latestGuidelines'),
+              files: [
+                { name: 'Prajashakthi Guidline - Sinhala', path: '/downloads/guidline/Prajashakthi Guidline - Sinhala.pdf' },
+                { name: 'Prajashakthi Guidline  - Tamil', path: '/downloads/guidline/Prajashakthi Guidline  - Tamil.pdf' },
+              ],
+              link: '/Download#Guidelines',
+            },
+            {
+              title: t('latestFormats'),
+              files: [
+                { name: 'Livelihood Project Proposal Format-English', path: '/downloads/Livelihood Project Proposal Format_En.pdf' },
+                { name: 'Livelihood Project Proposal Format-Sinhala.pdf', path: '/downloads/Livelihood Project Proposal Format_Si.pdf' },
+              ],
+              link: '/Download#Formats',
+            },
+          ].map((item, index) => (
+            <Reveal key={index} delay={index * 200}>
+              <div className="relative bg-gradient-to-br from-white to-yellow-50 border border-yellow-200 p-8 min-h-[250px]  rounded-xl shadow-md group hover:shadow-lg transition">
+                <h3 className="text-lg font-semibold text-gray-800 mb-4 border-b-2 border-yellow-400 pb-2">{item.title}</h3>
+                <ul className="space-y-2 text-gray-700 text-sm">
+                  {item.files.map((file, i) => (
+                    <li key={i}>
+                      <a
+                        href={file.path}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-900 hover:underline text-lg"
+                      >
+                        {file.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href={item.link}
+                  className="absolute bottom-4 right-4 text-yellow-600 font-semibold text-sm opacity-0 group-hover:opacity-100 transition"
+                >
+                  {t('viewAll')} →
+                </a>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <div>
+        {/* Other homepage sections */}
+        <FeaturedNewsSection />
+        {/* More sections */}
+      </div>
+
+      <div>
+        <ServicesSection />
+      </div>
+
       {/* Projects Section */}
-      <section className="bg-[#EEEEEE] py-16 px-6 md:px-20">
+      <section className="bg-[#F9F9F9] py-16 px-6 md:px-20">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
           {/* Left: Text Content */}
           <div className="md:w-1/2 text-left">
@@ -322,76 +400,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Download Section */}
-      <section className="bg-white py-16 px-6 md:px-20">
-        <Reveal>
-          <h2 className="text-3xl font-bold text-black mb-4 text-center uppercase">
-            {t('downloadTitle')}<br></br>
-          </h2>
-        </Reveal>
-        <br></br>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            {
-              title: t('latestCirculars'),
-              files: [
-                { name: 'Prajashakthi Circular-Sinhala', path: '/downloads/circular/Prajashakthi Circular-Sinhala.pdf' },
-                { name: 'Prajashakthi Circular-Tamil', path: '/downloads/circular/Prajashakthi Circular-Tamil.pdf' },
-              ],
-              link: '/Download#Circulars',
-            },
-            {
-              title: t('latestGuidelines'),
-              files: [
-                { name: 'Prajashakthi Guidline - Sinhala', path: '/downloads/guidline/Prajashakthi Guidline - Sinhala.pdf' },
-                { name: 'Prajashakthi Guidline  - Tamil', path: '/downloads/guidline/Prajashakthi Guidline  - Tamil.pdf' },
-              ],
-              link: '/Download#Guidelines',
-            },
-            {
-              title: t('latestFormats'),
-              files: [
-                { name: 'Livelihood Project Proposal Format-English', path: '/downloads/Livelihood Project Proposal Format_En.pdf' },
-                { name: 'Livelihood Project Proposal Format-Sinhala.pdf', path: '/downloads/Livelihood Project Proposal Format_Si.pdf' },
-              ],
-              link: '/Download#Formats',
-            },
-          ].map((item, index) => (
-            <Reveal key={index} delay={index * 200}>
-              <div className="relative bg-gradient-to-br from-white to-yellow-50 border border-yellow-200 p-8 min-h-[250px]  rounded-xl shadow-md group hover:shadow-lg transition">
-                <h3 className="text-lg font-semibold text-gray-800 mb-4 border-b-2 border-yellow-400 pb-2">{item.title}</h3>
-                <ul className="space-y-2 text-gray-700 text-sm">
-                  {item.files.map((file, i) => (
-                    <li key={i}>
-                      <a
-                        href={file.path}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-700 hover:underline"
-                      >
-                        {file.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href={item.link}
-                  className="absolute bottom-4 right-4 text-yellow-600 font-semibold text-sm opacity-0 group-hover:opacity-100 transition"
-                >
-                  {t('viewAll')} →
-                </a>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      <div>
-        {/* Other homepage sections */}
-        <FeaturedNewsSection />
-        {/* More sections */}
-      </div>
 
       {/* Related Organizations section */}
       <section className="bg-[#EEEEEE] py-16 px-6 md:px-20">

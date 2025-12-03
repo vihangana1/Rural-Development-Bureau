@@ -46,7 +46,7 @@ const FeaturedNewsSection = () => {
   const current = newsItems[currentIndex];
 
   return (
-    <section className="bg-[#F9F9F9] py-16 px-6 md:px-20 relative">
+    <section className="bg-[#EEEEEE] py-16 px-6 md:px-20 relative">
       {/* Header */}
       <div className="flex justify-between items-center mb-12">
         <h2 className="text-3xl font-bold text-black uppercase">

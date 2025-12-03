@@ -1,4 +1,3 @@
-
 import React, { useState } from "react"; 
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpeg";
@@ -31,6 +30,20 @@ const Header = ({
         { label: t('officerDetails'), anchor: "#services" },
       ],
     },
+    
+
+    {
+      label: t('download'),
+      path: "/Download",
+      subItems: [
+        { label: t('circulars'), anchor: "#Circulars" },
+        { label: t('guidelines'), anchor: "#Guidelines" },
+        { label: t('formats'), anchor: "#Formats" },
+      ],
+    },
+
+    { label: t('news'), path: "/News" },
+
     {
       label: t('services'),
       path: '',
@@ -96,16 +109,8 @@ const Header = ({
       ],
     },
     //{ label: t('product'), path: "/Product" },
-    {
-      label: t('download'),
-      path: "/Download",
-      subItems: [
-        { label: t('circulars'), anchor: "#Circulars" },
-        { label: t('guidelines'), anchor: "#Guidelines" },
-        { label: t('formats'), anchor: "#Formats" },
-      ],
-    },
-    { label: t('news'), path: "/News" },
+    
+    
     { label: t('contactUs'), path: "/ContactUs" },
   ];
 

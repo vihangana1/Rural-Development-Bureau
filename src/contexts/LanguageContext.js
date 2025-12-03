@@ -197,6 +197,14 @@ const translations = {
     clayRelatedProductItem: "Clay Related Product",
     dairyProductItem: "Dairy Product",
     showMore: "SHOW MORE",
+
+
+    //new service home page
+
+    "ourServices": "Our Services",
+    "services.healthWellbeing": "Your health and wellbeing",
+    "services.hospitalCare": "Hospital-Based Care",
+    "services.publicHealth": "Public Health",
     
     // Footer
     quickLinks: "Quick Links",
@@ -407,6 +415,13 @@ const translations = {
     clayRelatedProductItem: "මැටි ආශ්‍රිත නිෂ්පාදන",
     dairyProductItem: "කිරි නිෂ්පාදන",
     showMore: "වැඩි විස්තර",
+
+
+    //new service home page 
+    "ourServices": "අපගේ සේවා",
+    "services.healthWellbeing": "ඔබගේ සෞඛ්‍යය සහ සුභසාධනය",
+    "services.hospitalCare": "රෝහල් පදනම් සේවා",
+    "services.publicHealth": "පොදු සෞඛ්‍යය",
     
     // Footer
     quickLinks: "ඉක්මන් සබැඳි",
@@ -619,6 +634,15 @@ viewAll: "அனைத்தையும் பார்க்க",
     dairyProductItem: "பால் தயாரிப்பு",
     showMore: "மேலும் காட்டு",
     
+
+    //new service page home
+    "ourServices": "எங்கள் சேவைகள்",
+    "services.healthWellbeing": "உங்கள் ஆரோக்கியம் மற்றும் நலன்",
+    "services.hospitalCare": "மருத்துவமனை அடிப்படையிலான பராமரிப்பு",
+    "services.publicHealth": "பொது சுகாதாரம்",
+
+
+
     // Footer
     quickLinks: "விரைவு இணைப்புகள்",
     importantLinks: "முக்கிய இணைப்புகள்",
