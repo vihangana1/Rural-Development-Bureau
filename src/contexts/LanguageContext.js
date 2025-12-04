@@ -202,7 +202,7 @@ const translations = {
     //new service home page
 
     "ourServices": "Our Services",
-    "services.healthWellbeing": "Your health and wellbeing",
+    "services.AganukolapelessaLake-relatedmultipurposeproject": "Aganukolapelessa Lake-related multipurpose project",
     "services.hospitalCare": "Hospital-Based Care",
     "services.publicHealth": "Public Health",
     
@@ -380,7 +380,7 @@ const translations = {
     // News Page
     newsTitle: "ප්‍රවෘත්ති",
     dehydratedProduct: "විජලීකරණය කළ නිෂ්පාදන",
-    prajashakthiTrainingofTrainersNorthWesternProvinceProgram: "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ වයඹ පළාත් පළාත් වැඩසටහන",
+    prajashakthiTrainingofTrainersNorthWesternProvinceProgram: "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ වයඹ පළාත් වැඩසටහන",
     
 
     "featuredNews.title": "විශේෂ පුවත්",
@@ -389,7 +389,6 @@ const translations = {
     "featuredNews.imageAlt": "පුවත් රූපය",
 
     "news1.date": "2025 නොවැම්බර් 18",
-    "news1.title": "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ වයඹ පළාත් පළාත් වැඩසටහන",
     "news2.date": "2025 නොවැම්බර් 14",
     "news2.title": "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ උතුරු මැද පළාත් වැඩසටහන.",
 
@@ -419,7 +418,7 @@ const translations = {
 
     //new service home page 
     "ourServices": "අපගේ සේවා",
-    "services.healthWellbeing": "ඔබගේ සෞඛ්‍යය සහ සුභසාධනය",
+    "services.AganukolapelessaLake-relatedmultipurposeproject": "අගනුකොලපැලැස්ස වැව ආශ්‍රිත බහුකාර්ය ව්‍යාපෘතිය",
     "services.hospitalCare": "රෝහල් පදනම් සේවා",
     "services.publicHealth": "පොදු සෞඛ්‍යය",
     
@@ -637,7 +636,7 @@ viewAll: "அனைத்தையும் பார்க்க",
 
     //new service page home
     "ourServices": "எங்கள் சேவைகள்",
-    "services.healthWellbeing": "உங்கள் ஆரோக்கியம் மற்றும் நலன்",
+    "services.AganukolapelessaLake-relatedmultipurposeproject": "அகனுகோலபெலெஸ்ஸ ஏரி தொடர்பான பல்நோக்கு திட்டம்",
     "services.hospitalCare": "மருத்துவமனை அடிப்படையிலான பராமரிப்பு",
     "services.publicHealth": "பொது சுகாதாரம்",
 

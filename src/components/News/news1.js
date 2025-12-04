@@ -7,7 +7,7 @@ const News1 = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-12 text-gray-800">
-      <h1 className="text-4xl font-bold mb-6 text-[#F3931D] text-center uppercase">
+      <h1 className="text-3xl font-bold mb-6 text-black text-center uppercase">
         {t("prajashakthiTrainingofTrainersNorthWesternProvinceProgram")}
       </h1>
 

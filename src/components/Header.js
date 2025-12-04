@@ -46,7 +46,6 @@ const Header = ({
 
     {
       label: t('services'),
-      path: '',
       mainCategories: [
         {
           label: t('agriculture'),
