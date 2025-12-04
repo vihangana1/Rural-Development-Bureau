@@ -22,20 +22,20 @@ const bulathProjects = [
       "Under the Rural Development Programme- 2025, the total allocation of Rs 4,182,000.00 has been released for implementation of Betel Cultivation for Commercial Purpose in Ridee Ela under the Dehiattakandiya Divisional Secretary Division in Ampara District. There are 40 beneficiaries benefiting to raise their economic level through this project."
   },
 
-  {
-    id: 2,
-    name: "Pussella & Rangwala Betel Cluster",
-    district: "Kegalle",
-    office: "Kegalle",
-    product: "Betel Leaf",
-    location: "51 A Pussella, 51 A Rangwala",
-    images: [image1, image2], // 2 images only
-    mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.314248420939!2d81.0371839!3d7.671939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4b33d4694cd31%3A0xc42f5c92598e53a1!2sDehiattakandiya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-    // buyPath: "/buy/pussella-betel",
-    description:
-      "This cluster focuses on enhancing the quality and marketability of betel leaves through modern agricultural techniques.",
-  },
+  // {
+  //   id: 2,
+  //   name: "Pussella & Rangwala Betel Cluster",
+  //   district: "Kegalle",
+  //   office: "Kegalle",
+  //   product: "Betel Leaf",
+  //   location: "51 A Pussella, 51 A Rangwala",
+  //   images: [image1, image2], // 2 images only
+  //   mapEmbed:
+  //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.314248420939!2d81.0371839!3d7.671939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4b33d4694cd31%3A0xc42f5c92598e53a1!2sDehiattakandiya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+  //   // buyPath: "/buy/pussella-betel",
+  //   description:
+  //     "This cluster focuses on enhancing the quality and marketability of betel leaves through modern agricultural techniques.",
+  // },
 ];
 
 const BulathPage = () => {

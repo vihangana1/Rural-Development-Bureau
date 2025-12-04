@@ -3,9 +3,9 @@ import { useLocation } from "react-router-dom";
 import { useLanguage } from '../contexts/LanguageContext';
 
 // Import officer images
-import nimalImage from "../assets/officers/image 2.jpeg";
+//import nimalImage from "../assets/officers/image 2.jpeg";
 //import tharushiImage from "../assets/officers/image 2.jpeg";
-import ruwanImage from "../assets/officers/image 2.jpeg";
+//import ruwanImage from "../assets/officers/image 2.jpeg";
 import wickramageImage from "../assets/officers/W.P.S.Wickramage.jpeg";
 import wijayakoonImage from "../assets/officers/W.M.U.M.Wijayakoon.jpeg";
 import WickramanayakaImage from "../assets/officers/N.C.Wickramanayaka.jpeg";
@@ -59,19 +59,19 @@ const AboutUs = () => {
 
   const officers = [
     {
-      name: "S.K.W. Sisira Kumara",
+      name: "S.",
       designation: t('directorGeneral'),
       office: " Office-011 2877122",
       phone: "Mobile-N/A",
       email: "nimal.perera@ministry.gov.lk",
-      image: nimalImage,
+      //image: nimalImage,
     },
     {
       name: "W.P.S. Wickramge",
       designation: t('director'),
-      office: "Office-011 288714",
-      phone: "Mobile-071 8765432",
-      email: "tharushi.silva@ministry.gov.lk",
+      office: "-",
+      phone: "Mobile-071-8025137",
+      email: "suranga.wick75@gmail.com",
       image: wickramageImage,
     },
     {
@@ -79,39 +79,74 @@ const AboutUs = () => {
       designation: t('director'),
       office: "Office-N/A",
       phone: "Mobile-0714434091",
-      email: "ruwan.jayasena@ministry.gov.lk",
+      email: "uthlk@yahoo.com",
       image: wijayakoonImage,
     },
     {
       name: "N.C. Wickramanayaka",
       designation: t('director'),
-      office: "Office-112186018",
-      phone: "Mobile-094 718318437",
-      email: "ruwan.jayasena@ministry.gov.lk",
+      office: "Office-N/A",
+      phone: "Mobile-0718318434",
+      email: "nilanthawickramanayake@gmail.com",
       image: WickramanayakaImage,
+    },
+    {
+      name: "Champika D Rathnayake",
+      designation: t('director'),
+      office: "Office- N/A",
+      phone: "Mobile-0766580912",
+      email: "-",
+      //image: WickramanayakaImage,
+    },
+    {
+      name: "R.H.C.K.Ramasinghe",
+      designation: t('deputyDirector'),
+      office: "Office-N/A",
+      phone: "Mobile-0702599805",
+      email: "vijewardhana87@gmail.com",
+      //image: RathnayakeImage,
     },
     {
       name: "V.C. Wijewardana",
       designation: t('deputyDirector'),
-      office: "Office-112887478",
+      office: "Office-N/A",
       phone: "Mobile-0702599805",
       email: "ruwan.jayasena@ministry.gov.lk",
       image: VijewardanaImage,
+    },
+    
+    {
+      name: "J.A.W.N.Jayasooriya",
+      designation: t('deputyDirector'),
+      office: "Office-N/A",
+      phone: "Mobile-0713227593",
+      email: "wjayasooriya@gmail.com",
+      //image: wijayakoonImage,
+    },
+    
+    
+    {
+      name: "K.Yohanadan",
+      designation: t('assistantDirector'),
+      office: "Office-N/A",
+      phone: "Mobile-0777284657",
+      email: "yohanadhan1967@gmail.com",
+      //image: VijewardanaImage,
     },
     {
       name: "S.G.A.K. Subawickrama",
       designation: t('assistantDirector'),
       office: "Office-N/A",
-      phone: "Mobile-0741520766",
-      email: "ruwan.jayasena@ministry.gov.lk",
-      image: ruwanImage,
+      phone: "Mobile-071-2921285",
+      email: "ayeshasubhawickrama92@gmail.com",
+      //image: ruwanImage,
     },
     {
       name: "R.M.C.S. Rathnayaka",
       designation: t('assistantDirector'),
-      office: "Office-112887831",
+      office: "Office-N/A",
       phone: "Mobile-0703065277",
-      email: "ruwan.jayasena@ministry.gov.lk",
+      email: "rmcsrathnayake00@gmail.com",
       image: RathnayakeImage,
     },
   ];

@@ -17,61 +17,61 @@ const mushroomProjects = [
     description:
       "This zone supports orchid and anthurium growers with export certification, packaging, and air freight logistics. It connects rural producers to global markets.",  },
   
-  {
-    id: 2,
-    district: "Mathale",
-    office: "Ukuwela",
-    product: "Mushroom production",
-    location: "Owilla Thenna, Thibbatuwawa",
-    images: [image1],
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.994684342757!2d80.5980205!3d8.022494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afcbd63a2611585%3A0x1c2c7866914ae80d!2sThibbatuwewa!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-    // buyPath: "/buy/dambulla-flowers",
-    description:
-      "This zone supports orchid and anthurium growers with export certification, packaging, and air freight logistics. It connects rural producers to global markets.",  },
-  {
-    id: 3,
-    district: "Kegalle",
-    office: "Aranayake",
-    product: "Mushroom",
-    location: "45C Pahinibeddara, Gavilipitiya Village",
-    images: [image1],
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.314248420939!2d80.2473567!3d7.2250915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae31a1102026723%3A0x233870b85415a271!2sNelundeniya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-    // buyPath: "/buy/dambulla-flowers",
-    description:
-      "This zone supports orchid and anthurium growers with export certification, packaging, and air freight logistics. It connects rural producers to global markets.",  },
-  {
-    id: 4,
-    district: "Monaragala",
-    office: "Wellawaya",
-    product: "Mushroom",
-    location: "Kotikambokka",
-    images: [image1],
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.314248420939!2d80.2473567!3d7.2250915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae31a1102026723%3A0x233870b85415a271!2sNelundeniya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-    // buyPath: "/buy/dambulla-flowers",
-    description:
-      "This zone supports orchid and anthurium growers with export certification, packaging, and air freight logistics. It connects rural producers to global markets.",  },
-  {
-    id: 5,
-    district: "Badulla",
-    office: "Ella",
-    product: "Mushroom",
-    location: "Millagama, Idamegama, Udu Kumbalwela",
-    images: [image1],
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.314248420939!2d81.0274744!3d6.8815647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4645572a706ab%3A0x4aa4f518f484c194!2sKumbalwela!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-    // buyPath: "/buy/dambulla-flowers",
-    description:
-      "This zone supports orchid and anthurium growers with export certification, packaging, and air freight logistics. It connects rural producers to global markets.",  },
-  {
-    id: 6,
-    district: "Polonnaruwa",
-    office: "Madirigiriya",
-    product: "Mushroom",
-    location: "124 Veheragala",
-    images: [image1],
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.314248420939!2d80.9516002!3d8.143382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afb65eaeea2c9ad%3A0xc1b1d51f3a30a57c!2sMedirigiriya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-    // buyPath: "/buy/dambulla-flowers",
-    description:
-      "This zone supports orchid and anthurium growers with export certification, packaging, and air freight logistics. It connects rural producers to global markets.",  },
+  // {
+  //   id: 2,
+  //   district: "Mathale",
+  //   office: "Ukuwela",
+  //   product: "Mushroom production",
+  //   location: "Owilla Thenna, Thibbatuwawa",
+  //   images: [image1],
+  //   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.994684342757!2d80.5980205!3d8.022494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afcbd63a2611585%3A0x1c2c7866914ae80d!2sThibbatuwewa!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+  //   // buyPath: "/buy/dambulla-flowers",
+  //   description:
+  //     "This zone supports orchid and anthurium growers with export certification, packaging, and air freight logistics. It connects rural producers to global markets.",  },
+  // {
+  //   id: 3,
+  //   district: "Kegalle",
+  //   office: "Aranayake",
+  //   product: "Mushroom",
+  //   location: "45C Pahinibeddara, Gavilipitiya Village",
+  //   images: [image1],
+  //   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.314248420939!2d80.2473567!3d7.2250915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae31a1102026723%3A0x233870b85415a271!2sNelundeniya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+  //   // buyPath: "/buy/dambulla-flowers",
+  //   description:
+  //     "This zone supports orchid and anthurium growers with export certification, packaging, and air freight logistics. It connects rural producers to global markets.",  },
+  // {
+  //   id: 4,
+  //   district: "Monaragala",
+  //   office: "Wellawaya",
+  //   product: "Mushroom",
+  //   location: "Kotikambokka",
+  //   images: [image1],
+  //   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.314248420939!2d80.2473567!3d7.2250915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae31a1102026723%3A0x233870b85415a271!2sNelundeniya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+  //   // buyPath: "/buy/dambulla-flowers",
+  //   description:
+  //     "This zone supports orchid and anthurium growers with export certification, packaging, and air freight logistics. It connects rural producers to global markets.",  },
+  // {
+  //   id: 5,
+  //   district: "Badulla",
+  //   office: "Ella",
+  //   product: "Mushroom",
+  //   location: "Millagama, Idamegama, Udu Kumbalwela",
+  //   images: [image1],
+  //   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.314248420939!2d81.0274744!3d6.8815647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4645572a706ab%3A0x4aa4f518f484c194!2sKumbalwela!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+  //   // buyPath: "/buy/dambulla-flowers",
+  //   description:
+  //     "This zone supports orchid and anthurium growers with export certification, packaging, and air freight logistics. It connects rural producers to global markets.",  },
+  // {
+  //   id: 6,
+  //   district: "Polonnaruwa",
+  //   office: "Madirigiriya",
+  //   product: "Mushroom",
+  //   location: "124 Veheragala",
+  //   images: [image1],
+  //   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.314248420939!2d80.9516002!3d8.143382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afb65eaeea2c9ad%3A0xc1b1d51f3a30a57c!2sMedirigiriya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+  //   // buyPath: "/buy/dambulla-flowers",
+  //   description:
+  //     "This zone supports orchid and anthurium growers with export certification, packaging, and air freight logistics. It connects rural producers to global markets.",  },
 ];
 
 const MushroomPage = () => {

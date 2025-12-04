@@ -20,40 +20,40 @@ const coconutProjects = [
     description:
       "Under the Rural Development Programme- 2025, the Coconut Husk Based Product Project (Coconut Husk Peat) has been approved for allocation of Rs  5,421,225.00 to implement in Gemunupura Grama Niladhari Division of Uhana Divisional Secretariat Division in Ampara District. Further, this project is aimed to generate employment opportunities for local people especially youth and women and expected to contribute to local economic development in Ampara District. ",  
     },
-  {
-    id: 2,
-    name: "Coconut Husk Based Product",
-    district: "Kurunegala",
-    office: "Udubaddawa",
-    product: "Coconut Husk",
-    location: "Udadeniya",
-    images: [image1, image2, image3],
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.314248420939!2d79.9186883!3d7.4545244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2dad7bd94d815%3A0x71357788d19f6a4c!2sUdadeniya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-    // buyPath: "/buy/ambalangoda-coconut",
-    description:
-      "This coastal zone supports coconut shell artisans creating handmade mats and decorative items. It preserves traditional techniques and boosts tourism-linked sales.",  },
-  {
-    id: 3,
-    district: "Kurunegala",
-    office: "Kobeigane",
-    product: "Coconut Husk",
-    location: "Pubbiliya",
-    images: [image1, image2, image3],
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.314248420939!2d80.4792061!3d7.3862375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae340f13e3d8e8b%3A0x99445d5048a81adc!2sPubbiliya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-    // buyPath: "/buy/ambalangoda-coconut",
-    description:
-      "This coastal zone supports coconut shell artisans creating handmade mats and decorative items. It preserves traditional techniques and boosts tourism-linked sales.",  },
-  {
-    id: 4,
-    district: "Jaffna",
-    office: "Valikamam East (Kopai)",
-    product: "Coconut Oil",
-    location: "Puttur East J/278",
-    images: [image1, image2, image3],
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.314248420939!2d80.0981408!3d9.7317703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afeff95b8d76edd%3A0xca1fa8d34fc715b5!2sPuttur%20East!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-    // buyPath: "/buy/ambalangoda-coconut",
-    description:
-      "This coastal zone supports coconut shell artisans creating handmade mats and decorative items. It preserves traditional techniques and boosts tourism-linked sales.",  },
+  // {
+  //   id: 2,
+  //   name: "Coconut Husk Based Product",
+  //   district: "Kurunegala",
+  //   office: "Udubaddawa",
+  //   product: "Coconut Husk",
+  //   location: "Udadeniya",
+  //   images: [image1, image2, image3],
+  //   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.314248420939!2d79.9186883!3d7.4545244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2dad7bd94d815%3A0x71357788d19f6a4c!2sUdadeniya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+  //   // buyPath: "/buy/ambalangoda-coconut",
+  //   description:
+  //     "This coastal zone supports coconut shell artisans creating handmade mats and decorative items. It preserves traditional techniques and boosts tourism-linked sales.",  },
+  // {
+  //   id: 3,
+  //   district: "Kurunegala",
+  //   office: "Kobeigane",
+  //   product: "Coconut Husk",
+  //   location: "Pubbiliya",
+  //   images: [image1, image2, image3],
+  //   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.314248420939!2d80.4792061!3d7.3862375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae340f13e3d8e8b%3A0x99445d5048a81adc!2sPubbiliya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+  //   // buyPath: "/buy/ambalangoda-coconut",
+  //   description:
+  //     "This coastal zone supports coconut shell artisans creating handmade mats and decorative items. It preserves traditional techniques and boosts tourism-linked sales.",  },
+  // {
+  //   id: 4,
+  //   district: "Jaffna",
+  //   office: "Valikamam East (Kopai)",
+  //   product: "Coconut Oil",
+  //   location: "Puttur East J/278",
+  //   images: [image1, image2, image3],
+  //   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.314248420939!2d80.0981408!3d9.7317703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afeff95b8d76edd%3A0xca1fa8d34fc715b5!2sPuttur%20East!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+  //   // buyPath: "/buy/ambalangoda-coconut",
+  //   description:
+  //     "This coastal zone supports coconut shell artisans creating handmade mats and decorative items. It preserves traditional techniques and boosts tourism-linked sales.",  },
   
   
 ];

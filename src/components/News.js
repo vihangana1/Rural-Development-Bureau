@@ -51,7 +51,7 @@ const News = () => {
 
   const newsItems = [
     { title: t('prajashakthiTrainingofTrainersNorthWesternProvinceProgram'), image: News1, link: "/news/news1" },
-    { title: t('prajashakthiTrainingofTrainersNorthCentralProvinceProgram'), image: News2, link: "/news/news2" },
+    { title: t('prajashakthiTrainingofTrainersNorthWesternProvinceProgram'), image: News2, link: "/news/news2" },
     { title: t('dehydratedProduct'), image: placeholderImage, link: "/news/news3" },
     { title: t('dehydratedProduct'), image: placeholderImage, link: "/news/news4" },
     { title: t('dehydratedProduct'), image: placeholderImage, link: "/news/news5" },

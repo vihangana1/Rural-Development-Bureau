@@ -13,7 +13,7 @@ const ServicesSection = () => {
   const { t } = useLanguage();
 
   const services = [
-    { title: t("services.healthWellbeing"), image: serviceImg1 },
+    { title: t("services.AganukolapelessaLake-relatedmultipurposeproject"), image: serviceImg1 },
     { title: t("services.hospitalCare"), image: serviceImg2 },
     { title: t("services.publicHealth"), image: serviceImg3 },
     { title: t("services.extraService"), image: serviceImg4 }, // example new photo

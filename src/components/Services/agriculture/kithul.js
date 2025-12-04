@@ -14,7 +14,7 @@ const kithulProjects = [
   
   {//checked
     name: "Matugama Kithul Development Project",
-    id: 2,
+    id: 1,
     district: "Kalutara",
     office: "Mathugama",
     product: "Kithul Hakuru, honey, Kithul flour",
@@ -25,18 +25,18 @@ const kithulProjects = [
     description:
 "Photographs of the training program held on 22.07.2025 under the project expected to be implemented for the improvement of kithul production in the Grama Niladhari divisions 795B Sadasirigama, 794 Horawala, and 793D Madawala of the Matugama Divisional Secretariat Division, Kalutara District. (Allocation - 1,240,250.00)"   },
 
-  {
-    id: 1,
-    district: "Nuwara Eliya",
-    office: "Kotmale West",
-    product: "KKithul-related value-added products",
-    location: "Madakubura 468",
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.314248420939!2d80.1460593!3d7.0465585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3010ecda58481%3A0x64cf85d5a0ef8ea!2sMadakubura%20Road!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-    buyPath: "/buy/dambulla-flowers",
-    images: [image1, image2, image3, image4], // Only 3 images
-    description:
-      "This zone supports orchid and anthurium growers with export certification, packaging, and air freight logistics. It connects rural producers to global markets.", 
-  },  
+  // {
+  //   id: 2,
+  //   district: "Nuwara Eliya",
+  //   office: "Kotmale West",
+  //   product: "KKithul-related value-added products",
+  //   location: "Madakubura 468",
+  //   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.314248420939!2d80.1460593!3d7.0465585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3010ecda58481%3A0x64cf85d5a0ef8ea!2sMadakubura%20Road!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+  //   buyPath: "/buy/dambulla-flowers",
+  //   images: [image1, image2, image3, image4], // Only 3 images
+  //   description:
+  //     "This zone supports orchid and anthurium growers with export certification, packaging, and air freight logistics. It connects rural producers to global markets.", 
+  // },  
 
   
 ];

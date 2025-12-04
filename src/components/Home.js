@@ -129,7 +129,7 @@ const Home = () => {
 
   return (
     <div className="w-screen overflow-hidden">
-      {/* Carousel Section */}
+      {/* Carousel Sectionn */}
       <main className="w-full h-[350px] relative flex flex-col justify-center items-center">
         
         {/* Background Images */}
