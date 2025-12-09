@@ -7,16 +7,16 @@ const serviceImg1 = require("../assets/homepage/services/service1.jpeg");
 const serviceImg2 = require("../assets/homepage/services/service2.jpeg");
 const serviceImg3 = require("../assets/homepage/services/service3.jpeg");
 // Add more photos here as needed
-const serviceImg4 = require("../assets/homepage/services/service3.jpeg");
+//const serviceImg4 = require("../assets/homepage/services/service3.jpeg");
 
 const ServicesSection = () => {
   const { t } = useLanguage();
 
   const services = [
     { title: t("services.AganukolapelessaLake-relatedmultipurposeproject"), image: serviceImg1 },
-    { title: t("services.hospitalCare"), image: serviceImg2 },
-    { title: t("services.publicHealth"), image: serviceImg3 },
-    { title: t("services.extraService"), image: serviceImg4 }, // example new photo
+    { title: t("services.Dikwella-ropeGrindingProject"), image: serviceImg2 },
+    { title: t("services.VavuniyaDistrictSmall-scaleGarmentManufacturingProject"), image: serviceImg3 },
+   // { title: t("services.extraService"), image: serviceImg4 }, // example new photo
   ];
 
   return (

@@ -91,6 +91,9 @@ const Download = () => {
       { name: `${t('Reorganization-of-DCC Circular - Tamil')} `, file: "/downloads/circular/Reorganization-of-DCC Circular - Tamil.pdf" },
       { name: `${t('Gramashakthi-SDB-SPV-GS-2022-Circular-01')} `, file: "/downloads/circular/Gramashakthi-SDB-SPV-GS-2022-Circular-01.pdf" },
       { name: `${t('සෞභාග්යා-නිෂ්පාදන-ගම්මාන-පිළිබඳ-චක්ර-ලේඛය-SMS-SDB-2022-Circular')} `, file: "/downloads/circular/සෞභාග්යා-නිෂ්පාදන-ගම්මාන-පිළිබඳ-චක්ර-ලේඛය-SMS-SDB-2022-Circular.pdf" },
+      { name: `${t('Budget Circular')} `, file: "/downloads/circular/Budget Circular No 08_2025 S.pdf" },
+
+
     ],
     guidelines: [
       { name: `${t('Prajashakthi Guidline - Sinhala')} `, file: "/downloads/guidline/Prajashakthi Guidline - Sinhala.pdf" },

@@ -197,7 +197,7 @@ const AboutUs = () => {
             <Reveal delay={200}>
               <div className="bg-[#FDF1E7] rounded-lg p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-orange-600 mb-2">{t('vision')}</h3>
-                <p className="text-base leading-relaxed">
+                <p className="text-base  text-xl leading-relaxed">
                   {t('visionText')}
                 </p>
               </div>
@@ -206,7 +206,7 @@ const AboutUs = () => {
             <Reveal delay={400}>
               <div className="bg-[#FDF1E7] rounded-lg p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-orange-600 mb-2">{t('mission')}</h3>
-                <p className="text-base leading-relaxed">
+                <p className="text-base  text-xl  leading-relaxed">
                   {t('missionText')}
                 </p>
               </div>

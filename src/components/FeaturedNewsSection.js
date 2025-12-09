@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLanguage } from "../contexts/LanguageContext"; // ✅ make sure this path is correct
 import news1Image1 from "../assets/news/news1.jpeg";
 import News2Image from "../assets/news/news2.jpeg";
+import News3Image from "../assets/news/news3.jpeg";
 
 const FeaturedNewsSection = () => {
   const { t } = useLanguage(); // ✅ access translation function
@@ -19,6 +20,13 @@ const FeaturedNewsSection = () => {
      // image: null,
      image:News2Image,
       link: "/news/news2",
+    },
+    {
+      date: t("news3.date"),
+      title: t("news3.title"),
+     // image: null,
+     image:News3Image,
+      link: "/news/news3 ",
     },
   ];
 
@@ -46,22 +54,25 @@ const FeaturedNewsSection = () => {
   const current = newsItems[currentIndex];
 
   return (
-    <section className="bg-[#EEEEEE] py-16 px-6 md:px-20 relative">
-      {/* Header */}
-      <div className="flex justify-between items-center mb-12">
-        <h2 className="text-3xl font-bold text-black uppercase">
-          {t("featuredNews.title")}
-        </h2>
-        <a
-          href="/news"
-          className="text-yellow-600 font-semibold text-sm hover:underline"
-        >
-          {t("featuredNews.readMoreNews")}
-        </a>
-      </div>
+    <section className="bg-[#EEEEEE] py-16 px-6 md:px-20">
+  {/* Header */}
+  <div className="flex justify-between items-center mb-12">
+    <h2 className="text-3xl font-bold text-black uppercase">
+      {t("featuredNews.title")}
+    </h2>
+    <a
+      href="/news"
+      className="text-yellow-600 font-semibold text-sm hover:underline"
+    >
+      {t("featuredNews.readMoreNews")}
+    </a>
+  </div>
 
-      {/* News Card */}
-      <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-3xl mx-auto">
+  {/* Split Layout */}
+  <div className="flex flex-col lg:flex-row gap-6">
+    {/* Left: News Carousel */}
+    <div className="w-full lg:w-[70%] min-w-0 relative">
+      <div className="bg-white rounded-lg shadow-md overflow-hidden">
         {current.image && (
           <img
             src={current.image}
@@ -92,7 +103,7 @@ const FeaturedNewsSection = () => {
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white border border-gray-300 rounded-full p-2 shadow hover:bg-yellow-100"
+        className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-white border border-gray-300 rounded-full p-2 shadow hover:bg-yellow-100"
       >
         →
       </button>
@@ -104,14 +115,31 @@ const FeaturedNewsSection = () => {
             key={index}
             onClick={() => goToSlide(index)}
             className={`h-3 w-3 rounded-full ${
-              index === currentIndex
-                ? "bg-[#F3931D]"
-                : "bg-gray-300"
+              index === currentIndex ? "bg-[#F3931D]" : "bg-gray-300"
             }`}
           ></button>
         ))}
       </div>
-    </section>
+    </div>
+
+    {/* Right: Facebook Embed */}
+    <div className="w-full lg:w-1/3 h-[500px] overflow-y-scroll rounded-lg shadow-md bg-white p-4">
+      <iframe
+        title="Facebook Page"
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61576861798674&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true
+"
+        width="100%"
+        height="500"
+        style={{ border: "none", overflow: "hidden" }}
+        scrolling="yes"
+        frameBorder="0"
+        allowFullScreen={true}
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
   );
 };
 

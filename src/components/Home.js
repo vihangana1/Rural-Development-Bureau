@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom"; 
 import '../index.css';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -10,10 +11,12 @@ import image1 from "../assets/homepage/imageai1.jpeg";
 import image2 from "../assets/homepage/imageai2.jpeg";
 import image3 from "../assets/homepage/imageai3.jpeg";
 import image4 from "../assets/homepage/imageai4.jpeg";
-import image5 from "../assets/homepage/imageai5.jpeg";
+//import image5 from "../assets/homepage/imageai5.jpeg";
 import image6 from "../assets/homepage/imageai6.jpeg";
+import image7 from "../assets/homepage/imageai7.jpeg";
+import image8 from "../assets/homepage/imageai8.jpeg";
 
-const images = [image1, image2, image3, image4, image5, image6];
+const images = [image1, image2, image3, image4, image6, image7, image8];
 
 // --- 1. FIXED Reveal Component ---
 const Reveal = ({ children, delay = 0, className = "" }) => {
@@ -59,6 +62,12 @@ const Reveal = ({ children, delay = 0, className = "" }) => {
       {children}
     </div>
   );
+};
+
+// Define animation variants for motion.div
+const boxVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
 const Home = () => {
@@ -130,10 +139,10 @@ const Home = () => {
   return (
     <div className="w-screen overflow-hidden">
       {/* Carousel Sectionn */}
-      <main className="w-full h-[350px] relative flex flex-col justify-center items-center">
+      <main className="w-full h-[390px] relative flex flex-col justify-center items-center">
         
         {/* Background Images */}
-        <div className="absolute top-5 left-0 w-full h-[100%] z-0 overflow-hidden">
+        <div className="absolute top-5 left-0 w-full h-[110%] z-0 overflow-hidden">
         {images.map((img, index) => (
             <img
               key={index}
@@ -163,10 +172,13 @@ const Home = () => {
             </Link>
           ))}
         </div>
+      
       </main>
-   
+      <br></br>
+
+      <br></br>   
       {/* About Section */}
-      <section className="bg-[#F9F8F6] py-10 px-4 md:px-12">
+      <section className="bg-[#F9F8F6] py-10 px-4 md:px-12 gap-20">
         <div className="text-center mb-12">
           <Reveal>
             <h2 className="text-3xl font-bold text-black uppercase mb-4">
@@ -278,6 +290,7 @@ const Home = () => {
             {
               title: t('latestCirculars'),
               files: [
+                { name: 'Budget Circular 2025-Sinhala', path: '/downloads/circular/Budget Circular No 08_2025 S.pdf' },
                 { name: 'Prajashakthi Circular-Sinhala', path: '/downloads/circular/Prajashakthi Circular-Sinhala.pdf' },
                 { name: 'Prajashakthi Circular-Tamil', path: '/downloads/circular/Prajashakthi Circular-Tamil.pdf' },
               ],
@@ -399,6 +412,81 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+     {/* RTI Section */}
+
+     <section className="bg-white py-16 px-6 md:px-20">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-2xl sm:text-3xl font-bold text-[#2C3E50] mb-10 text-center uppercase tracking-wide">
+          {t("rti.title")}
+        </h2>
+
+        {/* Officers Grid */}
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Designated Officer */}
+          <motion.div
+            className="bg-[#FAC67A] rounded-lg shadow-md p-1"
+            variants={boxVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <div className="bg-[#F9F8F6] border border-gray-200 rounded-lg px-6 py-5 shadow-sm hover:shadow-md hover:border-[#9A3F3F] transition-all duration-300">
+            <h3 className="text-lg font-semibold text-[#9A3F3F] mb-2">
+              {t("rti.designatedOfficer")}
+            </h3>
+            <p className="text-gray-800 font-medium">{t("rti.secretaryTitle")}</p>
+            <p className="text-sm text-gray-600 mt-2">
+              {t("rti.addressLine1")}<br />
+              {t("rti.addressLine2")}
+            </p>
+            <p className="text-sm text-gray-600 mt-2">
+              {t("rti.phone")} +94 112877122 | +94 112887831
+            </p>
+            <p className="text-sm text-gray-600 mt-2">
+              {t("rti.email")}{" "}
+              <a href="mailto:secretary@mode.gov.lk" className="text-blue-700 hover:underline">
+                sisiku75@gmail.com
+              </a>
+            </p>
+            </div>
+          </motion.div>
+
+          {/* Information Officer */}
+          <motion.div
+            className="bg-[#FAC67A] rounded-lg shadow-md p-1"
+            variants={boxVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            {/* Information Officer */}
+            <div className="bg-[#F9F8F6] border border-gray-200 rounded-lg px-6 py-5 shadow-sm hover:shadow-md hover:border-[#9A3F3F] transition-all duration-300">        <h3 className="text-lg font-semibold text-[#9A3F3F] mb-2">
+              {t("rti.informationOfficer")}
+            </h3>
+            <p className="text-gray-800 font-medium">{t("rti.officerName")}</p>
+        <p className="text-sm text-gray-600 mt-2">
+              {t("rti.addressLine1")}<br />
+              {t("rti.addressLine2")}
+            </p>
+            <p className="text-sm text-gray-600 mt-2">
+              {t("rti.phone")} +94 1128887831 | +94 112887831
+            </p>
+            <p className="text-sm text-gray-600 mt-2">
+              {t("rti.email")}{" "}
+              <a href="mailto:as_admin@mode.gov.lk" className="text-blue-700 hover:underline break-all">
+                dir.rdb.mrsc@sltnet.lk
+              </a>
+            </p>
+      </div>
+          </motion.div>
+
+        </div>
+      </div>
+    </section>
+
+
 
 
 

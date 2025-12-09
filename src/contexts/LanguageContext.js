@@ -178,6 +178,8 @@ const translations = {
     "news1.title": "Praja Shakthi Training of Trainers - North Western Province Program.",
     "news2.date": "10th Nov 2025",
     "news2.title": "Praja Shakthi Training of Trainers - North Center Province Program.",
+    "news3.date": "28th Oct 2025",
+    "news3.title": "Praja Shakthi Training of Trainers - Eastern Province Program.",
 
 
     //news1 page 
@@ -187,6 +189,10 @@ const translations = {
     //news2 page
     northCentralProgramIntro: "The North Central Province Program for Training of Community Empowerment Trainers, jointly organized by the Rural Development Bureau and the Presidential Secretariat, was successfully held on November 10th and 11th at the National Freshwater Fisheries and Aquaculture Training Center.",
     northCentralProgramAlt: "Community Empowerment Training Program",
+
+    //news3 page
+    prajashakthiTrainingofTrainersEasternProvinceProgram: "Praja Shakthi Training of Trainers - Eastern Province Program.",
+    easternProgramIntro: "The Eastern Provincial Program for Training Community Empowerment Trainers, jointly organized by the Rural Development Bureau and the Presidential Secretariat, was successfully held on October 28th and 29th at the Kalmunai Vocational Training Center.",
 
     // Products Page
     productsTitle: "Products",
@@ -203,16 +209,33 @@ const translations = {
 
     "ourServices": "Our Services",
     "services.AganukolapelessaLake-relatedmultipurposeproject": "Aganukolapelessa Lake-related multipurpose project",
-    "services.hospitalCare": "Hospital-Based Care",
-    "services.publicHealth": "Public Health",
+    "services.Dikwella-ropeGrindingProject": "Providing rope grinding machines to beneficiaries in the Pathagama South Division, Dikwella, Matara on 20.11.2025 to promote the traditional coir industry.",
+    "services.VavuniyaDistrictSmall-scaleGarmentManufacturingProject": "Completion and handover of the small-scale garment manufacturing project implemented in the Asikulam Grama Niladhari Division of the Vavuniya Divisional Secretariat Division of the Vavuniya District - 2025.10.30",
     
+
+//RTI section
+    "rti.title": "Right to Information Officers",
+    "rti.designatedOfficer": "Designated Officer",
+    "rti.secretaryTitle": "Director Genaral - S.K.B.Sisira kumara",
+    "rti.addressLine1": "Rural Development Bureau,",
+    "rti.addressLine2": "9th Floor, Sethsiripaya Stage II,",
+    "rti.phone": "Tel:",
+    "rti.email": "Email:",
+    "rti.informationOfficer": "Information Officer",
+    //"rti.assistantTitle": "Director - Champika D. darmasena",
+    "rti.officerName": "Director - Champika D. darmasena",
+
+
+
+
+
     // Footer
     quickLinks: "Quick Links",
     importantLinks: "Important Links",
     contactInfo: "Contact Information",
     address: "Address",
     addressText: "9th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka",
-    phone: "Phone",
+   // phone: "Phone",
     followUs: "Follow Us",
     allRightsReserved: "All Rights Reserved",
     developedBy: "Developed by",
@@ -405,6 +428,9 @@ const translations = {
     "northCentralProgramIntro": "ග්‍රාමීය සංවර්ධන කාර්යංශය සහ ජනාධිපති ලේකම් කාර්යාලය එක්ව සංවිධානය කරනු ලැබූ ප්‍රජාශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ උතුරු මැද පළාත් වැඩසටහන නොවැම්බර් මස 10, 11 දෙදින තුළ ජාතික මිරිදිය දීවර සහ ජලජීවී වගා පුහුනු මධ්‍යස්ථානයේ දී සාර්ථකව පවත්වන ලදි.",
     //"northWesternProgramAlt": "සමාජ බලගැන්වීමේ පුහුණු වැඩසටහන",
 
+    //news3 page
+    prajashakthiTrainingofTrainersEasternProvinceProgram: "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ නැගෙනහිර පළාත් වැඩසටහන.",
+
     // Products Page
     productsTitle: "නිෂ්පාදන",
     productsDescription: "සෞභාග්‍ය නිෂ්පාදන ගම්මාන වල අපගේම නිෂ්පාදකයින් විසින් සාදන ලද ගුණාත්මක නිෂ්පාදන පුළුල් පරාසයක් අප සතුව ඇත. මෙම දේශීයව පදනම් වූ වටිනාකම් එකතු කරන ලද නිෂ්පාදන සත්කාරයෙන් නිර්මාණය කර ඇති අතර නිෂ්පාදන වටිනාකම් දාමයේ ගෝලීය ප්‍රමිතීන් සපුරාලයි.",
@@ -419,16 +445,29 @@ const translations = {
     //new service home page 
     "ourServices": "අපගේ සේවා",
     "services.AganukolapelessaLake-relatedmultipurposeproject": "අගනුකොලපැලැස්ස වැව ආශ්‍රිත බහුකාර්ය ව්‍යාපෘතිය",
-    "services.hospitalCare": "රෝහල් පදනම් සේවා",
-    "services.publicHealth": "පොදු සෞඛ්‍යය",
+    "services.Dikwella-ropeGrindingProject": "සාම්ප්‍රදායික  කොහු කර්මාන්තය නගා සිටුවීම උදෙසා මාතර,දික්වැල්ල පාතගම දකුණ වසමෙහි ප්‍රතිලාභීන් සඳහා 2025.11.20 වන දින ලණු අඹරන මැෂින් ලබාදීම.",
+    "services.VavuniyaDistrictSmall-scaleGarmentManufacturingProject": "වව්නියාව දිස්ත්‍රික්කයේ වව්නියාව ප්‍රාදේශීය ලේකම් කොට්ඨාසයේ ආසිකුලම ග්‍රාමනිලධාරි කොට්ඨාසයේ ක්‍රියාත්මක කුඩා පරිමාණ ඇඟලුම් නිෂ්පාදන ව්‍යාපෘතියෙහි වැඩ නිම කොට ප්‍රතිලාභීන් වෙත ලබා දීම - 2025.10.30",
     
+// RTI Section
+    "rti.title": "තොරතුරු ලබාගැනීමේ නිලධාරීන්",
+    "rti.designatedOfficer": "නම් කළ නිලධාරියා",
+    "rti.secretaryTitle": "අධ්‍යක්ෂ ජනරාල් - එස්. කේ. බී. සිසිර කුමාර",
+    "rti.addressLine1": "ග්‍රාමීය සංවර්ධන කාර්යංශය,",
+    "rti.addressLine2": "9 වන මහල, සෙත්සිරිපාය II අදියර, බත්තරමුල්ල.",
+    "rti.phone": "දුරකථන:",
+    "rti.email": "ඊමේල්:",
+    "rti.informationOfficer": "තොරතුරු නිලධාරී",
+    "rti.assistantTitle": " ",
+    "rti.officerName": "අධ්‍යක්ෂ - චම්පිකා  ඩී ධර්මසේන",
+
+
     // Footer
     quickLinks: "ඉක්මන් සබැඳි",
     importantLinks: "වැදගත් සබැඳි",
     contactInfo: "සම්බන්ධතා තොරතුරු",
     address: "ලිපිනය",
     addressText: "9 වන මහල, සෙත්සිරිපාය II අදියර, බත්තරමුල්ල, ශ්‍රී ලංකාව",
-    phone: "දුරකථන",
+  //  phone: "දුරකථන",
     followUs: "අප අනුගමනය කරන්න",
     allRightsReserved: "සියලුම හිමිකම් ඇවිරිණි",
     developedBy: "නිර්මාණය කළේ",
@@ -620,6 +659,8 @@ viewAll: "அனைத்தையும் பார்க்க",
   northCentralProgramIntro:"கிராமப்புற அபிவிருத்தி பணியகம் மற்றும் ஜனாதிபதி செயலகம் இணைந்து ஏற்பாடு செய்த சமூக வலுவூட்டல் பயிற்சியாளர்களுக்கான வடமத்திய மாகாண பயிற்சி நிகழ்ச்சித்திட்டம் நவம்பர் 10 மற்றும் 11 ஆம் தேதிகளில் தேசிய நன்னீர் மீன்பிடி மற்றும் மீன்வளர்ப்பு பயிற்சி மையத்தில் வெற்றிகரமாக நடைபெற்றது.",
   northCentralProgramAlt:"வடமத்திய மாகாண பயிற்சி நிகழ்ச்சித்திட்டம்",
 
+  //news3 page
+  prajashakthiTrainingofTrainersEasternProvinceProgram:"பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – கிழக்கு மாகாண திட்டம்",
 
 
 
@@ -637,8 +678,21 @@ viewAll: "அனைத்தையும் பார்க்க",
     //new service page home
     "ourServices": "எங்கள் சேவைகள்",
     "services.AganukolapelessaLake-relatedmultipurposeproject": "அகனுகோலபெலெஸ்ஸ ஏரி தொடர்பான பல்நோக்கு திட்டம்",
-    "services.hospitalCare": "மருத்துவமனை அடிப்படையிலான பராமரிப்பு",
-    "services.publicHealth": "பொது சுகாதாரம்",
+    "services.Dikwella-ropeGrindingProject": "பாரம்பரிய தென்னை நார்த் தொழிலை மேம்படுத்துவதற்காக 20.11.2025 அன்று மாத்தறை, திக்வெல்ல, பதகம தெற்குப் பிரிவில் பயனாளிகளுக்கு கயிறு அரைக்கும் இயந்திரங்களை வழங்குதல்.",
+    "services.VavuniyaDistrictSmall-scaleGarmentManufacturingProject": "வவுனியா மாவட்டத்தின் வவுனியா பிரதேச செயலாளர் பிரிவின் ஆசிகுளம் கிராம அலுவலர் பிரிவில் செயல்படுத்தப்பட்ட சிறிய அளவிலான ஆடை உற்பத்தி திட்டத்தை நிறைவு செய்து கையளித்தல் - 2025.10.30",
+
+
+    "rti.title": "தகவல் உரிமை அதிகாரிகள்",
+    "rti.designatedOfficer": "நியமிக்கப்பட்ட அதிகாரி",
+    "rti.secretaryTitle": "பணிப்பாளர் நாயகம் - எஸ்.கே.பி.சிசிர குமார",
+    "rti.addressLine1": "டிஜிட்டல் பொருளாதார அமைச்சு, நிலை 11, அலகு எண்: 1101",
+    "rti.addressLine2": "ஒன் கால் பேஸ் டவர், எண் 1 A, கால் பேஸ், கொழும்பு 02.",
+    "rti.phone": "தொலைபேசி:",
+    "rti.email": "மின்னஞ்சல்:",
+    "rti.informationOfficer": "தகவல் அதிகாரி",
+    "rti.assistantTitle": "இயக்குனர் - சம்பிகா டி. தர்மசேன",
+    "rti.officerName": "திருமதி தினுஜி ரந்திகா கோடிகமுவ",
+
 
 
 
@@ -648,7 +702,7 @@ viewAll: "அனைத்தையும் பார்க்க",
     contactInfo: "தொடர்பு தகவல்",
     address: "முகவரி",
     addressText: "9வது மாடி, சேத்சிரிபாய கட்டம் II, பத்தரமுல்ல, இலங்கை",
-    phone: "தொலைபேசி",
+  //  phone: "தொலைபேசி",
     followUs: "எங்களை பின்தொடருங்கள்",
     allRightsReserved: "அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை",
     developedBy: "உருவாக்கியவர்",
