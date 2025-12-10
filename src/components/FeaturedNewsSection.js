@@ -3,6 +3,7 @@ import { useLanguage } from "../contexts/LanguageContext"; // ✅ make sure this
 import news1Image1 from "../assets/news/news1.jpeg";
 import News2Image from "../assets/news/news2.jpeg";
 import News3Image from "../assets/news/news3.jpeg";
+import News4Image from "../assets/news/news4.jpeg";
 
 const FeaturedNewsSection = () => {
   const { t } = useLanguage(); // ✅ access translation function
@@ -27,6 +28,12 @@ const FeaturedNewsSection = () => {
      // image: null,
      image:News3Image,
       link: "/news/news3 ",
+    },
+    {
+      date: t("news4.date"),
+      title: t("news4.title"),
+     image:News4Image,
+      link: "/news/news4 ",
     },
   ];
 

@@ -16,7 +16,7 @@ import image6 from "../assets/homepage/imageai6.jpeg";
 import image7 from "../assets/homepage/imageai7.jpeg";
 import image8 from "../assets/homepage/imageai8.jpeg";
 
-const images = [image1, image2, image3, image4, image6, image7, image8];
+const images = [image7, image1, image2, image3, image4, image6, image8];
 
 // --- 1. FIXED Reveal Component ---
 const Reveal = ({ children, delay = 0, className = "" }) => {

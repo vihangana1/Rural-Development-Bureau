@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef } from "react"; // Added hooks
 import { Link } from "react-router-dom";
 import { useLanguage } from '../contexts/LanguageContext'; 
-import placeholderImage from "../assets/homepage/image 1.jpeg";
 import News1 from "../assets/news/news1.jpeg";
 import News2 from "../assets/news/news2.jpeg";
 import News3 from "../assets/news/news3.jpeg";
+import News4 from "../assets/news/news4.jpeg";
 
 // --- Reusable Reveal Component ---
 const Reveal = ({ children, delay = 0, className = "" }) => {
@@ -54,9 +54,9 @@ const News = () => {
     { title: t('prajashakthiTrainingofTrainersNorthWesternProvinceProgram'), image: News1, link: "/news/news1" },
     { title: t('prajashakthiTrainingofTrainersNorthWesternProvinceProgram'), image: News2, link: "/news/news2" },
     { title: t('prajashakthiTrainingofTrainersEasternProvinceProgram'), image: News3, link: "/news/news3" },
-    { title: t('dehydratedProduct'), image: placeholderImage, link: "/news/news4" },
-    { title: t('dehydratedProduct'), image: placeholderImage, link: "/news/news5" },
-    { title: t('dehydratedProduct'), image: placeholderImage, link: "/news/news6" },
+    { title: t('prajashakthiTrainingofTrainersNorthProvinceProgram'), image: News4, link: "/news/news4" },
+    //{ title: t('dehydratedProduct'), image: placeholderImage, link: "/news/news5" },
+    //{ title: t('dehydratedProduct'), image: placeholderImage, link: "/news/news6" },
   ];
 
   return (

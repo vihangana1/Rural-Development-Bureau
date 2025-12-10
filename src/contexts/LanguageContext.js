@@ -180,6 +180,8 @@ const translations = {
     "news2.title": "Praja Shakthi Training of Trainers - North Center Province Program.",
     "news3.date": "28th Oct 2025",
     "news3.title": "Praja Shakthi Training of Trainers - Eastern Province Program.",
+    "news4.date": "18th Oct 2025",
+    "news4.title": "Praja Shakthi Training of Trainers - North Province Program.",
 
 
     //news1 page 
@@ -193,6 +195,10 @@ const translations = {
     //news3 page
     prajashakthiTrainingofTrainersEasternProvinceProgram: "Praja Shakthi Training of Trainers - Eastern Province Program.",
     easternProgramIntro: "The Eastern Provincial Program for Training Community Empowerment Trainers, jointly organized by the Rural Development Bureau and the Presidential Secretariat, was successfully held on October 28th and 29th at the Kalmunai Vocational Training Center.",
+
+    //news4 page
+    prajashakthiTrainingofTrainersNorthProvinceProgram: "Praja Shakthi Training of Trainers - North Province Program.",
+    northProgramIntro: "The Northern Provincial Program for Training Community Empowerment Trainers, jointly organized by the Rural Development Bureau and the Presidential Secretariat, was successfully held on October 18th and 19st at the Kilinochchi Vocational Training Center.",
 
     // Products Page
     productsTitle: "Products",
@@ -414,6 +420,11 @@ const translations = {
     "news1.date": "2025 නොවැම්බර් 18",
     "news2.date": "2025 නොවැම්බර් 14",
     "news2.title": "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ උතුරු මැද පළාත් වැඩසටහන.",
+    "news3.date": "2025 නොවැම්බර් 10",
+    "news3.title": "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ නැගෙනහිර පළාත් වැඩසටහන.",
+    "news4.date": "2025 නොවැම්බර් 18",
+    "news4.title": "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ උතුරු පළාත් වැඩසටහන.",
+    
 
 
 
@@ -430,6 +441,10 @@ const translations = {
 
     //news3 page
     prajashakthiTrainingofTrainersEasternProvinceProgram: "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ නැගෙනහිර පළාත් වැඩසටහන.",
+
+    //news4 page
+    prajashakthiTrainingofTrainersNorthProvinceProgram: "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ උතුරු පළාත් වැඩසටහන.",
+
 
     // Products Page
     productsTitle: "නිෂ්පාදන",
@@ -647,6 +662,10 @@ viewAll: "அனைத்தையும் பார்க்க",
 "news1.title": "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – வடமேற்கு மாகாண திட்டம்.",
 "news2.date": "2025 நவம்பர் 14",
 "news2.title": "தென் மற்றும் தென்கிழக்கு ஆசியாவுக்கான WHO 78வது பிராந்திய மாநாட்டின் இரண்டாவது நாள் இன்று.",
+"news3.date": "2025 நவம்பர் 11",
+"news3.title": "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – கிழக்கு மாகாண திட்டம்.",
+"news4.date": "2025 நவம்பர் 10",
+"news4.title": "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – வட மாகாண திட்டம்.",
 
 
     //news1 page 
@@ -662,7 +681,8 @@ viewAll: "அனைத்தையும் பார்க்க",
   //news3 page
   prajashakthiTrainingofTrainersEasternProvinceProgram:"பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – கிழக்கு மாகாண திட்டம்",
 
-
+//news4 page
+  prajashakthiTrainingofTrainersSouthernProvinceProgram:"பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – வட மாகாணம் திட்டம்",
 
     // Products Page
     productsTitle: "தயாரிப்புகள்",

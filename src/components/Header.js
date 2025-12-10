@@ -133,7 +133,7 @@ const Header = ({
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4">
           <div className="flex items-center gap-4">
             <img src={logo} alt="Ministry Logo" className="h-[100px] w-[100px] object-contain rounded-full" />
-            <h1 className="text-sm md:text-lg font-bold leading-snug" style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}>
+            <h1 className="text-2xl md:text-2xl font-bold leading-snug" style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}>
               ග්‍රාමීය සංවර්ධන කාර්යංශය<br />
               Rural Development Bureau<br />
               கிராமிய அபிவிருத்தி அமைச்சு
@@ -238,7 +238,7 @@ const Header = ({
                     }
                     isActive={accessibilitySettings.grayscale}
                   />
-                  <AccessibilityButton
+                  {/* <AccessibilityButton
                     label="Big Cursor"
                     onClick={() =>
                       setAccessibilitySettings((s) => ({
@@ -247,12 +247,12 @@ const Header = ({
                       }))
                     }
                     isActive={accessibilitySettings.bigCursor}
-                  />
-                  <AccessibilityButton
+                  /> */}
+                  {/* <AccessibilityButton
                     label="Reading Guide"
                     onClick={() => alert("Reading guide feature coming soon")}
                     isActive={activeAccessibility === "Reading Guide"}
-                  />
+                  /> */}
                   <AccessibilityButton
                     label="Text to Speech"
                     onClick={() => {
