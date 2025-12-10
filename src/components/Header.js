@@ -18,7 +18,7 @@ const Header = ({
   const [hoveredCategory, setHoveredCategory] = useState(null);
   const [activeAccessibility, setActiveAccessibility] = useState("");
 
-  // Navigation items with translations
+  //  //Navigation items with translations
   const navItems = [
     { label: t('home'), path: "/" },
     {
