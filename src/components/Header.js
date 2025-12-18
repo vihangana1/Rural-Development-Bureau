@@ -44,69 +44,69 @@ const Header = ({
 
     { label: t('news'), path: "/News" },
 
-    {
-      label: t('services'),
-      mainCategories: [
-        {
-          label: t('agriculture'),
-          subItems: [
-            { label: t('coconutRelatedProduct'), path: "/services/agriculture/coconut" },
-            { label: t('kithulRelatedProduct'), path: "/services/agriculture/kithul" },
-            { label: t('palmRelatedProduct'), path: "/services/agriculture/palm" },
-            { label: t('spicesRelatedProduct'), path: "/services/agriculture/spices" },
-            { label: t('flowersOrnamentalPlants'), path: "/services/agriculture/flowers" },
-            { label: t('seedProduct'), path: "/services/agriculture/seed" },
-            { label: t('fruitRelatedProduct'), path: "/services/agriculture/fruits" },
-            { label: t('vegetableValueAddition'), path: "/services/agriculture/vegetable" },
-            { label: t('mushroomProduct'), path: "/services/agriculture/mushroom" },
-            { label: t('otherProduct'), path: "/services/agriculture/other" },
-            { label: t('teaProduct'), path: "/services/agriculture/tea" },
-            { label: t('bulathProduct'), path: "/services/agriculture/bulath" },
-            { label: t('cinnamonProduct'), path: "/services/agriculture/cinnamon" },
-          ],
-        },
-        {
-          label: t('industries'),
-          subItems: [
-            { label: t('clothRelatedProduct'), path: "/services/industries/cloth" },
-            { label: t('footwear'), path: "/services/industries/footwear" },
-            { label: t('caneRelatedProduct'), path: "/services/industries/cane" },
-            { label: t('clayRelatedProduct'), path: "/services/industries/clay" },
-            { label: t('woodenItems'), path: "/services/industries/wooden" },
-            { label: t('poojaItems'), path: "/services/industries/pooja" },
-            { label: t('sweetOrganicFoods'), path: "/services/industries/sweet&foods" },
-            { label: t('coconutHuskProduct'), path: "/services/industries/coconutHusk" },
-            { label: t('handCraftProduct'), path: "/services/industries/handcraft" },
-            { label: t('ironGoldProduct'), path: "/services/industries/iron&gold" }
-          ],
-        },
-        {
-          label: t('fisheries'),
-          subItems: [
-            { label: t('umbalakadaDriedFish'), path: "/services/fisheries/umbalakada&driesfish" },
-            { label: t('ornamentalFish'), path: "/services/fisheries/ornamentalfish" },
-          ],
-        },
-        {
-          label: t('animalHusbandry'),
-          subItems: [
-            { label: t('dairyProduct'), path: "/services/AnimalHusbandry/dairyproduct" },
-            { label: t('egg'), path: "/services/AnimalHusbandry/eggs" },
-            { label: t('meats'), path: "/services/AnimalHusbandry/meats" },
-            { label: t('beeHoney'), path: "/services/AnimalHusbandry/beehoney" },
-          ],
-        },
-        {
-          label: t('infrastructure'),
-          subItems: [
-            { label: t('roadDevelopments'), path: "/services/village/roaddevelopment" },
-            { label: t('sanitaryFacilities'), path: "/services/village/sanitaryfacilities" },
-            { label: t('tourismIndustry'), path: "/services/village/tourism" },
-            { label: t('otherServices'), path: "/services/village/otherservices" },
-          ],
-        },
-      ],
-    },
+    // {
+    //   label: t('services'),
+    //   mainCategories: [
+    //     {
+    //       label: t('agriculture'),
+    //       subItems: [
+    //         { label: t('coconutRelatedProduct'), path: "/services/agriculture/coconut" },
+    //         { label: t('kithulRelatedProduct'), path: "/services/agriculture/kithul" },
+    //         { label: t('palmRelatedProduct'), path: "/services/agriculture/palm" },
+    //         { label: t('spicesRelatedProduct'), path: "/services/agriculture/spices" },
+    //         { label: t('flowersOrnamentalPlants'), path: "/services/agriculture/flowers" },
+    //         { label: t('seedProduct'), path: "/services/agriculture/seed" },
+    //         { label: t('fruitRelatedProduct'), path: "/services/agriculture/fruits" },
+    //         { label: t('vegetableValueAddition'), path: "/services/agriculture/vegetable" },
+    //         { label: t('mushroomProduct'), path: "/services/agriculture/mushroom" },
+    //         { label: t('otherProduct'), path: "/services/agriculture/other" },
+    //         { label: t('teaProduct'), path: "/services/agriculture/tea" },
+    //         { label: t('bulathProduct'), path: "/services/agriculture/bulath" },
+    //         { label: t('cinnamonProduct'), path: "/services/agriculture/cinnamon" },
+    //       ],
+    //     },
+    //     {
+    //       label: t('industries'),
+    //       subItems: [
+    //         { label: t('clothRelatedProduct'), path: "/services/industries/cloth" },
+    //         { label: t('footwear'), path: "/services/industries/footwear" },
+    //         { label: t('caneRelatedProduct'), path: "/services/industries/cane" },
+    //         { label: t('clayRelatedProduct'), path: "/services/industries/clay" },
+    //         { label: t('woodenItems'), path: "/services/industries/wooden" },
+    //         { label: t('poojaItems'), path: "/services/industries/pooja" },
+    //         { label: t('sweetOrganicFoods'), path: "/services/industries/sweet&foods" },
+    //         { label: t('coconutHuskProduct'), path: "/services/industries/coconutHusk" },
+    //         { label: t('handCraftProduct'), path: "/services/industries/handcraft" },
+    //         { label: t('ironGoldProduct'), path: "/services/industries/iron&gold" }
+    //       ],
+    //     },
+    //     {
+    //       label: t('fisheries'),
+    //       subItems: [
+    //         { label: t('umbalakadaDriedFish'), path: "/services/fisheries/umbalakada&driesfish" },
+    //         { label: t('ornamentalFish'), path: "/services/fisheries/ornamentalfish" },
+    //       ],
+    //     },
+    //     {
+    //       label: t('animalHusbandry'),
+    //       subItems: [
+    //         { label: t('dairyProduct'), path: "/services/AnimalHusbandry/dairyproduct" },
+    //         { label: t('egg'), path: "/services/AnimalHusbandry/eggs" },
+    //         { label: t('meats'), path: "/services/AnimalHusbandry/meats" },
+    //         { label: t('beeHoney'), path: "/services/AnimalHusbandry/beehoney" },
+    //       ],
+    //     },
+    //     {
+    //       label: t('infrastructure'),
+    //       subItems: [
+    //         { label: t('roadDevelopments'), path: "/services/village/roaddevelopment" },
+    //         { label: t('sanitaryFacilities'), path: "/services/village/sanitaryfacilities" },
+    //         { label: t('tourismIndustry'), path: "/services/village/tourism" },
+    //         { label: t('otherServices'), path: "/services/village/otherservices" },
+    //       ],
+    //     },
+    //   ],
+    // },
     //{ label: t('product'), path: "/Product" },
     
     

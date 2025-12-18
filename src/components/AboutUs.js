@@ -5,12 +5,14 @@ import { useLanguage } from '../contexts/LanguageContext';
 // Import officer images
 //import nimalImage from "../assets/officers/image 2.jpeg";
 //import tharushiImage from "../assets/officers/image 2.jpeg";
-//import ruwanImage from "../assets/officers/image 2.jpeg";
-import wickramageImage from "../assets/officers/W.P.S.Wickramage.jpeg";
+import yahanadanImage from "../assets/officers/yohanadan.jpeg";
+import wickramageImage from "../assets/officers/wickramage.jpeg";
 import wijayakoonImage from "../assets/officers/W.M.U.M.Wijayakoon.jpeg";
 import WickramanayakaImage from "../assets/officers/N.C.Wickramanayaka.jpeg";
-import VijewardanaImage from "../assets/officers/V.C.Vijewardana.jpeg";
-import RathnayakeImage from "../assets/officers/R.M.C.S.Rathnayake.jpeg";
+import VijewardanaImage from "../assets/officers/vijewardhana.jpeg";
+import RathnayakeImage from "../assets/officers/rathnayake.jpeg";
+import jayasooriyaImage from "../assets/officers/jayasooriya.jpeg";
+import champikaImage from "../assets/officers/champika.jpg";
 
 // --- Reusable Reveal Component ---
 const Reveal = ({ children, delay = 0, className = "" }) => {
@@ -61,47 +63,47 @@ const AboutUs = () => {
     {
       name: "S.",
       designation: t('directorGeneral'),
-      office: " Office-011 2877122",
-      phone: "Mobile-N/A",
+      office: " 011 2877122",
+      phone: "N/A",
       email: "nimal.perera@ministry.gov.lk",
       //image: nimalImage,
     },
     {
       name: "W.P.S. Wickramge",
       designation: t('director'),
-      office: "-",
-      phone: "Mobile-071-8025137",
+      office: "N/A",
+      phone: "071-8025137",
       email: "suranga.wick75@gmail.com",
       image: wickramageImage,
     },
     {
       name: "W.M.U.M. Wijeyakoon",
       designation: t('director'),
-      office: "Office-N/A",
-      phone: "Mobile-0714434091",
+      office: "N/A",
+      phone: "0714434091",
       email: "uthlk@yahoo.com",
       image: wijayakoonImage,
     },
     {
       name: "N.C. Wickramanayaka",
       designation: t('director'),
-      office: "Office-N/A",
-      phone: "Mobile-0718318434",
+      office: "N/A",
+      phone: "0718318434",
       email: "nilanthawickramanayake@gmail.com",
       image: WickramanayakaImage,
     },
     {
       name: "Champika D Rathnayake",
       designation: t('director'),
-      office: "Office- N/A",
-      phone: "Mobile-0766580912",
+      office: "N/A",
+      phone: "0766580912",
       email: "-",
-      //image: WickramanayakaImage,
+      image: champikaImage,
     },
     {
       name: "R.H.C.K.Ramasinghe",
       designation: t('deputyDirector'),
-      office: "Office-N/A",
+      office: "N/A",
       phone: "Mobile-0702599805",
       email: "vijewardhana87@gmail.com",
       //image: RathnayakeImage,
@@ -109,8 +111,8 @@ const AboutUs = () => {
     {
       name: "V.C. Wijewardana",
       designation: t('deputyDirector'),
-      office: "Office-N/A",
-      phone: "Mobile-0702599805",
+      office: "N/A",
+      phone: "0702599805",
       email: "ruwan.jayasena@ministry.gov.lk",
       image: VijewardanaImage,
     },
@@ -118,34 +120,34 @@ const AboutUs = () => {
     {
       name: "J.A.W.N.Jayasooriya",
       designation: t('deputyDirector'),
-      office: "Office-N/A",
-      phone: "Mobile-0713227593",
+      office: "N/A",
+      phone: "0713227593",
       email: "wjayasooriya@gmail.com",
-      //image: wijayakoonImage,
+      image: jayasooriyaImage,
     },
     
     
     {
       name: "K.Yohanadan",
       designation: t('assistantDirector'),
-      office: "Office-N/A",
-      phone: "Mobile-0777284657",
+      office: "N/A",
+      phone: "0777284657",
       email: "yohanadhan1967@gmail.com",
-      //image: VijewardanaImage,
+      image: yahanadanImage,
     },
-    {
-      name: "S.G.A.K. Subawickrama",
-      designation: t('assistantDirector'),
-      office: "Office-N/A",
-      phone: "Mobile-071-2921285",
-      email: "ayeshasubhawickrama92@gmail.com",
-      //image: ruwanImage,
-    },
+    // {
+    //   name: "S.G.A.K. Subawickrama",
+    //   designation: t('assistantDirector'),
+    //   office: "N/A",
+    //   phone: "071-2921285",
+    //   email: "ayeshasubhawickrama92@gmail.com",
+    //   image: subhawickramaImage,
+    // },
     {
       name: "R.M.C.S. Rathnayaka",
       designation: t('assistantDirector'),
-      office: "Office-N/A",
-      phone: "Mobile-0703065277",
+      office: "N/A",
+      phone: "0703065277",
       email: "rmcsrathnayake00@gmail.com",
       image: RathnayakeImage,
     },

@@ -2,6 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+
 import { LanguageProvider } from './contexts/LanguageContext';
 // Layout
 import Header from "./components/Header";

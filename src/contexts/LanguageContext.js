@@ -106,6 +106,8 @@ const translations = {
     presidentName: "Hon. Anura Kumara Dissanayake",
     ministerName: "Mr. Upali Pannilage",
     secretaryName: "Mr. S. Alokabandara",
+    directorGeneralName: "Mr. H.M.M.U.B. Herath",
+
     
     // Organizations
     ruralDevResearchInstitute: "Rural Development and Research Institute",
@@ -213,7 +215,7 @@ const translations = {
 
     //new service home page
 
-    "ourServices": "Our Services",
+    "ourServices": "Our Events",
     "services.AganukolapelessaLake-relatedmultipurposeproject": "Aganukolapelessa Lake-related multipurpose project",
     "services.Dikwella-ropeGrindingProject": "Providing rope grinding machines to beneficiaries in the Pathagama South Division, Dikwella, Matara on 20.11.2025 to promote the traditional coir industry.",
     "services.VavuniyaDistrictSmall-scaleGarmentManufacturingProject": "Completion and handover of the small-scale garment manufacturing project implemented in the Asikulam Grama Niladhari Division of the Vavuniya Divisional Secretariat Division of the Vavuniya District - 2025.10.30",
@@ -222,7 +224,7 @@ const translations = {
 //RTI section
     "rti.title": "Right to Information Officers",
     "rti.designatedOfficer": "Designated Officer",
-    "rti.secretaryTitle": "Director Genaral - S.K.B.Sisira kumara",
+    "rti.secretaryTitle": "Director Genaral",
     "rti.addressLine1": "Rural Development Bureau,",
     "rti.addressLine2": "9th Floor, Sethsiripaya Stage II,",
     "rti.phone": "Tel:",
@@ -350,7 +352,8 @@ const translations = {
     // Officers Names
     presidentName: "ගරු අනුර කුමාර දිසානායක",
     ministerName: "උපාලි පන්නිලගේ මහතා",
-    secretaryName: "එස්. අලෝකබන්දාර මහතා",
+    secretaryName: "එස්. අලෝකබන්ඩාර මහතා",
+    directorGeneralName: "එච්. එම්. එම්. යූ. බී. හේරත් මහතා",
     
     // Organizations
     ruralDevResearchInstitute: "ග්‍රාමීය සංවර්ධන හා පර්යේෂණ ආයතනය",
@@ -466,7 +469,7 @@ const translations = {
 // RTI Section
     "rti.title": "තොරතුරු ලබාගැනීමේ නිලධාරීන්",
     "rti.designatedOfficer": "නම් කළ නිලධාරියා",
-    "rti.secretaryTitle": "අධ්‍යක්ෂ ජනරාල් - එස්. කේ. බී. සිසිර කුමාර",
+    "rti.secretaryTitle": "අධ්‍යක්ෂ ජනරාල් ",
     "rti.addressLine1": "ග්‍රාමීය සංවර්ධන කාර්යංශය,",
     "rti.addressLine2": "9 වන මහල, සෙත්සිරිපාය II අදියර, බත්තරමුල්ල.",
     "rti.phone": "දුරකථන:",
@@ -593,6 +596,8 @@ const translations = {
     presidentName: "மாண். அனுர குமார திஸாநாயக்க",
     ministerName: "திரு. உபாலி பன்னிலகே",
     secretaryName: "திரு. எஸ். அலோகபந்தார",
+    directorGeneralName: "திரு. எச்.எம்.எம்.யூ.பி.ஹெரத்",
+  
     
     // Organizations
     ruralDevResearchInstitute: "கிராமிய அபிவிருத்தி மற்றும் ஆராய்ச்சி நிறுவனம்",
@@ -704,7 +709,7 @@ viewAll: "அனைத்தையும் பார்க்க",
 
     "rti.title": "தகவல் உரிமை அதிகாரிகள்",
     "rti.designatedOfficer": "நியமிக்கப்பட்ட அதிகாரி",
-    "rti.secretaryTitle": "பணிப்பாளர் நாயகம் - எஸ்.கே.பி.சிசிர குமார",
+    "rti.secretaryTitle": "பணிப்பாளர் நாயகம் ",
     "rti.addressLine1": "டிஜிட்டல் பொருளாதார அமைச்சு, நிலை 11, அலகு எண்: 1101",
     "rti.addressLine2": "ஒன் கால் பேஸ் டவர், எண் 1 A, கால் பேஸ், கொழும்பு 02.",
     "rti.phone": "தொலைபேசி:",
