@@ -243,7 +243,7 @@ const Home = () => {
     {
       title: t('directorGeneral'),
       name: t('directorGeneralName'),
-      image: require("../assets/officers/H.M.M.U.B.herath.jpeg"),
+      image: require("../assets/officers/H.M.M.U.B.herath1.jpeg"),
     },
   ].map((officer, index) => (
     <Reveal key={index} delay={index * 150}>
