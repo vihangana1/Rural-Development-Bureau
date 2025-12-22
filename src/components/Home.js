@@ -14,11 +14,11 @@ import image2 from "../assets/homepage/imageai2.jpeg";
 import image3 from "../assets/homepage/imageai3.jpeg";
 import image4 from "../assets/homepage/imageai4.jpeg";
 //import image5 from "../assets/homepage/imageai5.jpeg";
-import image6 from "../assets/homepage/imageai6.jpeg";
+//import image6 from "../assets/homepage/imageai6.jpeg";
 import image7 from "../assets/homepage/imageai7.jpeg";
 import image8 from "../assets/homepage/imageai8.jpeg";
 
-const images = [image7, image1, image2, image3, image4, image6, image8];
+const images = [image7, image1, image2, image3, image4, image8];
 
 // --- 1. FIXED Reveal Component ---
 const Reveal = ({ children, delay = 0, className = "" }) => {
@@ -140,22 +140,21 @@ const Home = () => {
 
   return (
     <div className="w-screen overflow-hidden">
-      {/* Carousel Sectionn */}
-      <main className="w-full h-[390px] relative flex flex-col justify-center items-center">
-        
-        {/* Background Images */}
-        <div className="absolute top-5 left-0 w-full h-[110%] z-0 overflow-hidden">
+    {/* Carousel Section */}
+    <main className="w-full h-[450px] relative flex flex-col justify-center items-center">
+      {/* Background Images */}
+      <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
         {images.map((img, index) => (
-            <img
-              key={index}
-              src={img}
-              alt={`Slide ${index + 1}`}
-              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
-                index === currentIndex ? "opacity-100" : "opacity-0"
-              }`}
-            />
-          ))}<br></br> <br></br>
-        </div>
+          <img
+            key={index}
+            src={img}
+            alt={`Slide ${index + 1}`}
+            className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
+              index === currentIndex ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
+      </div>
 
         {/* Overlay Boxes */}
         <div className="absolute top-[600px] z-10 flex flex-col md:flex-row justify-center items-center gap-6 px-4 w-[710px] mx-auto">
@@ -180,14 +179,14 @@ const Home = () => {
 
       <br></br>   
       {/* About Section */}
-      <section className="bg-[#F9F8F6] py-10 px-4 md:px-12 gap-20">
-        <div className="text-center mb-12">
-          <Reveal>
-            <h2 className="text-3xl font-bold text-black uppercase mb-4">
-              {t('aboutMinistry')}
-            </h2>
-          </Reveal>
-        </div>
+  <section className="bg-[#F9F8F6] py-10 px-4 md:px-12">
+    <div className="text-center mb-12">
+      <Reveal>
+        <h2 className="text-2xl md:text-3xl font-bold text-black uppercase mb-4">
+          {t("aboutMinistry")}
+        </h2>
+      </Reveal>
+    </div>
 
         {/* Vision and Mission */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
@@ -220,65 +219,70 @@ const Home = () => {
           </Reveal>
         </div>
 
-        <div className="w-full overflow-x-auto pb-4">
-          <div className="flex gap-6 justify-center min-w-[800px]">
-            {[
-              {
-                title: t('president'),
-                name: t('presidentName'),
-                image: require("../assets/officers/president.jpeg"),
-              },
-              {
-                title: t('minister'),
-                name: t('ministerName'),
-                image: require("../assets/officers/minister.jpg"),
-              },
-              {
-                title: t('secretary'),
-                name: t('secretaryName'),
-                image: require("../assets/officers/secetry.jpg"),
-              },
-              {
-                title: t('directorGeneral'),
-                name: t('directorGeneralName'),
-                //image: require("../assets/officers/secetry.jpg"),
-              },
-            ].map((officer, index) => (
-              <Reveal key={index} delay={index * 200}>
-                <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl w-64">
-                  <img
-                    src={officer.image}
-                    alt={officer.title}
-                    className="w-40 h-40 rounded-full object-cover mb-4"
-                  />
-                  <p className="text-sm font-semibold text-gray-600 uppercase">
-                    {officer.title}
-                  </p>
-                  <p className="text-lg font-bold text-gray-800 text-center">
-                    {officer.name}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
+        {/* ===== OFFICERS SECTION ===== */}
+<div className="max-w-7xl mx-auto px-4">
 
-          <div className="w-full overflow-x-auto pb-4 mb-6">
-            <div className="flex gap-10 justify-center min-w-[900px]">
-              {/* officer cards */}
-            </div>
-          </div>
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+  {[
+    
+    {
+      title: t('minister'),
+      name: t('ministerName'),
+      image: require("../assets/officers/minister.jpg"),
+    },
+    {
+      title: t('deputyMinister'),
+      name: t('deputyMinisterName'),
+      image: require("../assets/officers/deputyminister.jpeg"),
+    },
+    {
+      title: t('secretary'),
+      name: t('secretaryName'),
+      image: require("../assets/officers/secetry.jpg"),
+    },
+    {
+      title: t('directorGeneral'),
+      name: t('directorGeneralName'),
+      image: require("../assets/officers/H.M.M.U.B.herath.jpeg"),
+    },
+  ].map((officer, index) => (
+    <Reveal key={index} delay={index * 150}>
+      <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-transform duration-300 hover:-translate-y-1 text-center">
 
-          <div className="w-full text-center">
-            <Reveal delay={600}>
-              <a
-                href="/AboutUs#services"
-                className="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
-              >
-                {t('officerDetail')} →
-              </a>
-            </Reveal>
-          </div>
-        </div>
+        <img
+          src={officer.image}
+          alt={officer.title}
+          className="w-32 h-32 sm:w-36 sm:h-36 mx-auto rounded-full object-cover mb-4 border-4 border-[#F3931D]"
+        />
+
+        <p className="text-xs tracking-widest text-gray-500 uppercase">
+          {officer.title}
+        </p>
+
+        <p className="mt-2 text-lg font-bold text-gray-800">
+          {officer.name}
+        </p>
+
+      </div>
+    </Reveal>
+  ))}
+</div>
+
+{/* Button */}
+<div className="text-center mt-10">
+  <Reveal delay={600}>
+    <a
+      href="/AboutUs#services"
+      className="inline-flex items-center gap-2 bg-yellow-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
+    >
+      {t('officerDetail')}
+      <span>→</span>
+    </a>
+  </Reveal>
+</div>
+
+</div>
+
       </section>
 
       
@@ -509,6 +513,11 @@ const Home = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             {
+              name: t('ministryOfRuralDevelopment'),
+              logo: require("../assets/gov_logo.jpeg"),
+              link: "https://www.srilankabusiness.com/",
+            },
+            {
               name: t('ruralDevResearchInstitute'),
               logo: require("../assets/gov_logo.jpeg"),
               link: "https://stateminsamurdhi.gov.lk/web/index.php?option=com_content&view=article&id=48&Itemid=184&lang=en",
@@ -533,6 +542,19 @@ const Home = () => {
               logo: require("../assets/gov_logo.jpeg"),
               link: "https://www.srilankabusiness.com/",
             },
+            
+            {
+              name: t('nationalSecretariat'),
+              logo: require("../assets/gov_logo.jpeg"),
+              link: "https://www.nspd.gov.lk/",
+            },
+            {
+              name: t('samurdi'),
+              logo: require("../assets/gov_logo.jpeg"),
+              link: "http://www.samurdhi.gov.lk/",
+            },
+
+
           ].map((org, index) => (
             <Reveal key={index} delay={index * 100}>
               <a

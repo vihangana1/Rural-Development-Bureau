@@ -4,6 +4,7 @@ import news1Image1 from "../assets/news/news1.jpeg";
 import News2Image from "../assets/news/news2.jpeg";
 import News3Image from "../assets/news/news3.jpeg";
 import News4Image from "../assets/news/news4.jpeg";
+import News5Image from "../assets/news/news5.jpeg";
 
 const FeaturedNewsSection = () => {
   const { t } = useLanguage(); // ✅ access translation function
@@ -34,6 +35,12 @@ const FeaturedNewsSection = () => {
       title: t("news4.title"),
      image:News4Image,
       link: "/news/news4 ",
+    },
+    {
+      date: t("news5.date"),
+      title: t("news5.title"),
+     image:News5Image,
+      link: "/news/news5 ",
     },
   ];
 

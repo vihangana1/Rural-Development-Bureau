@@ -12,11 +12,12 @@ const Header = ({
 }) => {
   const { language, changeLanguage, t } = useLanguage();
   
-  const [isServicesHovered, setIsServicesHovered] = useState(false);
+ // const [isServicesHovered, setIsServicesHovered] = useState(false);
   const [isAboutUsHovered, setIsAboutUsHovered] = useState(false);
   const [isDownloadHovered, setIsDownloadHovered] = useState(false);
-  const [hoveredCategory, setHoveredCategory] = useState(null);
+  //const [hoveredCategory, setHoveredCategory] = useState(null);
   const [activeAccessibility, setActiveAccessibility] = useState("");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   //  //Navigation items with translations
   const navItems = [
@@ -116,7 +117,7 @@ const Header = ({
   const AccessibilityButton = ({ label, onClick, isActive }) => (
     <button
       onClick={onClick}
-      className={`w-full text-left px-3 py-2 rounded-md transition ${
+      className={`w-full text-left px-3 py-2 rounded-md transition text-xs sm:text-sm ${
         isActive
           ? "bg-black text-white"
           : "bg-white text-black hover:bg-gray-200 hover:text-black"
@@ -129,57 +130,67 @@ const Header = ({
   return (
     <header className="w-full shadow-md">
       {/* Top Bar */}
-      <div className="w-full text-white py-4" style={{ background: "linear-gradient(to right, #F7941D, #6AA84F)" }}>
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-4">
-          <div className="flex items-center gap-4">
-            <img src={logo} alt="Ministry Logo" className="h-[100px] w-[100px] object-contain rounded-full" />
-            <h1 className="text-2xl md:text-2xl font-bold leading-snug" style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}>
-              ග්‍රාමීය සංවර්ධන කාර්යංශය<br />
-              Rural Development Bureau<br />
-              கிராமிய அபிவிருத்தி அமைச்சு
+      <div className="w-full text-white py-3 sm:py-4" style={{ background: "linear-gradient(to right, #F7941D, #6AA84F)" }}>
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-2 sm:px-4">
+          {/* Logo & Title */}
+          <div className="flex items-center gap-2 sm:gap-4">
+            <img 
+              src={logo} 
+              alt="Ministry Logo" 
+              className="h-12 w-12 sm:h-20 sm:w-20 lg:h-[100px] lg:w-[100px] object-contain rounded-full" 
+            />
+            <h1 className="text-xs sm:text-sm md:text-lg lg:text-2xl font-bold leading-tight sm:leading-snug" style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}>
+              <span className="block">ග්‍රාමීය සංවර්ධන කාර්යංශය</span>
+              <span className="block">Rural Development Bureau</span>
+              <span className="block">கிராமிய அபிவிருத்தி அமைச்சு</span>
             </h1>
           </div>
-          
-          <div className="flex items-center gap-4">
-            {/* Language Switcher Buttons */}
-            <div className="flex gap-2">
+
+
+          {/* Right Side Controls */}
+          <div className="flex items-center gap-2 sm:gap-4">
+            {/* Language Switcher - Responsive */}
+            <div className="flex flex-col sm:flex-row gap-1 sm:gap-2">
               <button
                 onClick={() => changeLanguage('en')}
-                className={`px-4 py-2 rounded-md text-sm font-semibold transition ${
+                className={`px-2 sm:px-4 py-1 sm:py-2 rounded-md text-xs sm:text-sm font-semibold transition ${
                   language === 'en'
                     ? 'bg-black text-white'
                     : 'bg-white text-black hover:bg-gray-200'
                 }`}
               >
-                English
+                <span className="hidden sm:inline">English</span>
+                <span className="sm:hidden">EN</span>
               </button>
               <button
                 onClick={() => changeLanguage('si')}
-                className={`px-4 py-2 rounded-md text-sm font-semibold transition ${
+                className={`px-2 sm:px-4 py-1 sm:py-2 rounded-md text-xs sm:text-sm font-semibold transition ${
                   language === 'si'
                     ? 'bg-black text-white'
                     : 'bg-white text-black hover:bg-gray-200'
                 }`}
               >
-                සිංහල
+                <span className="hidden sm:inline">සිංහල</span>
+                <span className="sm:hidden">සිං</span>
               </button>
               <button
                 onClick={() => changeLanguage('ta')}
-                className={`px-4 py-2 rounded-md text-sm font-semibold transition ${
+                className={`px-2 sm:px-4 py-1 sm:py-2 rounded-md text-xs sm:text-sm font-semibold transition ${
                   language === 'ta'
                     ? 'bg-black text-white'
                     : 'bg-white text-black hover:bg-gray-200'
                 }`}
               >
-                தமிழ்
+                <span className="hidden sm:inline">தமிழ்</span>
+                <span className="sm:hidden">த</span>
               </button>
             </div>
 
-            {/* Accessibility Icon + Box */}
+            {/* Accessibility Icon */}
             <div className="relative">
               <button
                 onClick={() => setShowAccessibilityBox(!showAccessibilityBox)}
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-black text-xl text-white hover:bg-blue-100 hover:text-blue-600 transition"
+                className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-black text-base sm:text-xl text-white hover:bg-blue-100 hover:text-blue-600 transition"
                 title="Accessibility"
               >
                 <i className="bi bi-universal-access"></i>
@@ -188,34 +199,46 @@ const Header = ({
               {showAccessibilityBox && (
                 <div
                   ref={accessibilityBoxRef}
-                  className="absolute top-full right-0 mt-2 bg-white border border-gray-300 rounded-lg shadow-lg p-4 z-[9999] w-64 space-y-2 text-sm text-black"
+                  className="fixed sm:absolute top-16 sm:top-full right-2 sm:right-0 mt-2 bg-white border border-gray-300 rounded-lg shadow-lg p-3 sm:p-4 z-[9999] w-56 sm:w-64 space-y-2 text-xs sm:text-sm text-black max-h-[80vh] overflow-y-auto"
                 >
                   <button
                     onClick={() => setShowAccessibilityBox(false)}
-                    className="absolute top-2 right-2 text-gray-500 hover:text-black"
+                    className="absolute top-2 right-2 text-gray-500 hover:text-black text-lg"
                   >
                     ✕
                   </button>
-                  <h3 className="font-bold text-red mb-2">Accessibility Options</h3>
+                  <h3 className="font-bold text-red mb-2 pr-6">Accessibility Options</h3>
 
                   <AccessibilityButton
                     label="Increase Text Size"
-                    onClick={() => setAccessibilitySettings((s) => ({ ...s, textSize: "text-lg" }))}
+                    onClick={() => {
+                      setAccessibilitySettings((s) => ({ ...s, textSize: "text-lg" }));
+                      setActiveAccessibility("Increase Text Size");
+                    }}
                     isActive={activeAccessibility === "Increase Text Size"}
                   />
                   <AccessibilityButton
                     label="Decrease Text Size"
-                    onClick={() => setAccessibilitySettings((s) => ({ ...s, textSize: "text-sm" }))}
+                    onClick={() => {
+                      setAccessibilitySettings((s) => ({ ...s, textSize: "text-sm" }));
+                      setActiveAccessibility("Decrease Text Size");
+                    }}
                     isActive={activeAccessibility === "Decrease Text Size"}
                   />
                   <AccessibilityButton
                     label="Increase Text Spacing"
-                    onClick={() => setAccessibilitySettings((s) => ({ ...s, spacing: "tracking-wide" }))}
+                    onClick={() => {
+                      setAccessibilitySettings((s) => ({ ...s, spacing: "tracking-wide" }));
+                      setActiveAccessibility("Increase Text Spacing");
+                    }}
                     isActive={activeAccessibility === "Increase Text Spacing"}
                   />
                   <AccessibilityButton
                     label="Decrease Text Spacing"
-                    onClick={() => setAccessibilitySettings((s) => ({ ...s, spacing: "tracking-tight" }))}
+                    onClick={() => {
+                      setAccessibilitySettings((s) => ({ ...s, spacing: "tracking-tight" }));
+                      setActiveAccessibility("Decrease Text Spacing");
+                    }}
                     isActive={activeAccessibility === "Decrease Text Spacing"}
                   />
                   <AccessibilityButton
@@ -238,21 +261,6 @@ const Header = ({
                     }
                     isActive={accessibilitySettings.grayscale}
                   />
-                  {/* <AccessibilityButton
-                    label="Big Cursor"
-                    onClick={() =>
-                      setAccessibilitySettings((s) => ({
-                        ...s,
-                        bigCursor: !s.bigCursor,
-                      }))
-                    }
-                    isActive={accessibilitySettings.bigCursor}
-                  /> */}
-                  {/* <AccessibilityButton
-                    label="Reading Guide"
-                    onClick={() => alert("Reading guide feature coming soon")}
-                    isActive={activeAccessibility === "Reading Guide"}
-                  /> */}
                   <AccessibilityButton
                     label="Text to Speech"
                     onClick={() => {
@@ -260,6 +268,7 @@ const Header = ({
                         "Welcome to the Rural Development Bureau website"
                       );
                       speechSynthesis.speak(utterance);
+                      setActiveAccessibility("Text to Speech");
                     }}
                     isActive={activeAccessibility === "Text to Speech"}
                   />
@@ -274,7 +283,7 @@ const Header = ({
                     isActive={accessibilitySettings.disableAnimations}
                   />
                   <AccessibilityButton
-                    label="Reset Accessibility Settings"
+                    label="Reset Settings"
                     onClick={() => {
                       setAccessibilitySettings({
                         textSize: "text-base",
@@ -284,9 +293,9 @@ const Header = ({
                         bigCursor: false,
                         disableAnimations: false,
                       });
-                      setActiveAccessibility("Reset Accessibility Settings");
+                      setActiveAccessibility("");
                     }}
-                    isActive={activeAccessibility === "Reset Accessibility Settings"}
+                    isActive={activeAccessibility === "Reset Settings"}
                   />
                 </div>
               )}
@@ -294,60 +303,18 @@ const Header = ({
           </div>
         </div>
       </div>
+
       
       {/* Navigation Bar */}
       <nav className="w-full bg-[#EFDCAB]">
-        <div className="max-w-7xl mx-auto px-10 flex items-center justify-between h-12">
-          <ul className="flex items-center gap-6">
+        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-12">
+          {/* Desktop Navigation - Hidden on mobile/tablet */}
+          <ul className="hidden lg:flex items-center gap-6">
             {navItems.map((item) => {
               const isAboutUs = item.label === t('aboutUs');
               const isDownload = item.label === t('download');
-              const isServices = item.label === t('services');
 
-              return isServices ? (
-                <li
-                  key={item.label}
-                  className="relative"
-                  onMouseEnter={() => setIsServicesHovered(true)}
-                  onMouseLeave={() => {
-                    setIsServicesHovered(false);
-                    setHoveredCategory(null);
-                  }}
-                >
-                  <Link to={item.path} className="px-6 py-2 bg-white text-sm font-medium shadow-sm hover:bg-[#F3931D] transition">
-                    {item.label}
-                  </Link>
-                  {isServicesHovered && (
-                    <ul className="absolute left-0 top-full mt-2 w-56 bg-white shadow-lg rounded-md z-50">
-                      {Array.isArray(item.mainCategories) &&
-                        item.mainCategories.map((category, index) => (
-                          <li
-                            key={index}
-                            className="relative"
-                            onMouseEnter={() => setHoveredCategory(category.label)}
-                            onMouseLeave={() => setHoveredCategory(null)}
-                          >
-                            <div className="px-4 py-2 text-black hover:bg-[#F3931D] cursor-pointer">
-                              {category.label}
-                            </div>
-                            {hoveredCategory === category.label && (
-                              <ul className="absolute left-full top-0 w-[200px] bg-white shadow-lg rounded-md z-50 grid grid-cols-1 gap-2 p-4">
-                                {Array.isArray(category.subItems) &&
-                                  category.subItems.map((sub, i) => (
-                                    <li key={i}>
-                                      <Link to={sub.path} className="block text-sm text-gray-700 hover:text-white hover:bg-[#F3931D] px-3 py-2 rounded-md">
-                                        {sub.label}
-                                      </Link>
-                                    </li>
-                                  ))}
-                              </ul>
-                            )}
-                          </li>
-                        ))}
-                    </ul>
-                  )}
-                </li>
-              ) : (item.subItems && (isAboutUs || isDownload)) ? (
+              return (item.subItems && (isAboutUs || isDownload)) ? (
                 <li
                   key={item.label}
                   className="relative"
@@ -384,7 +351,52 @@ const Header = ({
               );
             })}
           </ul>
+
+          {/* Mobile Hamburger Button */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="lg:hidden flex flex-col gap-1 p-2 ml-auto"
+            aria-label="Toggle menu"
+          >
+            <span className={`w-6 h-0.5 bg-black transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+            <span className={`w-6 h-0.5 bg-black transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
+            <span className={`w-6 h-0.5 bg-black transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+          </button>
         </div>
+
+        {/* Mobile Menu Dropdown */}
+        {isMobileMenuOpen && (
+          <div className="lg:hidden bg-white shadow-lg">
+            <ul className="flex flex-col">
+              {navItems.map((item) => (
+                <li key={item.label} className="border-b border-gray-200">
+                  <Link 
+                    to={item.path} 
+                    className="block px-4 py-3 hover:bg-[#F3931D] text-sm font-medium"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                  {item.subItems && (
+                    <ul className="bg-gray-50">
+                      {item.subItems.map((sub, i) => (
+                        <li key={i}>
+                          <a 
+                            href={`${item.path}${sub.anchor}`} 
+                            className="block px-8 py-2 hover:bg-[#F3931D] text-xs"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                          >
+                            {sub.label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </nav>
     </header>
   );

@@ -84,6 +84,7 @@ const translations = {
     president: "President",
     minister: "Minister",
     secretary: "Secretary",
+    deputyMinister: "Deputy Minister",
     
     aboutIntro: "Our leadership and guiding principles for national development.",
     // vision: "Our Vision",
@@ -103,9 +104,9 @@ const translations = {
     relatedOrganizations: "Related Organizations",
     
     // Officers Names
-    presidentName: "Hon. Anura Kumara Dissanayake",
+    deputyMinisterName: "Mr. Wasantha Piyathissa",
     ministerName: "Mr. Upali Pannilage",
-    secretaryName: "Mr. S. Alokabandara",
+    secretaryName: "Mr. S. Manthrinayake",
     directorGeneralName: "Mr. H.M.M.U.B. Herath",
 
     
@@ -115,6 +116,11 @@ const translations = {
     ministryHomeAffairs: "Ministry of Home Affairs",
     ministryFinance: "Ministry of Finance",
     exportDevBoard: "Export Development Board",
+    ministryOfRuralDevelopment: "Ministry of Rural Development, Social Security and Community Empowerment",
+    nationalSecretariat: "National Secretariat for Community Empowerment",
+    samurdi: "Department of Samurdhi Development",
+
+
     
     // About Us Page
     aboutUsTitle: "About Us",
@@ -168,7 +174,7 @@ const translations = {
     dehydratedProduct: "Dehydrated Product",
     prajashakthiTrainingofTrainersNorthWesternProvinceProgram: "Praja Shakthi Training of Trainers - North Western Province Program",
     prajashakthiTrainingofTrainersNorthCentralProvinceProgram: "Praja Shakthi Training of Trainers - North Central Province Program",
-
+    //prajashakthiTrainingofTrainersSouthAndCentralProvinceProgram: "Praja Shakthi Training of Trainers - South and Central Province Program",
     
 
     "featuredNews.title": "Featured News",
@@ -184,6 +190,8 @@ const translations = {
     "news3.title": "Praja Shakthi Training of Trainers - Eastern Province Program.",
     "news4.date": "18th Oct 2025",
     "news4.title": "Praja Shakthi Training of Trainers - North Province Program.",
+    "news5.date": "16th Dec 2025",
+    "news5.title": "Praja Shakthi Training of Trainers - South and Central Province Program.",
 
 
     //news1 page 
@@ -196,11 +204,16 @@ const translations = {
 
     //news3 page
     prajashakthiTrainingofTrainersEasternProvinceProgram: "Praja Shakthi Training of Trainers - Eastern Province Program.",
-    easternProgramIntro: "The Eastern Provincial Program for Training Community Empowerment Trainers, jointly organized by the Rural Development Bureau and the Presidential Secretariat, was successfully held on October 28th and 29th at the Kalmunai Vocational Training Center.",
+    easternProgramIntro: "The Eastern Provincial Program for Training Community Empowerment Trainers, jointly organized by the Rural Development Bureau and the Presidential Secretariat, was successfully held on October 25th and 2th at the  TrincomaleeManagement Development And Training Institute .",
 
     //news4 page
     prajashakthiTrainingofTrainersNorthProvinceProgram: "Praja Shakthi Training of Trainers - North Province Program.",
-    northProgramIntro: "The Northern Provincial Program for Training Community Empowerment Trainers, jointly organized by the Rural Development Bureau and the Presidential Secretariat, was successfully held on October 18th and 19st at the Kilinochchi Vocational Training Center.",
+    northProgramIntro: "The Northern Provincial Program for Training Community Empowerment Trainers, jointly organized by the Rural Development Bureau and the Presidential Secretariat, was successfully held on October 18th and 19st at the Kilinochchi Management Development And Training Institute.",
+
+    //news5 page
+    prajashakthiTrainingofTrainersSouthAndCentralProvinceProgram: "Praja Shakthi Training of Trainers - South and Central Province Program.",
+    southProgramIntro: "The Southern and Central Provinces Program for Training of Prajashakthi Trainers, jointly organized by the Rural Development Bureau and the Presidential Secretariat, was successfully held on December 16th and 17th at the Ranminithenna Tele Cinema Village.",
+
 
     // Products Page
     productsTitle: "Products",
@@ -348,11 +361,13 @@ const translations = {
     
     downloadTitle: "චක්‍රලේඛ, මාර්ගෝපදේශ සහ ආකෘති බාගන්න",
     relatedOrganizations: "අදාළ ආයතන",
+
+    deputyMinister: "උප අමාත්‍ය",
     
     // Officers Names
-    presidentName: "ගරු අනුර කුමාර දිසානායක",
+    deputyMinisterName: "වසන්ත පියතිස්ස මහතා",
     ministerName: "උපාලි පන්නිලගේ මහතා",
-    secretaryName: "එස්. අලෝකබන්ඩාර මහතා",
+    secretaryName: "සම්පත් මන්ත්‍රිනායක මහතා",
     directorGeneralName: "එච්. එම්. එම්. යූ. බී. හේරත් මහතා",
     
     // Organizations
@@ -361,6 +376,10 @@ const translations = {
     ministryHomeAffairs: "ස්වදේශ කටයුතු අමාත්‍යාංශය",
     ministryFinance: "මුදල් අමාත්‍යාංශය",
     exportDevBoard: "අපනයන සංවර්ධන මණ්ඩලය",
+    ministryOfRuralDevelopment: "ග්‍රාමීය සංවර්ධන, සමාජ ආරක්ෂණ සහ ප්‍රජා සවිබලගැන්වීම් අමාත්‍යාංශය",
+    nationalSecretariat: "ජාතික ප්‍රජා සවිබලගැන්වීම් ලේකම් කාර්යාලය",
+    samurdi: "සමෘද්ධි සංවර්ධන දෙපාර්තමේන්තුව",
+
     
     // About Us Page
     aboutUsTitle: "අප ගැන",
@@ -421,12 +440,15 @@ const translations = {
     "featuredNews.imageAlt": "පුවත් රූපය",
 
     "news1.date": "2025 නොවැම්බර් 18",
+    "news1.title": "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ වයඹ පළාත් වැඩසටහන.",
     "news2.date": "2025 නොවැම්බර් 14",
     "news2.title": "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ උතුරු මැද පළාත් වැඩසටහන.",
     "news3.date": "2025 නොවැම්බර් 10",
     "news3.title": "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ නැගෙනහිර පළාත් වැඩසටහන.",
     "news4.date": "2025 නොවැම්බර් 18",
     "news4.title": "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ උතුරු පළාත් වැඩසටහන.",
+    "news5.date": "2025 දෙසැමබර් 16",
+    "news5.title": "ප්‍රජාශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ දකුණු සහ මධ්‍යම  පළාත් වැඩසටහන",
     
 
 
@@ -439,15 +461,22 @@ const translations = {
     "northWesternProgramAlt": "සමාජ බලගැන්වීමේ පුහුණු වැඩසටහන",
 
     //newa2 page
+    prajashakthiTrainingofTrainersNorthCentralProvinceProgram: "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ උතුරු මැද පළාත් වැඩසටහන.",
     "northCentralProgramIntro": "ග්‍රාමීය සංවර්ධන කාර්යංශය සහ ජනාධිපති ලේකම් කාර්යාලය එක්ව සංවිධානය කරනු ලැබූ ප්‍රජාශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ උතුරු මැද පළාත් වැඩසටහන නොවැම්බර් මස 10, 11 දෙදින තුළ ජාතික මිරිදිය දීවර සහ ජලජීවී වගා පුහුනු මධ්‍යස්ථානයේ දී සාර්ථකව පවත්වන ලදි.",
     //"northWesternProgramAlt": "සමාජ බලගැන්වීමේ පුහුණු වැඩසටහන",
 
     //news3 page
     prajashakthiTrainingofTrainersEasternProvinceProgram: "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ නැගෙනහිර පළාත් වැඩසටහන.",
+    easternProgramIntro: "ග්‍රාම සංවර්ධන කාර්යාංශය සහ ජනාධිපති ලේකම් කාර්යාලය එක්ව සංවිධානය කරන ලද ප්‍රජා සවිබල ගැන්වීමේ පුහුණුකරුවන් පුහුණු කිරීමේ නැගෙනහිර පළාත් වැඩසටහන ඔක්තෝබර් 25 සහ 26 යන දෙදින තුළ ත්‍රිකුණාමලය කළමනාකරණ සංවර්ධන හා පුහුණු ආයතනයේ දී සාර්ථකව පැවැත්විණි.",
 
     //news4 page
     prajashakthiTrainingofTrainersNorthProvinceProgram: "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ උතුරු පළාත් වැඩසටහන.",
+    northProgramIntro: "ග්‍රාම සංවර්ධන කාර්යාංශය සහ ජනාධිපති ලේකම් කාර්යාලය එක්ව සංවිධානය කරන ලද ප්‍රජා සවිබල ගැන්වීමේ පුහුණුකරුවන් පුහුණු කිරීමේ උතුරු පළාත් වැඩසටහන ඔක්තෝබර් 18 සහ 19 යන දෙදින තුළ කිලිනොච්චි කළමනාකරණ සංවර්ධන සහ පුහුණු ආයතනයේ දී සාර්ථකව පැවැත්විණි.",
 
+
+    //news5 page
+    prajashakthiTrainingofTrainersSouthAndCentralProvinceProgram: "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ දකුණු සහ මධ්‍යම පළාත් වැඩසටහන.",
+    southProgramIntro: "ග්‍රාම සංවර්ධන කාර්යාංශය සහ ජනාධිපති ලේකම් කාර්යාලය එක්ව සංවිධානය කරන ලද ප්‍රජාශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ දකුණු සහ මධ්‍යම පළාත් වැඩසටහන දෙසැම්බර් 16 සහ 17 යන දෙදින රන්මිණිතැන්න ටෙලි සිනමා ගම්මානයේදී සාර්ථකව පැවැත්විණි.",
 
     // Products Page
     productsTitle: "නිෂ්පාදන",
@@ -591,11 +620,12 @@ const translations = {
     
     downloadTitle: "சுற்றறிக்கைகள், வழிகாட்டுதல்கள் மற்றும் வடிவங்களை பதிவிறக்கவும்",
     relatedOrganizations: "தொடர்புடைய நிறுவனங்கள்",
+    deputyMinister: "உப அமைச்சர்",
     
     // Officers Names
-    presidentName: "மாண். அனுர குமார திஸாநாயக்க",
+    deputyMinisterName: "திரு. வசந்த பியதிஸ்ஸ",
     ministerName: "திரு. உபாலி பன்னிலகே",
-    secretaryName: "திரு. எஸ். அலோகபந்தார",
+    secretaryName: "திரு. சம்பத் மந்திரிநாயக்க",
     directorGeneralName: "திரு. எச்.எம்.எம்.யூ.பி.ஹெரத்",
   
     
@@ -605,6 +635,13 @@ const translations = {
     ministryHomeAffairs: "உள்துறை அமைச்சு",
     ministryFinance: "நிதி அமைச்சு",
     exportDevBoard: "ஏற்றுமதி அபிவிருத்தி வாரியம்",
+    ministryOfRuralDevelopment: "கிராமப்புற மேம்பாடு சமூகப் பாதுகாப்பு மற்றும் சமூக அதிகாரமளித்தல்",
+    nationalSecretariat: "மாற்றுத்திறனாளிகளுக்கான தேசிய செயலாளர்",
+    samurdi: "சமுர்த்தி அபிவிருத்தித் துறை",
+
+    
+    
+
     
     // About Us Page
     aboutUsTitle: "எங்களை பற்றி",
@@ -666,11 +703,13 @@ viewAll: "அனைத்தையும் பார்க்க",
 "news1.date": "2025 நவம்பர் 18",
 "news1.title": "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – வடமேற்கு மாகாண திட்டம்.",
 "news2.date": "2025 நவம்பர் 14",
-"news2.title": "தென் மற்றும் தென்கிழக்கு ஆசியாவுக்கான WHO 78வது பிராந்திய மாநாட்டின் இரண்டாவது நாள் இன்று.",
+"news2.title": "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – வடமத்திய மாகாண திட்டம்.",
 "news3.date": "2025 நவம்பர் 11",
 "news3.title": "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – கிழக்கு மாகாண திட்டம்.",
 "news4.date": "2025 நவம்பர் 10",
 "news4.title": "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – வட மாகாண திட்டம்.",
+"news5.date": "2025 டிசம்பர் 16",
+"news5.title": "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – மத்திய மாகாண திட்டம்.",
 
 
     //news1 page 
@@ -685,10 +724,15 @@ viewAll: "அனைத்தையும் பார்க்க",
 
   //news3 page
   prajashakthiTrainingofTrainersEasternProvinceProgram:"பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – கிழக்கு மாகாண திட்டம்",
+  easternProgramIntro: "கிராம அபிவிருத்தி பணியகம் மற்றும் ஜனாதிபதி செயலகம் இணைந்து ஏற்பாடு செய்த கிழக்கு மாகாண சமூக வலுவூட்டல் பயிற்சியாளர்களுக்கான பயிற்சி நிகழ்ச்சித்திட்டம், திருகோணமலை மேலாண்மை மேம்பாடு மற்றும் பயிற்சி நிறுவனத்தில் அக்டோபர் 25 மற்றும் 26 ஆகிய தேதிகளில் வெற்றிகரமாக நடைபெற்றது.",
 
 //news4 page
-  prajashakthiTrainingofTrainersSouthernProvinceProgram:"பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – வட மாகாணம் திட்டம்",
+prajashakthiTrainingofTrainersNorthProvinceProgram:"பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – வட மாகாணம் திட்டம்",
+  northProgramIntro: "கிராமப்புற அபிவிருத்தி பணியகம் மற்றும் ஜனாதிபதி செயலகம் இணைந்து ஏற்பாடு செய்த சமூக வலுவூட்டல் பயிற்சியாளர்களுக்கான வடக்கு மாகாண பயிற்சி நிகழ்ச்சித்திட்டம் அக்டோபர் 18 மற்றும் 19 ஆகிய தேதிகளில் கிளிநொச்சி மேலாண்மை மேம்பாட்டு மற்றும் பயிற்சி நிறுவனத்தில் வெற்றிகரமாக நடைபெற்றது.",
 
+  //news5 page
+  prajashakthiTrainingofTrainersSouthAndCentralProvinceProgram: "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – மத்திய மாகாண திட்டம்",
+  southProgramIntro: "கிராம அபிவிருத்தி பணியகம் மற்றும் ஜனாதிபதி செயலகம் இணைந்து ஏற்பாடு செய்த பிரஜாசக்தி பயிற்சியாளர்களுக்கான தெற்கு மற்றும் மத்திய மாகாண பயிற்சி நிகழ்ச்சித்திட்டம் டிசம்பர் 16 மற்றும் 17 ஆகிய தேதிகளில் ரன்மினிதென்ன டெலி சினிமா கிராமத்தில் வெற்றிகரமாக நடைபெற்றது.",
     // Products Page
     productsTitle: "தயாரிப்புகள்",
     productsDescription: "சௌபாக்ய உற்பத்தி கிராமங்களில் எங்கள் சொந்த உற்பத்தியாளர்களால் தயாரிக்கப்பட்ட தரமான தயாரிப்புகளின் பரந்த அளவு எங்களிடம் உள்ளது. இந்த உள்நாட்டில் அடிப்படையிலான மதிப்பு கூட்டப்பட்ட தயாரிப்புகள் கவனமாக வடிவமைக்கப்பட்டு உற்பத்தி மதிப்பு சங்கிலியில் உலகளாவிய தரங்களை சந்திக்கின்றன.",

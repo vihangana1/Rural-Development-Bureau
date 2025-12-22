@@ -4,7 +4,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 // Import officer images
 //import nimalImage from "../assets/officers/image 2.jpeg";
-//import tharushiImage from "../assets/officers/image 2.jpeg";
+import herathImage from "../assets/officers/H.M.M.U.B.herath.jpeg";
 import yahanadanImage from "../assets/officers/yohanadan.jpeg";
 import wickramageImage from "../assets/officers/wickramage.jpeg";
 import wijayakoonImage from "../assets/officers/W.M.U.M.Wijayakoon.jpeg";
@@ -61,12 +61,12 @@ const AboutUs = () => {
 
   const officers = [
     {
-      name: "S.",
+      name: "H.M.M.U.B. Herath.",
       designation: t('directorGeneral'),
       office: " 011 2877122",
       phone: "N/A",
       email: "nimal.perera@ministry.gov.lk",
-      //image: nimalImage,
+      image: herathImage,
     },
     {
       name: "W.P.S. Wickramge",
@@ -100,14 +100,14 @@ const AboutUs = () => {
       email: "-",
       image: champikaImage,
     },
-    {
-      name: "R.H.C.K.Ramasinghe",
-      designation: t('deputyDirector'),
-      office: "N/A",
-      phone: "Mobile-0702599805",
-      email: "vijewardhana87@gmail.com",
-      //image: RathnayakeImage,
-    },
+    // {
+    //   name: "R.H.C.K.Ramasinghe",
+    //   designation: t('deputyDirector'),
+    //   office: "N/A",
+    //   phone: "Mobile-0702599805",
+    //   email: "vijewardhana87@gmail.com",
+    //   //image: RathnayakeImage,
+    // },
     {
       name: "V.C. Wijewardana",
       designation: t('deputyDirector'),
