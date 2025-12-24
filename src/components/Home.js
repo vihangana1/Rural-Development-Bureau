@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
-// import { Link, useNavigate } from "react-router-dom"; 
- import { Link } from "react-router-dom"; 
+import { Link, useNavigate } from "react-router-dom"; 
 
 import '../index.css';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -75,61 +74,61 @@ const boxVariants = {
 const Home = () => {
   const { t } = useLanguage();
   const [currentIndex, setCurrentIndex] = useState(0);
-  //const [activeService, setActiveService] = useState(null);
-  //const navigate = useNavigate();
+  const [activeService, setActiveService] = useState(null);
+  const navigate = useNavigate();
 
   // Services data with translations
-  // const servicesData = {
-  //   [t('agriculture')]: [
-  //     { label: t('coconutRelatedProduct'), path: "/services/agriculture/coconut" },
-  //     { label: t('kithulRelatedProduct'), path: "/services/agriculture/kithul" },
-  //     { label: t('palmRelatedProduct'), path: "/services/agriculture/palm" },
-  //     { label: t('spicesRelatedProduct'), path: "/services/agriculture/spices" },
-  //     { label: t('flowersOrnamentalPlants'), path: "/services/agriculture/flowers" },
-  //     { label: t('seedProduct'), path: "/services/agriculture/seed" },
-  //     { label: t('fruitRelatedProduct'), path: "/services/agriculture/fruits" },
-  //     { label: t('vegetableValueAddition'), path: "/services/agriculture/vegetable" },
-  //     { label: t('mushroomProduct'), path: "/services/agriculture/mushroom" },
-  //     { label: t('otherProduct'), path: "/services/agriculture/other" },
-  //     { label: t('teaProduct'), path: "/services/agriculture/tea" },
-  //     { label: t('bulathProduct'), path: "/services/agriculture/bulath" },
-  //     { label: t('cinnamonProduct'), path: "/services/agriculture/cinnamon" },
-  //   ],
-  //   [t('industries')]: [
-  //     { label: t('clothRelatedProduct'), path: "/services/industries/cloth" },
-  //     { label: t('footwear'), path: "/services/industries/footwear" },
-  //     { label: t('caneRelatedProduct'), path: "/services/industries/cane" },
-  //     { label: t('clayRelatedProduct'), path: "/services/industries/clay" },
-  //     { label: t('woodenItems'), path: "/services/industries/wooden" },
-  //     { label: t('poojaItems'), path: "/services/industries/pooja" },
-  //     { label: t('sweetOrganicFoods'), path: "/services/industries/sweet&foods" },
-  //     { label: t('coconutHuskProduct'), path: "/services/industries/coconutHusk" },
-  //     { label: t('handCraftProduct'), path: "/services/industries/handcraft" },
-  //     { label: t('ironGoldProduct'), path: "/services/industries/iron&gold" }
-  //   ],
-  //   [t('fisheries')]: [
-  //     { label: t('umbalakadaDriedFish'), path: "/services/fisheries/umbalakada&driesfish" },
-  //     { label: t('ornamentalFish'), path: "/services/fisheries/ornamentalfish" },
-  //   ],
-  //   [t('animalHusbandry')]: [
-  //     { label: t('dairyProduct'), path: "/services/AnimalHusbandry/dairyproduct" },
-  //     { label: t('egg'), path: "/services/AnimalHusbandry/eggs" },
-  //     { label: t('meats'), path: "/services/AnimalHusbandry/meats" },
-  //     { label: t('beeHoney'), path: "/services/AnimalHusbandry/beehoney" },
-  //   ],
-  //   [t('infrastructure')]: [
-  //     { label: t('roadDevelopments'), path: "/services/village/roaddevelopment" },
-  //     { label: t('sanitaryFacilities'), path: "/services/village/sanitaryfacilities" },
-  //     { label: t('tourismIndustry'), path: "/services/village/tourism" },
-  //     { label: t('otherServices'), path: "/services/village/otherservices" },
-  //   ]
- // };
+  const servicesData = {
+    [t('agriculture')]: [
+      { label: t('coconutRelatedProduct'), path: "/services/agriculture/coconut" },
+      { label: t('kithulRelatedProduct'), path: "/services/agriculture/kithul" },
+      { label: t('palmRelatedProduct'), path: "/services/agriculture/palm" },
+      { label: t('spicesRelatedProduct'), path: "/services/agriculture/spices" },
+      { label: t('flowersOrnamentalPlants'), path: "/services/agriculture/flowers" },
+      { label: t('seedProduct'), path: "/services/agriculture/seed" },
+      { label: t('fruitRelatedProduct'), path: "/services/agriculture/fruits" },
+      { label: t('vegetableValueAddition'), path: "/services/agriculture/vegetable" },
+      { label: t('mushroomProduct'), path: "/services/agriculture/mushroom" },
+      { label: t('otherProduct'), path: "/services/agriculture/other" },
+      { label: t('teaProduct'), path: "/services/agriculture/tea" },
+      { label: t('bulathProduct'), path: "/services/agriculture/bulath" },
+      { label: t('cinnamonProduct'), path: "/services/agriculture/cinnamon" },
+    ],
+    [t('industries')]: [
+      { label: t('clothRelatedProduct'), path: "/services/industries/cloth" },
+      { label: t('footwear'), path: "/services/industries/footwear" },
+      { label: t('caneRelatedProduct'), path: "/services/industries/cane" },
+      { label: t('clayRelatedProduct'), path: "/services/industries/clay" },
+      { label: t('woodenItems'), path: "/services/industries/wooden" },
+      { label: t('poojaItems'), path: "/services/industries/pooja" },
+      { label: t('sweetOrganicFoods'), path: "/services/industries/sweet&foods" },
+      { label: t('coconutHuskProduct'), path: "/services/industries/coconutHusk" },
+      { label: t('handCraftProduct'), path: "/services/industries/handcraft" },
+      { label: t('ironGoldProduct'), path: "/services/industries/iron&gold" }
+    ],
+    [t('fisheries')]: [
+      { label: t('umbalakadaDriedFish'), path: "/services/fisheries/umbalakada&driesfish" },
+      { label: t('ornamentalFish'), path: "/services/fisheries/ornamentalfish" },
+    ],
+    [t('animalHusbandry')]: [
+      { label: t('dairyProduct'), path: "/services/AnimalHusbandry/dairyproduct" },
+      { label: t('egg'), path: "/services/AnimalHusbandry/eggs" },
+      { label: t('meats'), path: "/services/AnimalHusbandry/meats" },
+      { label: t('beeHoney'), path: "/services/AnimalHusbandry/beehoney" },
+    ],
+    [t('infrastructure')]: [
+      { label: t('roadDevelopments'), path: "/services/village/roaddevelopment" },
+      { label: t('sanitaryFacilities'), path: "/services/village/sanitaryfacilities" },
+      { label: t('tourismIndustry'), path: "/services/village/tourism" },
+      { label: t('otherServices'), path: "/services/village/otherservices" },
+    ]
+ };
 
   // Function to handle sub-item click
-  // const handleSubItemClick = (subItem) => {
-  //   console.log(`Sub-item clicked: ${subItem}`);
-  //   navigate(subItem.path);
-  // };
+  const handleSubItemClick = (subItem) => {
+    console.log(`Sub-item clicked: ${subItem}`);
+    navigate(subItem.path);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -363,26 +362,26 @@ const Home = () => {
         <ServicesSection />
       </div>
 
-      {/* Projects Section */}
-      {/* <section className="bg-[#F9F9F9] py-16 px-6 md:px-20">
+      {/* Projects Section */} 
+      <section className="bg-[#F9F9F9] py-16 px-6 md:px-20">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
-          Left: Text Content */}
-          {/* <div className="md:w-1/2 text-left">
+          {/* Left: Text Content  */}
+          <div className="md:w-1/2 text-left">
             <Reveal>
-              <h2 className="text-3xl font-bold text-black mb-4 uppercase">
+              <h2 className="text-4xl font-bold text-black mb-4 uppercase">
                 {t('projects')}
               </h2>
-              <p className="text-sm uppercase text-gray-600 mb-2">
+              {/* {/* <p className="text-sm uppercase text-gray-600 mb-2">
                 {t('exploreSectors')}
-              </p>
+              </p> */}
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 {t('projectsDescription')}
-              </p>
+              </p> 
             </Reveal>
-          </div> */}
+          </div>
 
           {/* Right: Interactive Services */}
-          {/* <div className="md:w-1/2 w-full">
+           <div className="md:w-1/2 w-full">
             <div className="space-y-4">
               {Object.keys(servicesData).map((service, index) => (
                 <Reveal key={service} delay={index * 100}>
@@ -422,7 +421,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
 
      {/* RTI Section */}

@@ -127,7 +127,7 @@ const Footer = () => {
             </div>
             <div>
               <p className="font-semibold">{t('email')}:</p>
-              <p className="text-sm">sdbspv@gmail.com</p>
+              <p className="text-sm">ruraldevelopmentbureau@gmail.com</p>
             </div>
           </div>
 
@@ -175,10 +175,10 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto mt-8 pt-6 border-t border-white/30 text-center text-sm">
         <p>
-          © 2024 {t('aboutMinistry')}. {t('allRightsReserved')}.
+          © 2025 {t('aboutMinistry')}. {t('allRightsReserved')}.
         </p>
         <p className="mt-2">
-          {t('developedBy')} <span className="font-semibold">Your Team Name</span>
+          {/* {t('developedBy')} <span className="font-semibold">Your Team Name</span> */}
         </p>
       </div>
     </footer>

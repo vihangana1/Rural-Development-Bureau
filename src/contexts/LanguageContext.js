@@ -98,7 +98,7 @@ const translations = {
     officerDetail: "OFFICER DETAIL",
     projects: "Projects",
     exploreSectors: "Explore 5 Key Sectors Driving Rural Development",
-    projectsDescription: "The  Production Village Program empowers  villages by organizing services into Agriculture, Industries, Fisheries, Animal Husbandry, and Infrastructure. Click a category to discover its sub-items and explore the products that uplift rural livelihoods.",
+    projectsDescription: "2025 our projects focus on Agriculture, Industries, Fisheries, Animal Husbandry, and Infrastructure development to empower rural communities and enhance their livelihoods.",
     
     downloadTitle: "Download circulers, Guidelines and Formats",
     relatedOrganizations: "Related Organizations",
