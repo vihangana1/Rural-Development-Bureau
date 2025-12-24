@@ -300,9 +300,9 @@ const Home = () => {
             {
               title: t('latestCirculars'),
               files: [
-                { name: 'Budget Circular 2025-Sinhala', path: '/downloads/circular/Budget Circular No 08_2025 S.pdf' },
                 { name: 'Prajashakthi Circular-Sinhala', path: '/downloads/circular/Prajashakthi Circular-Sinhala.pdf' },
                 { name: 'Prajashakthi Circular-Tamil', path: '/downloads/circular/Prajashakthi Circular-Tamil.pdf' },
+                { name: 'Budget Circular 2025-Sinhala', path: '/downloads/circular/Budget Circular No 08_2025 S.pdf' },
               ],
               link: '/Download#Circulars',
             },
