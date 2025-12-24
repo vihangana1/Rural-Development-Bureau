@@ -163,7 +163,7 @@ const Header = ({
             <div className="space-y-1">
               <h1 className="text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold leading-tight" 
                   style={{ textShadow: "3px 3px 6px rgba(0, 0, 0, 0.4)" }}>
-                <span className="block bg-gradient-to-r from-white to-yellow-100 bg-clip-text text-transparent">
+                <span className="block bg-gradient-to-r from-white to-yellow-100 bg-clip-text ">
                   ග්‍රාමීය සංවර්ධන කාර්යංශය
                 </span>
                 <span className="block text-yellow-100 font-semibold">
