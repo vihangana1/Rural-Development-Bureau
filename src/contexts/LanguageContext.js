@@ -131,7 +131,7 @@ const translations = {
     mission: "Mission",
     missionText: "To contribute to the optimal fulfillment of human needs through active community participation and strategic resource management through an integrated approach that encompasses the entire community.",
     officersDetails: "Officer's Details",
-    directorGeneral: "Director General",
+    directorGeneral: "Additional Secretary (Rural Development)",
     director: "Director",
     deputyDirector: "Deputy Director",
     assistantDirector: "Assistant Director",

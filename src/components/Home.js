@@ -517,6 +517,11 @@ const Home = () => {
               link: "https://www.srilankabusiness.com/",
             },
             {
+              name: t('samurdi'),
+              logo: require("../assets/gov_logo.jpeg"),
+              link: "http://www.samurdhi.gov.lk/",
+            },
+            {
               name: t('ruralDevResearchInstitute'),
               logo: require("../assets/gov_logo.jpeg"),
               link: "https://stateminsamurdhi.gov.lk/web/index.php?option=com_content&view=article&id=48&Itemid=184&lang=en",
@@ -547,11 +552,7 @@ const Home = () => {
               logo: require("../assets/gov_logo.jpeg"),
               link: "https://www.nspd.gov.lk/",
             },
-            {
-              name: t('samurdi'),
-              logo: require("../assets/gov_logo.jpeg"),
-              link: "http://www.samurdhi.gov.lk/",
-            },
+            
 
 
           ].map((org, index) => (

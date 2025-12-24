@@ -54,7 +54,7 @@ const Header = ({
           subItems: [
             { label: t('coconutRelatedProduct'), path: "/services/agriculture/coconut", icon: "🥥" },
             { label: t('kithulRelatedProduct'), path: "/services/agriculture/kithul", icon: "🌴" },
-            { label: t('palmRelatedProduct'), path: "/services/agriculture/palm", icon: "🌴" },
+            //{ label: t('palmRelatedProduct'), path: "/services/agriculture/palm", icon: "🌴" },
             { label: t('spicesRelatedProduct'), path: "/services/agriculture/spices", icon: "🌶️" },
             { label: t('flowersOrnamentalPlants'), path: "/services/agriculture/flowers", icon: "🌺" },
             { label: t('seedProduct'), path: "/services/agriculture/seed", icon: "🌱" },
