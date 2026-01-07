@@ -21,11 +21,11 @@ const Header = ({
 
   // Navigation items with translations
   const navItems = [
-    { label: t('home'), path: "/", icon: "🏠" },
+    { label: t('home'), path: "/" },
     {
       label: t('aboutUs'),
       path: "/AboutUs",
-      icon: "👥",
+      // icon: "👥",
       subItems: [
         { label: t('introduction'), anchor: "#introduction", icon: "📋" },
         { label: t('overview'), anchor: "#overview", icon: "👁️" },
@@ -35,17 +35,17 @@ const Header = ({
     {
       label: t('download'),
       path: "/Download",
-      icon: "📥",
+      // icon: "📥",
       subItems: [
         { label: t('circulars'), anchor: "#Circulars", icon: "📄" },
         { label: t('guidelines'), anchor: "#Guidelines", icon: "📖" },
         { label: t('formats'), anchor: "#Formats", icon: "📝" },
       ],
     },
-    { label: t('news'), path: "/News", icon: "📰" },
+    { label: t('news'), path: "/News"},
     {
       label: t('services'),
-      icon: "🛠️",
+      // icon: "🛠️",
       mainCategories: [
         {
           label: t('agriculture'),
@@ -54,14 +54,14 @@ const Header = ({
           subItems: [
             { label: t('coconutRelatedProduct'), path: "/services/agriculture/coconut", icon: "🥥" },
             { label: t('kithulRelatedProduct'), path: "/services/agriculture/kithul", icon: "🌴" },
-            //{ label: t('palmRelatedProduct'), path: "/services/agriculture/palm", icon: "🌴" },
+            { label: t('palmRelatedProduct'), path: "/services/agriculture/palm", icon: "🌴" },
             { label: t('spicesRelatedProduct'), path: "/services/agriculture/spices", icon: "🌶️" },
             { label: t('flowersOrnamentalPlants'), path: "/services/agriculture/flowers", icon: "🌺" },
             { label: t('seedProduct'), path: "/services/agriculture/seed", icon: "🌱" },
             { label: t('fruitRelatedProduct'), path: "/services/agriculture/fruits", icon: "🍎" },
             { label: t('vegetableValueAddition'), path: "/services/agriculture/vegetable", icon: "🥕" },
             { label: t('mushroomProduct'), path: "/services/agriculture/mushroom", icon: "🍄" },
-            { label: t('otherProduct'), path: "/services/agriculture/other", icon: "🌿" },
+            //{ label: t('otherProduct'), path: "/services/agriculture/other", icon: "🌿" },
             { label: t('teaProduct'), path: "/services/agriculture/tea", icon: "🍵" },
             { label: t('bulathProduct'), path: "/services/agriculture/bulath", icon: "🌿" },
             { label: t('cinnamonProduct'), path: "/services/agriculture/cinnamon", icon: "🌰" },
@@ -73,14 +73,14 @@ const Header = ({
           color: "from-blue-400 to-blue-600",
           subItems: [
             { label: t('clothRelatedProduct'), path: "/services/industries/cloth", icon: "👕" },
-            { label: t('footwear'), path: "/services/industries/footwear", icon: "👟" },
-            { label: t('caneRelatedProduct'), path: "/services/industries/cane", icon: "🦯" },
+            //{ label: t('footwear'), path: "/services/industries/footwear", icon: "👟" },
+            //{ label: t('caneRelatedProduct'), path: "/services/industries/cane", icon: "🦯" },
             { label: t('clayRelatedProduct'), path: "/services/industries/clay", icon: "🏺" },
             { label: t('woodenItems'), path: "/services/industries/wooden", icon: "🪵" },
-            { label: t('poojaItems'), path: "/services/industries/pooja", icon: "🕯️" },
+            //{ label: t('poojaItems'), path: "/services/industries/pooja", icon: "🕯️" },
             { label: t('sweetOrganicFoods'), path: "/services/industries/sweet&foods", icon: "🍯" },
-            { label: t('coconutHuskProduct'), path: "/services/industries/coconutHusk", icon: "🥥" },
-            { label: t('handCraftProduct'), path: "/services/industries/handcraft", icon: "🎨" },
+           // { label: t('coconutHuskProduct'), path: "/services/industries/coconutHusk", icon: "🥥" },
+            //{ label: t('handCraftProduct'), path: "/services/industries/handcraft", icon: "🎨" },
             { label: t('ironGoldProduct'), path: "/services/industries/iron&gold", icon: "⚙️" }
           ],
         },
@@ -100,7 +100,7 @@ const Header = ({
           subItems: [
             { label: t('dairyProduct'), path: "/services/AnimalHusbandry/dairyproduct", icon: "🥛" },
             { label: t('egg'), path: "/services/AnimalHusbandry/eggs", icon: "🥚" },
-            { label: t('meats'), path: "/services/AnimalHusbandry/meats", icon: "🍖" },
+            //{ label: t('meats'), path: "/services/AnimalHusbandry/meats", icon: "🍖" },
             { label: t('beeHoney'), path: "/services/AnimalHusbandry/beehoney", icon: "🍯" },
           ],
         },
@@ -112,12 +112,12 @@ const Header = ({
             { label: t('roadDevelopments'), path: "/services/village/roaddevelopment", icon: "🛣️" },
             { label: t('sanitaryFacilities'), path: "/services/village/sanitaryfacilities", icon: "🚿" },
             { label: t('tourismIndustry'), path: "/services/village/tourism", icon: "🏖️" },
-            { label: t('otherServices'), path: "/services/village/otherservices", icon: "⚡" },
+            //{ label: t('otherServices'), path: "/services/village/otherservices", icon: "⚡" },
           ],
         },
       ],
     },
-    { label: t('contactUs'), path: "/ContactUs", icon: "📞" },
+    { label: t('contactUs'), path: "/ContactUs"},
   ];
 
   const AccessibilityButton = ({ label, onClick, isActive, icon }) => (
@@ -140,7 +140,7 @@ const Header = ({
       <div 
         className="w-full text-white py-4 sm:py-6 relative overflow-hidden"
         style={{ 
-          background: "linear-gradient(135deg, #F7941D 0%, #6AA84F 50%, #2E8B57 100%)",
+          background: "linear-gradient(135deg, #7a1115 2%, #e38a2b 50%, #2E8B57 100%)",
         }}
       >
         {/* Decorative Background Pattern */}
@@ -161,19 +161,22 @@ const Header = ({
               />
             </div>
             <div className="space-y-1">
-              <h1 className="text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold leading-tight" 
-                  style={{ textShadow: "3px 3px 6px rgba(0, 0, 0, 0.4)" }}>
-                <span className="block bg-gradient-to-r from-white to-yellow-100 bg-clip-text ">
+              <h1
+                className="text-3xl font-bold leading-tight"
+                style={{ textShadow: "3px 3px 6px rgba(0, 0, 0, 0.4)" }}
+              >
+                <span className="block  text-white to-yellow-100 bg-clip-text text-transparent">
                   ග්‍රාමීය සංවර්ධන කාර්යංශය
                 </span>
-                <span className="block text-yellow-100 font-semibold">
-                  Rural Development Bureau
-                </span>
-                <span className="block text-yellow-200 text-sm lg:text-base">
+                <span className="block text-white-100 font-semibold">
                   கிராமிய அபிவிருத்தி அமைச்சு
+                </span>
+                <span className="block text-white-100 font-semibold">
+                  Rural Development Bureau
                 </span>
               </h1>
             </div>
+
           </div>
 
           {/* Enhanced Right Side Controls */}
@@ -181,9 +184,9 @@ const Header = ({
             {/* Improved Language Switcher */}
             <div className="flex flex-col sm:flex-row gap-2 bg-white/20 backdrop-blur-sm rounded-xl p-2">
               {[
-                { code: 'en', label: 'English', short: 'EN' },
                 { code: 'si', label: 'සිංහල', short: 'සිං' },
-                { code: 'ta', label: 'தமிழ்', short: 'த' }
+                { code: 'ta', label: 'தமிழ்', short: 'த' },
+                { code: 'en', label: 'English', short: 'EN' }
               ].map(({ code, label, short }) => (
                 <button
                   key={code}

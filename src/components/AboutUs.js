@@ -234,7 +234,7 @@ const AboutUs = () => {
                     <img
                       src={officer.image}
                       alt={officer.name}
-                      className="w-35 h-350 object-cover mb-4 border-2"
+                      className="w-full h-64 object-cover object-top rounded-t-lg mb-4 border-b-2"
                     />
                     <h3 className="text-xl font-semibold text-black mb-1">
                       {officer.name}

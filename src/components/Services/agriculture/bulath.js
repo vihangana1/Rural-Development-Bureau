@@ -1,73 +1,80 @@
-import React, { useState, useRef, useEffect } from "react";
-// import { Link } from "react-router-dom";
-
-// Import images (only 3 images now)
-import image1 from "../../../assets/services/agriculture/bulath/id01/image1.jpg";
-import image2 from "../../../assets/services/agriculture/bulath/id01/image2.jpg";
-import image3 from "../../../assets/services/agriculture/bulath/id01/image3.jpg";
+import React, { useState, useRef } from "react";
+import { useLanguage } from "../../../contexts/LanguageContext";
 
 const bulathProjects = [
-  {//rechecked id  1
+  {
     id: 1,
-    name: "RidiEla Organic Betel Project",
-    district: "Ampara",
-    office: "Dehiaththakndiya",
-    product: "Betel Leaf",
-    location: "RidiEla",
-    images: [image1, image2, image3], // Only 3 images
-    mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.314248420939!2d81.0371839!3d7.671939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4b33d4694cd31%3A0xc42f5c92598e53a1!2sDehiattakandiya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-    // buyPath: "/buy/ridiela-betel",
-    description:
-      "Under the Rural Development Programme- 2025, the total allocation of Rs 4,182,000.00 has been released for implementation of Betel Cultivation for Commercial Purpose in Ridee Ela under the Dehiattakandiya Divisional Secretary Division in Ampara District. There are 40 beneficiaries benefiting to raise their economic level through this project."
+    name: "ampara_organicBetel", // Full name for details
+    project: "organicBetelProject", // Small name for table
+    district: "ampara",
+    office: "dehiaththakandiya",
+    product: "betel_leaf",
+    amount: "4 182 000,00",
+    location: "ridiela",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.314248420939!2d81.0371839!3d7.671939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4b33d4694cd31%3A0xc42f5c92598e53a1!2sDehiattakandiya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
   },
-
-  // {
-  //   id: 2,
-  //   name: "Pussella & Rangwala Betel Cluster",
-  //   district: "Kegalle",
-  //   office: "Kegalle",
-  //   product: "Betel Leaf",
-  //   location: "51 A Pussella, 51 A Rangwala",
-  //   images: [image1, image2], // 2 images only
-  //   mapEmbed:
-  //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.314248420939!2d81.0371839!3d7.671939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4b33d4694cd31%3A0xc42f5c92598e53a1!2sDehiattakandiya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-  //   // buyPath: "/buy/pussella-betel",
-  //   description:
-  //     "This cluster focuses on enhancing the quality and marketability of betel leaves through modern agricultural techniques.",
-  // },
+  {
+    id: 2,
+    name: "kegalle_betelCluster",
+    project: "betelCluster",
+    district: "kegalle",
+    office: "kegalle",
+    product: "betel_leaf",
+    amount: "2 787 590,00",
+    location: "pussella",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.314248420939!2d81.0371839!3d7.671939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4b33d4694cd31%3A0xc42f5c92598e53a1!2sDehiattakandiya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+  },
+  {
+    id: 3,
+    name: "galigamuwa_betelCluster",
+    project: "betelCluster",
+    district: "kegalle",
+    office: "galigamuwa",
+    product: "betel_leaf",
+    amount: "4 095 797,50",
+    location: "papoluwa",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63386.31424842094!2d80.2338!3d7.2462958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae31a01c30563e9%3A0x669fc9d3bfa17ca6!2sPalapoluwa!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk"
+  },
+  {
+    id: 4,
+    name: "puttalama_betelCluster",
+    project: "betelCluster",
+    district: "puttalama",
+    office: "arachchikattuwa",
+    product: "betel_leaf",
+    amount: "2 232 450,00" ,
+    location: "abakele",
+    mapEmbed: "https://www.google.com/maps/place/Abakele/@7.706288,79.8970846,17z/data=!3m1!4b1!4m6!3m5!1s0x3afd330c7716a403:0x112a26ba8fbe4ef5!8m2!3d7.706288!4d79.8996595!16s%2Fg%2F11vc34pxh3?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D",
+  },  
+  {
+    id: 5,
+    name: "hambanthota_betelCluster",
+    project: "betelCluster",
+    district: "hambanthota",
+    office: "veeraketiya",
+    product: "betel_leaf",
+    amount: "414 100,00" ,
+    location: "degampotha",
+    mapEmbed: "https://www.google.com/maps/place/Degampotha/@6.1907618,80.7650618,14.15z/data=!4m6!3m5!1s0x3ae152f753861b7f:0x59ac569c31238836!8m2!3d6.1863691!4d80.7740912!16s%2Fg%2F11nn3h98mv?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D",
+  },  
 ];
 
 const BulathPage = () => {
+  const { t } = useLanguage();
   const [selectedProject, setSelectedProject] = useState(bulathProjects[0]);
-  const [imageIndex, setImageIndex] = useState(0);
   const scrollTargetRef = useRef(null);
-
-  useEffect(() => {
-    setImageIndex(0);
-  }, [selectedProject]);
-
-  useEffect(() => {
-    if (!selectedProject.images.length) return;
-
-    const interval = setInterval(() => {
-      setImageIndex((prev) => (prev + 1) % selectedProject.images.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [selectedProject]);
 
   const handleSelect = (project) => {
     setSelectedProject(project);
     setTimeout(() => {
-      scrollTargetRef.current?.scrollIntoView({ behavior: "smooth" });
-    }, 200);
+      scrollTargetRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 100);
   };
 
   return (
     <div className="min-h-screen bg-white px-6 py-10 space-y-10">
       <h1 className="text-2xl font-bold text-[#2C3E50] mb-6">
-        Betel Leaf Related Products
+        {t("betelPageTitle")}
       </h1>
 
       {/* Table Section */}
@@ -75,38 +82,29 @@ const BulathPage = () => {
         <table className="min-w-full border border-gray-300">
           <thead className="bg-[#896C6C] text-white">
             <tr>
-              <th className="px-4 py-2 border">No</th>
-              <th className="px-4 py-2 border">District</th>
-              <th className="px-4 py-2 border">Office</th>
-              <th className="px-4 py-2 border">Product</th>
-              <th className="px-4 py-2 border">Location</th>
-              {/* <th className="px-4 py-2 border">Buy</th> */}
+              <th className="px-4 py-2 border">{t("no")}</th>
+              <th className="px-4 py-2 border">{t("district")}</th>
+              <th className="px-4 py-2 border">{t("divisionalOffice")}</th>
+              <th className="px-4 py-2 border">{t("project")}</th>
+              <th className="px-4 py-2 border">{t("product")}</th>
+              <th className="px-4 py-2 border">{t("location")}</th>
             </tr>
           </thead>
-
           <tbody>
             {bulathProjects.map((item) => (
               <tr
                 key={item.id}
-                className="hover:bg-[#BCA88D] cursor-pointer"
+                className="hover:bg-[#BCA88D] cursor-pointer transition-colors"
                 onClick={() => handleSelect(item)}
               >
                 <td className="px-4 py-2 border text-center">{item.id}</td>
-                <td className="px-4 py-2 border">{item.district}</td>
-                <td className="px-4 py-2 border">{item.office}</td>
-                <td className="px-4 py-2 border">{item.product}</td>
+                <td className="px-4 py-2 border">{t(item.district)}</td>
+                <td className="px-4 py-2 border">{t(item.office)}</td>
+                <td className="px-4 py-2 border">{t(item.project)}</td>
+                <td className="px-4 py-2 border">{t(item.product)}</td>
                 <td className="px-4 py-2 border text-blue-600 underline">
-                  {item.location} </td>
-                {/* </td>
-                <td className="px-4 py-2 border">
-                  <Link
-                    to={item.buyPath}
-                    className="text-blue-600 underline hover:text-[#896C6C]"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    clickHere
-                  </Link>
-                </td> */}
+                  {t(item.location)}
+                </td>
               </tr>
             ))}
           </tbody>
@@ -114,11 +112,8 @@ const BulathPage = () => {
       </div>
 
       {/* Details Section */}
-      <div
-        ref={scrollTargetRef}
-        className="w-full flex flex-col lg:flex-row gap-6 items-start"
-      >
-        <div className="w-full lg:w-1/2 h-[400px] rounded-md overflow-hidden shadow-lg">
+      <div ref={scrollTargetRef} className="w-full flex flex-col lg:flex-row gap-6 items-start">
+        <div className="w-full lg:w-1/2 h-[350px] rounded-md overflow-hidden shadow-lg">
           <iframe
             title="Betel Project Map"
             src={selectedProject.mapEmbed}
@@ -129,26 +124,17 @@ const BulathPage = () => {
           ></iframe>
         </div>
 
-        <div className="w-full lg:w-1/2 h-[400px] bg-[#EDE5DD] p-6 rounded-md shadow-md overflow-y-auto">
-          <h2 className="text-xl font-bold text-[#896C6C] mb-2">
-            {selectedProject.name}
+        <div className="w-full lg:w-1/2 h-[350px] bg-[#EDE5DD] p-6 rounded-md shadow-md overflow-y-auto">
+          <h2 className="text-xl font-bold text-[#896C6C] mb-4">
+            {t(selectedProject.name)}
           </h2>
 
-          <p className="text-sm text-gray-700 mb-4">
-            {selectedProject.description}
-          </p>
-
-          <div className="relative w-full h-40 mb-4 overflow-hidden rounded-md">
-            {selectedProject.images.map((img, idx) => (
-              <img
-                key={idx}
-                src={img}
-                alt=""
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
-                  idx === imageIndex ? "opacity-100" : "opacity-0"
-                }`}
-              />
-            ))}
+          <div className="space-y-2 text-lg text-gray-700">
+            <p><span className="font-semibold">{t("district")}:</span> {t(selectedProject.district)}</p>
+            <p><span className="font-semibold">{t("divisionalOffice")}:</span> {t(selectedProject.office)}</p>
+            <p><span className="font-semibold">{t("project")}:</span> {t(selectedProject.project)}</p>
+            <p><span className="font-semibold">{t("product")}:</span> {t(selectedProject.product)}</p>
+            <p><span className="font-semibold">{t("Amount(Rs)")}:</span> {selectedProject.amount}</p>
           </div>
         </div>
       </div>

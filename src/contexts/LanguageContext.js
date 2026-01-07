@@ -1,8 +1,12 @@
 import React, { createContext, useState, useContext } from 'react';
 
+
 // --- 1. Translation Data ---
 // All text for English (en), Sinhala (si), and Tamil (ta) is stored here.
 const translations = {
+
+  
+  
   en: {
     // Header Navigation
     home: "Home",
@@ -82,7 +86,7 @@ const translations = {
     
     aboutMinistry: "About Rural Development Bureau",
     president: "President",
-    minister: "Minister",
+    minister: " Minister",
     secretary: "Secretary",
     deputyMinister: "Deputy Minister",
     
@@ -104,8 +108,8 @@ const translations = {
     relatedOrganizations: "Related Organizations",
     
     // Officers Names
-    deputyMinisterName: "Mr. Wasantha Piyathissa",
-    ministerName: "Mr. Upali Pannilage",
+    deputyMinisterName: "Hon. Mr. W.Piyathissa",
+    ministerName: "Hon. Dr. Upali Pannilage",
     secretaryName: "Mr. S. Manthrinayake",
     directorGeneralName: "Mr. H.M.M.U.B. Herath",
 
@@ -246,10 +250,684 @@ const translations = {
     //"rti.assistantTitle": "Director - Champika D. darmasena",
     "rti.officerName": "Director - Champika D. darmasena",
 
+//service page
+
+//Agryculture
+//fruit page
+fruitPageTitle: "Fruit Related Product", 
+no: "No", 
+// district: "District", 
+divisionalOffice: "Divisional Secretary Office", 
+project: "Project", 
+// product: "Product", 
+location: "Location", 
+"Amount(Rs)": "Amount (Rs)",
+
+
+    "amban_bananaProject": "Amban Banana Project",
+    "durianProject": "Duriyan Project",
+    "vine_orangesProject": "Vine Orange Project",
+    "jamanarangProject": "jamanarang Project",
+    "nutsProject": "Nuts Project",
+    "jams_cordialsProject": "Jams and Cordials Project",
+    "kavendish_bananaProject": "Kavendish Banana Project",
+    "mixed_fruitsProject": "Fruit Project",
+    "pineapple_delumProject": "Pinapple and Delum Project",
+    "apple_pera_mangoProject": "Apple, Pera, Tompesi Mango Project",
+
+    "mahanuwara_banana": " Mahanuwara Amban Banana Project",
+    "mahanuwara_durian": "Mahanuwara Duuriyan Project",
+    "nuwara_eliya_orange": "Nuwara Eliya Vine Orange Project",
+    "nuwara_eliya_jamanarang": "Nuwara Eliya jamanarang Project",
+    "ampara_orange": "Ampara Vine Orange Project",
+    "kurunegala_nuts": "Kurunegala Nuts Project",
+    "mulathivu_jams": "Mulathivu Jams and Cordials Project",
+    "mulathivu_banana": "Mulathivu Kavendish Banana Project",
+    "kalutara_fruit": "Kalutara Fruit Project",
+    "polonnaruwa_pineapple": "Plonnaruwa Pinapple and Delum Project",
+    "polonnaruwa_apple": "Plonnaruwa Apple, Pera, Tompesi Mango Project",
+
+  
+    "mahanuwara": "Mahanuwara",
+    "nuwara_eliya": "Nuwara Eliya",
+    "ampara": "Ampara",
+    "kurunegala": "Kurunegala",
+    "mulathivu": "Mulathivu",
+    "kalutara": "Kalutara",
+    "polonnaruwa": "Polonnaruwa",
+ 
+    "harispaththuwa": "Harispaththuwa",
+    "poojapitiya": "Poojapitiya",
+    "kotmale_east": "Kotmale East",
+    "uhana": "Uhana",
+    "ibbagamuwa": "Ibbagamuwa",
+    "mantai_east": "Mantai East",
+    "puthukudirippu": "Puthukudirippu",
+    "dhodangoda": "Dhodangoda",
+    "madirigiriya": "Madirigiriya",
+
+
+    "amban_banana": "Amban Banana",
+    "durian": "Duuriyan",
+    "vine_oranges": "Vine oranges",
+    "jamanarang_drinks": "Jamanarang drinks",
+    "nuts": "Nuts",
+    "jams_cordials": "Jams, cordials and orange-based products",
+    "kavendish_banana": "Kavendish Banana",
+    "mixed_fruits": "Durian, rambutan, pineapple, Vine Orange, banana",
+    "pineapple_delum": "Pinapple and Delum",
+    "apple_pera_mango": "Apple Pera, Tompesi Mango",
+
+    "bulathgolla": "Bulathgolla",
+    "pahala_higulwala": "507-Pahala Higulwala",
+    "niyamgamdora": "Niyamgamdora 470",
+    "weralalapathana": "461/D Weralalapathana",
+    "bandaradoowa": "Bandaradoowa",
+    "omaragolla": "415 Omaragolla",
+    "ampalapuram": "Ampalapuram",
+    "theravil": "Theravil Thevipuram",
+    "thudugala": "Thudugala East, Nehinnewa, Wadugama",
+    "vijayapura": "108 Vijayapura",
+    "ihalagama": "109 Ihalagama",
+  
+
+
+    //Bulath Page
+
+    "betelPageTitle": "Betel Leaf Related Products",
+
+    "ampara_organicBetel": "RidiEla  Betel Project",
+    "kegalle_betelCluster": "Kegalle Betel Cluster",
+    "galigamuwa_betelCluster": "Galigamuwa Betel Cluster",
+    "puttalama_betelCluster": "Abakele Betel Cluster (Puttalam)",
+    "hambanthota_betelCluster": "Abakele Betel Cluster (Hambantota)",
+    "organicBetelProject": " Betel Project",
+    "betelCluster": "Betel Cluster",
+
+    
+    "kegalle": "Kegalle",
+    "puttalama": "Puttalama",
+    "hambanthota": "Hambanthota",
+
+    "dehiaththakandiya": "Dehiaththakandiya",
+    "galigamuwa": "Galigamuwa",
+    "arachchikattuwa": "Arachchikattuwa",
+    "veeraketiya": "Veeraketiya",
+
+    "betel_leaf": "Betel Leaf",
+
+    "ridiela": "RidiEla",
+    "pussella": "51 A Pussella, 51 A Rangwala",
+    "papoluwa": "70 A, Papoluwa",
+    "abakele": "Abakele, Ihala Aththanganaya",
+    "degampotha": "Degampotha, Abakolawewa North",
 
 
 
+    //cineman page
 
+    "cinnamonPageTitle": "Cinnamon Related Products",
+
+   
+
+    
+    "galle": "Galle",
+    
+    "monaragala": "Monaragala",
+    "sewanagala": "Sewanagala",
+    "tangalla": "Tangalla",
+    "balapitiya": "Balapitiya",
+    "niyagama": "Niyagama",
+    "yakkalamulla": "Yakkalamulla",
+    "wallawita": "Wallawita",
+    "madulla": "Madulla",
+
+    "cinnamonProject": "Cinnamon Project",
+    "tangalla_Cinamon": "Tangalla Cinnamon Project",
+    "balapitiya_Cinamon": "Balapitiya Cinnamon Project",
+    "niyagama_Cinamon": "Niyagama Cinnamon Project",
+    "yakkalamulla_Cinamon": "Yakkalamulla Cinnamon Project",
+    "wallawita_Cinamon": "Wallawita Cinnamon Project",
+    "monaragala_Cinamon": "Monaragala Cinnamon Project",
+    "madulla_Cinamon": "Madulla Cinnamon Project",
+    "mayyokkawatte_Cinamon": "Mayyokkawatte Cinnamon Project",
+    "sewanagala_Cinamon": "Sewanagala Cinnamon Project",
+
+    "vallodaya": "Vallodaya, Ratna East, Rekava West",
+    "kattakaduwa": "Kattakaduwa South, Kattakaduwa North, Kadiragoda",
+    "pelagus": "Pelagus Province, Pathiraja Place, Coconut Palm Province",
+    "horangalla": "Horangalla Thalawa, Horangalla West",
+    "ella_upper": "182 C Ella Upper",
+    "pareigama": "782 Pareigama North, Kuda Matugama",
+    "batugammana": "130 Batugammana",
+    "tharela": "113D - Tharela",
+    "illukkanda": "113C - Illukkanda",
+    "watawanagara": "116C - Watawanagara",
+    "mayyokkawatte": "Mayyokkawatte",
+    "kiri_wewa": "Kiri Wewa, Indikolapelessa",
+    "habarugala": "Habarugala, Mahagama",
+
+    //coconut page 
+    "coconutPageTitle": "Coconut Related Products",
+
+    "coconutHuskProject": "Coconut Husk Based Product Project",
+    "coconutOilProject": "Coconut Oil Production Project",
+    "uhana_coconut": "Uhana Coconut Husk Based Product",
+    "udubaddawa_coconut": "Udubaddawa Coconut Husk Based Product",
+    "kobeigane_coconut": "Kobeigane Coconut Husk Based Product",
+    "puttur_coconut": "Puttur East Coconut Oil Product",
+
+
+    "jaffna": "Jaffna",
+
+    "broom_rugs": "Broom, Rugs",
+    "coconut_husk": "Coconut Husk",
+    "coconut_oil": "Coconut Oil",
+
+    "udubaddawa": "Udubaddawa",
+    "kobeigane": "Kobeigane",
+    "valikamam_east": "Valikamam East (Kopai)",
+
+    "uhanapura": "Uhanapura",
+    "udadeniya": "Udadeniya",
+    "kobeigane_cluster": "Pubbiliya, Baddegama, Mawathagama, Walaswewa",
+    "puttur_east": "Puttur East J/278",
+
+
+
+    //flowwer page
+
+    "flowerPageTitle": "Flower and Ornamental Plants",
+
+    "flowerProject": "Ornamental flower cultivation project",
+    "pannala_flowers": "Pannala Ornamental flower cultivation project",
+    "idda_flower": "Idda Flower ",
+
+    "flowers": "Ornamental flower",
+
+
+    "pannala": "Pannala",
+    "kalpitiya": "Kalpitiya",
+
+    "pannala_cluster": "1557 - Batapotha Ela, 1563 - Weththewa, 1582 - Kotuwela",
+    "mampuriya": "Mampuriya",
+
+//Kithul page
+
+    "kithulPageTitle": "Kithul Related Products",
+
+    "kithulDevelopment": "Kithul Development Project",
+    "matugama_kithul": "Matugama Kithul Development Project",
+    "kotmale_kithul": "Kotmale West Kithul Development Project",
+
+    "kithul_mix": "Kithul Hakuru, Honey, Kithul Flour",
+    "kithul_value_added": "Kithul-related Value-added Products",
+
+    "matugama": "Mathugama",
+    "kotmale_west": "Kotmale West",
+
+    "matugama_kithul_loc": "795 B Sandasirigama, 794 Horawala, 793 B Madawala",
+    "madakubura": "Madakubura 468",
+
+//mushroom page
+
+  "mushroomPageTitle": "Mushroom Related Products",
+ 
+    "mushroomProduction": "Mushroom Production Zone",
+    "uhana_mushroom": "Uhana Mushroom Production Zone",
+    "ukuwela_mushroom": "Ukuwela Mushroom Production Zone",
+    "aranayake_mushroom": "Aranayake Mushroom Production Zone",
+    "wellawaya_mushroom": "Wellawaya Mushroom Production Zone",
+    "ella_mushroom": "Ella Mushroom Production Zone",
+    "madirigiriya_mushroom": "Madirigiriya Mushroom Production Zone",
+ 
+    "mushroom": "Mushroom",
+  
+    "ukuwela": "Ukuwela",
+    "aranayake": "Aranayake",
+    "wellawaya": "Wellawaya",
+    "ella": "Ella",
+
+    "ukuwela_loc": "Owilla Thenna, Thibbatuwawa",
+    "pahinibeddara": "45C Pahinibeddara, Gavilipitiya Village",
+    "kotikambokka": "Kotikambokka",
+    "ella_mushroom_loc": "Millagama, Idamegama, Udu Kumbalwela",
+    "veheragala": "124 Veheragala",
+ 
+//palm page
+    "palmPageTitle": "Palm Related Products",
+    "palmBasedProject": "Palm Based Project",
+    "jaffna_palm": "Jaffna Palm Based Project",
+
+    "palm_kernels": "Palm kernels and palm-based products",
+
+    "uduvil": "Valikamam South (Uduvil)",
+
+    "jaffna_palm_loc": "Elalai South, Munnakam Town South",
+
+    //seed page
+    "seedPageTitle": "Seed Related Products",
+
+    "seedProject": "Seed Production Project",
+    "badulla_seed_name": "Badulla Potato Seed Project",
+    "polonnaruwa_seed_name": "Polonnaruwa Seed Paddy Project",
+
+    "potato_seeds": "Potato Seeds",
+    "seed_paddy": "Seed Paddy",
+
+    "badulla_seed_cluster": "Hali Ela, Bandarawela, Haputale, Haldummulla, Passara",
+    "higurangoda": "Higurangoda",
+
+    "badulla_seed_loc": "Nayabeddawatte, Poonagalawatte, Dambetennawatte, Thangamalewatte, Udaweriyawatte, Gonamotawatte, Kanawerellawatte, Wewalewatte, Nawalawatte, Diyanagalawatte",
+    "rajaelagama": "37 Rajaelagama",
+
+    //spices page
+
+      "spicesPageTitle": "Spices and Related Products",
+   
+        "spiceVillageProject": "Black Pepper Village Development Project",
+        "udawatte_spice": "Udawatte Black Pepper Village",
+        "higuranketha_pepper": "Higuranketha Black Pepper Project",
+    
+        "black_pepper": "Black Pepper",
+    
+        "higuranketha": "Higuranketha",
+    
+        "udawatte_cluster": "Udawatte East, Udawatte West, 488/A Hakuruthal",
+      
+        //tea page
+          "teaPageTitle": "Tea Related Products",
+
+            "teaPromotion": "Tea Cultivation Promotion Project",
+            "teaDevelopment": "Tea Cultivation Promotion Project",
+            "teaCooperative": "TTea Cultivation Promotion Projectt",
+            "kottawa_tea": "Kottawa Tea Promotion Zone",
+            "neluwa_tea": "Neluwa Tea Development Area",
+            "ella_upper_tea": "Ella Upper Tea Cooperative",
+
+            "tea": "Tea",
+
+            "neluwa": "Neluwa",
+
+            "kottawa_cluster": "Kottawa, Kottawa East, Kottawa West",
+            "neluwa_cluster": "Happitiya, Pannimulla, Panagoda",
+            "ella_upper_loc": "182 C Ella Upper, Magedara East",
+
+            //vegetable page 
+
+              "vegetablePageTitle": "Vegetable Related Products",
+ 
+                "onion_cultivation": "Onion Cultivation Project",
+                "greenhouse_improvement": "Greenhouse Cultivation Improvement Project",
+                "pallankoddai_onion": "Pallankoddai Onion Cluster",
+                "ketawala_vegetable": "Ketawala Vegetable Zone",
+                "atampitiya_vegetable": "Atampitiya Vegetable Cooperative",
+  
+                "onion": "Onion",
+                "veg_flower": "Vegetables and Flowers",
+   
+                "nanattan": "Nanattan",
+                "hali_ela": "Hali Ela",
+     
+                "pallankoddai": "Pallankoddai",
+                "ketawala": "Ketawala",
+                "atampitiya": "Atampitiya",
+
+                "mannar": "Mannar",
+            //bee honey page
+
+        
+              "beeHoneyPageTitle": "Bee Honey Related Products",
+          
+                "beeKeeping": "Bee Keeping Project",
+                "bogahawela_honey": "Bogahawela Bee Honey Cluster",
+                "mawelakanda_honey": "Mawelakanda Bee Honey Cooperative",
+             
+                "bee_honey": "Bee Honey",
+                      
+                "bogahawela": "468 D Bogahawela",
+                "mawelakanda": "456 C Mawelakanda",
+         //daily milk page
+         
+         
+          "dairyPageTitle": "Dairy Product Related Projects",
+          
+            "goatControl": "Goat Control Project",
+            "dairyCowControl": "Dairy Cow Control Project",
+            "dairyManagement": "Dairy Cattle Management Project",
+            "dairyImprovement": "Dairy Cattle Management Improvement Project",
+            "cattleRanch": "Cattle Ranch Development Project",
+            "milkCenterReno": "Milk Collection Center Renovation Project",
+            "dairyDev": "Dairy Cattle Management and Development Project",
+            "grassCultivation": "Quality Grass Cultivation Project",
+            "irakkamam_goat": "Irakkamam Goat Control Project",
+            "akkarapaththu_dairy": "Akkarapaththu Dairy Cow Control Project",
+            "navindaveli_dairy": "Navindaveli Dairy Project",
+            "palinda_nuwara_goat": "Palinda Nuwara Goat Control Project",
+            "madadumbara_dairy": "Madadumbara Dairy Cow Control Project",
+            "udahenthenna_goat": "Udahenthenna Goat Control Project",
+            "labuhena_cattle": "Labuhena Cattle Ranch Development Project",
+            "garubevilagama_dairy": "Garubevilagama Dairy Development Project",
+            "weligepola_dairy": "Weligepola Dairy Development Project",
+            "kambuwatana_dairy": "Kambuwatana Dairy Development Project",
+            "kurundewa_dairy": "Kurundewa Dairy Development Project",
+            "thalawa_dairy": "Thalawa Dairy Development Project",
+            "panduwasnuwara_dairy": "Panduwasnuwara East Dairy Development Project",
+            "polgahawela_dairy": "Polgahawela Dairy Development Project",
+            "weerambugedara_dairy": "Weerambugedara Dairy Development Project",
+            "divulwewa_dairy": "Divulwewa Dairy Development Project",
+            "karuwalagaswewa_dairy": "Karuwalagaswewa Dairy Development Project",
+            "padhikudiruppu_reno": "Padhikudiruppu Milk Collection Center Renovation",
+            "buttala_dairy": "Buttala Dairy Development Project",
+            "welimada_dairy": "Welimada Dairy Development Project",
+            "bibiligamuwa_dairy": "Bibiligamuwa Dairy Development Project",
+            "niyamgamdora_dairy": "Niyamgamdora Dairy Development Project",
+         
+            "goat_milk": "Goat Milk",
+            "fresh_milk": "Fresh Milk",
+            "milk_mix": "Fresh Milk, Yogurt, Ghee, Butter",
+            "goat_milk_meat": "Goat Milk & Meat",
+          
+            "irakkamam_loc": "Varippattanchenai / Irakkamam 01-09",
+            "akkarapaththu_loc": "Pallikudiyiruppu / Akkarapattu Urban Divisions",
+            "salamwakeni": "Salamwakeni - 05",
+            "walakada": "Walakada, Peladha",
+            "kandekubura": "802-Kandekubura",
+            "udahenthenna_loc": "Udahenthenna, Athgala North, Ulapane",
+            "labuhena_loc": "Labuhena, Poramadulla, Bambaragama",
+            "garubevilagama": "Garubevilagama",
+            "galpaya_loc": "Galpaya, Bambaragala, Wadawalalanda",
+            "kambuwatana": "Kambuwatana",
+            "kurundewa": "Kurundewa",
+            "thalawa": "Thalawa",
+            "bodhimulla": "Bodhimulla",
+            "panaliya_loc": "Panaliya, Sunilagama, Wellawa",
+            "godavita": "854 - Godavita",
+            "divulwewa": "Divulwewa",
+            "pahariya": "Pahariya",
+            "padhikudiruppu": "Padhikudiruppu",
+            "mari_arawa": "Mari Arawa",
+            "katakaella": "58A Katakaella",
+            "bibiligamuwa": "50J Bibiligamuwa",
+            "mahindagama": "282 Mahindagama",
+
+            "maha_nuwara": "Maha Nuwara",
+            "rathnapura": "Rathnapura",
+            "badulla": "Badulla",
+            "vavuniya": "Vavuniya",
+            "puththalama": "Puththalam",
+            "irakkamam": "Irakkamam",
+    "akkarapaththu": "Akkarapaththu",
+    "navindaveli": "Navindaveli",
+    "palinda_nuwara": "Palinda Nuwara",
+    "madadumbara": "Madadumbara",
+    "gaga_ihala": "Gaga Ihala Korale",
+    "haguranketha": "Haguranketha",
+    "rathnapura_office": "Ratnapura",
+    "weligepola": "Weligepola",
+    "polpithigama": "Polpithigama",
+    "galgamuwa": "Galgamuwa",
+    "panduwasnuwara_east": "Panduwasnuwara East",
+    "polgahawela": "Polgahawela",
+    "weerambugedara": "Weerambugedara",
+    "anamaduwa": "Anamaduwa",
+    "karuwalagaswewa": "Karuwalagaswewa",
+    "vavuniya_north": "Vavuniya North",
+    "buttala": "Buttala",
+    "welimada": "Welimada",
+    "welikanda": "Welikanda",
+
+        //eggs page 
+       
+          "eggPageTitle": "Egg Related Product Projects",
+      
+            "chicken_village": "Chicken production village project for egg and chick production",
+            "egg_cluster": "Egg production cluster development",
+            "poultry_zone": "Poultry zone for egg and chick production",
+            "egg_coop": "Egg production cooperative development",
+            "kandangamuwa_egg": "Kandangamuwa Eggs and chicks",
+            "undugoda_egg": "Undugoda Egg Cluster",
+            "yakkaduwa_egg": "Yakkaduwa Poultry Zone",
+            "kosgulana_egg": "Kosgulana Egg Cooperative",
+    
+            "eggs_chicks": "Eggs and chicks",
+
+        
+            "gampaha": "Gampaha",
+  
+            "meerigama": "Meerigama",
+            "kegalle_off": "Kegalle",
+            "ja_ela": "Ja-Ela",
+            "palindanuwara": "Palindanuwara",
+         
+            "kandangamuwa_loc": "Kandangamuwa, Kindawala, Imbulanwala",
+            "undugoda_loc": "56 B Undugoda, 56 D Moradana",
+            "yakkaduwa": "Yakkaduwa",
+            "kosgulana_loc": "Kosgulana, Walakada, Dhiganna",
+          
+      //ornamental fish page 
+        "ornamentalFishPageTitle": "Fisheries & Ornamental Fish Related Projects",
+          "dryfish_livelihood": "Dry Fish Production and Livelihood Improvement Project",
+          "ornamental_farming": "Ornamental Fish Farming Project",
+          "fishing_wharf": "Project to construct a fishing wharf for sales and maintenance",
+          "ornamental_food": "Ornamental fish food production project",
+          "freshwater_gear": "Freshwater fishing community gear procurement project",
+          "lake_dev": "Lake Development Project for Fishing Activities",
+          "kareithiw_dryfish": "Kareithiw Dry Fish Project",
+          "mamunuwa_ornamental": "Mamunuwa Ornamental Fish Breeding Center",
+          "thalpitiya_wharf": "Thalpitiya Fishing Wharf",
+          "katuhena_feed": "Katuhena Fish Feed Unit",
+          "kandegama_hub": "Kandegama Fishing Industry Hub",
+          "alawakumbura_coop": "Alawakumbura Fishing Cooperative",
+     
+          "dry_fish": "Dry Fish",
+          "ornamental_breeding": "Ornamental Fish Breeding & Training",
+          "fishery_industry": "Fishery Industry",
+          "ornamental_food_prod": "Ornamental Fish Food",
+          "fishing_industry": "Freshwater Fishing Industry",
+      
+          "kareithiw": "Kareithiw",
+          "variyapola": "Variyapola",
+          "panadura": "Panadura",
+          "madurawala": "Madurawala",
+          "dibulagala": "Dimbulagala",
+       
+          "kareithiw_loc": "Kareithiw-09",
+          "mamunuwa": "Mamunuwa",
+          "thalpitiya_loc": "South Thalpitiya / Palliyamankada",
+          "katuhena_loc": "Katuhena / Upper Karannagoda",
+          "kandegama": "240 Kandegama",
+          "alawakumbura": "239 - Alawakumbura",
+        
+          //umbalakada page
+ 
+            "driedFishPageTitle": "Umbalakada & Dried Fish Related Product Projects",
+          
+              "community_fisheries": "Community-based fisheries project centered on Kalugaloya Lake",
+              "theppam_desc": "Theppam project for fishermen working in the lagoon",
+              "uhana_lake_fisheries": "Uhana Community-based fisheries project",
+              "kareithiw_dryfish_full": "Kareithiw Dry Fish Production and Livelihood Improvement",
+              "theppam_project": "Lagoon Fisherman Theppam Project",
+           
+              "fish_dried_fish": "Fish and Dried Fish",
+           
+              "bandaraduuwa": "Bandaraduuwa",
+              "karukupane": "Karukupane",
+
+            //clay page
+
+              "clayPageTitle": "Clay Related Product Projects",
+        
+                "kella_clay_dev": "Kella Clay Production Village Development Project",
+                "clay_village_title": "Clay Production Village Development Project",
+                "weerasekarapura_ornamental": "Weerasekarapura Clay-Based Ornamental Products Production Project",
+                "clay_ornamental_title": "Clay-Based Ornamental Products Production Project",
+                "clay_pot_initiative": "Clay Pot Initiative",
+                "weherayaya_initiative": "Weherayaya Clay Pot Initiative"
+            ,
+                "pots_clay_pots": "Pots, clay pots",
+                "clay_product": "Clay Product",
+                "milk_pot_clay_pot": "Milk Pot, Clay Pot",
+             
+                "kolonna": "Kolonna",
+                "biyagama": "Biyagama",
+                "wellavaya": "Wellawaya",
+           
+                "kella_loc": "Kella, Abagahayaya",
+                "biyagama_south": "28c Biyagama South",
+                "weherayaya": "Weherayaya",
+        //cloth page
+
+          "clothPageTitle": "Clothing & Textile Related Projects",
+  
+            "garment_manufacturing": "Small-scale garment manufacturing project",
+            "nugaduwa_batik": "Nugaduwa Batik Production Project",
+            "nikaweratiya_coir_zone": "Nikaweratiya Coir Industry Zone",
+            "akmeemana_batik": "Akmeemana Batik Cluster",
+        
+            "uniforms_garments": "School uniforms, children's clothing, embroidery and ari products",
+            "batik_clothing": "Batik clothing",
+        
+            "addalaichenai": "Addalaichenai",
+            "akmeemana": "Akmeemana",
+      
+            "addalaichenai_17": "Addalaichenai 17",
+            "nugaduuwa": "Nugaduuwa",
+
+            //iron and gold page
+              "ironGoldPageTitle": "Iron & Gold Related Product Projects",
+   
+                "malagala_iron": "Malagala Ironworks Cluster",
+                "iron_cluster_desc": "Industrial development cluster for metal and iron manufacturing"
+         ,
+                "iron_goods": "Iron products (Grills, Gates, Garden benches)"
+ ,
+                "colombo": "Colombo"
+             ,
+                "padukka": "Padukka"
+            ,
+                "malagala_loc": "Malagala, Udumulla"
+          ,
+          //sweets page
+  
+            "sweetFoodsPageTitle": "Sweet & Traditional Foods Related Projects",
+     
+              "sweets_village": "Sweets Village Development Project",
+              "karadagama_sweets": "Karadagama Sweet Foods Cooperative"
+          ,
+              "sweets": "Traditional Sweets & Snacks"
+        ,
+              "badalkumbura": "Badalkumbura"
+        ,
+              "karadagama": "Karadagama"
+           ,
+           //wooden page
+
+            "woodenPageTitle": "Wooden Furniture & Carpentry Projects",
+     
+              "wooden_furniture_cluster": "Wooden Furniture Industry Cluster Development",
+              "moratuwa_furniture": "Moratuwa Wooden Furniture Cluster"
+        ,
+              "wooden_furniture": "Wooden Furniture (Household & Office)"
+       ,
+              "moratuwa": "Moratuwa",
+         
+              "moratuwa_cluster_loc": "Koralawella (East, North, West, South), Katukurunda (North, South), Egoda Uyana (North, Central, South)"
+            ,
+            //road developmet oag
+      
+            
+              "roadDevelopmentPageTitle": "Rural Road Infrastructure Development",
+            
+              "service": "Project Type",
+              "amountLabel": "Estimated Cost",
+            
+                "matale": "Matale",
+                "kandy": "Kandy",
+                "matara": "Matara"
+        ,
+            
+                "pathahewaheta": "Pathahewaheta",
+                "naula": "Naula",
+                "puhulwella": "Kirinda Puhulwella"
+         ,
+                "salava_west": "Salava West",
+                "ankanda": "Ankanda",
+                "bawlana": "Bawlana",
+                "lihinipitiya": "Lihinipitiya",
+                "morawadiya": "Morawadiya",
+                "walakanda_south": "Walakanda South"
+          ,
+                "transport_facilities": "Transport Facilities",
+                "road_dev": "Road Development",
+                "bridge_dev": "Bridge Renovation",
+                "canal_dev": "Canal Development",
+                "concrete_paving": "Concrete Paving",
+                "dothal_oya_name": "Dothal Oya Gate to Fifty Acres Road Project",
+                "ankanda_bridge_name": "Ankanda Diggala Bridge Renovation",
+                "bawlana_sarvodaya_name": "Sarvodaya Road Development",
+                "bawlana_bus_road_name": "Bawlana Bus Stop to Delthota Road",
+                "kalulella_road_name": "Kalulella Road Development",
+                "lihinipitiya_main_road_name": "Lihinipitiya Main Road Development",
+                "lihinipitiya_canal_name": "Lihinipitiya Main Canal Development",
+                "bandarakanda_road_name": "Bandarakanda-Tungdola Road Development",
+                "kosgahahena_road_name": "Kosgahahena Road Development",
+                "kumara_house_road_name": "Tiger Land Road (Concrete)",
+                "ella_community_hall_name": "Ella to Community Hall via Polpitiya",
+                "kajuvetiya_side_road_name": "Ella Ihala Kajuvetiya Side Road",
+                "deniyamulla_road_name": "Deniyamulla Road Development",
+                "dehigahahena_road_name": "Dehigahahena to Mrs. Latha's Garden",
+                "preschool_road_name": "Ella Upper Pre-School Road",
+                "gepalawatta_culvert_name": "Gepalawatta Road Culvert",
+                "enasal_wattha_road_name": "Enasal Wattha Road (Concrete)",
+                "shirani_house_culvert_name": "Dola Ihala Road Box Culverts",
+                "punchi_dehigahahena_name": "Ella Ihala Punchi Dehigaha Hena Road",
+                "pitikumbura_road_name": "Pitikumbura Road Development",
+                "pindeniya_road_name": "Pindeniya Road Development",
+                //sanitary page
+                
+                  "sanitaryPageTitle": "Sanitary & Water Supply Projects",
+                 
+                    "drinking_water": "Drinking Water Facilities",
+                    "sanitary_facilities": "Sanitary Facilities",
+                
+                    "batticaloa": "Batticaloa",
+            
+                  
+                    "koralaipattu_south": "Koralaipattu South",
+                 
+                    "murutthanai": "Murutthanai",
+                    "ganthuna_medagama": "58G Ganthuna Medagama"
+        ,
+                    "murutthanai_water_name": "Minuminuttaveli & Akuranai Community Water Supply Scheme",
+                    "murutthanai_water_short": "Murutthanai Water Scheme",
+                    "murutthanai_toilet_name": "Murutthanai Community Toilet Construction Project",
+                    "murutthanai_toilet_short": "Toilet Construction Project",
+                    "aranayake_toilet_name": "Toilet Facilities for Low-Income Families - Aranayake",
+                    "aranayake_toilet_short": "Low-Income Sanitary Project"
+                  ,
+        //tuarism page
+      
+          "tourismPageTitle": "Tourism Infrastructure Projects",
+      
+            "food_beverage": "Food & Beverage Services",
+            "tourism_industry": "Tourism Industry Development",
+            "tourism_promotion": "Tourism Promotion",
+           "hambantota": "Hambantota", 
+           "angunakolapelessa": "Angunakolapelessa", 
+         
+            "alkaduwa": "Alkaduwa Waththa",
+            "angunakolapelessa_lake": "Angunakolapelessa Lake Side",
+            "maduragama": "68 C Maduragama"
+         ,
+            "sembuwatta_name": "Renovation of Sembuwatta Tea Factory Ground Floor as a Restaurant",
+            "sembuwatta_short": "Tea Factory Restaurant Renovation",
+            "angunakolapelessa_name": "Multipurpose Development Project along the Angunakolapelessa Lake",
+            "angunakolapelessa_short": "Lake-Side Multipurpose Project",
+            "ella_promotion_name": "Project to Provide Food and Beverages to Tourists and Promote Outlets",
+            "ella_promotion_short": "Tourist Outlet Promotion",
+         
+            
     // Footer
     quickLinks: "Quick Links",
     importantLinks: "Important Links",
@@ -341,7 +1019,7 @@ const translations = {
     
     aboutMinistry: "ග්‍රාමීය සංවර්ධන කාර්යංශය පිළිබඳව",
     president: "ජනාධිපති",
-    minister: "අමාත්‍ය",
+    minister: " අමාත්‍ය",
     secretary: "ලේකම්",
 
 
@@ -362,12 +1040,12 @@ const translations = {
     downloadTitle: "චක්‍රලේඛ, මාර්ගෝපදේශ සහ ආකෘති බාගන්න",
     relatedOrganizations: "අදාළ ආයතන",
 
-    deputyMinister: "උප අමාත්‍ය",
+    deputyMinister: "නියෝජ්‍ය අමාත්‍ය",
     
     // Officers Names
-    deputyMinisterName: "වසන්ත පියතිස්ස මහතා",
-    ministerName: "උපාලි පන්නිලගේ මහතා",
-    secretaryName: "සම්පත් මන්ත්‍රිනායක මහතා",
+    deputyMinisterName: " ගරු වසන්ත පියතිස්ස මහතා",
+    ministerName: "ගරු වෛද්‍ය උපාලි පන්නිලගේ මහතා",
+    secretaryName: "සම්පත් මන්ත්‍රීනායක මහතා",
     directorGeneralName: "එච්. එම්. එම්. යූ. බී. හේරත් මහතා",
     
     // Organizations
@@ -508,6 +1186,685 @@ const translations = {
     "rti.officerName": "අධ්‍යක්ෂ - චම්පිකා  ඩී ධර්මසේන",
 
 
+
+    //service
+    //agriculture
+    //fruitpage
+    fruitPageTitle: "පළතුරු සම්බන්ධිත ව්‍යාපෘති",
+    no: "අංකය", 
+    // district: "දිස්ත්‍රික්කය", 
+    divisionalOffice: "ප්‍රාදේශීය ලේකම් කාර්යාලය", 
+    project: "ව්‍යාපෘතිය", 
+    // product: "නිෂ්පාදනය", 
+    location: "ස්ථානය", 
+    "Amount(Rs)": "මුදල (රු)",
+
+
+    
+    "mahanuwara_banana": "මහනුවර අඹන් කෙසෙල් ව්‍යාපෘතිය",
+    "mahanuwara_durian": "මහනුවර දූරියන් ව්‍යාපෘතිය",
+    "nuwara_eliya_orange": "නුබරඑළිය වැල් දොඩම් ව්‍යාපෘතිය",
+    "nuwara_eliya_jamanarang": "නුබරඑළිය ජමනාරං ව්‍යාපෘතිය",
+    "ampara_orange": "අම්පාර වැල් දොඩම් ව්‍යාපෘතිය",
+    "kurunegala_nuts": "කුරුණෑගල ගෙඩි වර්ග ව්‍යාපෘතිය",
+    "mulathivu_jams": "මුලතිව් ජෑම් සහ බීම වර්ග ව්‍යාපෘතිය",
+    "mulathivu_banana": "මුලතිව් කැවෙන්ඩිෂ් කෙසෙල් ව්‍යාපෘතිය",
+    "kalutara_fruit": "කළුතර පළතුරු ව්‍යාපෘතිය",
+    "polonnaruwa_pineapple": "පොළොන්නරුව අන්නාසි සහ දෙළුම් ව්‍යාපෘතිය",
+    "polonnaruwa_apple": "පොළොන්නරුව ඇපල්, පේර සහ අඹ ව්‍යාපෘතිය",
+
+    "amban_bananaProject": "අඹන් කෙසෙල් ව්‍යාපෘතිය",
+    "durianProject": "දූරියන් ව්‍යාපෘතිය",
+    "vine_orangesProject": "වැල් දොඩම් ව්‍යාපෘතිය",
+    "jamanarangProject": "ජමනාරං ව්‍යාපෘතිය",
+    "nutsProject": "ගෙඩි වර්ග ව්‍යාපෘතිය",
+    "jams_cordialsProject": "ජෑම් සහ බීම වර්ග ව්‍යාපෘතිය",
+    "kavendish_bananaProject": "කැවෙන්ඩිෂ් කෙසෙල් ව්‍යාපෘතිය",
+    "mixed_fruitsProject": "පළතුරු ව්‍යාපෘතිය",
+    "pineapple_delumProject": "අන්නාසි සහ දෙළුම් ව්‍යාපෘතිය",
+    "apple_pera_mangoProject": "ඇපල් පේර සහ ටොම්පේසි අඹ ව්‍යාපෘතිය",
+  
+    "mahanuwara": "මහනුවර",
+    "nuwara_eliya": "නුවරඑළිය",
+    "ampara": "අම්පාර",
+    "kurunegala": "කුරුණෑගල",
+    "mulathivu": "මුලතිව්",
+    "kalutara": "කළුතර",
+    "polonnaruwa": "පොළොන්නරුව",
+
+
+    "harispaththuwa": "හාරිස්පත්තුව",
+    "poojapitiya": "පූජාපිටිය",
+    "kotmale_east": "කොත්මලේ නැගෙනහිර",
+    "uhana": "උහන",
+    "ibbagamuwa": "ඉබ්බාගමුව",
+    "mantai_east": "මාන්තෙයි නැගෙනහිර",
+    "puthukudirippu": "පුදුකුඩුඉරිප්පු",
+    "dhodangoda": "දොඩංගොඩ",
+    "madirigiriya": "මැදිරිගිරිය",
+
+
+    "amban_banana": "අඹන් කෙසෙල්",
+    "durian": "දූරියන්",
+    "vine_oranges": "වැල් දොඩම්",
+    "jamanarang_drinks": "ජමනාරං බීම",
+    "nuts": "ගෙඩි වර්ග (Nuts)",
+    "jams_cordials": "ජෑම්, බීම සහ දොඩම් ආශ්‍රිත නිෂ්පාදන",
+    "kavendish_banana": "කැවෙන්ඩිෂ් කෙසෙල්",
+    "mixed_fruits": "දූරියන්, රඹුටන්, අන්නාසි, වැල් දොඩම්, කෙසෙල්",
+    "pineapple_delum": "අන්නාසි සහ දෙළුම්",
+    "apple_pera_mango": " ඇපල්  පේර, ටොම්ජේසී අඹ",
+
+    "bulathgolla": "බුලත්ගොල්ල",
+    "pahala_higulwala": "507-පහළ හිඟුල්වල",
+    "niyamgamdora": "නියම්ගම්දොර 470",
+    "weralalapathana": "461/ඩී වැරැල්ලපතන",
+    "bandaradoowa": "බණ්ඩාරදූව",
+    "omaragolla": "415 ඕමාරගොල්ල",
+    "ampalapuram": "අම්පාලපුරම්",
+    "theravil": "තෙරාවිල් තේවිපුරම්",
+    "thudugala": "තුඩුගල නැගෙනහිර, නෙහින්නෙව, වඩුගම",
+    "vijayapura": "108 විජයපුර",
+    "ihalagama": "109 ඉහළගම",
+
+
+
+    //bulath Page 
+
+    "betelPageTitle": "බුලත් පත්‍ර ආශ්‍රිත නිෂ්පාදන",
+
+    "ampara_organicBetel": "රිදීඇල බුලත් වගා ව්‍යාපෘතිය",
+    "kegalle_betelCluster": "කෑගල්ල බුලත් වගා ව්‍යාපෘතිය",
+    "galigamuwa_betelCluster": "ගලිගමුව බුලත් වගා ව්‍යාපෘතිය",
+    "puttalama_betelCluster": "අබකැලේ බුලත් වගා ව්‍යාපෘතිය (පුත්තලම)",
+    "hambanthota_betelCluster": "අබකැලේ බුලත් වගා ව්‍යාපෘතිය (හම්බන්තොට)",
+    "organicBetelProject": "බුලත් වගා ව්‍යාපෘතිය",
+    "betelCluster": "බුලත් වගා ව්‍යාපෘතිය",
+
+    "kegalle": "කෑගල්ල",
+    "puttalama": "පුත්තලම",
+    "hambanthota": "හම්බන්තොට",
+
+    "dehiaththakandiya": "දෙහිඅත්තකණ්ඩිය",
+    "galigamuwa": "ගලිගමුව",
+    "arachchikattuwa": "ආරච්චිකට්ටුව",
+    "veeraketiya": "වීරකැටිය",
+
+    "betel_leaf": "බුලත් කොළ",
+
+    "ridiela": "රිදීඇල",
+    "pussella": "51 A පූස්සැල්ල, 51 A රංවල",
+    "papoluwa": "70 A, පැපොළුව",
+    "abakele": "අබකැලේ, ඉහළ අත්තංගානය",
+    "degampotha": "දෙගම්පොත, උතුරු අබකොළවැව",
+
+    //cineman page
+
+    "cinnamonPageTitle": "කුරුඳු ආශ්‍රිත නිෂ්පාදන",
+
+    "cinnamonProject": "කුරුඳු ව්‍යාපෘතිය",
+    "tangalla_Cinamon": "තංගල්ල කුරුඳු ව්‍යාපෘතිය",
+    "balapitiya_Cinamon": "බලපිටිය කුරුඳු ව්‍යාපෘතිය",
+    "niyagama_Cinamon": "නියාගම කුරුඳු ව්‍යාපෘතිය",
+    "yakkalamulla_Cinamon": "යක්කලමුල්ල කුරුඳු ව්‍යාපෘතිය",
+    "wallawita_Cinamon": "වල්ලාවිට කුරුඳු ව්‍යාපෘතිය",
+    "monaragala_Cinamon": "මොණරාගල කුරුඳු ව්‍යාපෘතිය",
+    "madulla_Cinamon": "මාදුල්ල කුරුඳු ව්‍යාපෘතිය",
+    "mayyokkawatte_Cinamon": "මයියොක්කාවත්ත කුරුඳු ව්‍යාපෘතිය",
+    "sewanagala_Cinamon": "සෙවනගල කුරුඳු ව්‍යාපෘතිය",
+
+    "cinnamon": "කුරුඳු",
+
+    "galle": "ගාල්ල",
+    "monaragala": "මොණරාගල",
+
+    "tangalla": "තංගල්ල",
+    "balapitiya": "බලපිටිය",
+    "niyagama": "නියාගම",
+    "yakkalamulla": "යක්කලමුල්ල",
+    "walallawita": "වල්ලාවිට",
+    "madulla": "මාදුල්ල",
+    "sewanagala": "සෙවනගල",
+
+    "vallodaya": "වල්ලෝදය, රත්නා නැගෙනහිර, රෙකව බටහිර",
+    "kattakaduwa": "කට්ටකඩුව දකුණ, කට්ටකඩුව උතුර, කදිරගොඩ",
+    "pelagus": "පෑලගස් පළාත, පතිරාජ පෙදෙස",
+    "horangalla": "හොරංගල්ල තලාව, හොරංගල්ල බටහිර",
+    "ella_upper": "182 සී ඇල්ල ඉහළ",
+    "pareigama": "782 පරෙයිගම උතුර, කුඩා මතුගම",
+    "batugammana": "130 බටුගම්මන",
+    "tharela": "113ඩී - තැරෑල",
+    "illukkanda": "113සී - ඉලුක්කන්ද",
+    "watawanagara": "116සී - වටවානගර",
+    "mayyokkawatte": "මයියොක්කාවත්ත",
+    "kiri_wewa": "කිරි වැව, ඉඳිකොළපෑලැස්ස",
+    "habarugala": "හබරුගල, මහගම",
+
+
+    //coconut page
+    "coconutPageTitle": "පොල් ආශ්‍රිත නිෂ්පාදන",
+
+    "coconutHuskProject": "පොල් ලෙලි ආශ්‍රිත නිෂ්පාදන ව්‍යාපෘතිය",
+    "coconutOilProject": "පොල් තෙල් නිෂ්පාදන ව්‍යාපෘතිය",
+    "uhana_coconut": "උහන පොල් ලෙලි ආශ්‍රිත නිෂ්පාදන",
+    "udubaddawa_coconut": "උඩුබද්දව පොල් ලෙලි ආශ්‍රිත නිෂ්පාදන",
+    "kobeigane_coconut": "කොබෙයිගනේ පොල් ලෙලි ආශ්‍රිත නිෂ්පාදන",
+    "puttur_coconut": "පුත්තූර් නැගෙනහිර පොල් තෙල් නිෂ්පාදනය",
+
+    "broom_rugs": "කොසු, පාපිසි",
+    "coconut_husk": "පොල් ලෙලි",
+    "coconut_oil": "පොල් තෙල්",
+
+    "jaffna": "යාපනය",
+
+    "udubaddawa": "උඩුබද්දව",
+    "kobeigane": "කොබෙයිගනේ",
+    "valikamam_east": "වලිකාමම් නැගෙනහිර (කෝපායි)",
+
+    "uhanapura": "උහනපුර",
+    "udadeniya": "උඩදෙණිය",
+    "kobeigane_cluster": "පුබ්බිලිය, බැද්දේගම, මාවතගම, වලස්වැව",
+    "puttur_east": "පුත්තූර් නැගෙනහිර J/278",
+
+
+
+    //flower page
+
+    "flowerPageTitle": "විසිතුරු මල් වගා ව්‍යාපෘතිය",
+    "flowerProject": "විසිතුරු මල් වගා ව්‍යාපෘතිය",
+    "pannala_flowers": "පන්නල විසිතුරු මල් වගා ව්‍යාපෘතිය",
+    "idda_flower": "ඉද්ද මල් ",
+
+    "flowers": "විසිතුරු මල්  වර්ග",
+
+    "pannala": "පන්නල",
+    "kalpitiya": "කල්පිටිය",
+
+    "pannala_cluster": "1557 - බටපොත ඇල, 1563 - වෙත්තෑව, 1582 - කොටුවෙල",
+    "mampuriya": "මාම්පුරිය",
+
+    //kithul page
+
+    "kithulPageTitle": "කිතුල් ආශ්‍රිත නිෂ්පාදන",
+
+    "kithulDevelopment": "කිතුල් සංවර්ධන ව්‍යාපෘතිය",
+    "matugama_kithul": "මතුගම කිතුල් සංවර්ධන ව්‍යාපෘතිය",
+    "kotmale_kithul": "කොත්මලේ බටහිර කිතුල් සංවර්ධන ව්‍යාපෘතිය",
+
+    "kithul_mix": "කිතුල් හකුරු, පැණි, කිතුල් පිටි",
+    "kithul_value_added": "කිතුල් ආශ්‍රිත අගය එකතු කළ නිෂ්පාදන",
+
+    "matugama": "මතුගම",
+    "kotmale_west": "කොත්මලේ බටහිර",
+
+    "matugama_kithul_loc": "795 බී සඳසිරිගම, 794 හොරවල, 793 බී මඩවල",
+    "madakubura": "මඩකුඹුර 468",
+
+//mushroom page
+
+"mushroomPageTitle": "බිම්මල් ආශ්‍රිත නිෂ්පාදන",
+  
+    "mushroomProduction": "බිම්මල් නිෂ්පාදන කලාපය",
+    "uhana_mushroom": "උහන බිම්මල් නිෂ්පාදන කලාපය",
+    "ukuwela_mushroom": "උකුවෙල බිම්මල් නිෂ්පාදන කලාපය",
+    "aranayake_mushroom": "අරණායක බිම්මල් නිෂ්පාදන කලාපය",
+    "wellawaya_mushroom": "වැල්ලවාය බිම්මල් නිෂ්පාදන කලාපය",
+    "ella_mushroom": "ඇල්ල බිම්මල් නිෂ්පාදන කලාපය",
+    "madirigiriya_mushroom": "මැදිරිගිරිය බිම්මල් නිෂ්පාදන කලාපය",
+ 
+    "mushroom": "බිම්මල්",
+  
+    "matale": "මාතලේ",
+    "badulla": "බදුල්ල",
+ 
+    "ukuwela": "උකුවෙල",
+    "aranayake": "අරණායක",
+    "wellawaya": "වැල්ලවාය",
+    "ella": "ඇල්ල",
+ 
+    "ukuwela_loc": "ඕවිල්ලතැන්න, තිබ්බටුවාව",
+    "pahinibeddara": "45සී පහිනිබැද්දර, ගවිලිපිටිය ගම්මානය",
+    "kotikambokka": "කොටිකාම්බොක්ක",
+    "ella_mushroom_loc": "මිල්ලගම, ඉඩමේගම, උඩු කුඹල්වෙල",
+    "veheragala": "124 වෙහෙරගල",
+  //pulm page
+
+  "palmPageTitle": "තල් ආශ්‍රිත නිෂ්පාදන",
+
+  "palmBasedProject": "තල් ආශ්‍රිත ව්‍යාපෘතිය",
+    "jaffna_palm": "යාපනය තල් ආශ්‍රිත ව්‍යාපෘතිය",
+
+    "palm_kernels": "තල් මද සහ තල් ආශ්‍රිත නිෂ්පාදන",
+
+    "uduvil": "වලිකාමම් දකුණ (උඩුවිල්)",
+
+    "jaffna_palm_loc": "එලාලෙයි දකුණ, මුන්නක්කම් නගරය දකුණ",
+
+    //seed page
+
+    "seedPageTitle": "බීජ ආශ්‍රිත නිෂ්පාදන",
+
+    "seedProject": "බීජ නිෂ්පාදන ව්‍යාපෘතිය",
+    "badulla_seed_name": "බදුල්ල අර්තාපල් බීජ ව්‍යාපෘතිය",
+    "polonnaruwa_seed_name": "පොළොන්නරුව බීජ වී ව්‍යාපෘතිය",
+
+    "potato_seeds": "අර්තාපල් බීජ",
+    "seed_paddy": "බීජ වී",
+
+    "badulla_seed_cluster": "හාලි ඇල, බණ්ඩාරවෙල, හපුතලේ, හල්දුම්මුල්ල, පස්සර",
+    "higurangoda": "හිඟුරක්ගොඩ",
+
+    "badulla_seed_loc": "නයබැද්දවත්ත, පූනගලවත්ත, දඹේතැන්නවත්ත, තංගමලේ වත්ත, උඩවේරියවත්ත, ගෝනමෝටාවත්ත, කනවැරැල්ලවත්ත, වේවැල්වත්ත, නාවලවත්ත, දියණගලවත්ත",
+    "rajaelagama": "37 රජඇළගම",
+
+    //spices page
+ 
+      "spicesPageTitle": "කුළුබඩු ආශ්‍රිත නිෂ්පාදන",
+    
+        "spiceVillageProject": "ගම්මිරිස් වගා ව්‍යාපෘතිය",
+        "udawatte_spice": "උඩවත්ත ගම්මිරිස් ව්‍යාපෘතිය",
+        "higuranketha_pepper": "හඟුරන්කෙත ගම්මිරිස් ව්‍යාපෘතිය",
+   
+        "black_pepper": "ගම්මිරිස්",
+
+        "higuranketha": "හඟුරන්කෙත",
+    
+        "udawatte_cluster": "උඩවත්ත නැගෙනහිර, උඩවත්ත බටහිර, 488/A හකුරුතල්",
+
+        //tea page
+
+          "teaPageTitle": "තේ ආශ්‍රිත නිෂ්පාදන",
+
+            "teaPromotion": "තේ වගා ප්‍රවර්ධන ව්‍යාපෘතිය",
+            "teaDevelopment": "තේ වගා ප්‍රවර්ධන ව්‍යාපෘතිය",
+            "teaCooperative": "තේ වගා ප්‍රවර්ධන ව්‍යාපෘතිය",
+            "kottawa_tea": "කොට්ටව තේ ප්‍රවර්ධන කලාපය",
+            "neluwa_tea": "නෙළුව තේ සංවර්ධන ප්‍රදේශය",
+            "ella_upper_tea": "ඇල්ල ඉහළ තේ සමුපකාරය",
+
+            "tea": "තේ",
+      
+            "neluwa": "නෙළුව",
+         
+            "kottawa_cluster": "කොට්ටව, කොට්ටව නැගෙනහිර, කොට්ටව බටහිර",
+            "neluwa_cluster": "හප්පිටිය, පන්නිමුල්ල, පනාගොඩ",
+            "ella_upper_loc": "182 C ඇල්ල ඉහළ, මාගෙදර නැගෙනහිර",
+
+            //vegetable page
+
+              "vegetablePageTitle": "එළවළු ආශ්‍රිත නිෂ්පාදන",
+
+                "onion_cultivation": "ලූණු වගා කිරීමේ ව්‍යාපෘතිය",
+                "greenhouse_improvement": "හරිතාගාර වගා වැඩිදියුණු කිරීමේ ව්‍යාපෘතිය",
+                "pallankoddai_onion": "පල්ලන්කොඩ්ඩායි ලූණු ",
+                "ketawala_vegetable": "කැටවල එළවළු කලාපය",
+                "atampitiya_vegetable": "ඇටම්පිටිය එළවළු සමුපකාරය",
+         
+                "onion": "ලූණු",
+                "veg_flower": "එළවළු සහ මල්",
+
+                "nanattan": "නානට්ටාන්",
+                "hali_ela": "හාලි ඇළ",
+      
+                "pallankoddai": "පල්ලන්කොඩ්ඩායි",
+                "ketawala": "කැටවල",
+                "atampitiya": "ඇටම්පිටිය",
+
+                "mannar": "මන්නාරම",
+            //bee honey page
+
+              "beeHoneyPageTitle": "මී පැණි ආශ්‍රිත නිෂ්පාදන",
+ 
+                "beeKeeping": "මී මැසි පාලන ව්‍යාපෘතිය",
+                "bogahawela_honey": "බෝගහවෙල මී පැණි ව්‍යාපෘතිය",
+                "mawelakanda_honey": "මාවෙලකන්ද මී පැණි ව්‍යාපෘතිය",
+        
+                "bee_honey": "මී පැණි",
+         
+                "bogahawela": "468 ඩී බෝගහවෙල",
+                "mawelakanda": "456 සී මාවෙලකන්ද",
+
+            //dairy milk page
+         
+          
+              "dairyPageTitle": "කිරි නිෂ්පාදන ආශ්‍රිත ව්‍යාපෘති",
+
+              "maha_nuwara": "මහනුවර",
+              "rathnapura": "රත්නපුර",
+              "puththalama": "පුත්තලම",
+              "vavuniya": "වවුනියාව",
+
+              
+           
+                "goatControl": "එළු පාලන ව්‍යාපෘතිය",
+                "dairyCowControl": "කිරි ගව පාලන ව්‍යාපෘතිය",
+                "dairyManagement": "කිරි ගව කළමනාකරණ ව්‍යාපෘතිය",
+                "dairyImprovement": "කිරි ගව කළමනාකරණ වැඩිදියුණු කිරීමේ ව්‍යාපෘතිය",
+                "cattleRanch": "ගව පාලන මධ්‍යස්ථාන සංවර්ධන ව්‍යාපෘතිය",
+                "milkCenterReno": "කිරි එකතු කිරීමේ මධ්‍යස්ථාන ප්‍රතිසංස්කරණ ව්‍යාපෘතිය",
+                "dairyDev": "කිරි ගව කළමනාකරණ සහ සංවර්ධන ව්‍යාපෘතිය",
+                "grassCultivation": "ගුණාත්මක තණකොළ වගා කිරීමේ ව්‍යාපෘතිය",
+                "irakkamam_goat": "ඉරක්කාමම් එළු පාලන ව්‍යාපෘතිය",
+                "akkarapaththu_dairy": "අක්කරපත්තුව කිරි ගව පාලන ව්‍යාපෘතිය",
+                "navindaveli_dairy": "නාවින්දවෙලි කිරි ව්‍යාපෘතිය",
+                "palinda_nuwara_goat": "පාලින්දනුවර එළු පාලන ව්‍යාපෘතිය",
+                "madadumbara_dairy": "මැදදුම්බර කිරි ගව පාලන ව්‍යාපෘතිය",
+                "udahenthenna_goat": "උඩහේන්තැන්න එළු පාලන ව්‍යාපෘතිය",
+                "labuhena_cattle": "ලබුහේන ගව පාලන මධ්‍යස්ථාන සංවර්ධන ව්‍යාපෘතිය",
+                "garubevilagama_dairy": "ගරුබෙවිලගම කිරි සංවර්ධන ව්‍යාපෘතිය",
+                "weligepola_dairy": "වැලිගෙපොල කිරි සංවර්ධන ව්‍යාපෘතිය",
+                "kambuwatana_dairy": "කඹුවටන කිරි සංවර්ධන ව්‍යාපෘතිය",
+                "kurundewa_dairy": "කුරුන්දෑව කිරි සංවර්ධන ව්‍යාපෘතිය",
+                "thalawa_dairy": "තලාව කිරි සංවර්ධන ව්‍යාපෘතිය",
+                "panduwasnuwara_dairy": "පඬුවස්නුවර නැගෙනහිර කිරි සංවර්ධන ව්‍යාපෘතිය",
+                "polgahawela_dairy": "පොල්ගහවෙල කිරි සංවර්ධන ව්‍යාපෘතිය",
+                "weerambugedara_dairy": "වීරඹුගෙදර කිරි සංවර්ධන ව්‍යාපෘතිය",
+                "divulwewa_dairy": "දිවුල්වැව කිරි සංවර්ධන ව්‍යාපෘතිය",
+                "karuwalagaswewa_dairy": "කරුවලගස්වැව කිරි සංවර්ධන ව්‍යාපෘතිය",
+                "padhikudiruppu_reno": "පදිකුඩිරිප්පු කිරි එකතු කිරීමේ මධ්‍යස්ථානය ප්‍රතිසංස්කරණය",
+                "buttala_dairy": "බුත්තල කිරි සංවර්ධන ව්‍යාපෘතිය",
+                "welimada_dairy": "වැලිමඩ කිරි සංවර්ධන ව්‍යාපෘතිය",
+                "bibiligamuwa_dairy": "බිබිලිගමුව කිරි සංවර්ධන ව්‍යාපෘතිය",
+                "niyamgamdora_dairy": "නියම්ගම්දොර කිරි සංවර්ධන ව්‍යාපෘතිය",
+
+                "irakkamam": "ඉරක්කාමම්",
+    "akkarapaththu": "අක්කරපත්තුව",
+    "navindaveli": "නාවින්දවෙලි",
+    "palinda_nuwara": "පාලින්දනුවර",
+    "madadumbara": "මැදදුම්බර",
+    "gaga_ihala": "ගඟ ඉහළ කෝරළේ",
+    "haguranketha": "හඟුරන්කෙත",
+    "rathnapura_office": "රත්නපුර",
+    "weligepola": "වැලිගෙපොළ",
+    "polpithigama": "පොල්පිතිගම",
+    "galgamuwa": "ගල්ගමුව",
+    "panduwasnuwara_east": "පඬුවස්නුවර නැගෙනහිර",
+    "polgahawela": "පොල්ගහවෙල",
+    "weerambugedara": "වීරඹුගෙදර",
+    "anamaduwa": "ආණමඩුව",
+    "karuwalagaswewa": "කරුවලගස්වැව",
+    "vavuniya_north": "වව්නියාව උතුර",
+    "buttala": "බුත්තල",
+    "welimada": "වැලිමඩ",
+    "welikanda": "වැලි කන්ද",
+
+                "irakkamam_loc": "වාරිපත්තංචේනෙයි / ඉරක්කාමම්",
+    "akkarapaththu_loc": "පල්ලිකුඩියිරිප්පු / නාගරික කොට්ඨාස",
+    "salamwakeni": "සලාම්වකේනි - 05",
+    "walakada": "වලාකඩ, පෙලාද",
+    "kandekubura": "802-කන්දේකුඹුර",
+    "udahenthenna_loc": "උඩහේන්තැන්න / අත්ගාල",
+    "labuhena_loc": "ලබුහේන, පොරමඩුල්ල",
+    "garubevilagama": "ගරුබෙවිලගම",
+    "galpaya_loc": "ගල්පාය, බඹරගල",
+    "kambuwatana": "කඹුවටන",
+    "kurundewa": "කුරුන්දෑව",
+    "thalawa": "තලාව",
+    "bodhimulla": "බෝධිමුල්ල",
+    "panaliya_loc": "පනලිය, සුනිලාගම",
+    "godavita": "854 - ගොඩවිට",
+    "divulwewa": "දිවුල්වැව",
+    "pahariya": "පහාරිය",
+    "padhikudiruppu": "පදිකුඩිරිප්පු",
+    "mari_arawa": "මාරි අරාව",
+    "katakaella": "58A කටකැලේ",
+    "bibiligamuwa": "50J බිබිලිගමුව",
+    "mahindagama": "282 මහින්දාගම",
+             
+                "goat_milk": "එළු කිරි",
+                "fresh_milk": "දියර කිරි",
+                "milk_mix": "දියර කිරි, යෝගට්, ගිතෙල්, බටර්",
+                "goat_milk_meat": "එළු කිරි සහ මස්",
+              
+      //eggs page
+      
+        "eggPageTitle": "බිත්තර ආශ්‍රිත නිෂ්පාදන ව්‍යාපෘති",
+          "chicken_village": "බිත්තර හා පැටවුන් නිෂ්පාදනය සඳහා කුකුළු නිෂ්පාදන ගම්මාන ව්‍යාපෘතිය",
+          "egg_cluster": "බිත්තර නිෂ්පාදන ව්‍යාපෘති  සංවර්ධනය",
+          "poultry_zone": "බිත්තර හා පැටවුන් නිෂ්පාදනය සඳහා කුකුළු කලාපය",
+          "egg_coop": "බිත්තර නිෂ්පාදන සමුපකාර සංවර්ධනය",
+          "kandangamuwa_egg": "කඳන්ගමුව බිත්තර හා පැටවුන්",
+          "undugoda_egg": "උඳුගොඩ බිත්තර ව්‍යාපෘති",
+          "yakkaduwa_egg": "යක්කඩුව කුකුළු කලාපය",
+          "kosgulana_egg": "කොස්ගුලාන බිත්තර සමුපකාරය",
+    
+          "eggs_chicks": "බිත්තර හා පැටවුන්",
+  
+          "meerigama": "මීරිගම",
+          "kegalle_off": "කෑගල්ල",
+          "ja_ela": "ජා-ඇළ",
+          "palindanuwara": "පාලින්දනුවර",
+   
+          "kandangamuwa_loc": "කඳන්ගමුව, කින්දවල, ඉඹුලන්වල",
+          "undugoda_loc": "56 B උඳුගොඩ, 56 D මොරදාන",
+          "yakkaduwa": "යක්කඩුව",
+          "kosgulana_loc": "කොස්ගුලාන, වලාකඩ, දිගන්න",
+       
+//ornamental fish page
+
+  "ornamentalFishPageTitle": "ධීවර හා විසිතුරු මසුන් ආශ්‍රිත ව්‍යාපෘති",
+    "dryfish_livelihood": "කරවල නිෂ්පාදන හා ජීවනෝපාය සංවර්ධන ව්‍යාපෘතිය",
+    "ornamental_farming": "විසිතුරු මසුන් ඇති කිරීමේ ව්‍යාපෘතිය",
+    "fishing_wharf": "මසුන් අලෙවිය හා ධීවර කටයුතු නඩත්තුව සඳහා තොටුපළක් ඉදිකිරීමේ ව්‍යාපෘතිය",
+    "ornamental_food": "විසිතුරු මසුන් ආහාර නිෂ්පාදන ව්‍යාපෘතිය",
+    "freshwater_gear": "මිරිදිය ධීවර ප්‍රජාව සඳහා අවශ්‍ය උපකරණ ලබාදීමේ ව්‍යාපෘතිය",
+    "lake_dev": "ධීවර කටයුතු සඳහා වැව් සංවර්ධනය කිරීමේ ව්‍යාපෘතිය",
+    "kareithiw_dryfish": "කාරෙයිතිව් කරවල ව්‍යාපෘතිය",
+    "mamunuwa_ornamental": "මමුනුව විසිතුරු මසුන් ඇති කිරීමේ ව්‍යාපෘතිය",
+    "thalpitiya_wharf": "තල්පිටිය ධීවර තොටුපළ ව්‍යාපෘතිය",
+    "katuhena_feed": "කටුහේන මත්ස්‍ය ආහාර නිෂ්පාදන ඒකකය",
+    "kandegama_hub": "කන්දේගම ධීවර කර්මාන්ත මධ්‍යස්ථානය",
+    "alawakumbura_coop": "අලවකුඹුර ධීවර සමුපකාරය",
+
+    "dry_fish": "කරවල",
+    "ornamental_breeding": "විසිතුරු මසුන් බෝ කිරීම සහ පුහුණු මධ්‍යස්ථානය",
+    "fishery_industry": "ධීවර කර්මාන්තය",
+    "ornamental_food_prod": "විසිතුරු මසුන් ආහාර",
+    "fishing_industry": "ධීවර කර්මාන්තය",
+ 
+    "kareithiw": "කාරෙයිතිව්",
+    "variyapola": "වාරියපොළ",
+    "panadura": "පානදුර",
+    "madurawala": "මදුරාවල",
+    "dibulagala": "දිඹුලාගල",
+
+    "kareithiw_loc": "කාරෙයිතිව්-09",
+    "mamunuwa": "මමුනුව",
+    "thalpitiya_loc": "දකුණු තල්පිටිය / පල්ලියමංකඩ",
+    "katuhena_loc": "කටුහේන / ඉහළ කරන්නාගොඩ",
+    "kandegama": "240 කන්දේගම",
+    "alawakumbura": "239 - අලවකුඹුර",
+
+    //umbalakada page
+
+      "driedFishPageTitle": "උම්බලකඩ සහ කරවල ආශ්‍රිත නිෂ්පාදන ව්‍යාපෘති",
+     
+        "community_fisheries": "කලුගලඔය වැව කේන්ද්‍ර කරගත් ප්‍රජා මූලික ධීවර ව්‍යාපෘතිය",
+        "theppam_desc": "කලපුවේ වැඩ කරන ධීවරයන් සඳහා තෙප්පම් ව්‍යාපෘතිය",
+        "uhana_lake_fisheries": "උහන ප්‍රජා මූලික ධීවර ව්‍යාපෘතිය",
+        "kareithiw_dryfish_full": "කාරෙයිතිව් කරවල නිෂ්පාදන හා ජීවනෝපාය සංවර්ධන ව්‍යාපෘතිය",
+        "theppam_project": "කලපු ධීවර තෙප්පම් ව්‍යාපෘතිය",
+    
+        "fish_dried_fish": "මළු සහ කරවල",
+     
+        "bandaraduuwa": "බණ්ඩාරදූව",
+        "karukupane": "කරුකුපනේ",
+      
+        //clay page
+          "clayPageTitle": "මැටි ආශ්‍රිත නිෂ්පාදන ව්‍යාපෘති",
+          
+            "kella_clay_dev": "කැල්ල මැටි නිෂ්පාදන ගම්මානය සංවර්ධනය කිරීමේ ව්‍යාපෘතිය",
+            "clay_village_title": "මැටි නිෂ්පාදන ගම්මානය සංවර්ධන ව්‍යාපෘතිය",
+            "weerasekarapura_ornamental": "වීරසේකරපුර මැටි ආශ්‍රිත විසිතුරු භාණ්ඩ නිෂ්පාදන ව්‍යාපෘතිය",
+            "clay_ornamental_title": "මැටි ආශ්‍රිත විසිතුරු භාණ්ඩ නිෂ්පාදන ව්‍යාපෘතිය",
+            "clay_pot_initiative": "මැටි බඳුන් ව්‍යාපෘතිය",
+            "weherayaya_initiative": "වෙහෙරයාය මැටි බඳුන් ව්‍යාපෘතිය"
+        ,
+            "pots_clay_pots": "මුට්ටි, මැටි බඳුන්",
+            "clay_product": "මැටි නිෂ්පාදන",
+            "milk_pot_clay_pot": "කිරි මුට්ටි, මැටි බඳුන්"
+         ,
+            "kolonna": "කොලොන්න",
+            "biyagama": "බියගම",
+            "wellavaya": "වැල්ලවාය"
+         ,
+            "kella_loc": "කැල්ල, අඹගහයාය",
+            "biyagama_south": "28c බියගම දකුණ",
+            "weherayaya": "වෙහෙරයාය",
+      
+          "gampaha": "ගම්පහ",
+
+          //cxloth page
+   
+            "clothPageTitle": "ඇඟලුම් සහ රෙදිපිළි ආශ්‍රිත ව්‍යාපෘති",
+       
+              "garment_manufacturing": "සුළු පරිමාණ ඇඟලුම් නිෂ්පාදන ව්‍යාපෘතිය",
+              "nugaduwa_batik": "නුගදූව බතික් නිෂ්පාදන ව්‍යාපෘතිය",
+              "nikaweratiya_coir_zone": "නිකවැරටිය කොහු කර්මාන්ත කලාපය",
+              "akmeemana_batik": "අක්මීමන බතික් ව්‍යාපෘතිය",
+   
+              "uniforms_garments": "පාසල් නිල ඇඳුම්, ළමා ඇඳුම්, එම්බ්‍රොයිඩර් සහ ආරි නිෂ්පාදන ඇඟලුම්",
+              "batik_clothing": "බතික් ඇඳුම්",
+       
+              "addalaichenai": "අඩ්ඩාලච්චේන",
+              "akmeemana": "අක්මීමන",
+        
+              "addalaichenai_17": "අඩ්ඩාලච්චේන 17",
+              "nugaduuwa": "නුගදූව",
+
+      //iron and gold page 
+
+        "ironGoldPageTitle": "යකඩ සහ රන් ආශ්‍රිත නිෂ්පාදන ව්‍යාපෘති",
+    
+          "malagala_iron": "මාලගල යකඩ කර්මාන්ත ",
+          "iron_cluster_desc": "ලෝහ සහ යකඩ නිෂ්පාදනය සඳහා වන කාර්මික සංවර්ධන කර්මාන්ත"
+  ,
+          "iron_goods": "යකඩ ආශ්‍රිත නිෂ්පාදන (ග්‍රිල්, ගේට්ටු, උද්‍යාන බංකු)"
+,
+          "colombo": "කොළඹ"
+ ,
+          "padukka": "පාදුක්ක",
+ 
+          "malagala_loc": "මාලගල, උඩුමුල්ල",
+    //sweets page
+
+      "sweetFoodsPageTitle": "පැණිරස හා සාම්ප්‍රදායික ආහාර ආශ්‍රිත ව්‍යාපෘති",
+   
+        "sweets_village": "පැණිරස ආහාර නිෂ්පාදන ගම්මාන ව්‍යාපෘතිය",
+        "karadagama_sweets": "කරදගම පැණිරස ආහාර සමුපකාරය"
+ ,
+        "sweets": "සාම්ප්‍රදායික පැණිරස ආහාර සහ කෙටි ආහාර",
+
+        "badalkumbura": "බඩල්කුඹුර",
+     
+        "karadagama": "කරදගම",
+   //wooden page 
+
+    "woodenPageTitle": "ලී ගෘහභාණ්ඩ සහ වඩු කර්මාන්ත ව්‍යාපෘති",
+  
+      "wooden_furniture_cluster": "ලී ගෘහභාණ්ඩ කර්මාන්ත සංවර්ධනය කිරීම",
+      "moratuwa_furniture": "මොරටුව ලී ගෘහභාණ්ඩ කර්මාන්ත "
+ ,
+      "wooden_furniture": "ලී ගෘහභාණ්ඩ (නිවාස සහ කාර්යාල)"
+   ,
+      "moratuwa": "මොරටුව"
+ ,
+      "moratuwa_cluster_loc": "කොරලවැල්ල (නැගෙනහිර, උතුර, බටහිර, දකුණ), කටුකුරුන්ද (උතුර, දකුණ), එගොඩ උයන (උතුර, මධ්‍යම, දකුණ)"
+    ,
+    //road fdevelopment page
+ 
+      "roadDevelopmentPageTitle": "ග්‍රාමීය මාර්ග යටිතල පහසුකම් සංවර්ධනය",
+      "amountLabel": "ඇස්තමේන්තුගත පිරිවැය",
+     
+    
+        "kandy": "මහනුවර",
+        "matara": "මාතර"
+   ,
+      
+        "pathahewaheta": "පාතහේවාහැට",
+        "naula": "නාඋල",
+        "puhulwella": "කිරිඳි පුහුල්වැල්ල"
+   ,
+        "salava_west": "සාලාව බටහිර",
+        "ankanda": "අංකන්ද",
+        "bawlana": "බව්ලන",
+        "lihinipitiya": "ලිහිණිපිටිය",
+        "morawadiya": "මොරවැඩිය",
+        "walakanda_south": "වල්කන්ද දකුණ"
+,
+        "transport_facilities": "ප්‍රවාහන පහසුකම්",
+        "road_dev": "මාර්ග සංවර්ධනය",
+        "bridge_dev": "පාලම් ප්‍රතිසංස්කරණය",
+        "canal_dev": "ඇල මාර්ග සංවර්ධනය",
+        "concrete_paving": "කොන්ක්‍රීට් ඇතිරීම",
+        "dothal_oya_name": "දෝතල් ඔය ගේට්ටුවේ සිට අක්කර පනහ දක්වා මාර්ග සංවර්ධනය",
+        "ankanda_bridge_name": "අංකන්ද දිග්ගල පාලම ප්‍රතිසංස්කරණය",
+        "bawlana_sarvodaya_name": "සර්වෝදය මාර්ගය සංවර්ධනය",
+        "bawlana_bus_road_name": "බව්ලන බස් නැවතුමේ සිට දෙල්තොට දක්වා මාර්ගය",
+        "kalulella_road_name": "කලුලැල්ල මාර්ගය සංවර්ධනය",
+        "lihinipitiya_main_road_name": "ලිහිණිපිටිය ප්‍රධාන මාර්ගය සංවර්ධනය",
+        "lihinipitiya_canal_name": "ලිහිණිපිටිය ප්‍රධාන ඇල සංවර්ධනය",
+        "bandarakanda_road_name": "බණ්ඩාරකන්ද-තුංගදොළ මාර්ගය සංවර්ධනය",
+        "kosgahahena_road_name": "කොස්ගහහේන මාර්ගය සංවර්ධනය",
+        "kumara_house_road_name": "ටයිගර් ලෑන්ඩ් මාර්ගය (කොන්ක්‍රීට්)",
+        "ella_community_hall_name": "ඇල්ල සිට ප්‍රජා ශාලාව දක්වා මාර්ගය",
+        "kajuvetiya_side_road_name": "ඇල්ල ඉහළ කජුවෙටිය අතුරු මාර්ගය",
+        "deniyamulla_road_name": "දෙණියමුල්ල මාර්ගය සංවර්ධනය",
+        "dehigahahena_road_name": "දෙහිගහහේන සිට ලතා මහත්මියගේ වත්ත දක්වා මාර්ගය",
+        "preschool_road_name": "ඇල්ල ඉහළ පෙරපාසල් මාර්ගය",
+        "gepalawatta_culvert_name": "ගෙපලවත්ත මාර්ගයේ බෝක්කුව",
+        "enasal_wattha_road_name": "එනසාල් වත්ත මාර්ගය (කොන්ක්‍රීට්)",
+        "shirani_house_culvert_name": "දොළ ඉහළ මාර්ගයේ පෙට්ටි බෝක්කු",
+        "punchi_dehigahahena_name": "ඇල්ල ඉහළ පුංචි දෙහිගහ හේන මාර්ගය",
+        "pitikumbura_road_name": "පිටිකුඹුර මාර්ගය සංවර්ධනය",
+        "pindeniya_road_name": "පිණ්ඩෙනිය මාර්ගය සංවර්ධනය",
+
+        "service": "සේවාව",
+
+        //samnitary facilities
+        
+          "sanitaryPageTitle": "සනීපාරක්ෂක හා ජල සම්පාදන ව්‍යාපෘති",
+      
+            "drinking_water": "පානීය ජල පහසුකම්",
+            "sanitary_facilities": "සනීපාරක්ෂක පහසුකම්"
+      ,
+            "batticaloa": "මඩකලපුව",
+      
+            "koralaipattu_south": "කෝරලෙයිපත්තුව දකුණ",
+
+            "murutthanai": "මුරුත්තනෛ",
+            "ganthuna_medagama": "58G ගන්තූන මේදගම"
+      ,
+            "murutthanai_water_name": "මිනුමිනුත්තවේලි සහ අකුරනෛයි ප්‍රජා ජල සම්පාදන යෝජනා ක්‍රමය ",
+            "murutthanai_water_short": "මුරුත්තනෛ ජල යෝජනා ක්‍රමය",
+            "murutthanai_toilet_name": "මුරුත්තනෛ ප්‍රජා වැසිකිළි ඉදිකිරීමේ ව්‍යාපෘතිය",
+            "murutthanai_toilet_short": "වැසිකිළි ඉදිකිරීමේ ව්‍යාපෘතිය",
+            "aranayake_toilet_name": "අඩු ආදායම්ලාභී පවුල් සඳහා වැසිකිළි පහසුකම් සැපයීම - අරණායක",
+            "aranayake_toilet_short": "අඩු ආදායම්ලාභී සනීපාරක්ෂක ව්‍යාපෘතිය"
+          ,
+
+          //tuarism page
+       
+            "tourismPageTitle": "සංචාරක යටිතල පහසුකම් ව්‍යාපෘති",
+            
+              "food_beverage": "ආහාර පාන සේවා සැපයීම",
+              "tourism_industry": "සංචාරක කර්මාන්ත සංවර්ධනය",
+              "tourism_promotion": "සංචාරක ප්‍රවර්ධනය",
+           "hambantota": "හම්බන්තොට",
+            "angunakolapelessa": "අඟුණකොළපැලැස්ස",
+          
+              "alkaduwa": "අල්කඩුව වත්ත",
+              "angunakolapelessa_lake": "අඟුණකොළපැලැස්ස වැව අසල",
+              "maduragama": "68 C මදුරගම",
+           
+              "sembuwatta_name": "සෙම්බුවත්ත තේ කර්මාන්ත ශාලාවේ බිම් මහල අවන්හලක් ලෙස ප්‍රතිසංස්කරණය කිරීම",
+              "sembuwatta_short": "තේ කර්මාන්තශාලා අවන්හල් ව්‍යාපෘතිය",
+              "angunakolapelessa_name": "අඟුණකොළපැලැස්ස වැව ආශ්‍රිත බහුකාර්ය සංවර්ධන ව්‍යාපෘතිය",
+              "angunakolapelessa_short": "වැව ආශ්‍රිත බහුකාර්ය ව්‍යාපෘතිය",
+              "ella_promotion_name": "සංචාරකයින් සඳහා ආහාර පාන සැපයීම සහ අලෙවිසැල් ප්‍රවර්ධනය කිරීමේ ව්‍යාපෘතිය",
+              "ella_promotion_short": "සංචාරක අලෙවිසැල් ප්‍රවර්ධනය",
+           
+      
     // Footer
     quickLinks: "ඉක්මන් සබැඳි",
     importantLinks: "වැදගත් සබැඳි",
@@ -599,7 +1956,7 @@ const translations = {
     
     aboutMinistry: "கிராமிய அபிவிருத்தி அமைச்சகம் பற்றி",
     president: "ஜனாதிபதி",
-    minister: "அமைச்சர்",
+    minister: " அமைச்சர்",
     secretary: "செயலாளர்",
     
 
@@ -620,11 +1977,11 @@ const translations = {
     
     downloadTitle: "சுற்றறிக்கைகள், வழிகாட்டுதல்கள் மற்றும் வடிவங்களை பதிவிறக்கவும்",
     relatedOrganizations: "தொடர்புடைய நிறுவனங்கள்",
-    deputyMinister: "உப அமைச்சர்",
+    deputyMinister: " துணை அமைச்சர்",
     
     // Officers Names
-    deputyMinisterName: "திரு. வசந்த பியதிஸ்ஸ",
-    ministerName: "திரு. உபாலி பன்னிலகே",
+    deputyMinisterName: "கௌரவ  வசந்த பியதிஸ்ஸ",
+    ministerName: "கௌரவ  டாக்டர். உபாலி பன்னிலகே",
     secretaryName: "திரு. சம்பத் மந்திரிநாயக்க",
     directorGeneralName: "திரு. எச்.எம்.எம்.யூ.பி.ஹெரத்",
   
@@ -762,9 +2119,682 @@ prajashakthiTrainingofTrainersNorthProvinceProgram:"பிரஜாஷக்த�
     "rti.assistantTitle": "இயக்குனர் - சம்பிகா டி. தர்மசேன",
     "rti.officerName": "திருமதி தினுஜி ரந்திகா கோடிகமுவ",
 
+//services page
+//agriculture page
+
+
+//////////fruit page
+fruitPageTitle: "பழம் தொடர்பான திட்டங்கள்", 
+no: "எண்", 
+// district: "மாவட்டம்",
+ divisionalOffice: "தொகுதி செயலாளர் அலுவலகம்", 
+ project: "திட்டம்", 
+//  product: "பொருள்", 
+ location: "இடம்", 
+ "Amount(Rs)": "தொகை (ரூ)",
+
+ //projects
+ "amban_bananaProject": "அம்பன் வாழைத் திட்டம்",
+    "durianProject": "துரியன் திட்டம்",
+    "vine_orangesProject": "கொடி தோடம் திட்டம்",
+    "jamanarangProject": "ஜமனாரங் திட்டம்",
+    "nutsProject": "கொட்டை வகைகள் திட்டம்",
+    "jams_cordialsProject": "ஜாம் மற்றும் பானங்கள் திட்டம்",
+    "kavendish_bananaProject": "கேவன்டிஷ் வாழைத் திட்டம்",
+    "mixed_fruitsProject": "பழங்கள் திட்டம்",
+    "pineapple_delumProject": "அன்னாசி மற்றும் மாதுளை திட்டம்",
+    "apple_pera_mangoProject": "ஆப்பிள் கொய்யா, மாம்பழத் திட்டம்",
+
+//prject name
+    "mahanuwara_banana": "மகாநுவர அம்பன் வாழைத் திட்டம்",
+    "mahanuwara_durian": "மகாநுவர துரியன் திட்டம்",
+    "nuwara_eliya_orange": "நுவரெலியா கொடி தோடம் திட்டம்",
+    "nuwara_eliya_jamanarang": "நுவரெலியா ஜமனாரங் திட்டம்",
+    "ampara_orange": "அம்பாறை கொடி தோடம் திட்டம்",
+    "kurunegala_nuts": "குருநாகல் கொட்டை வகைகள் திட்டம்",
+    "mulathivu_jams": "முல்லைத்தீவு ஜாம் மற்றும் பானங்கள் திட்டம்",
+    "mulathivu_banana": "முல்லைத்தீவு கேவன்டிஷ் வாழைத் திட்டம்",
+    "kalutara_fruit": "களுத்துறை பழங்கள் திட்டம்",
+    "polonnaruwa_pineapple": "பொலன்னறுவை அன்னாசி மற்றும் மாதுளை திட்டம்",
+    "polonnaruwa_apple": "பொலன்னறுவை ஆப்பிள், கொய்யா, மாம்பழத் திட்டம்",
+
+//districts
+    "mahanuwara": "மகாநுவர",
+    "nuwara_eliya": "நுவரெலியா",
+    "ampara": "அம்பாறை",
+    "kurunegala": "குருநாகல்",
+    "mulathivu": "முல்லைத்தீவு",
+    "kalutara": "களுத்துறை",
+    "polonnaruwa": "பொலன்னறுவை",
+
+
+    //offices
+    "harispaththuwa": "ஹாரிஸ்பத்துவ",
+    "poojapitiya": "பூஜாபிட்டிய",
+    "kotmale_east": "கொத்மலை கிழக்கு",
+    "uhana": "உஹன",
+    "ibbagamuwa": "இப்பாகமுவ",
+    "mantai_east": "மாந்தை கிழக்கு",
+    "puthukudirippu": "புதுக்குடியிருப்பு",
+    "dhodangoda": "கொடங்கொடை",
+    "madirigiriya": "மெதிரிகிரிய",
+
+    //products
+    "amban_banana": "அம்பன் வாழை",
+    "durian": "துரியன்",
+    "vine_oranges": "கொடி தோடம்",
+    "jamanarang_drinks": "ஜமனாரங் பானங்கள்",
+    "nuts": "கொட்டை வகைகள்",
+    "jams_cordials": "ஜாம், பானங்கள் மற்றும் தோடம் சார்ந்த தயாரிப்புகள்",
+    "kavendish_banana": "கேவன்டிஷ் வாழை",
+    "mixed_fruits": "துரியன், ரம்புட்டான், அன்னாசி, கொடி தோடம், வாழை",
+    "pineapple_delum": "அன்னாசி மற்றும் மாதுளை",
+    "apple_pera_mango": "ஆப்பிள் கொய்யா, மாம்பழம்",
+
+    //locations
+    "bulathgolla": "புலத்கொல்ல",
+    "pahala_higulwala": "507-பஹல ஹிகுல்வல",
+    "niyamgamdora": "நியம்கம்தொர 470",
+    "weralalapathana": "461/D வெரலலபதன",
+    "bandaradoowa": "பண்டாரதூவ",
+    "omaragolla": "415 ஒமரகொல்ல",
+    "ampalapuram": "அம்பாலபுரம்",
+    "theravil": "தேராவில் தேவிபுரம்",
+    "thudugala": "துடுகல கிழக்கு, நெஹின்னேவ, வடுகம",
+    "vijayapura": "108 விஜயபுர",
+    "ihalagama": "109 இஹலகம",
+
+    //bulath page
+    "betelPageTitle": "வெற்றிலை தொடர்பான தயாரிப்புகள்",
+
+    "ampara_organicBetel": "ரிதிஎல  வெற்றிலை திட்டம்",
+    "kegalle_betelCluster": "கேகாலை வெற்றிலை கொத்து திட்டம்",
+    "galigamuwa_betelCluster": "கலிகமுவ வெற்றிலை கொத்து திட்டம்",
+    "puttalama_betelCluster": "அபகலெ வெற்றிலை கொத்து திட்டம் (புத்தளம்)",
+    "hambanthota_betelCluster": "அபகலெ வெற்றிலை கொத்து திட்டம் (அம்பாந்தோட்டை)",
+    "organicBetelProject": " வெற்றிலை திட்டம்",
+    "betelCluster": "வெற்றிலை கொத்து திட்டம்",
+
+    "kegalle": "கேகாலை",
+    "puttalama": "புத்தளம்",
+    "hambanthota": "அம்பாந்தோட்டை",
+
+    "dehiaththakandiya": "தெகிஅத்தகண்டிய",
+    "galigamuwa": "கலிகமுவ",
+    "arachchikattuwa": "ஆரச்சிக்கட்டுவ",
+    "veeraketiya": "வீரக்கெட்டிய",
+
+    "betel_leaf": "வெற்றிலை",
+
+    "ridiela": "ரிதிஎல",
+    "pussella": "51 A புஸ்ஸல்ல, 51 A ரங்வல",
+    "papoluwa": "70 A, பப்பொலுவ",
+    "abakele": "அபகலெ, இஹல அத்தங்கானய",
+    "degampotha": "தெகம்பொத்த, வடக்கு அபகொலவெவ",
+
+    //cineman page
+
+    "cinnamonPageTitle": "இலவங்கப்பட்டை தொடர்பான தயாரிப்புகள்",
+
+    "cinnamonProject": "இலவங்கப்பட்டை திட்டம்",
+    "tangalla_Cinamon": "தங்கல்ல இலவங்கப்பட்டை திட்டம்",
+    "balapitiya_Cinamon": "பலப்பிட்டிய இலவங்கப்பட்டை திட்டம்",
+    "niyagama_Cinamon": "நியாகம இலவங்கப்பட்டை திட்டம்",
+    "yakkalamulla_Cinamon": "யக்கலமுல்ல இலவங்கப்பட்டை திட்டம்",
+    "wallawita_Cinamon": "வல்லாவிட்ட இலவங்கப்பட்டை திட்டம்",
+    "monaragala_Cinamon": "மொனராகலை இலவங்கப்பட்டை திட்டம்",
+    "madulla_Cinamon": "மாதுள்ளை இலவங்கப்பட்டை திட்டம்",
+    "mayyokkawatte_Cinamon": "மய்யொக்காவத்த இலவங்கப்பட்டை திட்டம்",
+    "sewanagala_Cinamon": "செவனகல இலவங்கப்பட்டை திட்டம்",
+
+     "cinnamon": "இலவங்கப்பட்டை", 
+    "galle": "காலி",
+    "monaragala": "மொனராகலை",
+
+    "tangalla": "தங்கல்ல",
+    "balapitiya": "பலப்பிட்டிய",
+    "niyagama": "நியாகம",
+    "yakkalamulla": "யக்கலமுல்ல",
+    "walallawita": "வல்லாவிட்ட",
+  
+    "madulla": "மாதுள்ளை",
+    "sewanagala": "செவனகல",
+
+    "vallodaya": "வல்லோதய, ரத்ன கிழக்கு, ரெகவ மேற்கு",
+    "kattakaduwa": "கட்டக்கடுவ தெற்கு, கட்டக்கடுவ வடக்கு",
+    "pelagus": "பேலகஸ் மாகாணம், பத்திராஜ இடம்",
+    "horangalla": "ஹோரங்கல்ல தலாவ, ஹோரங்கல்ல மேற்கு",
+    "ella_upper": "182 சி எல்ல மேல்",
+    "pareigama": "782 பரேயிகம வடக்கு, குடா மத்துகம",
+    "batugammana": "130 படுகம்மன",
+    "tharela": "113டி - தரல",
+    "illukkanda": "113சி - இல்லுக்கந்த",
+    "watawanagara": "116சி - வட்டவானகற",
+    "mayyokkawatte": "மய்யொக்காவத்த",
+    "kiri_wewa": "கிரி வெவ, இந்திகொலபெலஸ்ஸ",
+    "habarugala": "ஹபரூகல, மஹகம",
+
+
+    //cocnut page
+    "coconutPageTitle": "தேங்காய் தொடர்பான தயாரிப்புகள்",
+
+    "coconutHuskProject": "தேங்காய் மட்டை சார்ந்த தயாரிப்பு திட்டம்",
+    "coconutOilProject": "தேங்காய் எண்ணெய் உற்பத்தி திட்டம்",
+    "uhana_coconut": "உஹன தேங்காய் மட்டை சார்ந்த தயாரிப்பு",
+    "udubaddawa_coconut": "உடுபத்தாவ தேங்காய் மட்டை சார்ந்த தயாரிப்பு",
+    "kobeigane_coconut": "கொபெய்கனே தேங்காய் மட்டை சார்ந்த தயாரிப்பு",
+    "puttur_coconut": "புத்தூர் கிழக்கு தேங்காய் எண்ணெய் தயாரிப்பு",
+
+    "broom_rugs": "துடைப்பம், தரைவிரிப்புகள்",
+    "coconut_husk": "தேங்காய் மட்டை",
+    "coconut_oil": "தேங்காய் எண்ணெய்",
+
+    "jaffna": "யாழ்ப்பாணம்",
+
+    "udubaddawa": "உடுபத்தாவ",
+    "kobeigane": "கொபெய்கனே",
+    "valikamam_east": "வலிகாமம் கிழக்கு (கோப்பாய்)",
+
+    "uhanapura": "உஹனபுர",
+    "udadeniya": "உடதெனிய",
+    "kobeigane_cluster": "புப்பிலிய, பெத்தேகம, மாவத்தகம, வலஸ்வெவ",
+    "puttur_east": "புத்தூர் கிழக்கு J/278",
 
 
 
+    // flower page
+
+    "flowerPageTitle": "அலங்கார மலர் சாகுபடி திட்டம்",
+
+    "flowerProject": "அலங்கார மலர் சாகுபடி திட்டம்",
+    "pannala_flowers": "பன்னால அலங்கார மலர் சாகுபடி திட்டம்",
+    "idda_flower": "இத்தா மலர் ",
+
+    "flowers": "மலர்கள்",
+
+    "pannala": "பன்னல",
+    "kalpitiya": "கல்பிட்டி",
+
+    "pannala_cluster": "1557 - படபொத எல, 1563 - வெத்தேவ",
+    "mampuriya": "மாம்புரிய",
+
+    //kiy=thul page
+
+    "kithulPageTitle": "கித்துள் தொடர்பான தயாரிப்புகள்",
+
+    "kithulDevelopment": "கித்துள் அபிவிருத்தி திட்டம்",
+    "matugama_kithul": "மத்துகம கித்துள் அபிவிருத்தி திட்டம்",
+    "kotmale_kithul": "கொத்மலை மேற்கு கித்துள் அபிவிருத்தி திட்டம்",
+
+    "kithul_mix": "கித்துள் சர்க்கரை, தேன், கித்துள் மா",
+    "kithul_value_added": "கித்துள் தொடர்பான பெறுமதி சேர்க்கப்பட்ட தயாரிப்புகள்",
+    "matugama": "மத்துகம",
+    "kotmale_west": "கொத்மலை மேற்கு",
+
+    "matugama_kithul_loc": "795 பி சந்தசிறிகம, 794 ஹோரவல, 793 பி மடவல",
+    "madakubura": "மடக்கும்புர 468",
+
+
+    //mushroom page 
+
+  
+      "mushroomPageTitle": "காளான் தொடர்பான தயாரிப்புகள்",
+      
+        "mushroomProduction": "காளான் உற்பத்தி மண்டலம்",
+        "uhana_mushroom": "உஹன காளான் உற்பத்தி மண்டலம்",
+        "ukuwela_mushroom": "உகுவெல காளான் உற்பத்தி மண்டலம்",
+        "aranayake_mushroom": "அரநாயக்க காளான் உற்பத்தி மண்டலம்",
+        "wellawaya_mushroom": "வெல்லவாய காளான் உற்பத்தி மண்டலம்",
+        "ella_mushroom": "எல்ல காளான் உற்பத்தி மண்டலம்",
+        "madirigiriya_mushroom": "மெதிரிகிரிய காளான் உற்பத்தி மண்டலம்",
+      
+        "mushroom": "காளான்",
+      
+        "matale": "மாத்தளை",
+        "badulla": "பதுளை",
+    
+        "ukuwela": "உகுவெல",
+        "aranayake": "அரநாயக்க",
+        "wellawaya": "வெல்லவாய",
+        "ella": "எல்ல",
+     
+        "ukuwela_loc": "ஓவில்லதென்ன, திப்பந்துவாவ",
+        "pahinibeddara": "45சி பஹினிபெத்தர, காவிலிபிட்டிய கிராமம்",
+        "kotikambokka": "கொடிக்கம்பொக்க",
+        "ella_mushroom_loc": "மில்லகம, இதமேகம, உடு கும்பல்வெல",
+        "veheragala": "124 வெஹரகல",
+     
+//palm page
+
+"palmPageTitle": "பனை தொடர்பான தயாரிப்புகள்",
+"palmBasedProject": "பனை சார்ந்த திட்டம்",
+"jaffna_palm": "யாழ்ப்பாண பனை சார்ந்த திட்டம்",
+
+"palm_kernels": "பனை விதைகள் மற்றும் பனை சார்ந்த தயாரிப்புகள்",
+
+"uduvil": "வலிகாமம் தெற்கு (உடுவில்)",
+
+"jaffna_palm_loc": "ஏழாலை தெற்கு, புன்னாகம் நகர தெற்கு",
+
+//seed page
+
+"seedPageTitle": "விதை தொடர்பான தயாரிப்புகள்",
+
+"seedProject": "விதை உற்பத்தி திட்டம்",
+    "badulla_seed_name": "பதுளை உருளைக்கிழங்கு விதை திட்டம்",
+    "polonnaruwa_seed_name": "பொலன்னறுவை விதை நெல் திட்டம்",
+
+    "potato_seeds": "உருளைக்கிழங்கு விதைகள்",
+    "seed_paddy": "விதை நெல்",
+
+   "badulla_seed_cluster": "ஹாலி எல, பண்டாரவளை, ஹப்புத்தளை, ஹல்துமுல்லை, பஸ்ஸறை",
+    "higurangoda": "ஹிங்குராக்கொடை",
+
+  "badulla_seed_loc": "நயபெத்தவத்தை, பூனகலவத்தை, தம்பேதென்னவத்தை, தங்கமலைவத்தை, உடவேரியவத்தை, கோனமோட்டாவத்தை, கனவெரல்லவத்தை, வேவலவத்தை, நாவலவத்தை, தியனகலவத்தை",
+    "rajaelagama": "37 ரஜஎலகம",
+
+    //spices page
+   "spicesPageTitle": "வாசனைத் திரவியங்கள் மற்றும் தொடர்பான தயாரிப்புகள்",
+
+        "spiceVillageProject": "மிளகு சாகுபடி திட்டம்",
+        "udawatte_spice": "உடவத்த மிளகுத் திட்டம்",
+        "higuranketha_pepper": "ஹங்குரன்கெத்த மிளகுத் திட்டம்",
+
+        "black_pepper": "கருமிளகு",
+  
+        "higuranketha": "ஹங்குரன்கெத்த",
+  
+        "udawatte_cluster": "உடவத்த கிழக்கு, உடவத்த மேற்கு, 488/A ஹகுருத்தல்",
+   
+        //tea page
+
+          "teaPageTitle": "தேயிலை தொடர்பான தயாரிப்புகள்",
+     
+            "teaPromotion": "தேயிலை சாகுபடி ஊக்குவிப்பு திட்டம்",
+            "teaDevelopment": "தேயிலை சாகுபடி ஊக்குவிப்பு திட்டம்",
+            "teaCooperative": "தேயிலை சாகுபடி ஊக்குவிப்பு திட்டம்",
+            "kottawa_tea": "கொட்டாவ தேயிலை ஊக்குவிப்பு மண்டலம்",
+            "neluwa_tea": "நெலுவ தேயிலை அபிவிருத்தி பகுதி",
+            "ella_upper_tea": "எல்ல மேல் தேயிலை கூட்டுறவு",
+          
+            "tea": "தேயிலை",
+        
+            "neluwa": "நெலுவ",
+      
+            "kottawa_cluster": "கொட்டாவ, கொட்டாவ கிழக்கு, கொட்டாவ மேற்கு",
+            "neluwa_cluster": "ஹப்பிட்டிய, பன்னிமுல்ல, பனாகொட",
+            "ella_upper_loc": "182 C எல்ல மேல், மாகெதர கிழக்கு",
+          
+            //vegetable page 
+
+              "vegetablePageTitle": "காய்கறி தொடர்பான தயாரிப்புகள்",
+        
+                "onion_cultivation": "வெங்காயச் செய்கைத் திட்டம்",
+                "greenhouse_improvement": "பசுமை இல்லச் செய்கை மேம்பாட்டுத் திட்டம்",
+                "pallankoddai_onion": "பள்ளங்கொடை வெங்காயக் கொத்து",
+                "ketawala_vegetable": "கெட்டவல காய்கறி வலயம",
+                "atampitiya_vegetable": "அட்டம்பிட்டிய காய்கறி கூட்டுறவு",
+        
+                "onion": "வெங்காயம்",
+                "veg_flower": "காய்கறிகள் மற்றும் மலர்கள்",
+       
+                "nanattan": "நானாட்டான்",
+                "hali_ela": "ஹாலி எல",
+        
+                "pallankoddai": "பள்ளங்கொடை",
+                "ketawala": "கெட்டவல",
+                "atampitiya": "அட்டம்பிட்டிய",
+
+                mannar: "மன்னார்",
+
+        //bee honey page
+          "beeHoneyPageTitle": "தேன் தொடர்பான தயாரிப்புகள்",
+            "beeKeeping": "தேனீ வளர்ப்பு திட்டம்",
+            "bogahawela_honey": "போகஹவெல தேன் கொத்து",
+            "mawelakanda_honey": "மாவேலகந்த தேன் கூட்டுறவு",
+    
+            "bee_honey": "தேன்",
+        
+            "bogahawela": "468 D போகஹவெல",
+            "mawelakanda": "456 C மாவேலகந்த",
+         
+      //dairy mil kpage
+   
+        "dairyPageTitle": "பால் உற்பத்தி தொடர்பான திட்டங்கள்",
+
+    "maha_nuwara": "கண்டி",
+       
+          "goatControl": "ஆடு வளர்ப்பு திட்டம்",
+          "dairyCowControl": "கறவை மாடு வளர்ப்பு திட்டம்",
+          "dairyManagement": "கறவை மாடு முகாமைத்துவ திட்டம்",
+          "dairyImprovement": "கறவை மாடு முகாமைத்துவ மேம்பாட்டு திட்டம்",
+          "cattleRanch": "கால்நடை பண்ணை மேம்பாட்டு திட்டம்",
+          "milkCenterReno": "பால் சேகரிப்பு நிலைய புனரமைப்பு திட்டம்",
+          "dairyDev": "கறவை மாடு முகாமைத்துவம் மற்றும் அபிவிருத்தி திட்டம்",
+          "grassCultivation": "தரமான புல் செய்கை திட்டம்",
+          "irakkamam_goat": "இறக்காமம் ஆடு வளர்ப்பு திட்டம்",
+          "akkarapaththu_dairy": "அக்கரைப்பற்று கறவை மாடு வளர்ப்பு திட்டம்",
+          "navindaveli_dairy": "நாவிதன்வெளி பால் திட்டம்",
+          "palinda_nuwara_goat": "பாலிந்த நுவர ஆடு வளர்ப்பு திட்டம்",
+          "madadumbara_dairy": "மததும்பர கறவை மாடு வளர்ப்பு திட்டம்",
+          "udahenthenna_goat": "உடஹேந்தன்ன ஆடு வளர்ப்பு திட்டம்",
+          "labuhena_cattle": "லபுஹேன கால்நடை பண்ணை மேம்பாட்டு திட்டம்",
+          "garubevilagama_dairy": "கருபெவிலகம பால் அபிவிருத்தி திட்டம்",
+          "weligepola_dairy": "வெலிகெபொல பால் அபிவிருத்தி திட்டம்",
+          "kambuwatana_dairy": "கம்புவட்டன பால் அபிவிருத்தி திட்டம்",
+          "kurundewa_dairy": "குருந்தேவ பால் அபிவிருத்தி திட்டம்",
+          "thalawa_dairy": "தலாவ பால் அபிவிருத்தி திட்டம்",
+          "panduwasnuwara_dairy": "பண்டுவஸ்நுவர கிழக்கு பால் அபிவிருத்தி திட்டம்",
+          "polgahawela_dairy": "பொல்கஹவெல பால் அபிவிருத்தி திட்டம்",
+          "weerambugedara_dairy": "வீரம்புக்கெதர பால் அபிவிருத்தி திட்டம்",
+          "divulwewa_dairy": "திவுல்வெவ பால் அபிவிருத்தி திட்டம்",
+          "karuwalagaswewa_dairy": "கருவலகஸ்வெவ பால் அபிவிருத்தி திட்டம்",
+          "padhikudiruppu_reno": "பதிகுடியிருப்பு பால் சேகரிப்பு நிலைய புனரமைப்பு",
+          "buttala_dairy": "புத்தல பால் அபிவிருத்தி திட்டம்",
+          "welimada_dairy": "வெலிமடை பால் அபிவிருத்தி திட்டம்",
+          "bibiligamuwa_dairy": "பிபிலிகமுவ பால் அபிவிருத்தி திட்டம்",
+          "niyamgamdora_dairy": "நியம்கம்தொர பால் அபிவிருத்தி திட்டம்",
+      
+          "goat_milk": "ஆட்டுப் பால்",
+          "fresh_milk": "பசும்பால்",
+          "milk_mix": "பசும்பால், தயிர், நெய், வெண்ணெய்",
+          "goat_milk_meat": "ஆட்டுப் பால் மற்றும் இறைச்சி",
+
+          "irakkamam": "இறக்காமம்",
+    "akkarapaththu": "அக்கரைப்பற்று",
+    "navindaveli": "நாவிதன்வெளி",
+    "palinda_nuwara": "பாலிந்த நுவர",
+    "madadumbara": "மததும்பர",
+    "gaga_ihala": "கங்க இஹல கோரலே",
+    "haguranketha": "ஹங்குரன்கெத்த",
+    "rathnapura_office": "இரத்தினபுரி",
+    "weligepola": "வெலிகெபொல",
+    "polpithigama": "பொல்பிகிதம",
+    "galgamuwa": "கல்கமுவ",
+    "panduwasnuwara_east": "பண்டுவஸ்நுவர கிழக்கு",
+    "polgahawela": "பொல்கஹவெல",
+    "weerambugedara": "வீரம்புக்கெதர",
+    "anamaduwa": "ஆனைமடு",
+    "karuwalagaswewa": "கருவலகஸ்வெவ",
+    "vavuniya_north": "வவுனியா வடக்கு",
+    "buttala": "புத்தல",
+    "welimada": "வெலிமடை",
+    "welikanda": "வெலிகந்த",
+
+          "irakkamam_loc": "வாரிப்பத்தாஞ்சேனை / இறக்காமம்",
+    "akkarapaththu_loc": "பள்ளிக் குடியிருப்பு / நகரப் பிரிவுகள்",
+    "salamwakeni": "ஸலாம்வக்கேனி - 05",
+    "walakada": "வலகடை, பெலாத",
+    "kandekubura": "802-கந்தேகும்புர",
+    "udahenthenna_loc": "உடஹேந்தன்ன / அத்கல",
+    "labuhena_loc": "லபுஹேன, பொரமதுல்ல",
+    "garubevilagama": "கருபெவிலகம",
+    "galpaya_loc": "கல்பாய, பம்பரலக",
+    "kambuwatana": "கம்புவட்டன",
+    "kurundewa": "குருந்தேவ",
+    "thalawa": "தலாவ",
+    "bodhimulla": "போதிமுல்ல",
+    "panaliya_loc": "பனாலிய, சுனிலாகம",
+    "godavita": "854 - கொடவிட்ட",
+    "divulwewa": "திவுல்வெவ",
+    "pahariya": "பஹாரிய",
+    "padhikudiruppu": "பதிகுடியிருப்பு",
+    "mari_arawa": "மாரி அராவ",
+    "katakaella": "58A கடகெல்ல",
+    "bibiligamuwa": "50J பிபிலிகமுவ",
+    "mahindagama": "282 மஹிந்தாகம",
+
+    "rathnapura": "இரத்தினபுரி",
+    "puththalama": "புத்தளம்",
+    "vavuniya": "வவுனியா",
+
+    //eggs page
+  
+      "eggPageTitle": "முட்டை தொடர்பான தயாரிப்பு திட்டங்கள்",
+        "chicken_village": "முட்டை மற்றும் குஞ்சு உற்பத்திக்கான கோழி உற்பத்தி கிராம திட்டம்",
+        "egg_cluster": "முட்டை உற்பத்தி கிளஸ்டர் அபிவிருத்தி",
+        "poultry_zone": "முட்டை மற்றும் குஞ்சு உற்பத்திக்கான கோழி வளர்ப்பு மண்டலம்",
+        "egg_coop": "முட்டை உற்பத்தி கூட்டுறவு அபிவிருத்தி",
+        "kandangamuwa_egg": "கந்தங்கமுவ முட்டை மற்றும் குஞ்சுகள்",
+        "undugoda_egg": "உந்துகொட முட்டை கிளஸ்டர்",
+        "yakkaduwa_egg": "யக்கடுவ கோழி வளர்ப்பு மண்டலம்",
+        "kosgulana_egg": "கொஸ்குலான முட்டை கூட்டுறவு",
+
+        "eggs_chicks": "முட்டைகள் மற்றும் குஞ்சுகள்",
+
+        "meerigama": "மீரிகம",
+        "kegalle_off": "கேகாலை",
+        "ja_ela": "ஜா-எல",
+        "palindanuwara": "பாலிந்த நுவர",
+
+        "kandangamuwa_loc": "கந்தங்கமுவ, கிந்தவல, இம்புலன்வல",
+        "undugoda_loc": "56 B உந்துகொட, 56 D மொரதான",
+        "yakkaduwa": "யக்கடுவ",
+        "kosgulana_loc": "கொஸ்குலான, வலகடை, திகன்ன",
+  
+        //ornament fish
+
+          "ornamentalFishPageTitle": "மீன்பிடி மற்றும் அலங்கார மீன் தொடர்பான திட்டங்கள்",
+            "dryfish_livelihood": "கருவாடு உற்பத்தி மற்றும் வாழ்வாதார மேம்பாட்டுத் திட்டம்",
+            "ornamental_farming": "அலங்கார மீன் வளர்ப்பு திட்டம்",
+            "fishing_wharf": "மீன் விற்பனை மற்றும் மீன்பிடி நடவடிக்கைகளுக்காக இறங்குதுறை அமைக்கும் திட்டம்",
+            "ornamental_food": "அலங்கார மீன் உணவு உற்பத்தி திட்டம்",
+            "freshwater_gear": "நன்னீர் மீன்பிடி சமூகத்திற்கான உபகரணங்கள் வழங்கும் திட்டம்",
+            "lake_dev": "மீன்பிடி நடவடிக்கைகளுக்காக ஏரி அபிவிருத்தி திட்டம்",
+            "kareithiw_dryfish": "காரைதீவு கருவாடு உற்பத்தி திட்டம்",
+            "mamunuwa_ornamental": "மமுனுவ அலங்கார மீன் வளர்ப்பு திட்டம்",
+            "thalpitiya_wharf": "தல்பிட்டிய மீன்பிடி இறங்குதுறை திட்டம்",
+            "katuhena_feed": "கட்டுஹேன மீன் தீவன உற்பத்தி நிலையம்",
+            "kandegama_hub": "கந்தேகம மீன்பிடி தொழில் மையம்",
+            "alawakumbura_coop": "அலவக்கும்புர மீன்பிடி கூட்டுறவுச் சங்கம்",
+       
+            "ornamental_breeding": "அலங்கார மீன் இனப்பெருக்கம் மற்றும் பயிற்சி நிலையம்",
+            "fishery_industry": "மீன்பிடித் தொழில்",
+            "ornamental_food_prod": "அலங்கார மீன் உணவு",
+            "fishing_industry": "மீன்பிடித் தொழில்",
+    
+            "kareithiw": "காரைதீவு",
+            "variyapola": "வாரியப்பொல",
+            "panadura": "பாணந்துறை",
+            "madurawala": "மதுராவல",
+            "dibulagala": "திம்புலாகலை",
+       
+            "kareithiw_loc": "காரைதீவு-09",
+            "mamunuwa": "மமுனுவ",
+            "thalpitiya_loc": "தெற்கு தல்பிட்டிய / பள்ளியமங்கடை",
+            "katuhena_loc": "கட்டுஹேன / மேல் கரன்னகொட",
+            "kandegama": "240 கந்தேகம",
+            "alawakumbura": "239 - அலவக்கும்புர",
+
+            //umbalakada and dry fish page
+        
+              "driedFishPageTitle": "உம்பலகடை மற்றும் கருவாடு தொடர்பான தயாரிப்பு திட்டங்கள்",
+           
+                "community_fisheries": "கலுகலோயா ஏரியை மையமாகக் கொண்ட சமூக அடிப்படையிலான மீன்பிடித் திட்டம்",
+                "theppam_desc": "காயலில் பணிபுரியும் மீனவர்களுக்கான தெப்பம் திட்டம்",
+                "uhana_lake_fisheries": "உகண சமூக அடிப்படையிலான மீன்பிடித் திட்டம்",
+                "kareithiw_dryfish_full": "காரைதீவு கருவாடு உற்பத்தி மற்றும் வாழ்வாதார மேம்பாட்டுத் திட்டம்",
+                "theppam_project": "காயல் மீனவர் தெப்பம் திட்டம்",
+           
+                "fish_dried_fish": "மீன் மற்றும் கருவாடு",
+              
+                "bandaraduuwa": "பண்டாரதுவ",
+                "karukupane": "கருக்குபனை",
+
+                "dry_fish": "கருவாடு",
+
+        //clay page
+   
+          "clayPageTitle": "களிமண் சார்ந்த தயாரிப்பு திட்டங்கள்",
+    
+            "kella_clay_dev": "கெல்ல களிமண் உற்பத்தி கிராம அபிவிருத்தி திட்டம்",
+            "clay_village_title": "களிமண் உற்பத்தி கிராம அபிவிருத்தி திட்டம்",
+            "weerasekarapura_ornamental": "வீரசேகரபுர களிமண் சார்ந்த அலங்காரப் பொருட்கள் உற்பத்தித் திட்டம்",
+            "clay_ornamental_title": "களிமண் சார்ந்த அலங்காரப் பொருட்கள் உற்பத்தித் திட்டம்",
+            "clay_pot_initiative": "மட்பாண்ட முயற்சி",
+            "weherayaya_initiative": "வெஹெரயாய மட்பாண்ட முயற்சி",
+      
+            "pots_clay_pots": "பானைகள், மட்பாண்டங்கள்",
+            "clay_product": "களிமண் தயாரிப்பு",
+            "milk_pot_clay_pot": "பால் பானை, மட்பாண்டம்",
+         
+            "kolonna": "கொலொன்ன",
+            "biyagama": "பியகம",
+            "wellavaya": "வெல்லவாய",
+         
+            "kella_loc": "கெல்ல, அம்பகஹயாய",
+            "biyagama_south": "28c பியகம தெற்கு",
+            "weherayaya": "வெஹெரயாய",
+          
+            "gampaha": "கம்பஹா",
+             
+            //cloth page
+    
+              "clothPageTitle": "ஆடை மற்றும் ஜவுளி தொடர்பான திட்டங்கள்",
+         
+                "garment_manufacturing": "சிறிய அளவிலான ஆடை உற்பத்தித் திட்டம்",
+                "nugaduwa_batik": "நுகதுவ பத்திக் உற்பத்தித் திட்டம்",
+                "nikaweratiya_coir_zone": "நிகவரெட்டிய தேங்காய் நார் கைத்தொழில் வலயம்",
+                "akmeemana_batik": "அக்மீமன பத்திக் கிளஸ்டர்"
+              ,
+                "uniforms_garments": "பள்ளி சீருடைகள், சிறுவர் உடைகள், எம்பிராய்டரி மற்றும் ஆரி தயாரிப்புகள்",
+                "batik_clothing": "பத்திக் ஆடைகள்"
+            ,
+                "addalaichenai": "அட்டளைச்சேனை",
+                "akmeemana": "அக்மீமன",
+          
+                "addalaichenai_17": "அட்டளைச்சேனை 17",
+                "nugaduuwa": "நுகதுவ",
+         //iron and gols page 
+
+          "ironGoldPageTitle": "இரும்பு மற்றும் தங்கம் தொடர்பான தயாரிப்பு திட்டங்கள்",
+    
+            "malagala_iron": "மலகல இரும்பு வேலைப்பாடுகள் கிளஸ்டர்",
+            "iron_cluster_desc": "உலோகம் மற்றும் இரும்பு உற்பத்திக்கான தொழில்துறை மேம்பாட்டு கிளஸ்டர்"
+         ,
+            "iron_goods": "இரும்பு தயாரிப்புகள் (கிரில்ஸ், கேட்டுகள், பூங்கா இருக்கைகள்)",
+    
+            "colombo": "கொழும்பு",
+ 
+            "padukka": "பாதுக்கை",
+     
+            "malagala_loc": "மலகல, உடுமுல்ல",
+     //sweet page
+
+              "sweetFoodsPageTitle": "இனிப்பு மற்றும் பாரம்பரிய உணவு தொடர்பான திட்டங்கள்",
+            
+                "sweets_village": "இனிப்பு உற்பத்தி கிராம அபிவிருத்தி திட்டம்",
+                "karadagama_sweets": "கறதகம இனிப்பு உணவு கூட்டுறவுச் சங்கம்"
+        ,
+                "sweets": "பாரம்பரிய இனிப்புகள் மற்றும் தின்பண்டங்கள்",
+        
+                "badalkumbura": "பதல்கும்புர",
+          
+                "karadagama": "கறதகம",
+       //wooden project
+
+        "woodenPageTitle": "மரத்தளபாடங்கள் மற்றும் தச்சுத் தொழில் திட்டங்கள்",
+   
+          "wooden_furniture_cluster": "மரத்தளபாடத் தொழில் கிளஸ்டர் அபிவிருத்தி",
+          "moratuwa_furniture": "மொரட்டுவ மரத்தளபாடங்கள் கிளஸ்டர்"
+,
+          "wooden_furniture": "மரத்தளபாடங்கள் (வீடு மற்றும் அலுவலகம்)"
+    ,
+          "moratuwa": "மொரட்டுவ",
+  
+          "moratuwa_cluster_loc": "கோරලவெல்ல (கிழக்கு, வடக்கு, மேற்கு, தெற்கு), கட்டுக்குருந்த (வடக்கு, தெற்கு), எகொட உயன (வடக்கு, மத்திய, தெற்கு)"
+        ,
+        //road development page
+     
+          "roadDevelopmentPageTitle": "கிராமப்புற வீதி உட்கட்டமைப்பு மேம்பாடு",
+         
+          "amountLabel": "மதிப்பிடப்பட்ட செலவு",
+         
+            "kandy": "கண்டி",
+            "matara": "மாத்தறை"
+        ,
+            "pathahewaheta": "பாதஹேவாஹெட்ட",
+            "naula": "நாவுல",
+            "puhulwella": "கிரிந்த புஹுல்வெல்ல"
+       ,
+            "salava_west": "சாலாவ மேற்கு",
+            "ankanda": "அங்கந்த",
+            "bawlana": "பவ்லன",
+            "lihinipitiya": "லிகினிபிட்டிய",
+            "morawadiya": "மொரவெடிய",
+            "walakanda_south": "வல்கந்த தெற்கு",
+      
+            "transport_facilities": "போக்குவரத்து வசதிகள்",
+            "road_dev": "வீதி அபிவிருத்தி",
+            "bridge_dev": "பாலம் புனரமைப்பு",
+            "canal_dev": "கால்வாய் அபிவிருத்தி",
+            "concrete_paving": "கொன்கிரீட் வீதி",
+            "dothal_oya_name": "தோதல் ஓயா வாயில் முதல் ஐம்பது ஏக்கர் வீதி திட்டம்",
+            "ankanda_bridge_name": "அங்கந்த திக்கல பாலம் புனரமைப்பு",
+            "bawlana_sarvodaya_name": "சர்வோதய வீதி அபிவிருத்தி",
+            "bawlana_bus_road_name": "பவ்லன பஸ் நிறுத்தம் முதல் தெல்தோட்டை வீதி",
+            "kalulella_road_name": "கலுலெல்ல வீதி அபிவிருத்தி",
+            "lihinipitiya_main_road_name": "லிகினிபிட்டிய பிரதான வீதி அபிவிருத்தி",
+            "lihinipitiya_canal_name": "லிகினிபிட்டிய பிரதான கால்வாய் அபிவிருத்தி",
+            "bandarakanda_road_name": "பண்டாரகந்த-துங்கதோல வீதி அபிவிருத்தி",
+            "kosgahahena_road_name": "கொஸ்கஹஹேன வீதி அபிவிருத்தி",
+            "kumara_house_road_name": "டைகர் லேண்ட் வீதி (கொன்கிரீட்)",
+            "ella_community_hall_name": "எல்ல முதல் சமூக மண்டபம் வரையிலான வீதி",
+            "kajuvetiya_side_road_name": "எல்ல இஹல கஜுவெட்டிய பக்க வீதி",
+            "deniyamulla_road_name": "தெனியமுல்ல வீதி அபிவிருத்தி",
+            "dehigahahena_road_name": "தெஹிகஹஹேன முதல் தோட்டம் வரையிலான வீதி",
+            "preschool_road_name": "எல்ல மேல் பாலர் பாடசாலை வீதி",
+            "gepalawatta_culvert_name": "கெப்பலவத்த வீதி மதகு",
+            "enasal_wattha_road_name": "ஏலக்காய் தோட்ட வீதி (கொன்கிரீட்)",
+            "shirani_house_culvert_name": "தொல இஹல வீதி பெட்டி மதகுகள்",
+            "punchi_dehigahahena_name": "எல்ல இஹல புஞ்சி தெஹிகஹ ஹேன வீதி",
+            "pitikumbura_road_name": "பிட்டிகும்பர வீதி அபிவிருத்தி",
+            "pindeniya_road_name": "பிந்தெனிய வீதி அபிவிருத்தி",
+
+            "service": "சேவை",
+    //sanitary facilities
+ 
+      "sanitaryPageTitle": "சுகாதார மற்றும் நீர் வழங்கல் திட்டங்கள்",
+   
+   
+        "drinking_water": "குடிநீர் வசதிகள்",
+        "sanitary_facilities": "சுகாதார வசதிகள்"
+    ,
+        "batticaloa": "மட்டக்களப்பு",
+   
+        "koralaipattu_south": "கோரளைப்பற்று தெற்கு",
+     
+        "murutthanai": "முருத்தனை",
+        "ganthuna_medagama": "58G கந்துன மேதகம"
+     ,
+        "murutthanai_water_name": "மின்மினுட்டவேளி மற்றும் அக்குறானை சமூக நீர் வழங்கல் திட்டம்",
+        "murutthanai_water_short": "முருத்தனை நீர் வழங்கல் திட்டம்",
+        "murutthanai_toilet_name": "முருத்தனை கழிப்பறை நிர்மாணத் திட்டம்",
+        "murutthanai_toilet_short": "கழிப்பறை நிர்மாணத் திட்டம்",
+        "aranayake_toilet_name": "குறைந்த வருமானம் பெறும் குடும்பங்களுக்கான கழிப்பறை வசதிகள் - அரநாயக்க",
+        "aranayake_toilet_short": "குறைந்த வருமான சுகாதாரத் திட்டம்"
+      ,
+      //tuarism page
+      
+        "tourismPageTitle": "சுற்றுலா உட்கட்டமைப்பு திட்டங்கள்",
+        
+          "food_beverage": "உணவு மற்றும் பானங்கள் வழங்குதல்",
+          "tourism_industry": "சுற்றுலாத்துறை அபிவிருத்தி",
+          "tourism_promotion": "சுற்றுலா ஊக்குவிப்பு",
+        "hambantota": "அம்பாந்தோட்டை",
+     "angunakolapelessa": "அங்குணகொலபெலஸ்ஸ",
+    
+          "alkaduwa": "அல்கடுவ வத்தை",
+          "angunakolapelessa_lake": "அங்குணகொலபெலஸ்ஸ ஏரிக்கரை",
+          "maduragama": "68 C மதுரகம"
+       ,
+          "sembuwatta_name": "செம்புவத்தை தேயிலை தொழிற்சாலையின் தரைதளத்தை உணவகமாக புனரமைத்தல்",
+          "sembuwatta_short": "தேயிலை தொழிற்சாலை உணவக புனரமைப்பு",
+          "angunakolapelessa_name": "அங்குணகொலபெலஸ்ஸ ஏரியை ஒட்டிய பலநோக்கு அபிவிருத்தி திட்டம்",
+          "angunakolapelessa_short": "ஏரிக்கரை பலநோக்கு திட்டம்",
+          "ella_promotion_name": "சுற்றுலாப் பயணிகளுக்கு உணவு மற்றும் பானங்களை வழங்குதல் மற்றும் விற்பனை நிலையங்களை மேம்படுத்துதல்",
+          "ella_promotion_short": "சுற்றுலா விற்பனை நிலைய மேம்பாடு",
+        
     // Footer
     quickLinks: "விரைவு இணைப்புகள்",
     importantLinks: "முக்கிய இணைப்புகள்",

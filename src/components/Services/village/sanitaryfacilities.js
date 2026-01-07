@@ -1,74 +1,44 @@
 import React, { useState, useRef } from "react";
+import { useLanguage } from "../../../contexts/LanguageContext";
 
 const sanitaryProjects = [
-    {
-        id: 1,
-        district: "Madakalapuwa",
-        office: "Koralaipattu South",
-        product: "Drinking water facilities",
-        location: "Murutthanai",
-        mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.314248420939!2d81.8046523!3d7.2234233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae513ddc602ccdb%3A0x0000000000000000!2sMurutthanai!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-        buyPath: "/buy/dambulla-pottery",
-        description:
-          "This project supports traditional clay artisans in Dambulla, helping them preserve age-old techniques while improving product quality and market access. The initiative includes training, equipment upgrades, and connections to local and international buyers.",  },
-      {
-        id: 2,
-        district: "Madakalapuwa",
-        office: "Koralaipattu South",
-        product: "Sanitary facilities",
-        location: "Murutthanai",
-        mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.314248420939!2d81.8046523!3d7.2234233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae513ddc602ccdb%3A0x0000000000000000!2sMurutthanai!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-        buyPath: "/buy/dambulla-pottery",
-        description:
-          "This project supports traditional clay artisans in Dambulla, helping them preserve age-old techniques while improving product quality and market access. The initiative includes training, equipment upgrades, and connections to local and international buyers.",  },
-      {
-        id: 3,
-        district: "Madakalapuwa",
-        office: "Koralaipattu South",
-        product: "Health clinic facilities",
-        location: "Murutthanai",
-        mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.314248420939!2d81.8046523!3d7.2234233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae513ddc602ccdb%3A0x0000000000000000!2sMurutthanai!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-        showMore: "Click Here",
-      },
-
   {
-    id: 4,
-    district: "Kegalle",
-    office: "Aranayake",
-    product: "Sanitary facilities",
-    location: "58G Ganthuna Medagama",
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.314248420939!2d80.4048678!3d7.1182999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25b8dcd181989%3A0x0000000000000000!2s58G%20Ganthuna%20Medagama!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-    buyPath: "/buy/dambulla-pottery",
-    description:
-      "This project supports traditional clay artisans in Dambulla, helping them preserve age-old techniques while improving product quality and market access. The initiative includes training, equipment upgrades, and connections to local and international buyers.",  
-    },
-    {
-        id: 5,
-        district: "Vavuniya",
-        office: "Vavuniya South",
-        product: "Providing food and beverages and providing public facilities",
-        location: "Irattaperiyakulam",
-        mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.314248420939!2d80.4791437!3d8.7074043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2sIrattaperiyakulam!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-        buyPath: "/buy/dambulla-pottery",
-        description:
-          "This project supports traditional clay artisans in Dambulla, helping them preserve age-old techniques while improving product quality and market access. The initiative includes training, equipment upgrades, and connections to local and international buyers.",  
-        },
-        {
-    id: 6,
-    district: "Matara",
-    office: "Kirinda Phulwella",
-    product: "Development of Kaluhena Colony Welipotha Road",
-    location: "Walaknda South",
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.314248420939!2d80.6376655!3d6.0203737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae1485d2381b083%3A0x3e906a380d1ba760!2sWalakanda%20South%2C%20Kirinda!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-    buyPath: "/buy/dambulla-pottery",
-    description:
-      "This project supports traditional clay artisans in Dambulla, helping them preserve age-old techniques while improving product quality and market access. The initiative includes training, equipment upgrades, and connections to local and international buyers.",  },
-  
-  
-
+    id: 1,
+    name: "murutthanai_water_name",
+    project: "murutthanai_water_short",
+    district: "batticaloa",
+    office: "koralaipattu_south",
+    product: "drinking_water",
+    location: "murutthanai",
+    amount: "25,669,857.83",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.000000000000!2d81.5!3d7.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDInMDAuMCJOIDgxwrAzMCcwMC4wIkU!5e0!3m2!1sen!2slk!4v1625000000000!5m2!1sen!2slk",
+  },
+  {
+    id: 2,
+    name: "murutthanai_toilet_name",
+    project: "murutthanai_toilet_short",
+    district: "batticaloa",
+    office: "koralaipattu_south",
+    product: "sanitary_facilities",
+    location: "murutthanai",
+    amount: "7,130,652.31",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.000000000000!2d81.5!3d7.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDInMDAuMCJOIDgxwrAzMCcwMC4wIkU!5e0!3m2!1sen!2slk!4v1625000000000!5m2!1sen!2slk",
+  },
+  {
+    id: 3,
+    name: "aranayake_toilet_name",
+    project: "aranayake_toilet_short",
+    district: "kegalle",
+    office: "aranayake",
+    product: "sanitary_facilities",
+    location: "ganthuna_medagama",
+    amount: "2,458,200.00",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.0!2d80.4!3d7.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDYnMDAuMCJOIDgwwrAyNCc0MC4wIkU!5e0!3m2!1sen!2slk!4v1625000000000!5m2!1sen!2slk",
+  }
 ];
 
 const SanitaryFacilitiesPage = () => {
+  const { t } = useLanguage();
   const [selectedProject, setSelectedProject] = useState(sanitaryProjects[0]);
   const scrollTargetRef = useRef(null);
 
@@ -81,40 +51,37 @@ const SanitaryFacilitiesPage = () => {
 
   return (
     <div className="min-h-screen bg-white px-6 py-10 space-y-10">
-      <h1 className="text-2xl font-bold text-[#2C3E50] mb-6">Sanitary Facilities Projects</h1>
+      <h1 className="text-2xl font-bold text-[#34495E] mb-6">
+        {t("sanitaryPageTitle")}
+      </h1>
 
+      {/* Table Section */}
       <div className="overflow-x-auto mb-6">
         <table className="min-w-full border border-gray-300">
-          <thead className="bg-[#F3931D] text-white">
+          <thead className="bg-[#2C3E50] text-white">
             <tr>
-              <th className="px-4 py-2 border">No</th>
-              <th className="px-4 py-2 border">District</th>
-              <th className="px-4 py-2 border">Divisional Secretary Office</th>
-              <th className="px-4 py-2 border">Project Type</th>
-              <th className="px-4 py-2 border">Location</th>
-              <th className="px-4 py-2 border">Buy Product</th>
+              <th className="px-4 py-2 border">{t("no")}</th>
+              <th className="px-4 py-2 border">{t("district")}</th>
+              <th className="px-4 py-2 border">{t("divisionalOffice")}</th>
+              <th className="px-4 py-2 border">{t("project")}</th>
+              <th className="px-4 py-2 border">{t("product")}</th>
+              <th className="px-4 py-2 border">{t("location")}</th>
             </tr>
           </thead>
           <tbody>
-            {sanitaryProjects.map((item) => (
+            {sanitaryProjects.map((item, index) => (
               <tr
                 key={item.id}
-                className="hover:bg-[#FFF7E6] cursor-pointer"
+                className="hover:bg-[#F4F6F7] cursor-pointer transition-colors"
                 onClick={() => handleSelect(item)}
               >
-                <td className="px-4 py-2 border text-center">{item.id}</td>
-                <td className="px-4 py-2 border">{item.district}</td>
-                <td className="px-4 py-2 border">{item.office}</td>
-                <td className="px-4 py-2 border">{item.product}</td>
-                <td className="px-4 py-2 border text-blue-600 underline">{item.location}</td>
-                <td className="px-4 py-2 border">
-                  <a
-                    href={item.buyPath}
-                    className="text-blue-600 underline hover:text-[#F3931D]"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    Click Here
-                  </a>
+                <td className="px-4 py-2 border text-center">{index + 1}</td>
+                <td className="px-4 py-2 border">{t(item.district)}</td>
+                <td className="px-4 py-2 border">{t(item.office)}</td>
+                <td className="px-4 py-2 border">{t(item.project)}</td>
+                <td className="px-4 py-2 border">{t(item.product)}</td>
+                <td className="px-4 py-2 border text-blue-600 underline">
+                  {t(item.location)}
                 </td>
               </tr>
             ))}
@@ -122,28 +89,32 @@ const SanitaryFacilitiesPage = () => {
         </table>
       </div>
 
+      {/* Split Layout Section */}
       <div ref={scrollTargetRef} className="w-full flex flex-col lg:flex-row gap-6 items-start">
-        <div className="w-full lg:w-1/2 h-[400px] rounded-md overflow-hidden shadow-lg">
+        {/* Map Section */}
+        <div className="w-full lg:w-1/2 h-[350px] rounded-md overflow-hidden shadow-lg border-2 border-[#BDC3C7]">
           <iframe
-            title="Sanitary Project Map"
+            title="Iron & Gold Project Map"
             src={selectedProject.mapEmbed}
             width="100%"
             height="100%"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
 
-        <div className="w-full lg:w-1/2 h-[400px] bg-[#FFF7E6] p-6 rounded-md shadow-md overflow-y-auto">
-          <h2 className="text-xl font-bold text-[#F3931D] mb-2">{selectedProject.name}</h2>
-          <p className="text-sm text-gray-700 mb-4">{selectedProject.description}</p>
-          <div className="text-sm space-y-1">
-            <p><strong>District:</strong> {selectedProject.district}</p>
-            <p><strong>Divisional Secretary Office:</strong> {selectedProject.office}</p>
-            <p><strong>Project Type:</strong> {selectedProject.product}</p>
-            <p><strong>Location:</strong> {selectedProject.location}</p>
+        {/* Project Details Section */}
+        <div className="w-full lg:w-1/2 h-[350px] bg-[#FBFCFC] p-6 rounded-md shadow-md border-l-4 border-[#F1C40F] overflow-y-auto">
+          <h2 className="text-xl font-bold text-[#2C3E50] mb-4">
+            {t(selectedProject.name)}
+          </h2>
+          <div className="space-y-3 text-lg text-gray-800">
+            <p><span className="font-semibold">{t("district")}:</span> {t(selectedProject.district)}</p>
+            <p><span className="font-semibold">{t("divisionalOffice")}:</span> {t(selectedProject.office)}</p>
+            <p><span className="font-semibold">{t("product")}:</span> {t(selectedProject.product)}</p>
+            <p><span className="font-semibold">{t("Amount(Rs)")}:</span> {selectedProject.amount}</p>
+            <p><span className="font-semibold">{t("location")}:</span> {t(selectedProject.location)}</p>
           </div>
         </div>
       </div>

@@ -89,21 +89,21 @@ const Home = () => {
       { label: t('fruitRelatedProduct'), path: "/services/agriculture/fruits" },
       { label: t('vegetableValueAddition'), path: "/services/agriculture/vegetable" },
       { label: t('mushroomProduct'), path: "/services/agriculture/mushroom" },
-      { label: t('otherProduct'), path: "/services/agriculture/other" },
+      //{ label: t('otherProduct'), path: "/services/agriculture/other" },
       { label: t('teaProduct'), path: "/services/agriculture/tea" },
       { label: t('bulathProduct'), path: "/services/agriculture/bulath" },
       { label: t('cinnamonProduct'), path: "/services/agriculture/cinnamon" },
     ],
     [t('industries')]: [
       { label: t('clothRelatedProduct'), path: "/services/industries/cloth" },
-      { label: t('footwear'), path: "/services/industries/footwear" },
-      { label: t('caneRelatedProduct'), path: "/services/industries/cane" },
+     // { label: t('footwear'), path: "/services/industries/footwear" },
+    //  { label: t('caneRelatedProduct'), path: "/services/industries/cane" },
       { label: t('clayRelatedProduct'), path: "/services/industries/clay" },
       { label: t('woodenItems'), path: "/services/industries/wooden" },
-      { label: t('poojaItems'), path: "/services/industries/pooja" },
+     // { label: t('poojaItems'), path: "/services/industries/pooja" },
       { label: t('sweetOrganicFoods'), path: "/services/industries/sweet&foods" },
-      { label: t('coconutHuskProduct'), path: "/services/industries/coconutHusk" },
-      { label: t('handCraftProduct'), path: "/services/industries/handcraft" },
+    // { label: t('coconutHuskProduct'), path: "/services/industries/coconutHusk" },
+//{ label: t('handCraftProduct'), path: "/services/industries/handcraft" },
       { label: t('ironGoldProduct'), path: "/services/industries/iron&gold" }
     ],
     [t('fisheries')]: [
@@ -113,14 +113,14 @@ const Home = () => {
     [t('animalHusbandry')]: [
       { label: t('dairyProduct'), path: "/services/AnimalHusbandry/dairyproduct" },
       { label: t('egg'), path: "/services/AnimalHusbandry/eggs" },
-      { label: t('meats'), path: "/services/AnimalHusbandry/meats" },
+      //{ label: t('meats'), path: "/services/AnimalHusbandry/meats" },
       { label: t('beeHoney'), path: "/services/AnimalHusbandry/beehoney" },
     ],
     [t('infrastructure')]: [
       { label: t('roadDevelopments'), path: "/services/village/roaddevelopment" },
       { label: t('sanitaryFacilities'), path: "/services/village/sanitaryfacilities" },
       { label: t('tourismIndustry'), path: "/services/village/tourism" },
-      { label: t('otherServices'), path: "/services/village/otherservices" },
+     // { label: t('otherServices'), path: "/services/village/otherservices" },
     ]
  };
 
@@ -221,51 +221,53 @@ const Home = () => {
         {/* ===== OFFICERS SECTION ===== */}
 <div className="max-w-7xl mx-auto px-4">
 
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-  {[
-    
-    {
-      title: t('minister'),
-      name: t('ministerName'),
-      image: require("../assets/officers/minister.jpg"),
-    },
-    {
-      title: t('deputyMinister'),
-      name: t('deputyMinisterName'),
-      image: require("../assets/officers/deputyminister.jpeg"),
-    },
-    {
-      title: t('secretary'),
-      name: t('secretaryName'),
-      image: require("../assets/officers/secetry.jpg"),
-    },
-    {
-      title: t('directorGeneral'),
-      name: t('directorGeneralName'),
-      image: require("../assets/officers/H.M.M.U.B.herath1.jpeg"),
-    },
-  ].map((officer, index) => (
-    <Reveal key={index} delay={index * 150}>
-      <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-transform duration-300 hover:-translate-y-1 text-center">
+<div className="max-w-7xl mx-auto px-4">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    {[
+      {
+        title: t('minister'),
+        name: t('ministerName'),
+        image: require("../assets/officers/minister.jpg"),
+      },
+      {
+        title: t('deputyMinister'),
+        name: t('deputyMinisterName'),
+        image: require("../assets/officers/deputyminister.jpeg"),
+      },
+      {
+        title: t('secretary'),
+        name: t('secretaryName'),
+        image: require("../assets/officers/secetry.jpg"),
+      },
+      {
+        title: t('directorGeneral'),
+        name: t('directorGeneralName'),
+        image: require("../assets/officers/H.M.M.U.B.herath.jpeg"),
+      },
+    ].map((officer, index) => (
+      <Reveal key={index} delay={index * 150}>
+        <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-transform duration-300 hover:-translate-y-1 text-center">
 
-        <img
-          src={officer.image}
-          alt={officer.title}
-          className="w-32 h-32 sm:w-36 sm:h-36 mx-auto rounded-full object-cover mb-4 border-4 border-[#F3931D]"
-        />
+          <img
+            src={officer.image}
+            alt={officer.title}
+            className="w-full h-auto max-h-[320px] object-cover mx-auto mb-4  rounded-none"
+          />
 
-        <p className="text-xs tracking-widest text-gray-500 uppercase">
-          {officer.title}
-        </p>
+          <p className="text-xs tracking-widest text-gray-500 uppercase">
+            {officer.title}
+          </p>
 
-        <p className="mt-2 text-lg font-bold text-gray-800">
-          {officer.name}
-        </p>
+          <p className="mt-2 text-lg font-bold text-gray-800">
+            {officer.name}
+          </p>
 
-      </div>
-    </Reveal>
-  ))}
+        </div>
+      </Reveal>
+    ))}
+  </div>
 </div>
+
 
 {/* Button */}
 <div className="text-center mt-10">
