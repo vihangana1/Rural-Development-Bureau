@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
 import { useLanguage } from "../contexts/LanguageContext";
 
 // Import images
@@ -18,17 +16,7 @@ const meetingImages = [meeting1, meeting2, meeting3];
 
 const Gallery = () => {
   const { t } = useLanguage();
-  const [isOpen, setIsOpen] = useState(false);
-  const [photoIndex, setPhotoIndex] = useState(0);
-  const [activeSection, setActiveSection] = useState(null); // "event" or "meeting"
-
-  const openLightbox = (index, section) => {
-    setPhotoIndex(index);
-    setActiveSection(section);
-    setIsOpen(true);
-  };
-
-  const images = activeSection === "event" ? eventImages : meetingImages;
+  const [selectedImage, setSelectedImage] = useState(null);
 
   return (
     <div className="bg-[#FFF8F6] min-h-screen px-6 py-10">
@@ -48,7 +36,7 @@ const Gallery = () => {
               src={img}
               alt={`${t("eventImage")} ${index + 1}`}
               className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition duration-300 object-cover w-full h-64"
-              onClick={() => openLightbox(index, "event")}
+              onClick={() => setSelectedImage(img)}
             />
           ))}
         </div>
@@ -66,27 +54,32 @@ const Gallery = () => {
               src={img}
               alt={`${t("meetingImage")} ${index + 1}`}
               className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition duration-300 object-cover w-full h-64"
-              onClick={() => openLightbox(index, "meeting")}
+              onClick={() => setSelectedImage(img)}
             />
           ))}
         </div>
       </section>
 
-      {/* Lightbox */}
-      {isOpen && (
-        <Lightbox
-          mainSrc={images[photoIndex]}
-          nextSrc={images[(photoIndex + 1) % images.length]}
-          prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-          onCloseRequest={() => setIsOpen(false)}
-          onMovePrevRequest={() =>
-            setPhotoIndex((photoIndex + images.length - 1) % images.length)
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((photoIndex + 1) % images.length)
-          }
-          imageCaption={`${t("imageCaption")} ${photoIndex + 1}`}
-        />
+      {/* Modal Popup */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative">
+            <img
+              src={selectedImage}
+              alt="Selected"
+              className="max-h-[80vh] max-w-[90vw] rounded-lg shadow-lg"
+            />
+            <button
+              className="absolute top-2 right-2 bg-white text-black px-3 py-1 rounded-full shadow-md hover:bg-gray-200"
+              onClick={() => setSelectedImage(null)}
+            >
+              ✕
+            </button>
+          </div>
+        </div>
       )}
     </div>
   );
