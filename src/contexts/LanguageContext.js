@@ -1531,7 +1531,7 @@ location: "Location",
                 "bogahawela": "468 ඩී බෝගහවෙල",
                 "mawelakanda": "456 සී මාවෙලකන්ද",
 
-            //dairy milk page
+            //dairy milk page 
          
           
               "dairyPageTitle": "කිරි නිෂ්පාදන ආශ්‍රිත ව්‍යාපෘති",
@@ -2766,7 +2766,8 @@ no: "எண்",
             "pindeniya_road_name": "பிந்தெனிய வீதி அபிவிருத்தி",
 
             "service": "சேவை",
-    //sanitary facilities
+
+    //sanitary facilities....
  
       "sanitaryPageTitle": "சுகாதார மற்றும் நீர் வழங்கல் திட்டங்கள்",
    
