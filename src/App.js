@@ -1,6 +1,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 import { LanguageProvider } from './contexts/LanguageContext';
@@ -15,6 +16,7 @@ import ContactUs from "./components/ContactUs";
 import News from "./components/News";
 import Product from "./components/Products";
 import Download from "./components/Download";
+import Gallery from "./components/Gallery";
 
 // Programmes
 import Gramashakthi from "./components/Programme/Gramashakthi";
@@ -117,6 +119,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop /> 
       <LanguageProvider>
         <div
           className={`min-h-screen ${
@@ -144,6 +147,7 @@ function App() {
             <Route path="/News" element={<News />} />
             <Route path="/Product" element={<Product />} />
             <Route path="/Download" element={<Download />} />
+            <Route path="/Gallery" element={<Gallery />} />
 
             {/* Programmes */}
             <Route path="/components/programme/Gramashakthi" element={<Gramashakthi />} />

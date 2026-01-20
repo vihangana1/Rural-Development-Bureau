@@ -102,7 +102,7 @@ const translations = {
     officerDetail: "OFFICER DETAIL",
     projects: "Projects",
     exploreSectors: "Explore 5 Key Sectors Driving Rural Development",
-    projectsDescription: "2025 our projects focus on Agriculture, Industries, Fisheries, Animal Husbandry, and Infrastructure development to empower rural communities and enhance their livelihoods.",
+    projectsDescription: "Projects approved by our Bureau for the development of agriculture, industry, fisheries, animal husbandry and infrastructure to empower rural communities and improve their livelihoods in the year 2025.",
     
     downloadTitle: "Download circulers, Guidelines and Formats",
     relatedOrganizations: "Related Organizations",
@@ -250,6 +250,11 @@ const translations = {
     //"rti.assistantTitle": "Director - Champika D. darmasena",
     "rti.officerName": "Director - Champika D. darmasena",
 
+
+    // gallary
+
+    "gallery" : "Gallery",
+    "galleryTitle": "Gallery", "eventsSection": "Events", "meetingsSection": "Meetings", "eventImage": "Event Image", "meetingImage": "Meeting Image", "imageCaption": "Image",
 //service page
 
 //Agryculture
@@ -261,7 +266,7 @@ divisionalOffice: "Divisional Secretary Office",
 project: "Project", 
 // product: "Product", 
 location: "Location", 
-"Amount(Rs)": "Amount (Rs)",
+"Amount(Rs)": "Approved Allocation (Rs.) ",
 
 
     "amban_bananaProject": "Amban Banana Project",
@@ -964,7 +969,7 @@ location: "Location",
     agriculture: "කෘෂිකර්මාන්තය",
     industries: "කර්මාන්ත",
     fisheries: "ධීවර කර්මාන්තය",
-    animalHusbandry: "පශු සම්පත් සංවර්ධනය",
+    animalHusbandry: "සත්ව පාලනය",
     infrastructure: "යටිතල පහසුකම්",
     
     // Agriculture Products
@@ -1035,7 +1040,7 @@ location: "Location",
     
     projects: "ව්‍යාපෘති",
     exploreSectors: "ග්‍රාමීය සංවර්ධනය හමුවන ප්‍රධාන අංශ 5ක් ගවේෂණය කරන්න",
-    projectsDescription: "සෞභාග්‍ය නිෂ්පාදන ගම්මාන වැඩසටහන කෘෂිකර්මාන්තය, කර්මාන්ත, ධීවර කර්මාන්තය, පශු සම්පත් සංවර්ධනය සහ යටිතල පහසුකම් වලට සේවා සංවිධානය කරමින් ගම්මාන 576ක් සවිබල ගන්වයි.",
+    projectsDescription: "2025 වර්ෂයේ ග්‍රාමීය ප්‍රජාවන් සවිබල ගැන්වීම සහ ඔවුන්ගේ ජීවනෝපායන් වැඩිදියුණු කිරීම සඳහා කෘෂිකර්මය, කර්මාන්ත, ධීවර කටයුතු, සත්ව පාලනය සහ යටිතල පහසුකම් සංවර්ධනයට අප කාර්යංශය විසින් අනුමත කල ව්‍යාපෘති.",
     
     downloadTitle: "චක්‍රලේඛ, මාර්ගෝපදේශ සහ ආකෘති බාගන්න",
     relatedOrganizations: "අදාළ ආයතන",
@@ -1098,7 +1103,7 @@ location: "Location",
     guideline: "මාර්ගෝපදේශය",
     format: "ආකෘතිය",
     
-    latestCirculars: "නවතම වටුපත්",
+    latestCirculars: "නවතම චක්‍රලේඛ",
     latestGuidelines: "නවතම මාර්ගෝපදේශ",
     latestFormats: "නවතම ආකෘති",
     viewAll: "සියල්ල බලන්න",
@@ -1185,7 +1190,9 @@ location: "Location",
     "rti.assistantTitle": " ",
     "rti.officerName": "අධ්‍යක්ෂ - චම්පිකා  ඩී ධර්මසේන",
 
-
+//Gallary Page
+    "galleryTitle": "ගැලරිය", "eventsSection": "සිදුවීම්", "meetingsSection": "රැස්වීම්", "eventImage": "සිදුවීමේ පින්තූරය", "meetingImage": "රැස්වීමේ පින්තූරය", "imageCaption": "පින්තූරය",
+    "gallery": "ගැලරිය",
 
     //service
     //agriculture
@@ -1197,7 +1204,7 @@ location: "Location",
     project: "ව්‍යාපෘතිය", 
     // product: "නිෂ්පාදනය", 
     location: "ස්ථානය", 
-    "Amount(Rs)": "මුදල (රු)",
+    "Amount(Rs)": "අනුමත ප්‍රතිපාදන (රු.)",
 
 
     
@@ -1901,7 +1908,7 @@ location: "Location",
     agriculture: "விவசாயம்",
     industries: "தொழில்துறை",
     fisheries: "மீன்பிடி",
-    animalHusbandry: "கால்நடை வளர்ப்பு",
+    animalHusbandry: "கால்நடை பராமரிப்பு",
     infrastructure: "உள்கட்டமைப்பு",
     
     // Agriculture Products
@@ -1973,7 +1980,7 @@ location: "Location",
     
     projects: "திட்டங்கள்",
     exploreSectors: "கிராமிய அபிவிருத்தியை இயக்கும் 5 முக்கிய துறைகளை ஆராயுங்கள்",
-    projectsDescription: "சௌபாக்ய உற்பத்தி கிராம திட்டம் விவசாயம், தொழில்துறை, மீன்பிடி, கால்நடை வளர்ப்பு மற்றும் உள்கட்டமைப்பு ஆகியவற்றில் சேவைகளை ஒழுங்கமைப்பதன் மூலம் 576 கிராமங்களுக்கு அதிகாரம் அளிக்கிறது.",
+    projectsDescription: "2025 ஆம் ஆண்டில் கிராமப்புற சமூகங்களை மேம்படுத்துவதற்கும் அவர்களின் வாழ்வாதாரத்தை மேம்படுத்துவதற்கும் விவசாயம், தொழில், மீன்பிடி, கால்நடை வளர்ப்பு மற்றும் உள்கட்டமைப்பு மேம்பாட்டிற்காக எங்கள் பணியகத்தால் அங்கீகரிக்கப்பட்ட திட்டங்கள்.",
     
     downloadTitle: "சுற்றறிக்கைகள், வழிகாட்டுதல்கள் மற்றும் வடிவங்களை பதிவிறக்கவும்",
     relatedOrganizations: "தொடர்புடைய நிறுவனங்கள்",
@@ -2043,9 +2050,9 @@ location: "Location",
 
 
     latestCirculars: "சமீபத்திய சுற்றறிக்கைகள்",
-latestGuidelines: "சமீபத்திய வழிகாட்டிகள்",
-latestFormats: "சமீபத்திய வடிவங்கள்",
-viewAll: "அனைத்தையும் பார்க்க",
+    latestGuidelines: "சமீபத்திய வழிகாட்டிகள்",
+    latestFormats: "சமீபத்திய வடிவங்கள்",
+    viewAll: "அனைத்தையும் பார்க்க",
     
     // News Page
     newsTitle: "செய்திகள்",
@@ -2119,7 +2126,14 @@ prajashakthiTrainingofTrainersNorthProvinceProgram:"பிரஜாஷக்த�
     "rti.assistantTitle": "இயக்குனர் - சம்பிகா டி. தர்மசேன",
     "rti.officerName": "திருமதி தினுஜி ரந்திகா கோடிகமுவ",
 
-//services page
+
+    //Gallary Page
+    "gallery" :  "காட்சியகம்",
+    "galleryTitle": "காட்சியகம்", "eventsSection": "நிகழ்வுகள்", "meetingsSection": "மாநாடுகள்", "eventImage": "நிகழ்வு படம்", "meetingImage": "மாநாடு படம்", "imageCaption": "படம்",
+
+
+
+    //services page
 //agriculture page
 
 
@@ -2131,7 +2145,7 @@ no: "எண்",
  project: "திட்டம்", 
 //  product: "பொருள்", 
  location: "இடம்", 
- "Amount(Rs)": "தொகை (ரூ)",
+ "Amount(Rs)": "அங்கீகரிக்கப்பட்ட ஏற்பாடுகள் (ரூ.)",
 
  //projects
  "amban_bananaProject": "அம்பன் வாழைத் திட்டம்",
@@ -2825,24 +2839,22 @@ export const useLanguage = () => {
 // --- 4. Language Provider Component ---
 // This component wraps your entire app and manages the language state.
 export const LanguageProvider = ({ children }) => {
-  // Default language is English ('en')
-  const [language, setLanguage] = useState('en');
+  // Load saved language from localStorage, or default to English
+  const [language, setLanguage] = useState(() => {
+    return localStorage.getItem("preferredLanguage") || "en";
+  });
 
-  // The translation function `t`. It takes a key and returns the translated string.
-  // If a translation isn't found, it returns the key itself to prevent crashes.
   const t = (key) => {
     return translations[language][key] || key;
   };
 
-  // Function to change the language.
   const changeLanguage = (lang) => {
-    // Only changes the language if it exists in our translations object.
     if (translations[lang]) {
       setLanguage(lang);
+      localStorage.setItem("preferredLanguage", lang); // ✅ Save choice
     }
   };
 
-  // Provide the current language, the change function, and the translation function to all children.
   return (
     <LanguageContext.Provider value={{ language, changeLanguage, t }}>
       {children}

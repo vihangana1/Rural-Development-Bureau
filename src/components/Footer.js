@@ -28,11 +28,11 @@ const Footer = () => {
                 {t('aboutUs')}
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/Product" className="hover:underline">
                 {t('product')}
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/News" className="hover:underline">
                 {t('news')}
@@ -143,22 +143,22 @@ const Footer = () => {
               >
                 <i className="bi bi-facebook"></i>
               </a>
-              <a
+              {/* <a
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:text-blue-300 transition"
               >
                 <i className="bi bi-twitter"></i>
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:text-pink-300 transition"
               >
                 <i className="bi bi-instagram"></i>
-              </a>
+              </a> */}
               <a
                 href="https://youtube.com"
                 target="_blank"

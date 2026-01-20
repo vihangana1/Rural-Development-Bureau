@@ -16,7 +16,6 @@ const Header = ({
   const [isDownloadHovered, setIsDownloadHovered] = useState(false);
   const [isServicesHovered, setIsServicesHovered] = useState(false);
   const [hoveredCategory, setHoveredCategory] = useState(null);
-  const [activeAccessibility, setActiveAccessibility] = useState("");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Navigation items with translations
@@ -117,22 +116,14 @@ const Header = ({
         },
       ],
     },
+
+    {label: t('gallery'), path: "/Gallery"},
+    
     { label: t('contactUs'), path: "/ContactUs"},
+
   ];
 
-  const AccessibilityButton = ({ label, onClick, isActive, icon }) => (
-    <button
-      onClick={onClick}
-      className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-300 text-sm font-medium flex items-center gap-3 ${
-        isActive
-          ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg transform scale-105"
-          : "bg-white text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-700 border border-gray-200 hover:border-blue-300"
-      }`}
-    >
-      <span className="text-lg">{icon}</span>
-      {label}
-    </button>
-  );
+  
 
   return (
     <header className="w-full shadow-2xl relative z-50">
@@ -169,7 +160,7 @@ const Header = ({
                   ග්‍රාමීය සංවර්ධන කාර්යංශය
                 </span>
                 <span className="block text-white-100 font-semibold">
-                  கிராமிய அபிவிருத்தி அமைச்சு
+                  கிராமிய அபிவிருத்தி பணியகம்
                 </span>
                 <span className="block text-white-100 font-semibold">
                   Rural Development Bureau
@@ -203,115 +194,7 @@ const Header = ({
               ))}
             </div>
 
- {/* Accessibility Button + Popup */}
- <div className="relative">
-  {/* Accessibility Button */}
-  <button
-    onClick={() => setShowAccessibilityBox(!showAccessibilityBox)}
-    className="w-12 h-12 flex items-center justify-center rounded-full
-               bg-white border-2 border-blue-600 text-blue-600"
-    aria-label="Accessibility Options"
-  >
-    <i className="bi bi-universal-access text-xl"></i>
-  </button>
-
-
-  {/* Popup appears below the icon */}
-  {showAccessibilityBox && (
-    <div
-    className="fixed top-28 right-6 w-72 bg-white text-black rounded-xl shadow-2xl border z-[9999]"
-    role="dialog"
-      aria-label="Accessibility Options"
-    >
-      <div className="flex justify-between items-center px-4 py-3 border-b">
-        <h3 className="font-bold text-lg">Accessibility Options</h3>
-        <button
-          onClick={() => setShowAccessibilityBox(false)}
-          aria-label="Close Accessibility Options"
-          className="text-xl hover:text-red-600"
-        >
-          ✕
-        </button>
-      </div>
-
-      <div className="p-4 space-y-2">
-        <AccessibilityButton
-          label="Increase Text Size"
-          onClick={() => {
-            setAccessibilitySettings((s) => ({
-              ...s,
-              textSize:
-                s.textSize === "text-sm"
-                  ? "text-base"
-                  : s.textSize === "text-base"
-                  ? "text-lg"
-                  : "text-lg",
-            }));
-            setActiveAccessibility("inc");
-          }}
-          isActive={activeAccessibility === "inc"}
-        />
-
-        <AccessibilityButton
-          label="Decrease Text Size"
-          onClick={() => {
-            setAccessibilitySettings((s) => ({
-              ...s,
-              textSize:
-                s.textSize === "text-lg"
-                  ? "text-base"
-                  : s.textSize === "text-base"
-                  ? "text-sm"
-                  : "text-sm",
-            }));
-            setActiveAccessibility("dec");
-          }}
-          isActive={activeAccessibility === "dec"}
-        />
-
-        <AccessibilityButton
-          label="Invert Colors"
-          onClick={() =>
-            setAccessibilitySettings((s) => ({
-              ...s,
-              invert: !s.invert,
-            }))
-          }
-          isActive={accessibilitySettings.invert}
-        />
-
-        <AccessibilityButton
-          label="Gray Hues"
-          onClick={() =>
-            setAccessibilitySettings((s) => ({
-              ...s,
-              grayscale: !s.grayscale,
-            }))
-          }
-          isActive={accessibilitySettings.grayscale}
-        />
-
-        <AccessibilityButton
-          label="Reset All"
-          onClick={() => {
-            setAccessibilitySettings({
-              textSize: "text-base",
-              spacing: "tracking-normal",
-              invert: false,
-              grayscale: false,
-              bigCursor: false,
-              disableAnimations: false,
-            });
-            setActiveAccessibility("");
-          }}
-          isActive={false}
-        />
-      </div>
-    </div>
-  )}
-</div>
-
-
+ 
 
 
             </div>

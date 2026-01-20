@@ -104,7 +104,7 @@ const UmbalakadaDriesFishPage = () => {
           <h2 className="text-xl font-bold text-[#896C6C] mb-4">
             {t(selectedProject.name)}
           </h2>
-          <div className="space-y-2 text-md text-gray-800">
+          <div className="space-y-2 text-lg text-gray-800">
             <p><span className="font-semibold">{t("district")}:</span> {t(selectedProject.district)}</p>
             <p><span className="font-semibold">{t("divisionalOffice")}:</span> {t(selectedProject.office)}</p>
             <p><span className="font-semibold">{t("project")}:</span> {t(selectedProject.project)}</p>

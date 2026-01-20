@@ -32,7 +32,7 @@ const fruitProjects = [
     district: "nuwara_eliya",
     office: "kotmale_east",
     product: "vine_oranges",
-    location: ".niyamgamdora",
+    location: "niyamgamdora",
     amount: " 922 500,00 ",
     mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.314248420939!2d80.6397853!3d7.0508821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25b8dcd181989%3A0x0000000000000000!2sNiyamgamdora%20470!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk"
   },

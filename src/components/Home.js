@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom"; 
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 import '../index.css';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -8,16 +9,18 @@ import FeaturedNewsSection from "../components/FeaturedNewsSection";
 import ServicesSection from "../components/ServicesSection";
 
 // Import your images
-import image1 from "../assets/homepage/imageai1.jpeg";
+//import image1 from "../assets/homepage/imageai1.jpeg";
 import image2 from "../assets/homepage/imageai2.jpeg";
 import image3 from "../assets/homepage/imageai3.jpeg";
 import image4 from "../assets/homepage/imageai4.jpeg";
-//import image5 from "../assets/homepage/imageai5.jpeg";
-//import image6 from "../assets/homepage/imageai6.jpeg";
+import image5 from "../assets/homepage/image 1.jpeg";
+//import image6 from "../assets/homepage/image2.jpeg";
 import image7 from "../assets/homepage/imageai7.jpeg";
-import image8 from "../assets/homepage/imageai8.jpeg";
+import image8 from "../assets/homepage/image1.jpeg";
+import image9 from "../assets/homepage/image3.jpeg";
+import image10 from "../assets/homepage/image4.jpeg"
 
-const images = [image7, image1, image2, image3, image4, image8];
+const images = [image7, image8, image5, image3,image10, image4,  image9,image2  ];
 
 // --- 1. FIXED Reveal Component ---
 const Reveal = ({ children, delay = 0, className = "" }) => {
@@ -76,6 +79,16 @@ const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeService, setActiveService] = useState(null);
   const navigate = useNavigate();
+
+  // Function to go to the previous slide
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  // Function to go to the next slide
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  };
 
   // Services data with translations
   const servicesData = {
@@ -140,7 +153,7 @@ const Home = () => {
   return (
     <div className="w-screen overflow-hidden">
     {/* Carousel Section */}
-    <main className="w-full h-[450px] relative flex flex-col justify-center items-center">
+    <main className="w-full h-[500px] relative flex flex-col justify-center items-center">
       {/* Background Images */}
       <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
         {images.map((img, index) => (
@@ -153,7 +166,42 @@ const Home = () => {
             }`}
           />
         ))}
-      </div>
+
+                {/* Left Arrow Button */}
+                <button
+                  onClick={prevSlide}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/40 p-3 rounded-full text-white backdrop-blur-md transition-all opacity-0 group-hover:opacity-100"
+                >
+                  <FiChevronLeft size={32} />
+                </button>
+
+        {/* Right Arrow Button */}
+        <button
+          onClick={nextSlide}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/40 p-3 rounded-full text-white backdrop-blur-md transition-all opacity-0 group-hover:opacity-100"
+        >
+          <FiChevronRight size={32} />
+        </button>
+
+        {/* Carousel Indicators (Dots) */}
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => {
+                // Removed setDirection as it is not defined
+                setCurrentIndex(index);
+              }}
+              className={`w-3 h-3 rounded-full transition-all ${
+                index === currentIndex ? "bg-white w-8" : "bg-white/50"
+              }`}
+            />
+          ))}
+        </div>
+
+      
+
+
 
         {/* Overlay Boxes */}
         <div className="absolute top-[600px] z-10 flex flex-col md:flex-row justify-center items-center gap-6 px-4 w-[710px] mx-auto">
@@ -171,6 +219,7 @@ const Home = () => {
               <br></br>
             </Link>
           ))}
+        </div>
         </div>
       
       </main>

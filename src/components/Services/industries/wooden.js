@@ -68,7 +68,7 @@ const WoodenPage = () => {
       {/* Split Layout Section */}
       <div ref={scrollTargetRef} className="w-full flex flex-col lg:flex-row gap-6 items-start">
         {/* Map Section */}
-        <div className="w-full lg:w-1/2 h-[400px] rounded-md overflow-hidden shadow-lg border-2 border-[#954C2E]">
+        <div className="w-full lg:w-1/2 h-[350px] rounded-md overflow-hidden shadow-lg border-2 border-[#954C2E]">
           <iframe
             title="Wooden Project Map"
             src={selectedProject.mapEmbed}
@@ -81,11 +81,11 @@ const WoodenPage = () => {
         </div>
 
         {/* Project Details Section */}
-        <div className="w-full lg:w-1/2 h-[400px] bg-[#FAF3EB] p-6 rounded-md shadow-md border-l-4 border-[#954C2E] overflow-y-auto">
+        <div className="w-full lg:w-1/2 h-[350px] bg-[#FAF3EB] p-6 rounded-md shadow-md border-l-4 border-[#954C2E] overflow-y-auto">
           <h2 className="text-xl font-bold text-[#5D4037] mb-4">
             {t(selectedProject.name)}
           </h2>
-          <div className="space-y-3 text-md text-gray-800">
+          <div className="space-y-3 text-lg text-gray-800">
             <p><span className="font-semibold">{t("district")}:</span> {t(selectedProject.district)}</p>
             <p><span className="font-semibold">{t("divisionalOffice")}:</span> {t(selectedProject.office)}</p>
             <p><span className="font-semibold">{t("product")}:</span> {t(selectedProject.product)}</p>
