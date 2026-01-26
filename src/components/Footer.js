@@ -136,7 +136,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-2">{t('followUs')}:</h4>
             <div className="flex gap-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61576861798674"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:text-blue-300 transition"
@@ -160,7 +160,7 @@ const Footer = () => {
                 <i className="bi bi-instagram"></i>
               </a> */}
               <a
-                href="https://youtube.com"
+                href="https://www.youtube.com/@RuralDevelopmentBureau"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:text-red-300 transition"
