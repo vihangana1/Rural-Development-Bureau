@@ -118,6 +118,8 @@ const Header = ({
     },
 
     {label: t('gallery'), path: "/Gallery"},
+
+    { label: t('FAQ'), path: "/FAQ"},
     
     { label: t('contactUs'), path: "/ContactUs"},
 
@@ -131,7 +133,7 @@ const Header = ({
       <div 
         className="w-full text-white py-4 sm:py-6 relative overflow-hidden"
         style={{ 
-          background: "linear-gradient(135deg, #7a1115 2%, #e38a2b 50%, #2E8B57 100%)",
+          background: "linear-gradient(135deg, #7a1115 50%, #e38a2b 90%, #2E8B57 105%)",
         }}
       >
         {/* Decorative Background Pattern */}
@@ -203,7 +205,7 @@ const Header = ({
      
 
       {/* Enhanced Navigation Bar */}
-      <nav className="w-full bg-gradient-to-r from-amber-50 via-yellow-50 to-orange-50 border-t border-orange-200 shadow-lg">
+      <nav className="w-full bg-gradient-to-r from-amber-50 via-yellow-50 to-orange-50 border-t border-orange-200 shadow-lg ">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
           {/* Desktop Navigation */}
           <ul className="hidden lg:flex items-center gap-2">

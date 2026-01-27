@@ -17,6 +17,7 @@ import News from "./components/News";
 import Product from "./components/Products";
 import Download from "./components/Download";
 import Gallery from "./components/Gallery";
+import FAQ from "./components/FAQ";
 
 // Programmes
 import Gramashakthi from "./components/Programme/Gramashakthi";
@@ -148,6 +149,7 @@ function App() {
             <Route path="/Product" element={<Product />} />
             <Route path="/Download" element={<Download />} />
             <Route path="/Gallery" element={<Gallery />} />
+            <Route path="/FAQ" element={<FAQ />} />
 
             {/* Programmes */}
             <Route path="/components/programme/Gramashakthi" element={<Gramashakthi />} />

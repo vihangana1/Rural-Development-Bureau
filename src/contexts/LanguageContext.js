@@ -16,6 +16,7 @@ const translations = {
     download: "Download",
     news: "News",
     contactUs: "Contact Us",
+    FAQ: "FAQ",
     
     // About Us sub-items
     introduction: "Introduction",
@@ -196,7 +197,8 @@ const translations = {
     "news4.title": "Praja Shakthi Training of Trainers - North Province Program.",
     "news5.date": "16th Dec 2025",
     "news5.title": "Praja Shakthi Training of Trainers - South and Central Province Program.",
-
+    "news6.date": "13th Jan 2026",
+    "news6.title": "Praja Shakthi - Western Province Summit to Educate Community Development Council Representatives",
 
     //news1 page 
     northWesternProgramIntro: "The North Western Provincial Program for Training Community Empowerment Trainers, jointly organized by the Rural Development Bureau and the Presidential Secretariat, was successfully held on November 18th and 19th at the Wariyapola North Western Training Center.",
@@ -215,9 +217,11 @@ const translations = {
     northProgramIntro: "The Northern Provincial Program for Training Community Empowerment Trainers, jointly organized by the Rural Development Bureau and the Presidential Secretariat, was successfully held on October 18th and 19st at the Kilinochchi Management Development And Training Institute.",
 
     //news5 page
-    prajashakthiTrainingofTrainersSouthAndCentralProvinceProgram: "Praja Shakthi Training of Trainers - South and Central Province Program.",
-    southProgramIntro: "The Southern and Central Provinces Program for Training of Prajashakthi Trainers, jointly organized by the Rural Development Bureau and the Presidential Secretariat, was successfully held on December 16th and 17th at the Ranminithenna Tele Cinema Village.",
+    prajashakthiTrainingofTrainersSouthAndCentralProvinceProgram: "Praja Shakthi Training of Trainers - Matara and Monaragala  district Program.",
+    southProgramIntro: "The Matara and Monaragala  district Program for Training of Prajashakthi Trainers, jointly organized by the Rural Development Bureau and the Presidential Secretariat, was successfully held on December 16th and 17th at the Ranminithenna Tele Cinema Village.",
 
+    //news6 page
+    PrajaShakthiWesternProvince:"Praja Shakthi - Western Province Summit to Educate Community Development Council Representatives",
 
     // Products Page
     productsTitle: "Products",
@@ -954,6 +958,7 @@ location: "Location",
     download: "බාගත කිරීම්",
     news: "ප්‍රවෘත්ති",
     contactUs: "අප අමතන්න",
+    FAQ: "නිතර අසන පැන",
     
     // About Us sub-items
     introduction: "හැඳින්වීම",
@@ -1132,6 +1137,8 @@ location: "Location",
     "news4.title": "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ උතුරු පළාත් වැඩසටහන.",
     "news5.date": "2025 දෙසැමබර් 16",
     "news5.title": "ප්‍රජාශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ දකුණු සහ මධ්‍යම  පළාත් වැඩසටහන",
+    "news6.date": "2026 ජනවාරි  13",
+    "news6.title": "ප්‍රජා ශක්ති - ප්‍රජා සංවර්ධන සභා නියෝජිතයන් දැනුවත් කිරීමේ බස්නාහිර පළාත් සමුළුව",
     
 
 
@@ -1158,8 +1165,11 @@ location: "Location",
 
 
     //news5 page
-    prajashakthiTrainingofTrainersSouthAndCentralProvinceProgram: "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ දකුණු සහ මධ්‍යම පළාත් වැඩසටහන.",
-    southProgramIntro: "ග්‍රාම සංවර්ධන කාර්යාංශය සහ ජනාධිපති ලේකම් කාර්යාලය එක්ව සංවිධානය කරන ලද ප්‍රජාශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ දකුණු සහ මධ්‍යම පළාත් වැඩසටහන දෙසැම්බර් 16 සහ 17 යන දෙදින රන්මිණිතැන්න ටෙලි සිනමා ගම්මානයේදී සාර්ථකව පැවැත්විණි.",
+    prajashakthiTrainingofTrainersSouthAndCentralProvinceProgram: "ප්‍රජා ශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ මාතර සහ මොණරාගල දිස්ත්‍රික්කයන්හි වැඩසටහන.",
+    southProgramIntro: "ග්‍රාම සංවර්ධන කාර්යාංශය සහ ජනාධිපති ලේකම් කාර්යාලය එක්ව සංවිධානය කරන ලද ප්‍රජාශක්ති පුහුණුකරුවන් පුහුණු කිරීමේ මාතර සහ මොණරාගල දිස්ත්‍රික්කයන්හි වැඩසටහන දෙසැම්බර් 16 සහ 17 යන දෙදින රන්මිණිතැන්න ටෙලි සිනමා ගම්මානයේදී සාර්ථකව පැවැත්විණි.",
+
+    //news6 page
+    PrajaShakthiWesternProvince:"ප්‍රජා ශක්ති - ප්‍රජා සංවර්ධන සභා නියෝජිතයන් දැනුවත් කිරීමේ බස්නාහිර පළාත් සමුළුව",
 
     // Products Page
     productsTitle: "නිෂ්පාදන",
@@ -1893,6 +1903,7 @@ location: "Location",
     download: "பதிவிறக்கம்",
     news: "செய்திகள்",
     contactUs: "எங்களை தொடர்பு கொள்ளுங்கள்",
+    FAQ:"அடிக்கடி கேட்கப்படும் கேள்விகள்",
     
     // About Us sub-items
     introduction: "அறிமுகம்",
@@ -2074,6 +2085,8 @@ location: "Location",
 "news4.title": "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – வட மாகாண திட்டம்.",
 "news5.date": "2025 டிசம்பர் 16",
 "news5.title": "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – மத்திய மாகாண திட்டம்.",
+"news6.date": "2026 ஜனவரி 12",
+"news6.title": "பிரஜா சக்தி - சமூக அபிவிருத்தி சபை பிரதிநிதிகளை கல்வி செய்யும் மேற்கு மாகாண மாநாடு",
 
 
     //news1 page 
@@ -2095,9 +2108,13 @@ prajashakthiTrainingofTrainersNorthProvinceProgram:"பிரஜாஷக்த�
   northProgramIntro: "கிராமப்புற அபிவிருத்தி பணியகம் மற்றும் ஜனாதிபதி செயலகம் இணைந்து ஏற்பாடு செய்த சமூக வலுவூட்டல் பயிற்சியாளர்களுக்கான வடக்கு மாகாண பயிற்சி நிகழ்ச்சித்திட்டம் அக்டோபர் 18 மற்றும் 19 ஆகிய தேதிகளில் கிளிநொச்சி மேலாண்மை மேம்பாட்டு மற்றும் பயிற்சி நிறுவனத்தில் வெற்றிகரமாக நடைபெற்றது.",
 
   //news5 page
-  prajashakthiTrainingofTrainersSouthAndCentralProvinceProgram: "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – மத்திய மாகாண திட்டம்",
-  southProgramIntro: "கிராம அபிவிருத்தி பணியகம் மற்றும் ஜனாதிபதி செயலகம் இணைந்து ஏற்பாடு செய்த பிரஜாசக்தி பயிற்சியாளர்களுக்கான தெற்கு மற்றும் மத்திய மாகாண பயிற்சி நிகழ்ச்சித்திட்டம் டிசம்பர் 16 மற்றும் 17 ஆகிய தேதிகளில் ரன்மினிதென்ன டெலி சினிமா கிராமத்தில் வெற்றிகரமாக நடைபெற்றது.",
-    // Products Page
+  prajashakthiTrainingofTrainersSouthAndCentralProvinceProgram: "பிரஜாஷக்தி பயிற்சியாளர்கள் பயிற்சி – மாத்தறை மற்றும் மொனராகலை மாவட்டம்",
+  southProgramIntro: "கிராம அபிவிருத்தி பணியகம் மற்றும் ஜனாதிபதி செயலகம் இணைந்து ஏற்பாடு செய்த பிரஜாசக்தி பயிற்சியாளர்களுக்கான மாத்தறை மற்றும் மொனராகலை மாவட்டம் பயிற்சி நிகழ்ச்சித்திட்டம் டிசம்பர் 16 மற்றும் 17 ஆகிய தேதிகளில் ரன்மினிதென்ன டெலி சினிமா கிராமத்தில் வெற்றிகரமாக நடைபெற்றது.",
+  
+  //news6 page
+  PrajaShakthiWesternProvince: "பிரஜா சக்தி - சமூக அபிவிருத்தி சபை பிரதிநிதிகளை கல்வி செய்யும் மேற்கு மாகாண மாநாடு",
+  
+  // Products Page
     productsTitle: "தயாரிப்புகள்",
     productsDescription: "சௌபாக்ய உற்பத்தி கிராமங்களில் எங்கள் சொந்த உற்பத்தியாளர்களால் தயாரிக்கப்பட்ட தரமான தயாரிப்புகளின் பரந்த அளவு எங்களிடம் உள்ளது. இந்த உள்நாட்டில் அடிப்படையிலான மதிப்பு கூட்டப்பட்ட தயாரிப்புகள் கவனமாக வடிவமைக்கப்பட்டு உற்பத்தி மதிப்பு சங்கிலியில் உலகளாவிய தரங்களை சந்திக்கின்றன.",
     handCraft: "கைவினை",

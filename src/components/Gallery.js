@@ -7,11 +7,14 @@ import event2 from "../assets/gallery/event2.jpeg";
 import event3 from "../assets/gallery/event3.jpeg";
 import event4 from "../assets/gallery/event4.jpeg";
 import event5 from "../assets/gallery/event5.jpeg";
+import event6 from "../assets/gallery/event6.jpeg";
+import event7 from "../assets/gallery/event7.jpeg";
+
 import meeting1 from "../assets/gallery/meeting1.jpeg";
 import meeting2 from "../assets/gallery/meeting2.jpeg";
 import meeting3 from "../assets/gallery/meeting3.jpeg";
 
-const eventImages = [event1, event2, event3, event4, event5];
+const eventImages = [event1, event2, event3, event4, event5,event6,event7];
 const meetingImages = [meeting1, meeting2, meeting3];
 
 // Combine all images into one array for navigation

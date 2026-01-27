@@ -5,11 +5,18 @@ import News2Image from "../assets/news/news2.jpeg";
 import News3Image from "../assets/news/news3.jpeg";
 import News4Image from "../assets/news/news4.jpeg";
 import News5Image from "../assets/news/news5.jpeg";
+import News6Image from "../assets/news/news6.jpeg";
 
 const FeaturedNewsSection = () => {
   const { t } = useLanguage(); // ✅ access translation function
 
   const newsItems = [
+    {
+      date: t("news6.date"),
+      title: t("news6.title"),
+      image: News6Image,
+      link: "/news/news6",
+    },
     {
       date: t("news1.date"),
       title: t("news1.title"),
@@ -42,6 +49,7 @@ const FeaturedNewsSection = () => {
      image:News5Image,
       link: "/news/news5 ",
     },
+    
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
